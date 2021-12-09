@@ -3,7 +3,7 @@
 The Rust speedsheet covers the Rust programming language. The speedsheet is hosted on [speedsheet.io](https://speedsheet.io). This is the raw content for that speedsheet.
 
 Rust SpeedSheet:  
-https://speedsheet.io/s/rush
+https://speedsheet.io/s/rust
 
 
 # Status
