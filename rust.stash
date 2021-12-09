@@ -1,0 +1,796 @@
+# Rust
+
+<m>Primitives:
+<l>https://doc.rust-lang.org/rust-by-example/primitives.html<><>
+
+<m>Rust by Example (Docs):
+<l>https://doc.rust-lang.org/rust-by-example/index.html<><>
+
+
+# Online Links
+
+
+### Rust Official Site
+<l>https://www.rust-lang.org/<>
+
+
+### Rust - Download / Install Page
+<l>https://www.rust-lang.org/tools/install<>
+
+
+# Hello World
+
+
+# Language Fundamentals
+
+
+
+### Comments
+
+<cb><#>// This is a comment.<><>
+
+Start a comment with '<c>//<>'.
+@
+@ //
+
+
+### Comments - Multiline
+
+<cb><#>/*
+
+Multiline Comment
+
+*/<><>
+
+Start a multiline comment with '<c>/*<>'.
+End with '<c>*/>'
+@
+@ /*, */, /**/
+
+
+
+### Statement Terminator
+
+<cb><v>statement<>;<>
+
+Terminate commands with a semicolon.
+
+
+Example:
+
+<cb>println!("<v>This statement is terminated with a semicolon.<>");<>
+@
+@ ;, command, line
+
+
+
+### Rust File Extension
+
+<cb>.rs<>
+
+<cb><v>filename<>.rs<>
+@
+@ .rs
+
+
+
+### Rust Environment Variable - Cargo Home
+
+<cb>cargo_HOME<>
+
+Locates the Cargo directory.
+
+Typically:
+
+<cb>$HOME/.cargo<>
+@
+@ RUSTUP_HOME
+@ Rust Path, .cargo
+
+
+
+### Rust Environment Variable - Rustup Home
+
+<cb>RUSTUP_HOME<>
+
+Locates the RustUp directory.
+
+Typically:
+
+<cb>$HOME/.rustup<>
+@
+@ RUSTUP_HOME
+@ Rust Path, .rustup
+
+
+
+# Convention Guidelines
+
+<table><col>Crates<><col>No Convention?<>
+<col>Modules<><col><c><v>snake_case<><><>
+<col>Types<><col><c><v>TitleCase<><><>
+<col>Traits<><col><c><v>TitleCase<><><>
+<col>Enum Variants<><col><c><v>TitleCase<><><>
+<col>Functions<><col><c><v>snake_case<><><>
+<col>Methods<><col><c><v>snake_case<><><>
+<col>General Constructors<><col>new
+<c><v>with_more_details<><><>
+<col>Conversion constructors<><col><c><v>from_some_other_type<><><>
+<col>Macros<><col><c><v>snake_case<>!<><>
+<col>Local Variables<><col><c><v>snake_case<><><>
+<col>Statics<><col><c><v>UPPER_SNAKE_CASE<><><>
+<col>Constants<><col><c><v>UPPER_SNAKE_CASE<><><>
+<col>Type Carameters<><col><c><v>T<><>  (Upper Case Letter)
+<c><v>TitleCase<><><>
+<col>Lifetimes<><col><c><v>lowercase<><><>
+<col>Features<><col>No Convention?<><>
+
+See:
+<l>https://rust-lang.github.io/api-guidelines/naming.html<>
+
+
+### Convention - Crates
+
+No convention?
+
+
+### Convention - Modules
+
+<cb><v>snake_case<><>
+
+
+### Convention - Types
+
+<cb><v>TitleCase<><>
+
+
+### Convention - Traits
+
+<cb><v>TitleCase<><>
+
+
+### Convention - Enum Variants
+
+<cb><v>TitleCase<><>
+
+
+### Convention - Functions
+
+<cb><v>snake_case<><>
+
+
+### Convention - Methods
+
+<cb><v>snake_case<><>
+
+
+### Convention - General Constructor
+
+<cb>new<>
+
+<cb><v>with_more_details<>
+
+
+### Convention - Conversion Constructor
+
+<cb><v>from_some_other_type<><>
+
+
+### Convention - Macros
+
+<cb><v>snake_case<>!<>
+
+
+### Convention - Local Variable
+
+<cb><v>snake_case<><>
+
+
+### Convention - Statics
+
+<cb><v>UPPER_SNAKE_CASE<><>
+
+
+### Convention - Constants
+
+<cb><v>UPPER_SNAKE_CASE<><>
+
+
+### Convention - Type Parameters
+
+<cb><v>TitleCase<><>
+
+<cb><v>T<><>
+
+Short concise name in TitleCase.
+Some recommend a single uppercase letter.
+
+
+### Convention - Lifetimes
+
+<cb>lowercase<>
+
+Use short words.
+Some recommend a single letter but I strongly disagree.
+
+
+### Convention - Features
+
+No convention?
+
+<m>See: C-FEATURE
+<l>https://rust-lang.github.io/api-guidelines/naming.html#c-feature<><>
+
+
+
+# Install
+
+Install Page:
+<l>https://www.rust-lang.org/tools/install<>
+
+
+## Linux / Mac
+
+
+### Linux / Mac - Install
+
+From Terminal:
+
+<cb>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh<>
+
+
+### Linux / Mac - Uninstall
+
+<cb>rustup self uninstall<>
+
+
+
+# Command Line
+
+
+### Program - Compile
+
+<cb>rustc <v>program_name.rs<><>
+@
+@ rustc
+
+
+
+### Program - Run
+
+<cb><v>program_name<><>
+
+Run after compiling with rustc.
+
+
+
+# Operators
+@
+@ Operators, Operations, Expressions
+
+
+
+# Control Structures
+@
+@ statements, flow, control-only
+
+
+
+### If
+
+
+### Match
+
+# Variables
+
+
+
+# Literals
+@
+@ literals-only, lit-only, literal-only
+
+
+## Literals - Basics
+
+<table><col>= <c>true | false<><><col>Boolean Literal<>
+<col> <>
+<col><c>= <v>11<><><><col>Decimal Literal<>
+<col><c>= <v>-11<><><><col>Decimal Literal<>
+<col><c>= <v>12_345<><><><col>Decimal Literal<>
+<col> <>
+<col><c>= 0b<v>1111_0000<><><><col>Binary Literal<>
+<col><c>= 0x<v>ff<><><><col>Hex Literal<>
+<col><c>= 0o<v>77<><><><col>Octal Literal<>
+<col> <>
+<col><c>= <v>11.23<><><><col>Float Literal<>
+<col><c>= <v>-11.23<><><><col>Float Literal<>
+<col><c>= <v>12_345.23_45<><><><col>Float Literal<>
+<col> <>
+<col><c>= b'<v>C<>'<><><col>Byte Literal (u8 only)<>
+<col> <>
+<col><c>= '<v>c<>'<><><col>Character Literal<>
+<col><c>= "<v>string<>"<><><col>String Literal<>
+<col> <>
+<col><c>= [<v>value_1<>, <v>value_2<>, <v>value_3<>]<><><col>Array<>
+<col><c>= (<v>value_1<>, <v>value_2<>, <v>value_3<>)<><><col>Tuple<><>
+
+
+
+## Literals - Details
+
+
+### Boolean Literal
+
+<cb>= true<>
+
+<cb>= false<>
+@
+@ true, false
+
+
+
+### Byte Literals
+
+<cb>= b'<v>A<>'<>
+
+Returns: u8
+@
+@ b'', u8
+
+
+
+### Integer Literal - Decimals
+
+<cb>= <v>11<><>
+
+<cb>= <v>-11<><>
+
+<cb>= <v>12_345<><>
+
+<m>(confirm underscores ignored)<>
+
+
+
+### Integer Literal - Binary
+
+<cb>= 0b<v>1100<><>
+
+<cb>= 0b<v>1111_0000<><>
+
+<m>(confirm underscores ignored)<>
+@
+@ 0b
+
+
+
+### Integer Literal - Hex
+
+<cb>= 0x<v>ff<><>
+@
+@ 0x
+
+
+
+### Integer Literal - Octal
+
+<cb>= 0o<v>77<><>
+@
+@ 0o
+
+
+
+### Float Literal
+
+<cb>= <v>11.23<><>
+
+<cb>= <v>-11.23<><>
+
+<cb>= <v>12_345.67<><>
+
+<m>(confirm underscores ignored)<>
+
+
+
+### Character Literal
+
+<cb>= '<v>c<>'<>
+@
+@ ''
+
+
+
+### String Literal
+
+<cb>= "<v>A String<>"<>
+@
+@ ""
+
+
+
+# Data Types
+
+## Standard Types
+
+<m>(See: <l>https://doc.rust-lang.org/book/ch03-02-data-types.html<>)<>
+
+<table><col>Boolean<><col>bool<>
+<col> <>
+<col>i8<><col>Integer, 8-bit Signed<>
+<col>i16<><col>Integer, 16-bit Signed<>
+<col>i32<><col>Integer, 32-bit Signed<>
+<col>i64<><col>Integer, 64-bit Signed<>
+<col>i128<><col>Integer, 128-bit Signed<>
+<col> <>
+<col>u8<><col>Integer, 8-bit Unsigned<>
+<col>u16<><col>Integer, 16-bit Unsigned<>
+<col>u32<><col>Integer, 32-bit Unsigned<>
+<col>u64<><col>Integer, 64-bit Unsigned<>
+<col>u128<><col>Integer, 128-bit Unsigned<>
+<col> <>
+<col>f32<><col>Float, 32-bit Single Precision<>
+<col>f64<><col>Float, 64-bit, Double Precision<>
+<col> <>
+<col>tup<><col>Tuple<><>
+
+Floats: IEEE-754 Standard
+
+
+
+# Boolean
+
+<cb>= true
+= false<>
+
+<cb>: bool<>
+
+Type: bool
+@
+@ true, false
+
+
+# Byte
+
+<cb>= b'<v>C<>'<>
+
+<cb>: u8<>
+
+Returns: <c>u8<>
+@
+@ u8, b''
+
+
+# Character
+
+<cb>: char<>
+
+Unicode scalar.
+4 bytes.
+
+
+# Float - 32-Bit, Single Precision
+
+<cb>f32<>
+
+
+
+# Float - 64-Bit, Double Precision
+
+<cb>f64<>
+
+
+
+# Integer - 8-Bit, Signed
+
+<cb>i8<>
+
+Integer, 8-bit Signed
+
+Example:
+
+<cb>let <v>int_1<>: i8 = <v>1<>;<>
+@
+@ i8
+
+
+
+# Integer - 8-Bit, Unsigned
+
+<cb>u8<>
+
+Integer, 8-bit Unsigned
+
+Example:
+
+<cb>let <v>int_1<>: u8 = <v>1<>;<>
+@
+@ u8
+
+
+
+# Integer - 16-Bit, Signed
+
+<cb>i16<>
+
+Integer, 16-bit Signed
+
+Example:
+
+<cb>let <v>int_1<>: i16 = <v>1<>;<>
+i@
+@ i16
+
+
+
+# Integer - 16-Bit, Unsigned
+
+<cb>u16<>
+
+Integer, 16-bit Unsigned
+
+Example:
+
+<cb>let <v>int_1<>: u16 = <v>1<>;<>
+u@
+@ u16
+
+
+
+# Integer - 32-Bit, Signed
+
+<cb>i32<>
+
+Integer, 32-bit Signed
+
+Example:
+
+<cb>let <v>int_1<>: i32 = <v>1<>;<>
+i@
+@ i32
+
+
+
+# Integer - 32-Bit, Unsigned
+
+<cb>u32<>
+
+Integer, 32-bit Unsigned
+
+Example:
+
+<cb>let <v>int_1<>: u32 = <v>1<>;<>
+u@
+@ u32
+
+
+
+# Integer - 64-Bit, Signed
+
+<cb>i64<>
+
+Integer, 64-bit Signed
+
+Example:
+
+<cb>let <v>int_1<>: i64 = <v>1<>;<>
+i@
+@ i64
+
+
+
+# Integer - 64-Bit, Unsigned
+
+<cb>u64<>
+
+Integer, 64-bit Unsigned
+
+Example:
+
+<cb>let <v>int_1<>: u64 = <v>1<>;<>
+u@
+@ u64
+
+
+
+# Integer - 128-Bit, Signed
+
+<cb>i128<>
+
+Integer, 128-bit Signed
+
+Example:
+
+<cb>let <v>int_1<>: i128 = <v>1<>;<>
+i1@
+@ i128
+
+
+
+# Integer - 128-Bit, Unsigned
+
+<cb>u128<>
+
+Integer, 128-bit Unsigned
+
+Example:
+
+<cb>let <v>int_1<>: u128 = <v>1<>;<>
+u1@
+@ u128
+
+
+
+# String
+
+
+
+
+# Array
+
+<cb>= [<v>value_1<>, <v>value_2<>, <v>value_3<>]<>
+
+<cb>: [<v>type<>, <v>size<>]<>
+
+Immutable list of items.
+Must be of the same type.
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];<>
+
+<cb>let <v>array_1<>: [<v>i32<>; <v>3<>] = [<v>1<>, <v>2<>, <v>3<>];<>
+
+
+## Array - Create
+
+
+## Array - Operations
+
+
+### Array - Get
+
+<cb>= <v>array_1<>[<v>index<>]<>
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
+
+<v>first<> = <v>array_1<>[<v>0<>];<>
+
+
+
+### Array - Get First
+
+<cb>= <v>array_1<>[0]<>
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
+
+<v>first = <v>array_1<>[<v>0<>];<>
+
+
+
+### Array - Get Last
+
+<cb>= <v>array_1<>[<v>index<>]<>
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
+
+
+
+### Array - Get Size
+
+<cb>= <v>array_1<>.len()<>
+
+Returns: Integer
+@
+@ .len()
+@ length, count
+
+
+
+# Tuple
+
+<cb>= (<v>value_1<>, <v>value_2<>, <v>value_3<>)<>
+
+Empty Tuple:
+
+<cb>= ()<>
+
+Immutable listu of items.
+Can be of mixed types.
+
+
+Example:
+
+<cb>let <v>tuple_1<> = [<v>1<>, <v>'2'<>, <v>true<>]<>
+
+
+
+# Struct
+
+
+
+# Enum
+
+
+
+# Vector
+
+Mutable lit of items.
+
+
+## Vector - Create
+
+<cb>= Vec\<<type>><>
+
+<cb>let <v>vector_1<>: Vec\<i32> = Vec::new();<>
+
+
+## Vector - Create Using Macro
+
+<cb>= vec![]<>
+
+<cb>let <v>vector_1<>: Vec\<i32> = vec![];<>
+
+
+# How To
+@
+@ how-to
+
+
+# Reference - Directories
+
+
+## Linux / Mac
+
+
+### Linux / Mac - User Cargo Directory
+
+<cb>$HOME/.cargo<>
+
+Cargo's user root directory.
+
+
+### Linux / Mac - User Cargo Bin Directory
+
+<cb>$HOME/.cargo/bin<>
+
+Contains Cargo commands such as:
+
+<indent><c>cargo, rustc, rustup<><>
+@
+@ .cargo/bin, bin
+
+
+### Linux / Mac - User Cargo Environment Directory
+
+<cb>$HOME/.cargo/env<>
+@
+@ .cargo/env, env
+
+
+### Linux / Mac - User Rustup Directory
+
+<cb>$HOME/.rustup<>
+
+Contains metadata, toolchains.
+
+Configure to this directory with <c>RUSTUP_HOME<>
+@
+@ .rustup
+
+
+# Acronyms
+
+
+# Terms
+@
+@ glossary
+
