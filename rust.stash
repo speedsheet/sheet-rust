@@ -1,10 +1,48 @@
 # Rust
 
-<m>Primitives:
-<l>https://doc.rust-lang.org/rust-by-example/primitives.html<><>
+Add:
 
-<m>Rust by Example (Docs):
-<l>https://doc.rust-lang.org/rust-by-example/index.html<><>
+    destructuring
+        let (a, b) = ...
+
+
+Symbols / Operators:
+<l>https://doc.rust-lang.org/book/appendix-02-operators.html<>
+
+Primitives:
+<l>https://doc.rust-lang.org/rust-by-example/primitives.html<>
+
+Rust by Example (Docs):
+<l>https://doc.rust-lang.org/rust-by-example/index.html<>
+
+<in-2>Next (Conversion):
+<l>https://doc.rust-lang.org/rust-by-example/conversion/from_into.html<>
+
+char:
+<l>https://doc.rust-lang.org/std/primitive.char.html<>
+
+float:
+<l>https://doc.rust-lang.org/std/primitive.f32.html<>
+
+Array Slicing:
+<l>https://doc.rust-lang.org/rust-by-example/primitives/array.html<>
+
+Enums With Properties:
+<l>https://doc.rust-lang.org/rust-by-example/custom_types/enum.html<>
+
+Match Destructuring:
+<l>https://doc.rust-lang.org/rust-by-example/flow_control/match/destructuring.html<><>
+
+
+
+### Use Module
+
+<cb>use <v>module<>::<v>component<>;<>
+
+<m>(Incorporate)<>
+@
+@ import
+
 
 
 # Online Links
@@ -14,8 +52,23 @@
 <l>https://www.rust-lang.org/<>
 
 
+### Rust Documents
+<l>https://doc.rust-lang.org/book/title-page.html<>
+@
+@ documentation
+
+
 ### Rust - Download / Install Page
 <l>https://www.rust-lang.org/tools/install<>
+
+
+### Rust - Online Playground
+<l>https://play.rust-lang.org/<>
+
+Code interactively on this page, no setup required.
+@
+@ repl, interactively
+
 
 
 # Hello World
@@ -34,6 +87,7 @@ Start a comment with '<c>//<>'.
 @ //
 
 
+
 ### Comments - Multiline
 
 <cb><#>/*
@@ -46,6 +100,109 @@ Start a multiline comment with '<c>/*<>'.
 End with '<c>*/>'
 @
 @ /*, */, /**/
+
+
+
+### Doc Comments
+
+<cb><#>/// This is a doc comment.<><>
+
+<cb><#>/// This doc comment
+/// adds content to the
+/// following function.<>
+fn <v>documented_function<>() {
+    <v>...<>
+}<>
+
+Doc comments are placed before the item being commented on.
+Use a triple forward slash (<#><c>///<><>) on each line.
+@
+@ code, documentation, docstring-only, docstr-only, doc-string-only, doc-str-only
+@ ///
+
+
+
+### Doc Comments - Markdown Format
+
+<cb><#>/// # Heading 1
+/// ## Heading 2
+///
+/// In **<b>bold<>** or __<b>bold<>__
+/// In *<i>italics<>* or _<i>italics<>_
+/// In ~~<->strikethrough<>~~
+///
+/// [Link](<l>http//speedsheet.io<>)<><>
+
+
+Doc comments support CommonMark Markdown.
+
+CommonMark:
+<l>https://commonmark.org/help/<>
+@
+@ code, documentation, docstring-only, docstr-only, doc-string-only, doc-str-only
+@ ///
+
+
+
+### Block
+
+<cb>{
+    <v>...<>
+}<>
+
+
+A block of code with it's own scope separate from the local scope.
+
+
+Example:
+
+<cb>let <v>a<> = <v>10<>;
+
+{
+    let <v>a<> = <v>5<> + <v>a<>;
+    println!("a = {}", <v>a<>);
+}
+
+println!("a = {}", <v>a<>);
+
+<#>// Prints:
+//
+//    a = 15
+//    a = 10<><>
+
+
+
+### Block Expression
+
+<cb>= {
+    <v>...<>
+    <v>return_value<>
+}<>
+
+
+Defines a block that returns a value.
+Return a value like any other expression, leave the semicolon (;) off.
+
+
+Example:
+
+<cb>let <v>value<> = {
+    <v>10<>_i32.pow(<v>2<>)
+};
+
+println!("value = {}", <v>value<>);
+
+<#>// Prints: "value = 100"<><>
+
+
+
+### Program Entry Point / Main Function
+
+<cb>fn main() {
+
+}<>
+@
+@ main()
 
 
 
@@ -104,29 +261,72 @@ Typically:
 
 
 
-# Convention Guidelines
+# Naming Conventions
+@
+@ names naming
 
-<table><col>Crates<><col>No Convention?<>
-<col>Modules<><col><c><v>snake_case<><><>
-<col>Types<><col><c><v>TitleCase<><><>
-<col>Traits<><col><c><v>TitleCase<><><>
-<col>Enum Variants<><col><c><v>TitleCase<><><>
-<col>Functions<><col><c><v>snake_case<><><>
-<col>Methods<><col><c><v>snake_case<><><>
-<col>General Constructors<><col>new
-<c><v>with_more_details<><><>
-<col>Conversion constructors<><col><c><v>from_some_other_type<><><>
-<col>Macros<><col><c><v>snake_case<>!<><>
-<col>Local Variables<><col><c><v>snake_case<><><>
-<col>Statics<><col><c><v>UPPER_SNAKE_CASE<><><>
-<col>Constants<><col><c><v>UPPER_SNAKE_CASE<><><>
-<col>Type Carameters<><col><c><v>T<><>  (Upper Case Letter)
+## Naming Conventions - Basics
+
+<table><col>Constant<><col><c><v>UPPER_SNAKE_CASE<><><>
+<col> <>
+<col>Constructor - General<><col>new
+
+<c>with_<v>more_details<><><>
+<col> <>
+<col>Constructor - Conversion<><col><c>from_<v>some_other_type<><><>
+<col> <>
+<col>Crate<><col>No Convention?<>
+<col> <>
+<col>Enum Variant<><col><c><v>TitleCase<><><>
+<col> <>
+<col>Feature<><col>No Convention?<>
+<col> <>
+<col>Function<><col><c><v>snake_case<><><>
+<col> <>
+<col>Lifetime<><col><c><v>lowercase<><><>
+<col> <>
+<col>Method<><col><c><v>snake_case<><><>
+<col> <>
+<col>Macro<><col><c><v>snake_case<>!<><>
+<col> <>
+<col>Module<><col><c><v>snake_case<><><>
+<col> <>
+<col>Static<><col><c><v>UPPER_SNAKE_CASE<><><>
+<col> <>
+<col>Trait<><col><c><v>TitleCase<><><>
+<col> <>
+<col>Type<><col><c><v>TitleCase<><><>
+<col> <>
+<col>Type Parameter<><col><c><v>T<><>  (Upper Case Letter)
+
 <c><v>TitleCase<><><>
-<col>Lifetimes<><col><c><v>lowercase<><><>
-<col>Features<><col>No Convention?<><>
+<col> <>
+<col>Variable<><col><c><v>snake_case<><><>
+<col> <>
+<col>Variable - Constants<><col><c><v>UPPER_SNAKE_CASE<><><><>
 
 See:
 <l>https://rust-lang.github.io/api-guidelines/naming.html<>
+
+
+## Naming Convention Details
+
+
+### Convention - Constants
+
+<cb><v>UPPER_SNAKE_CASE<><>
+
+
+### Convention - Constructors - General
+
+<cb>new<>
+
+<cb>with_<v>more_details<><>
+
+
+### Convention - Constructors - Conversion
+
+<cb>from_<v>some_other_type<><>
 
 
 ### Convention - Crates
@@ -139,19 +339,17 @@ No convention?
 <cb><v>snake_case<><>
 
 
-### Convention - Types
-
-<cb><v>TitleCase<><>
-
-
-### Convention - Traits
-
-<cb><v>TitleCase<><>
-
-
 ### Convention - Enum Variants
 
 <cb><v>TitleCase<><>
+
+
+### Convention - Features
+
+No convention?
+
+<m>See: C-FEATURE
+<l>https://rust-lang.github.io/api-guidelines/naming.html#c-feature<><>
 
 
 ### Convention - Functions
@@ -159,21 +357,12 @@ No convention?
 <cb><v>snake_case<><>
 
 
-### Convention - Methods
+### Convention - Lifetimes
 
-<cb><v>snake_case<><>
+<cb>lowercase<>
 
-
-### Convention - General Constructor
-
-<cb>new<>
-
-<cb><v>with_more_details<>
-
-
-### Convention - Conversion Constructor
-
-<cb><v>from_some_other_type<><>
+Use short words.
+Some recommend a single letter but I strongly disagree.
 
 
 ### Convention - Macros
@@ -181,7 +370,7 @@ No convention?
 <cb><v>snake_case<>!<>
 
 
-### Convention - Local Variable
+### Convention - Methods
 
 <cb><v>snake_case<><>
 
@@ -191,9 +380,14 @@ No convention?
 <cb><v>UPPER_SNAKE_CASE<><>
 
 
-### Convention - Constants
+### Convention - Traits
 
-<cb><v>UPPER_SNAKE_CASE<><>
+<cb><v>TitleCase<><>
+
+
+### Convention - Types
+
+<cb><v>TitleCase<><>
 
 
 ### Convention - Type Parameters
@@ -206,20 +400,14 @@ Short concise name in TitleCase.
 Some recommend a single uppercase letter.
 
 
-### Convention - Lifetimes
+### Convention - Variables
 
-<cb>lowercase<>
-
-Use short words.
-Some recommend a single letter but I strongly disagree.
+<cb><v>snake_case<><>
 
 
-### Convention - Features
+### Convention - Variables - Constants
 
-No convention?
-
-<m>See: C-FEATURE
-<l>https://rust-lang.github.io/api-guidelines/naming.html#c-feature<><>
+<cb><v>UPPER_SNAKE_CASE<><>
 
 
 
@@ -264,9 +452,131 @@ Run after compiling with rustc.
 
 
 
+# Compiler
+
+
+### Silence Dead Code Warnings
+
+<cb>#![allow(dead_code)]<>
+@
+@ #![allow(dead_code)], allow dead_code
+
+
+
 # Operators
 @
 @ Operators, Operations, Expressions
+
+
+## Arithmetic Operators
+
+<in><table><col><c><v>a<> + <v>b<><>    <><col>Add<>
+<col><c><v>a<> - <v>b<><><><col>Subtract<>
+<col><c><v>a<> * <v>b<><><><col>Multiply<>
+<col><c><v>a<> / <v>b<><><><col>Divide<>
+<col><c><v>a<> % <v>b<><><><col>Modulo / Remainder<><><>
+@
+@ +, -, *, /, %
+@ add, plus, subtract, minus, multiply, divide, modulo, modulus
+
+
+
+## Arithmetic Assignment Operators
+
+<in><table><col><c><v>a<> += <v>b<><>   <><col>Add<>
+<col><c><v>a<> -= <v>b<><><><col>Subtract<>
+<col><c><v>a<> *= <v>b<><><><col>Multiply<>
+<col><c><v>a<> /= <v>b<><><><col>Divide<>
+<col><c><v>a<> %= <v>b<><><><col>Modulo / Remainder<><><>
+
+Calculate the operation and save the result in <c><v>a<><>.
+@
+@ +=, -=, *=, /= %=
+@ add, plus, subtract, minus, multiply, divide, modulo, modulus
+
+
+
+## Bitwise Operators
+
+<in><table><col><c>!<v>a<><><><col>Complement / Inverse<>
+<col> <>
+<col><c><v>a<> & <v>b<><><><col>Bitwise AND<>
+<col><c><v>a<> | <v>b<><><><col>Bitwise OR<>
+<col><c><v>a<> ^ <v>b<><><><col>Bitwise XOR<>
+<col> <>
+<col><c><v>a<> \<\< <v>shift_count<><><><col>Bitwise Shift Left<>
+<col><c><v>a<> >> <v>shift_count<><><><col>Bitwise Shift Right<><><>
+@
+@ !, &, |, ^, \<\<, >>, binary
+@ shift left, shift right
+
+
+
+## Bitwise Assignment Operators
+
+Calculate the operation and save the result in <c><v>a<><>:
+
+<in><table><col><c><v>a<> &= <v>b<><><><col>Bitwise AND<>
+<col><c><v>a<> |= <v>b<><><><col>Bitwise OR<>
+<col><c><v>a<> ^= <v>b<><><><col>Bitwise XOR<>
+<col> <>
+<col><c><v>a<> \<\<= <v>shift_count<><><><col>Bitwise Shift Left<>
+<col><c><v>a<> >>= <v>shift_count<><><><col>Bitwise Shift Right<><><>
+@
+@ &=, |=, ^=, \<\<=, >>=, binary
+@ and, or, xor, shift left, shift right
+
+
+
+## Comparison Operators
+
+<in><table><col><c><v>a<> == <v>b<><>     <><col>Equals<>
+<col><c><v>a<> != <v>b<><><><col>Not Equals<>
+<col><c><v>a<> > <v>b<><><><col>Greater Than<>
+<col><c><v>a<> \< <v>b<><><><col>Less Than<>
+<col><c><v>a<> >= <v>b<><><><col>Greater Than or Equals<>
+<col><c><v>a<> \<= <v>b<><><><col>Less Than or Equals<><><>
+@
+@ Boolean, ==, !=, \<>, \<, \<=, >, >/
+@ less than, greater than, less that or equal, greater than or equal
+
+
+
+## Logical Operators
+
+<in><table><col><c>!<v>a<><><><col>Not<>
+<col> <>
+<col><c><v>a<> && <v>b<><><><col>And<>
+<col><c><v>a<> || <v>b<><><><col>Or<><><>
+@
+@ Boolean, !, &&, ||
+@ and, or, not
+
+
+
+## Ternary Operator / Inline If
+
+<cb>= if <v>expression<> { <v>true_value<> } else { <v>false_value<> }<>
+
+Full Form:
+
+<cb>let <v>value<> = if <v>expression<> { <v>true_value<> } else { <v>false_value<> };<>
+
+
+Evaluates a conditional if expression to a value.
+Must be terminated with a semicolon (;).
+
+
+Example:
+
+<cb>let <v>a<> = 10;
+let <v>more_or_less<> = if <v>a<> > 5 {"more"} else {"less"};
+
+println!("{} is {} than 5.", <v>a<>, <v>more_or_less<>);
+
+<#>// Prints "10 is more than 5."<><>
+@
+@ Conditional, iif, expression
 
 
 
@@ -276,12 +586,349 @@ Run after compiling with rustc.
 
 
 
-### If
+## For
+@
+@ for-only, fors-only
 
 
-### Match
 
-# Variables
+### For - In Range
+
+<cb>for <v>value<> in <v>min<>..<v>max_plus_one<> {
+    <v>...<>
+}<>
+
+<cb>for <v>value<> in <v>min<>..=<v>max<> {
+    <v>...<>
+}<>
+
+
+Example:
+
+For With <c>..<> :
+
+<cb>for <v>value<> in <v>0<>..<v>3<> {
+    println!("{}", <v>value<>);
+}
+
+<#>// Prints values 0, 1, 2<><>
+
+For With <c>..=<> :
+
+<cb>for <v>value<> in <v>0<>..=<v>3<> {
+    println!("{}", <v>value<>);
+}
+
+<#>// Prints values 0, 1, 2, 3<><>
+@
+@ .., ..=
+
+
+
+### For - With Iterator
+
+<cb>for <v>value<> in <v>iterator<> {
+    <v>...<>
+}<>
+
+
+Example:
+
+<cb>let <v>vec_1<> = vec!["<v>a<>", "<v>b<>", "<v>c<>"];
+
+for <v>item<> in <v>vec_1<>.iter() {
+    print!("{} ", <v>item<>);
+}
+println!();
+
+<#>// Prints: "a b c "<><>
+@
+@ .., ..=
+@ for-only
+
+
+
+## If Else
+
+<cb>if <v>expression<> {
+    <v>...<>
+}<>
+
+<cb>if <v>expression<> {
+    <v>...<>
+}
+else if <v>expression<> {
+    <v>...<>
+}
+else {
+    <v>...<>
+}<>
+
+
+Example:
+
+<cb>let <v>value<> = 42;
+
+if <v>value<> \< 42 {
+    println!("{} is less than 42.", <v>value<>);
+}
+else if <v>value<> == 42 {
+    println!("{} is 42.", <v>value<>);
+}
+else  {
+    println!("{} is greater than 42.", <v>value<>);
+}<>
+@
+@ else, if-only, if-else
+
+
+
+## Loop
+@
+@ loop-only
+
+
+### Loop
+
+<cb>loop {
+    <v>...<>
+}<>
+
+<cb>loop {
+    <v>...<>
+    continue;
+    <v>...<>
+    break;
+    <v>...<>
+}<>
+
+
+Loops continuously until break is called.
+Use to create an infinite loop.
+
+
+Example:
+
+<cb>let mut <v>value<> = <v>0<>;
+
+loop {
+    <v>value<> += 1;
+    println!("{}", <v>value<>);
+
+    if <v>value<> > 4 {
+        break;
+    }
+}
+
+<#>// Prints values 1, 2, 3, 4.<><>
+@
+@ break, continue
+
+
+
+### Loop - Loop Expression / Return Value
+
+<cb>let <v>returned_value<> = loop {
+    <v>...<>
+    break <v>return_value<>;
+    <v>...<>
+}<>
+
+
+Loops continuously until break is called.
+Use to create an infinite loop.
+
+
+Example:
+
+<cb>let mut <v>value<> = <v>0<>;
+
+let <v>final<> = loop {
+    <v>value<> += 1;
+    println!("{}", <v>value<>);
+
+    if <v>value<> > 4 {
+        break <v>value<>;
+    }
+}
+
+<#>// Prints values 1, 2, 3, 4.<><>
+@
+@ break
+@ loop-only, expression, with return value
+
+
+
+### Loop - Named / Nested Loop
+
+<cb>'<v>name<>: loop {
+    <v>...<>
+    continue <v>name<>;
+    <v>...<>
+    break <v>name<>;
+    <v>...<>
+}<>
+
+Nested:
+
+<cb>'<v>outer_name<>: loop {
+
+    '<v>inner_name<>: loop {
+        <v>...<>
+        continue <v>outer_name<>;
+        <v>...<>
+        break <v>outer_name<>;
+        <v>...<>
+    }
+}<>
+
+
+Labels each loop with a name.
+Allows break and continue statements to operate on an outer loop.
+@
+@ break, continue, labeled
+
+
+## Match
+@
+@ match-only, matches-only
+
+
+### Match - Basics
+
+<cb>match <v>item<> {
+    <v>value_1<> => {
+        <v>...<>
+    }
+    <v>value_2<> | <v>value_3<> => {
+        <v>...<>
+    }
+    <v>min_1<>..<v>max_plus_one_1<> => {
+        <v>...<>
+    }
+    <v>bind_value<> @ <v>min_2<>..<v>max_plus_one_2<> => {
+        <v>...<>
+    }
+    _ => {
+        <v>...<>
+    }
+}<>
+
+Match Expression:
+
+<cb>let <v>value<> = match <v>item<> {
+    <v>value_1<> => { <v>...<> }
+    <v>value_2<> => { <v>...<> }
+};<>
+
+
+### Match - Details
+
+
+#### Match - Single Value
+
+<cb>match <v>item<> {
+    <v>value_1<> => {
+        <v>...<>
+    }
+    <v>value_2<> => {
+        <v>...<>
+    }
+    _ => {
+        <v>...<>
+    }
+}<>
+
+
+
+#### Match - Multiple Values
+
+<cb>match <v>item<> {
+    <v>value_1<> | <v>value_2<> => {
+        <v>...<>
+    }
+    <v>value_3<> | <v>value_4<> => {
+        <v>...<>
+    }
+}<>
+
+
+
+#### Match - Value Range
+
+<cb>match <v>item<> {
+    <v>min<>..<v>max_plus_one<> => {
+        <v>...<>
+    }
+    <v>min<>..=<v>max<> => {
+        <v>...<>
+    }
+}<>
+
+
+
+#### Match - Bind To Value
+
+<cb>match <v>item<> {
+    <v>bind_value<> @ <v>min_2<>..<v>max_plus_one_2<> => {
+        <v>...<>
+    }
+}<>
+
+
+
+#### Match - Match Expression
+
+Match Expression:
+
+<cb>let <v>value<> = match <v>item<> {
+    <v>value_1<> => { <v>...<> }
+    <v>value_2<> => { <v>...<> }
+};<>
+
+
+Returns a value from a match expression.
+
+
+Example:
+
+<cb>let <v>value<> = 200;
+
+let <v>returned_value<> = match <v>value<> {
+    200 => { "OK" }
+    400 => { "Bad Request" }
+    500 => { "Server Error" }
+    _ => { "Unknown" }
+};
+
+println!("Returns {}.", <v>returned_value<>);
+
+<#>// Prints ""><><>
+@
+@ return value
+
+
+
+## While
+
+<cb>while <v>expression<> {
+    <v>...<>
+}<>
+
+
+Loops until the expression evaluates to true.
+
+
+Example:
+
+<cb>let mut <v>value<> = 0;
+
+while <v>value<> \< 5 {
+    println!("{}", <v>value<>);
+    <v>value<> += 1;
+}
+
+<#>\\ Prints values 0, 1, 2, 3, 4.<><>
 
 
 
@@ -292,27 +939,38 @@ Run after compiling with rustc.
 
 ## Literals - Basics
 
-<table><col>= <c>true | false<><><col>Boolean Literal<>
+<table><col>= <c>true | false<><><col>Boolean Literal<><col><c>bool<><>
 <col> <>
-<col><c>= <v>11<><><><col>Decimal Literal<>
-<col><c>= <v>-11<><><><col>Decimal Literal<>
-<col><c>= <v>12_345<><><><col>Decimal Literal<>
+<col><c>= <v>11<><><><col>Decimal Literal<><col>Integer<>
+<col><c>= <v>-11<><><><col>Decimal Literal<><col>Integer<>
+<col><c>= <v>11<>_i32<><><col>Decimal Literal<><col>Integer / i32<>
+<col><c>= <v>12_345<><><><col>Decimal Literal<><col>Integer<>
 <col> <>
-<col><c>= 0b<v>1111_0000<><><><col>Binary Literal<>
-<col><c>= 0x<v>ff<><><><col>Hex Literal<>
-<col><c>= 0o<v>77<><><><col>Octal Literal<>
+<col><c>= 0b<v>1111_0000<><><><col>Binary Literal<><col>Integer<>
+<col><c>= 0x<v>ff<><><><col>Hex Literal<><col>Integer<>
+<col><c>= 0o<v>77<><><><col>Octal Literal<><col>Integer<>
 <col> <>
-<col><c>= <v>11.23<><><><col>Float Literal<>
-<col><c>= <v>-11.23<><><><col>Float Literal<>
-<col><c>= <v>12_345.23_45<><><><col>Float Literal<>
+<col><c>= <v>11.23<><><><col>Float Literal<><col>Float<>
+<col><c>= <v>-11.23<><><><col>Float Literal<><col>Float<>
+<col><c>= <v>11.23<>_f64<><><col>Float Literal<><col>Float / f64<>
+<col><c>= <v>12_345.23_45<><><><col>Float Literal<><col>Float<>
 <col> <>
-<col><c>= b'<v>C<>'<><><col>Byte Literal (u8 only)<>
+<col><c>= b'<v>C<>'<><><col>Byte Literal<><col><c>u8<><>
 <col> <>
-<col><c>= '<v>c<>'<><><col>Character Literal<>
-<col><c>= "<v>string<>"<><><col>String Literal<>
+<col><c>= '<v>c<>'<><><col>Character Literal<><col><c>char<><>
+<col><c>= "<v>string<>"<><><col>String Literal<><col><c>str<><>
 <col> <>
-<col><c>= [<v>value_1<>, <v>value_2<>, <v>value_3<>]<><><col>Array<>
-<col><c>= (<v>value_1<>, <v>value_2<>, <v>value_3<>)<><><col>Tuple<><>
+<col><c>= [<v>item_1<>, <v>item_2<>, <v>item_3<>]<><><col>Array<>
+<col><c>= (<v>item_1<>, <v>item_2<>, <v>item_3<>)<><><col>Tuple<><>
+
+Integer - One of:
+
+<in><c>i8, i16, i32, i64, i128, isize
+u8, u16, u32, u64, u128, usize<><>
+
+Float - One of:
+
+<in><c>f32, f64<><>
 
 
 
@@ -324,6 +982,8 @@ Run after compiling with rustc.
 <cb>= true<>
 
 <cb>= false<>
+
+Returns: <c>bool<>
 @
 @ true, false
 
@@ -333,7 +993,7 @@ Run after compiling with rustc.
 
 <cb>= b'<v>A<>'<>
 
-Returns: u8
+Returns: <c>u8<>
 @
 @ b'', u8
 
@@ -347,7 +1007,15 @@ Returns: u8
 
 <cb>= <v>12_345<><>
 
-<m>(confirm underscores ignored)<>
+Type Explicitly Declared:
+
+<cb>= <v>11<>i32<>
+
+<cb>= <v>11<>_i32<>
+
+Returns: Integer Type
+
+The return type depends on the type inference engine or the declared variable type.
 
 
 
@@ -357,7 +1025,9 @@ Returns: u8
 
 <cb>= 0b<v>1111_0000<><>
 
-<m>(confirm underscores ignored)<>
+Returns: Integer Type
+
+The return type depends on the type inference engine or the declared variable type.
 @
 @ 0b
 
@@ -366,6 +1036,10 @@ Returns: u8
 ### Integer Literal - Hex
 
 <cb>= 0x<v>ff<><>
+
+Returns: Integer Type
+
+The return type depends on the type inference engine or the declared variable type.
 @
 @ 0x
 
@@ -374,6 +1048,10 @@ Returns: u8
 ### Integer Literal - Octal
 
 <cb>= 0o<v>77<><>
+
+Returns: Integer Type
+
+The return type depends on the type inference engine or the declared variable type.
 @
 @ 0o
 
@@ -387,33 +1065,563 @@ Returns: u8
 
 <cb>= <v>12_345.67<><>
 
-<m>(confirm underscores ignored)<>
+Type Explicitly Declared:
+
+<cb>= <v>11.23<>f32<>
+
+<cb>= <v>11.23<>_f32<>
+
+Returns: Float Type
+
+The return type depends on the type inference engine or the declared variable type but must be a float type.
+
+@
+@ f64, f32
 
 
 
 ### Character Literal
 
 <cb>= '<v>c<>'<>
+
+Returns: <c>char<>
 @
-@ ''
+@ '', char
 
 
 
 ### String Literal
 
 <cb>= "<v>A String<>"<>
-@
-@ ""
 
+Returns: <c>str<>
+@
+@ "", str
+
+
+
+# Variables
+@
+@ vars-only, var-only, variable-only, variables-only
+
+
+## Variables - Basics
+
+Declare Only:
+
+<cb>let <v>name<>: <v>type<>;<>
+
+Constant:
+
+<cb>const <v>name<>: <v>type<> = <v>value<>;<>
+
+Immutable:
+
+<cb>let <v>name<>: <v>type<> = <v>value<>;<>
+
+With Type Inferencing:
+
+<cb>let <v>name<> = <v>value<>;<>
+
+Mutable:
+
+<cb>let mut <v>name<>: <v>type<> = <v>value<>;<>
+
+Update Mutable:
+
+<cb><v>name<> = <v>new_value<>;<>
+
+
+
+## Variable - Create
+@
+@ Create, New
+
+
+### Variable - Constant - Create
+
+<cb>const <v>name<>: <v>type<> = <v>value<>;<>
+
+
+Defines a constant, an immutable variable.
+
+Constants can be declared globally outside a function.
+The type must be declared (no type inferencing).
+
+The compiler replaces the constant identifier with the actual value at compile time.
+
+
+Example:
+
+<cb>const <v>OK_STATUS_CODE<>: i32 = 200;
+
+fn main() {
+    println!("OK Status = {}", <v>OK_STATUS_CODE<>);
+}
+<>
+@
+@ const, global
+
+println!("Value is {}.", <v>value<>);<>
+
+
+
+### Variable - Local - Create
+
+<cb>let <v>name<>: <v>type<> = <v>value<>;<>
+
+<cb>let <v>name<> = <v>value<>;<>
+
+
+Creates an immutable variable.
+If the type is not included, the inference engine will try to determine it from the use of the variable.
+
+
+Example:
+
+<cb>let <v>int_1<>: i32 = 42;<>
+@
+@ immutable, let, scope#
+
+
+
+### Variable - Static - Create
+
+<cb>static <v>STATIC_1<>: <v>type<> = <v>value<>;<>
+
+
+Creates a global immutable variable.
+Static data is stored in the binary
+Statics can be created inside or outside functions.
+You must declare the type for a static variable (no type inferencing).
+
+
+Example:
+
+<cb>static <v>INT_1<>: i32 = 42;
+
+println!("{}", <v>INT_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ immutable, static, global, scope
+
+
+
+### Variable - Static - Create With 'static
+
+<cb>static <v>STATIC_1<>: &'static <v>type<> = &<v>value<>;<>
+
+
+Creates a global immutable variable.
+Static data is stored in the binary
+Statics can be created inside or outside functions.
+You must declare the type for a static variable (no type inferencing).
+
+
+Examples:
+
+<cb>static <v>INT_1<>: &'static i32 = &42;
+
+println!("{}", <v>INT_1<>);
+
+<#>// Prints: "42"<><>
+
+<cb>static <v>STR_1<>: &'static str = "42";
+
+println!("{}", <v>STR_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ immutable, static, global, scope
+
+
+
+### Variable - Mutable - Create
+
+<cb>let mut <v>name<>: <v>type<> = <v>value<>;<>
+
+
+Creates a mutable variable.
+
+
+Example:
+
+<cb>let mut <v>int_1<>: i32 = 42;
+<v>int_1<> = int_1 + 10;<>
+@
+@ let, mut
+
+
+
+### Variable - Create With Type Inferencing
+
+<cb>let <v>name<> = <v>value<>;<>
+
+
+This will create a variable of type matching the value.
+
+
+Example:
+
+<cb>let <v>int_1<> = 42;
+
+<#>// Assigns int_1 as type i32;<><>
+@
+@ let
+
+
+
+### Variable - Define Before Use
+
+<cb>let <v>name<>: <v>type<>;<>
+
+<cb>let mut <v>name<>: <v>type<>;<>
+
+
+Define a variable before assiging a value.
+The value must be assigned at some point afterwards.
+
+
+Example:
+
+<cb>let <v>value<>:i32;
+
+let <v>flag<> = true;
+
+if <v>flag<> {
+    <v>value<> = 1;
+}
+else {
+    <v>value<> = -1;
+}
+
+<#>// Sets value to 1.<><>
+@
+@ predefine
+
+
+
+## Variable Operations
+
+
+
+### Variable - Cast
+
+<cb>= <v>value<> as <v>type<><>
+
+
+Converts a value from one type to another.
+
+
+Example:
+
+<cb>let <v>value<> = 10_i32;
+
+<v>value_i8<> = <v>value<> as i8;
+
+println!("Value is {}", <v>value_i8<>)<>
+@
+@ as type, change, convert, conversion
+
+
+
+### Variable - Memory Size
+
+<cb>= size_of_val(&<v>value_1<>)<>
+
+<cb>use std::mem::size_of_val;
+
+= size_of_val(&<v>value_1<>)<>
+
+
+Returns the memory used by a variable in bytes.
+
+
+Example:
+
+<cb>use std::mem::size_of_val;
+
+let <v>value<>: i64 = <v>42<>;
+
+println!("Size of value = {}.", size_of_val(&<v>value<>));
+
+<#>// Prints: "Size of value = 8."<><>
+@
+@ get, retrieve, std::mem::size_of_val(), size_of_val()
+
+
+
+### Variable - Type - Get Type
+
+<cb>= type_name::\<<v>T<>>()<>
+
+Use in a Function:
+
+<cb>use std::any::type_name;
+
+fn type_of\<<v>T<>>(_: <v>T<>) -> &'static str {
+    type_name::\<<v>T<>>()
+}<>
+
+
+Returns the variable type as a string.
+
+Not guaranteed to give consistent results.
+Use for testing only.
+
+
+Example:
+
+<cb>use std::any::type_name;
+
+fn type_of\<<v>T<>>(_: <v>T<>) -> &'static str {
+    type_name::\<<v>T<>>()
+}
+
+let <v>type_name<> = type_of(1_i32);
+println! ("Type = {}", <v>type_name<>);
+
+<#>// Prints "Type = i32"<><>
+@
+@ std::any::type_name, type_name, get, retrieve
+
+
+
+### Variable - Shadowing
+
+Block Variable Shadowing a Local Variable:
+
+<cb>let <v>a<> = <v>10<>;
+
+{
+    let <v>a<> = <v>20<>;
+    println!("a = {}.");
+}
+
+println!("a = {}.");<>
+
+
+Shadowing is where a local variable overshadows a global variable of the same name so the global variable is not accessible. The same for a block level variable shadowing a local variable.
+
+
+
+## Variables - let vs const vs static
+
+let:
+
+<in>Defines a variable with local scope.<>
+
+static:
+
+<in>Defines a variable with global scope.<>
+
+const:
+
+<in>Defines a value.
+The compiler replace every use of the constant with the actual value at compile time.<>
+@
+@ versus, scope
+
+
+
+# Ownership
+
+
+### Ownership - Rules
+
+1. Resources have one and only one owner.
+2. When the owner goes out of scope, the resource is freed.
+3. Ownership is movable (transferable).
+
+
+
+### Ownership - Borrow
+
+<cb>&<v>owner<><>
+
+By Assignment:
+
+<cb>let <v>borrower<> = &<v>owner<>;<>
+
+When Passing:
+
+<cb><v>function_1<>(&<v>owner<>);<>
+
+
+Borrow (pass) a resource without passing ownership of it with ampersand (<c>&<>).
+
+There is no limit on the number of borrowers for an immutable resource.
+
+
+Examples:
+
+<cb>let <v>owner<> = Box::new(<v>42<>_i32);
+
+let <v>borrower<> = &<v>owner<>;
+
+println!("{}", &<v>owner<>);
+println!("{}", <v>borrower<>);
+
+<#>// Prints:
+//
+//    "42"
+//    "42"<><>
+@
+@ &, borrowing
+
+
+
+### Ownership - Borrowing Mutable
+
+<cb>&mut <v>owner<><>
+
+By Assignment:
+
+<cb>let <v>borrower<> = &mut <v>owner<>;<>
+
+When Passing:
+
+<cb><v>function_1<>(&mut <v>owner<>);<>
+
+
+Borrow (pass) a mutable resource without passing ownership of it with ampersand mut (<c>&mut<>).
+
+There can only be one mutable borrower at a time for a mutable resource.
+There can be any number of immutable borrowers, but if there are, no mutable borrowers are allowed.
+
+
+Examples:
+
+<cb>let mut <v>owner<> = Box::new(<v>42<>_i32);
+
+let <v>borrower<> = &mut <v>owner<>;
+
+println!("{}", <v>borrower<>);
+
+<#>// Prints:
+//
+//    "42"
+//    "42"<><>
+@
+@ &, mut
+
+
+
+### Ownership - Moving Ownership
+
+By Assignment:
+
+<cb>let <v>new_owner<> = <v>owner<>;<>
+
+When Passing:
+
+<cb><v>function_1<>(<v>owner<>);<>
+
+
+Passes ownership of the resource to the new variable or to the called function.
+
+After a move, <v>owner<> can not be referenced.
+
+
+Examples:
+
+By Assignment:
+
+<cb>let <v>owner<> = Box::new(<v>42<>_i32);
+
+let <v>new_owner<> = <v>owner<>;
+
+<#>// NO:
+// println!("{}", owner);<>
+
+<#>// YES:<>
+println!("{}", <v>new_owner<>);
+
+<#>// Prints: "42"<><>
+
+By Passing:
+
+<cb>fn <v>take_ownership<>(<v>value<>: Box\<i32>) {
+    println!("{}", <v>value<>);
+}
+
+let <v>owner<> = Box::new(<v>42<>_i32);
+
+<v>take_ownership<>(<v>owner<>);
+<#>// Prints: "42"<>
+
+<#>// NO!
+// println!("{}", owner);<><>
+@
+@ move, take
+
+
+
+# Types
+
+
+### Type - Type Aliasing
+
+<cb>type <v>Alias1<> = <v>type<>;<>
+
+
+Rust allows you to create aliases of types so you can make your code more readable.
+
+
+Example:
+
+<cb>type <v>Kilometers<> = usize;
+
+let <v>distance<>: <v>Kilometers<> = 42;<>
+
+
+
+### Type - Type Inferencing
+
+Rust determines the variable type by looking ahead to see how it is used.
+It then creates variable of the correct type.
+
+Note:
+You must use the correct literal types. You can not substitute integers for floats or vice versa.
+
+
+Example:
+
+Infer type of <c><v>value<><>:
+
+<cb><#>// Infers value as i64:<>
+
+fn <v>square<>(<v>x<>: i64) -> i64 {
+    <v>x<> * <v>x<>
+}
+
+fn main() {
+
+    <#>// Infer type:<>
+    let <v>value<> = <v>4<>;
+
+    <#>// Inference happens here: i64<>
+    let <v>square<> = square(<v>value<>);
+
+    println!("{} squared is {}.", <v>value<>, <v>square<>);
+}<>
+
+
+
+<>
 
 
 # Data Types
+@
+@ basics
+
 
 ## Standard Types
 
 <m>(See: <l>https://doc.rust-lang.org/book/ch03-02-data-types.html<>)<>
 
-<table><col>Boolean<><col>bool<>
+<table><col>bool<><col>Boolean<>
 <col> <>
 <col>i8<><col>Integer, 8-bit Signed<>
 <col>i16<><col>Integer, 16-bit Signed<>
@@ -430,9 +1638,30 @@ Returns: u8
 <col>f32<><col>Float, 32-bit Single Precision<>
 <col>f64<><col>Float, 64-bit, Double Precision<>
 <col> <>
-<col>tup<><col>Tuple<><>
+<col>str<><col>String<>
+<col>tup<><col>Tuple<>
+<col> <>
+<col>()<><col>Unit<><>
 
 Floats: IEEE-754 Standard
+@
+@ integer, float
+
+
+
+## Other Types
+
+<table><col>Option\<<v>T<>><><col>Option<>
+<col>[]<><col>Array<>
+<col>()<><col>Tuple<><>
+
+<m>(Convert)<>
+
+
+
+## Collection Types
+
+Table<col>Vec\<<v>T<>><><col>Vector (Mutable List)<><>
 
 
 
@@ -441,207 +1670,1184 @@ Floats: IEEE-754 Standard
 <cb>= true
 = false<>
 
-<cb>: bool<>
+<cb>let <v>bool_1<> = true;<>
 
-Type: bool
+<cb>let <v>bool_1<>: bool = true;<>
+
+Type: <c>bool<>
+
+
+Creates a boolean variable.
+
+
+Examples:
+
+With Type Literals:
+
+<cb>let <v>bool_1<> = true;
+
+println!("{}", <v>bool_1<>);
+
+<#>// Prints: "true"<><>
+
+With Type Declaration:
+
+<cb>let <v>bool_1<>: bool = <v>false<>;
+
+println!("{}", <v>bool_1<>);
+
+<#>// Prints: "false"<><>
 @
 @ true, false
+@ bool-only, bools-only
+@ booleans, boolean-only, booleans-only
+@ data type
+
 
 
 # Byte
 
-<cb>= b'<v>C<>'<>
+<cb>= b'<v>c<>'<>
 
-<cb>: u8<>
+<cb>= 0x<v>FF<>_u8<>
+
+<cb>let <v>byte_1<>: u8 = b'<v>c<>';<>
 
 Returns: <c>u8<>
+
+
+Creates a byte value.
+Stored as type <c>u8<>.
+
+
+Example:
+
+From Byte Literal:
+
+<cb>let <v>byte_1<> = b'<v>x<>';
+
+println!("{}", <v>byte_1<>);
+println!("{}", <v>byte_1<> as char);
+
+<#>// Prints:
+//
+//    120
+//    x<><>
+
+From Hex Literal:
+
+<cb>let <v>byte_1<> = 0x<v>78<>_u8;
+
+println!("{}", <v>byte_1<>);
+println!("{}", <v>byte_1<> as char);
+
+<#>// Prints:
+//
+//    120
+//    x<><>
 @
 @ u8, b''
+@ bytes, bytes-only, bytess-only
+@ data type
+
+
+# Byte - Operations
+@
+@ u8, b''
+@ bytes, bytes-only, bytess-only
+@ data type
+
+
+
+### Byte - To Character
+
+<cb>= <v>byte_1<> as char<>
+
+<cb>let <v>char_1<>: char = <v>byte_1<> as char<>
+
+
+Coverts a byte to a character.
+
+
+Example:
+
+<cb>let <v>byte_1<> = b'z';
+
+let <v>char_1<> = <v>byte_1<> as char;
+
+println!("{}", <v>char_1<>);
+
+<#>// Prints: "z"<><>
+@
+@ convert, converting, conversion, from, as, cast, char
+
 
 
 # Character
 
-<cb>: char<>
+<cb>= '<v>c<>'<>
 
-Unicode scalar.
-4 bytes.
+<cb>let <v>char_1<>: char = '<v>c<>';<>
 
-
-# Float - 32-Bit, Single Precision
-
-<cb>f32<>
+Type: <c>char<>
+Size: 4 Bytes
 
 
-
-# Float - 64-Bit, Double Precision
-
-<cb>f64<>
+Represents a unicode scalar value.
 
 
+Examples:
 
-# Integer - 8-Bit, Signed
+From Literal:
 
-<cb>i8<>
+<cb>let <v>char_1<> = '*';
+
+println!("{}", <v>char_1<>);
+
+<#>// Prints: "*"<><>
+
+With Type Declaration:
+
+<cb>let <v>char_1<>: char = '*';
+
+println!("{}", <v>char_1<>);
+
+<#>// Prints: "*"<><>
+@
+@ char, char-only, chars, chars-only
+@ character-only, characters-only
+
+
+
+# Floats
+@
+@ float-only, floats-only
+
+
+## Float - 32-Bit, Single Precision
+
+<cb>= <v>number<>_f32<>
+
+<cb>let <v>float_1<>: f32 = <v>number<>;<>
+
+
+Type: <c>f32<>
+
+
+Float, 32-Bit, Single Precision
+
+
+Examples:
+
+With Literal:
+
+<cb>let <v>float_1<> = <v>11.23<>_f32;
+
+println!("{}", <v>float_1<>);
+
+<#>// Prints: "11.23"<><>
+
+With Type Declaration:
+
+<cb>let <v>float_1<>: f32 = <v>11.23<>;
+
+println!("{}", <v>float_1<>);
+
+<#>// Prints: "11.23"<><>
+@
+@ f32, f32-only, f32s-only
+@ data type
+
+
+
+
+## Float - 64-Bit, Double Precision
+
+<cb>= <v>number<>_f64<>
+
+<cb>let <v>float_1<>: f64 = <v>number<>;<>
+
+
+Type: <c>f64<>
+
+
+Float, 64-Bit, Double Precision
+
+
+Examples:
+
+With Type Literals:
+
+<cb>let <v>float_1<> = <v>11.23<>_f64;
+
+println!("{}", <v>float_1<>);
+
+<#>// Prints: "11.23"<><>
+
+With Type Declaration:
+
+<cb>let <v>float_1<>: f64 = <v>11.23<>;
+
+println!("{}", <v>float_1<>);
+
+<#>// Prints: "11.23"<><>
+@
+@ f64, f64-only, f64s-only
+@ floats, float-only, floats-only
+@ data type
+
+
+
+## Float Operations
+@
+@ f32, f64
+
+
+### Float - Power
+
+<cb>= <v>float_1<>.powf(<v>power<>)<>
+
+Returns: Float
+
+
+Returns the power of an float.
+
+
+Example:
+
+<cb>let <v>value<>: f32 = 4.0;
+let <v>square<> = <v>value<>.powf(<v>2.0<>);
+
+println!("{} squared is {}.", <v>value<>, <v>square<>);
+
+<#>// Prints "4 squared is 16."<><>
+@
+@ .powf(), square
+
+
+
+# Integer
+
+
+## Integer - 8-Bit, Signed
+
+<cb>= <v>number<>_i8<>
+
+<cb>let <v>int_1<>: i8 = <v>number<>;<>
+
+Type: <c>i8<>
+
 
 Integer, 8-bit Signed
 
-Example:
 
-<cb>let <v>int_1<>: i8 = <v>1<>;<>
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_i8;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: i8 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
 @
-@ i8
+@ i8, i8-only, i8s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
 
 
 
-# Integer - 8-Bit, Unsigned
+## Integer - 8-Bit, Unsigned
 
-<cb>u8<>
+<cb>= <v>number<>_u8<>
+
+<cb>let <v>int_1<>: u8 = <v>number<>;<>
+
+Type: <c>u8<>
+
 
 Integer, 8-bit Unsigned
 
+
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_u8;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: u8 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ u8, u8-only, u8s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
+
+
+
+## Integer - 8-Bit, Unsigned - Operations
+@
+@ u8, u8-only
+@ u8s, u8s-only
+@ data type
+
+
+
+### Integer - 8-Bit, Unsigned - To Character
+
+<cb>= <v>u8_1<> as char<>
+
+<cb>let <v>char_1<>: char = <v>u8_1<> as char<>
+
+
+Coverts a u8 integer to a character.
+
+
 Example:
 
-<cb>let <v>int_1<>: u8 = <v>1<>;<>
+<cb>let <v>u8_1<> = <v>42<>_u8;
+
+let <v>char_1<> = <v>u8_1<> as char;
+
+println!("{}", <v>char_1<>);
+
+<#>// Prints: "*"<><>
 @
-@ u8
+@ convert, converting, conversion, from
 
 
 
-# Integer - 16-Bit, Signed
+## Integer - 16-Bit, Signed
 
-<cb>i16<>
+<cb>= <v>number<>_i16<>
+
+<cb>let <v>int_1<>: i16 = <v>number<>;<>
+
+Type: <c>i16<>
+
 
 Integer, 16-bit Signed
 
-Example:
 
-<cb>let <v>int_1<>: i16 = <v>1<>;<>
-i@
-@ i16
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_i16;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: i16 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ i16, i16-only, i16s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
 
 
 
-# Integer - 16-Bit, Unsigned
+## Integer - 16-Bit, Unsigned
 
-<cb>u16<>
+<cb>= <v>number<>_u16<>
+
+<cb>let <v>int_1<>: u16 = <v>number<>;<>
+
+Type: <c>u16<>
+
 
 Integer, 16-bit Unsigned
 
-Example:
 
-<cb>let <v>int_1<>: u16 = <v>1<>;<>
-u@
-@ u16
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_u16;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: u16 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ u16, u16-only, u16s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
 
 
 
-# Integer - 32-Bit, Signed
+## Integer - 32-Bit, Signed (Default)
 
-<cb>i32<>
+<cb>= <v>number<>_i32<>
+
+<cb>let <v>int_1<>: i32 = <v>number<>;<>
+
+Type: <c>i32<>
+
 
 Integer, 32-bit Signed
 
-Example:
 
-<cb>let <v>int_1<>: i32 = <v>1<>;<>
-i@
-@ i32
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_i32;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: i32 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ i32, i32-only, i32s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
 
 
 
-# Integer - 32-Bit, Unsigned
+## Integer - 32-Bit, Unsigned
 
-<cb>u32<>
+<cb>= <v>number<>_u32<>
+
+<cb>let <v>int_1<>: u32 = <v>number<>;<>
+
+Type: <c>u32<>
+
 
 Integer, 32-bit Unsigned
 
-Example:
 
-<cb>let <v>int_1<>: u32 = <v>1<>;<>
-u@
-@ u32
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_u32;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: u32 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ u32, u32-only, u32s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
 
 
 
-# Integer - 64-Bit, Signed
+## Integer - 64-Bit, Signed
 
-<cb>i64<>
+<cb>= <v>number<>_i64<>
+
+<cb>let <v>int_1<>: i64 = <v>number<>;<>
+
+Type: <c>i64<>
+
 
 Integer, 64-bit Signed
 
-Example:
 
-<cb>let <v>int_1<>: i64 = <v>1<>;<>
-i@
-@ i64
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_i64;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: i64 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ i64, i64-only, i64s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
 
 
 
-# Integer - 64-Bit, Unsigned
+## Integer - 64-Bit, Unsigned
 
-<cb>u64<>
+<cb>= <v>number<>_u64<>
 
-Integer, 64-bit Unsigned
+<cb>let <v>int_1<>: u64 = <v>number<>;<>
 
-Example:
-
-<cb>let <v>int_1<>: u64 = <v>1<>;<>
-u@
-@ u64
+Type: <c>u64<>
 
 
+Integer, 64-bit Unsigned.
 
-# Integer - 128-Bit, Signed
 
-<cb>i128<>
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_u64;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: u64 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ u64, u64-only, u64s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
+
+
+
+## Integer - 128-Bit, Signed
+
+<cb>= <v>number<>_i128<>
+
+<cb>let <v>int_1<>: i128 = <v>number<>;<>
+
+Type: <c>i128<>
+
 
 Integer, 128-bit Signed
 
-Example:
 
-<cb>let <v>int_1<>: i128 = <v>1<>;<>
-i1@
-@ i128
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_i128;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: i128 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ i128, i128-only, i128s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
 
 
 
-# Integer - 128-Bit, Unsigned
+## Integer - 128-Bit, Unsigned
 
-<cb>u128<>
+<cb>= <v>number<>_u128<>
+
+<cb>let <v>int_1<>: u128 = <v>number<>;<>
+
+Type: <c>u128<>
+
 
 Integer, 128-bit Unsigned
 
+
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_u128;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: u128 = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ u128, u128-only, u128s-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
+
+
+
+## Integer - Pointer Size, Signed
+
+<cb>= <v>number<>_isize<>
+
+<cb>let <v>int_1<>: isize = <v>number<>;<>
+
+Type: <c>isize<>
+
+
+Integer, Pointer Sized, Signed
+The size is the number of bytes required to hold a pointer.
+
+
+32 Bit OS: 4 Bytes
+64 Bit OS: 8 Bytes
+
+
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_isize;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: isize = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ isize, isize-only, isizes-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type, 32 bit, 64 bit
+
+
+
+## Integer - Pointer Size, Unsigned
+
+<cb>= <v>number<>_usize<>
+
+<cb>let <v>int_1<>: usize = <v>number<>;<>
+
+Type: <c>usize<>
+
+
+Integer, Pointer Sized, Unsigned
+The size is the number of bytes required to hold a pointer.
+
+
+32 Bit OS: 4 Bytes
+64 Bit OS: 8 Bytes
+
+
+Examples:
+
+With Literal:
+
+<cb>let <v>int_1<> = <v>42<>_usize;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+
+With Type Declaration:
+
+<cb>let <v>int_1<>: usize = <v>42<>;
+
+println!("{}", <v>int_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ usize, usize-only, usizes-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type, 32 bit, 64 bit
+
+
+
+## Integer Operations
+@
+@ i8, i8-only, i8s-only
+@ i16, i16-only, i16s-only
+@ i32, i32-only, i32s-only
+@ i64, i64-only, i64s-only
+@ i128, i128-only, i128s-only
+@ isize, isize-only, isizes-only
+@ u8, u8-only, u8s-only
+@ u16, u16-only, u16s-only
+@ u32, u32-only, u32s-only
+@ u64, u64-only, u64s-only
+@ u128, u128-only, u128s-only
+@ usize, usize-only, usizes-only
+@ ints, int-only, ints-only
+@ integers, integer-only, integers-only
+@ data type
+
+
+### Integer - Power
+
+<cb>= <v>int_1<>.pow(<v>power<>)<>
+
+
+Returns: Integer
+
+
+Returns the power of an integer.
+
+
 Example:
 
-<cb>let <v>int_1<>: u128 = <v>1<>;<>
-u1@
-@ u128
+<cb>let <v>value<>: i32 = 4;
+let <v>square<> = <v>value<>.pow(<v>2<>);
+
+println!("{} squared is {}.", <v>value<>, <v>square<>);
+
+<#>// Prints "4 squared is 16."<><>
+@
+@ .pow(), square
+
+
+
+# Str
+
+<cb>= "<v>A String<>"<>
+
+<cb>let <v>str_1<>: &str = "<v>A String<>";<>
+
+
+Creates an immutable string of type <c>str<>.
+Stores as UTF-8.
+
+
+Examples:
+
+<cb>let <v>str_1<> = "abc";
+
+println!("{}", <v>str_1<>);
+
+<#>// Prints: "abc"<><>
+
+With Type Declaration:
+
+<cb>let <v>str_1<>: &str = "abc";
+
+println!("{}", <v>str_1<>);
+
+<#>// Prints: "abc"<><>
+@
+@ strs, str-only, strs-only
+@ data type, slice
+
+
+
+# Str - Operations
+@
+@ strs, str-only, strs-only
+@ data type, slice
+
+
+
+### Str - Character Count
+
+<cb>= <v>str_1<>.chars().count()<>
+
+Returns: <c>usize<>
+
+
+Returns the number of actual characters in the string accounting for Unicode encoding.
+
+Takes O(N) Time due to unicode complexity.
+
+
+Example:
+
+<cb>let <v>str_1<> = "🙂⭐️";
+
+let <v>length<> = <v>str_1<>.len();
+let <v>characters<> = <v>str_1<>.chars().count();
+
+println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>length<>, <v>characters<>);
+
+<#>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+@
+@ str.chars().count(), .chars().count(), .count()
+
+
+
+### Str - Concatenate
+
+<cb>= <v>str_1<>.to_string() + <v>str_2<><>
+
+Returns: <c>String<>
+
+
+Joins 2 or more strings together.
+Must start by converting the first <c>str<> into type <c>String<>.
+
+
+Example:
+
+<cb>let <v>a<> = "abc";
+let <v>b<> = "def";
+
+let <v>concatenated<> = <v>a<>.to_string() + <v>b<>;
+
+println!("{}", <v>concatenated<>);
+
+<#>// Prints: "abcdef"<><>
+@
+@ add, join, joining, concatenating, +
+@ str.to_owned(), .to_owned()
+
+
+
+### Str - Length
+
+<cb>= <v>string_1<>.len()<>
+
+Returns: <c>usize<>
+
+
+Returns the byte length of the string.
+This is different to the number of characters (chars().count()).
+
+
+Example:
+
+<cb>let <v>str_1<> = "🙂⭐️";
+
+let <v>length<> = <v>str_1<>.len();
+let <v>characters<> = <v>str_1<>.chars().count();
+
+println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>length<>, <v>characters<>);
+
+<#>// Prints "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+@
+@ count, size
+@ str.len(), .len()
+
+
+
+### Str - Repeat
+
+<cb>= <v>string_1<>.repeat(<v>count<>)<>
+
+Returns: <c>String<>
+
+
+Repeats a string.
+
+
+Example:
+
+<cb>let <v>stars<>: String = "*".repeat(10);
+
+println!("{}", <v>stars<>);
+
+<#>// Prints: "**********"<><>
+@
+@ str.repeat(), .repeat()
+
+
+
+### Str - To String
+
+<cb>= <v>str_1<>.to_string()<>
+
+<cb>= <v>str_1<>.to_string()
+= <v>str_1<>.to_owned()
+= <v>str_1<>.into()
+= String::from(<v>str_1<>)<>
+
+Returns: <c>String<>
+
+
+Converts an <c>str<> to a <c>String<>.
+
+
+Example:
+
+<cb>let <v>str_1<>: &str = "abc";
+
+let <v>string_1<>: String = <v>str_1<>.to_string();
+
+println!("{}", <v>string_1<>);
+
+<#>// Prints: "abc"<><>
+
+Every Way:
+
+<cb>let <v>str_1<> = "abc";
+
+let <v>string_1<> = <v>str_1<>.to_string();
+let <v>string_2<> = <v>str_1<>.to_owned();
+let <v>string_3<> = String::from(<v>str_1<>);
+let <v>string_4<>: String = <v>str_1<>.into();
+
+println!("{}", <v>string_1<>);
+println!("{}", <v>string_2<>);
+println!("{}", <v>string_3<>);
+println!("{}", <v>string_4<>);
+
+<#>// Prints:
+//
+// "abc"
+// "abc"
+// "abc"
+// "abc"<><>
+@
+@ convert, conversion, from,
+@ str.to_string(), .to_string()
+@ str.to_owned(), .to_owned()
+@ str.into(), .into()
+@ String::from(), from()
+
+
+
+# Unit
+
+<cb>= ()<>
+
+<cb>let <v>unit<> = ();<>
+
+
+The value returned from a function where no value was explicitly returned.
+@
+@ ()
+@ units, unit-only, units-only
+@ data type
 
 
 
 # String
 
+Stored on the heap.
+@
+@ strings, string-only, strings-only
 
+
+### String - Create
+
+<cb>= "<v>a string<>".to_string()<>
+
+<cb>= String::from("<v>a string<>")<>
+
+<cb>let <v>string_1<>: String = String::from("<v>a string<>");<>
+
+
+
+# String - Operations
+@
+@ strings, string-only, strings-only
+
+
+### String - Append
+
+<cb>= <v>string_1<>.push_str(<v>str_2<>)<>
+
+
+Appends a string onto another string.
+
+The first string must be mutable.
+The second string must be of type <c>str<>.
+
+
+Examples:
+
+<cb>let mut <v>string_1<> = "abc".to_string();
+let <v>str_2<> =  "def";
+
+<v>string_1<>.push_str(<v>str_2<>);
+
+println!("{}", <v>string_1<>);
+
+<#>// Prints: "abcdef"<><>
+@
+@ string.push_str(), .push_str(), str
+
+
+
+### String - Concatenate
+
+<cb>= [<v>string_1<>, <v>string_2<>].concat()<>
+
+<cb>= [<v>string_1<>, <v>string_2<>].concat()
+= [<v>string_1<>, <v>string_2<>].join("")
+= <v>string_1<> + <v>string_2<>.as_str()
+= format!("{}{}", <v>string_1<>, <v>string_2<>)<>
+@
+@ join, concatenating, +, .concat()
+
+
+
+### String - Format
+
+<cb>= format!("<v>{}<>", <v>string_1<>)<>
+
+<cb>let <v>string_2<>: String = format!("<v>format<>", <v>string_1<>, <v>string_2<>, <v>...<>);<>
+
+
+Formats a string.
+
+
+Example:
+
+<cb>let <v>string_1<> = "abc".to_string();
+
+let <v>formatted<> = format!("<v>...{}...<>", <v>string_1<>);
+
+println!("{}", <v>formatted<>);
+
+<#>// Prints: "...abc..."<><>
+@
+@ format!()
+
+
+
+### String - Join
+
+<cb>= [<v>string_1<>, <v>string_2<>].join(<v>join_str<>)<>
+
+<cb>let <v>string_1<> = [<v>string_1<>, <v>string_2<>, <v>...<>].join(<v>join_str<>);<>
+
+Returns: <c>String<>
+
+
+Joins all the strings in the array separated by <c>join_str<>.
+
+
+Example:
+
+<cb>let <v>string_1<> = "<v>1<>".to_string();
+let <v>string_2<> = "<v>2<>".to_string();
+let <v>string_3<> = "<v>3<>".to_string();
+
+let <v>joined<> = [<v>string_1<>, <v>string_2<>, <v>string_3<>].join(", ");
+
+println!("{}", <v>joined<>);
+
+<#>// Prints: "1, 2, 3"<><>
+@
+@ .join()
+
+
+
+### String - To Str
+
+<cb>= &<v>string_1<>.as_str()<>
+
+<cb>let <v>str_2<> = &<v>string_1<>.as_str();<>
+
+Using Deref:
+
+<cb>let <v>str_2<>: &str = &<v>string_1<>;<>
+
+
+Extracts the <c>str<> data behind the string.
+
+
+Examples:
+
+Using .as_str():
+
+<cb>let <v>string_1<> = "abc".to_string();
+
+let <v>str_2<> = <v>string_1<>.as_str();
+
+println!("{}", <v>str_2<>);
+
+<#>// Prints: "abc"<><>
+
+Using Deref:
+
+<cb>let <v>string_1<> = "abc".to_string();
+
+let <v>str_2<>: &str = &<v>string_1<>;
+
+println!("{}", <v>str_2<>);
+
+<#>// Prints: "abc"<><>
+@
+@ Convert, conversion, converting, from
+@ deref coercion, string.as_str(), .as_str()
 
 
 # Array
 
-<cb>= [<v>value_1<>, <v>value_2<>, <v>value_3<>]<>
+Type:
 
 <cb>: [<v>type<>, <v>size<>]<>
 
 Immutable list of items.
 Must be of the same type.
+@
+@ arrays, array-only, arrays-only
+@ data type
+
+
+## Array - Create
+
+<cb>= [<v>value_1<>, <v>value_2<>, <v>value_3<>]<>
+
+<cb>let <v>array_1<>: [<v>type<>, <v>size<>] = [<v>...<>]<>
 
 
 Example:
 
 <cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];<>
 
-<cb>let <v>array_1<>: [<v>i32<>; <v>3<>] = [<v>1<>, <v>2<>, <v>3<>];<>
-
-
-## Array - Create
+<cb>let <v>array_1<>: [<v>i32<>, <v>3<>] = [<v>1<>, <v>2<>, <v>3<>];<>
+@
+@ new, define, instantiate
 
 
 ## Array - Operations
@@ -695,6 +2901,30 @@ Returns: Integer
 
 
 
+# Box
+
+<cb>= Box::new(<v>value<>)<>
+
+<cb>let <v>box_1<>: Box\<<v>T<>> = Box::new(<v>value<>);<>
+
+Type: <c>Box\<<v>T<>><>
+
+
+Creates data on the heap.
+
+
+Example:
+
+<cb>let <v>box_1<> = Box::new(<v>42<>_i32);
+
+println!("{}", <v>box_1<>);
+
+<#>// Prints: "42"<><>
+@
+@ Box::new(), Box\<T>
+
+
+
 # Tuple
 
 <cb>= (<v>value_1<>, <v>value_2<>, <v>value_3<>)<>
@@ -710,39 +2940,987 @@ Can be of mixed types.
 Example:
 
 <cb>let <v>tuple_1<> = [<v>1<>, <v>'2'<>, <v>true<>]<>
+@
+@ tuples, tuple-only, tuples-only
+@ data type
 
 
 
 # Struct
+@
+@ structs, struct-only, structs-only, structures, structure-only, structures-only
+@ tuple-struct-only, tuple-structs-only
+@ data type
+
+
+## Struct - Basics
+
+Standard Struct:
+
+<cb>struct <v>Struct1<> {
+   <v>field_1<>: <v>type<>,
+   <v>field_2<>: <v>type<>,
+   <v>field_3<>: <v>type<>
+}
+
+let <v>value_1<> = <v>Strut1<> {
+   <v>field_1<>: <v>value<>,
+   <v>field_2<>: <v>value<>,
+   <v>field_3<>: <v>value<>
+};
+
+let <v>field_1<> = <v>value_1<>.<v>field_1<>;<>
+
+
+Tuple Struct:
+
+<cb>struct <v>Struct1<> { <v>type<>, <v>type<>, <v>type<> };
+
+let <v>value_1<> = <v>Strut1<> {<v>value<>, <v>value<>, <v>value<>};
+
+let <v>first_field<> = <v>value_1<>.<v>0<>;<>
+@
+@ struct-only, structs-only, structure-only, structures-only
+
+
+
+# Struct - Define
+
+<cb>struct <v>Struct1<> {
+   <v>field_1<>: <v>type<>,
+   <v>field_2<>: <v>type<>,
+   <v>field_3<>: <v>type<>
+}<>
+
+
+Defines a structure type.
+
+Note:
+No semicolon (<c>;<>) is required at the end of the definition.
+
+
+Example:
+
+<cb>struct <v>Point<> {
+    <v>x<>: i32,
+    <v>y<>: i32
+}
+
+let <v>point_1<> = <v>Point<> {
+    x: 10,
+    y: 20
+};
+
+println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
+
+<#>// Prints: "Point 1: 10, 20"<><>
+@
+@ structs, struct-only, structs-only, structures, structure-only, structures-only
+@ tuple-struct-only, tuple-structs-only
+@ data type
+
+
+
+# Struct - Operations
+@
+@ structs, struct-only, structs-only, structures, structure-only, structures-only
+@ tuple-struct-only, tuple-structs-only
+@ data type
+
+
+
+### Struct - Assign
+
+<cb>let <v>struct_1<> = <v>Strut1<> {
+   <v>field_1<> = <v>value<>,
+   <v>field_2<> = <v>value<>,
+   <v>field_3<> = <v>value<>,
+};<>
+
+
+
+### Structure - Get Field Value
+
+<cb>= <v>struct_1<>.<v>field_1<><>
+
+<cb>let <v>field_1<> = <v>struct_1<>.<v>field_1<>;<>
+
+
+
+# Tuple Struct - Define
+
+<cb>struct <v>TupleStruct1<> { <v>type<>, <v>type<>, <v>type<> }<>
+
+
+Defines a tuple struct.
+
+Note:
+A semicolon (<c>;<>) is required at the end of the definition.
+
+
+Example:
+
+<cb>struct <v>Point<> (<v>i32<>, <v>i32<>);
+
+let <v>point_1<> = <v>Point<>(<v>10<>, <v>20<>);
+
+println!("Point 1: {}, {}", <v>point_1<>.0, <v>point_1<>.1);
+
+<#>// Prints: "Point 1: 10, 20"<><>
+
+
+
+# Tuple Struct - Operations
+@
+@ tuple structs
+@ tuple-struct-only, tuple-structs-only, tuple-structure-only, tuple-structures-only
+@ data type
+
+
+
+### Tuple Struct - Assign
+
+<cb>let <v>value_1<> = <v>TupleStrut1<> {<v>value<>, <v>value<>, <v>value<>};<>
+
+
+
+### Tuple Structure - Get Field Value
+
+<cb>= <v>value_1<>.<v>0<>;<>
+
+<cb>let <v>first_field<> = <v>value_1<>.<v>0<>;<>
 
 
 
 # Enum
+@
+@ enums, enum-only, enums-only
+@ data type
+
+
+## Enum Basics
+
+<cb>enum <v>Enum1<> {
+    <v>Value1<>,
+    <v>Value2<>,
+    <v>Value3<>
+}
+
+let <v>value_1<> = <v>Enum1<>::<v>Value1<>;
+
+match <v>value_1<> {
+    <v>Enum1<>:Value1<> => <v>...<>,
+    <v>Enum1<>:Value2<> => <v>...<>,
+    <v>Enum1<>:Value3<> => <v>...<>
+}<>
+
+Enums With Properties:
+
+<cb>enum <v>Enum1<> {
+    <v>Value1<>(i32),
+    <v>Value2<>(char),
+    <v>Value3<>(String)
+    <v>Value4<>{x: i32, y: i32}
+}<>
+
+<m>** you can mix and match.<>
 
 
 
-# Vector
+# Option
 
-Mutable lit of items.
+<cb>= None
+
+= Some(<v>value<>)<>
+
+Type:
+
+<cb>: Option\<<v>type<>><>
+
+From
+
+<cb>std::option::Option<>
 
 
-## Vector - Create
-
-<cb>= Vec\<<type>><>
-
-<cb>let <v>vector_1<>: Vec\<i32> = Vec::new();<>
+Creates an <c>Option<> variable.
+If assigning <c>None<>, you must define the type.
 
 
-## Vector - Create Using Macro
+Example:
+
+<cb>let <v>some_value<> = Some(42);<>
+
+<cb>let <v>no_value<>: Option\<i32> = None;<>
+@
+@ None, Some(), optional
+@ options, optionals, option-only, options-only
+@ data type
+
+
+
+# Option - Operations
+@
+@ options, optionals, option-only, options-only
+@ data type
+
+
+### Option - Get Value
+
+<cb>= <v>optional_1<>.unwrap()<>
+@
+@ .unwrap()
+
+
+
+### Option - Get Value Or Else
+
+<cb>= <v>optional_1<>.unwrap_or_else(<v>function_1<>)<>
+
+<m>(Confirm if function)<>
+
+Returns unwrapped value or if None, calls parameter function.
+
+
+Example:
+
+Passing Lambda:
+
+<cb>let no_value: Option<&str> = Option.None;
+
+let <v>unwrapped<> = <v>no_value<>.unwrap_or_else(|| "Is None");
+println!("Unwrapped = {}", <v>unwrapped<>);
+
+<#>// Prints "Unwrapped = Is None"<><>
+@
+@ .unwrap_or_else()
+
+
+
+### Option - Match
+
+<cb>match <v>optional_1<> {
+    Some(<v>value<>) => {
+        <v>...<>
+    }
+    None => {
+        <v>...<>
+    }
+}<>
+
+
+Use <c>match<> to process an <c>Option<> variable.
+
+
+Example:
+
+<cb>let <v>optional_int<> = Some(4);
+
+match <v>optional_int<> {
+    Some(<v>value<>) => {
+        println!("Optional int value is {}.", <v>value<>);
+    }
+    None => {
+        println!("Optional int is None.");
+    }
+}
+
+<#>// Prints ""<><>
+@
+@ Some(), None
+
+
+
+# HashMap
+
+Type:
+
+<cb>HashMap\<<v>key_type<>, <v>value_type<>><>
+
+<cb>use std::collections::HashMap;<>
+
+Usage:
+
+<cb>use std::collections::HashMap;
+
+let mut <v>map<>\<<v>...<>> = HashMap::new();<>
+
+<cb>= HashMap::from(<v>list_of_key_value_tuples<>);
+
+= HashMap::from([(<v>key<>,<v>value<>), (<v>key<>,<v>value<>), <v>...<>]);
+
+= HashMap::with_capacity(10);
+
+
+.insert(key, value)
+.get(key)
+.remove(key)
+.clear()
+
+.contains_key(key)
+
+.is_empty()
+.len()
+.capacity()
+
+.keys()     <#>// Iterator<>
+.values()   <#>// Iterator<>
+
+for (<v>key<>, <v>value<>) in <v>hashmap_1<>.iter() { <v>...<> }
+<>
+
+Official Doc:
+<l>https://doc.rust-lang.org/std/collections/struct.HashMap.html<>
+@
+@ hashmaps, hashmap-only, hashmaps-only
+@ data type
+
+
+
+# Range
+
+<cb>= <v>start<>..<v>end_plus_one<><>
+
+<cb>= <v>start<>..=<v>end<><>
+
+Type:
+
+<cb>Range\<<v>type<>><>
+
+Usage:
+
+<cb>use std::ops::Range;
+
+let <v>range_1<>: Range\<i32> = <v>0<>..<v>4<>;<>
+
+
+Official Docs:
+<l>https://doc.rust-lang.org/std/ops/struct.Range.html<>
+
+
+Examples:
+
+<cb>use std::ops::Range;
+
+let <v>range_1<>: Range\<i32> = <v>0<>..<v>4<>;
+
+for <v>value<> in <v>range_1<> {
+    print!("{} ", <v>value<>);
+}
+println!();
+
+
+<#>// Prints: 0 1 2 3 <><>
+
+<cb>use std::ops::Range;
+
+let <v>range_1<>: Range\<i32> = <v>0<>..=<v>3<>;
+
+for <v>value<> in <v>range_1<> {
+    print!("{} ", <v>value<>);
+}
+println!();
+
+<#>// Prints: 0 1 2 3 <><>
+@
+@ std::ops::Range
+@
+@ ranges, range-only, ranges-only
+@ data type
+
+
+
+# Vec
+
+Type:
+
+<cb>Vec\<<v>type<>><>
+
+<cb>use std::vec::Vec;<>
+
+
+Mutable array of items.
+Lives in the heap.
+
+
+Official Docs:
+<l>https://doc.rust-lang.org/std/vec/struct.Vec.html<>
+@
+@ std::vec::vec, vec::vec
+@ vecs, vec-only, vecs-only
+@ vectors, vector-only, vectors-only
+
+
+
+## Vec - Create
+
+<cb>= Vec::new()<>
+
+Type:
+
+<cb>Vec\<<v>type<>><>
+
+<cb>let <v>vec_1<>: Vec\<i32> = Vec::new();<>
+
+Returns: <c>std::vec::vec<>
+@
+@ vec::new()
+@ new, define, instantiate
+
+
+
+## Vec - Create Using Macro
 
 <cb>= vec![]<>
 
-<cb>let <v>vector_1<>: Vec\<i32> = vec![];<>
+<cb>let <v>vec_1<>: Vec\<<v>i32<>> = vec![];<>
+
+<cb>let <v>vec_1<> = vec![<v>item_1<>, <v>item_2<>, <v>...<>];<>
+
+Returns: <c>std::vec::vec<>
+
+
+Creates a vec.
+
+
+Example:
+
+<cb>let <v>vec_1<> = vec!["<v>a<>", "<v>b<>", "<v>c<>"];
+
+for <v>item<> in <v>vec_1<>.iter() {
+    print!("{} ", <v>item<>);
+}
+println!();
+
+<#>// Prints: "a b c "<><>
+@
+@ vec!, vec![]
+@ new, define, instantiate
+
+
+# Vec Operations
+@
+@ std::vec::vec, vec::vec
+@ vecs, vec-only, vecs-only
+@ vectors, vector-only, vectors-only
+
+
+
+### Vec - Iterator
+
+<cb>= <v>vec_1<>.iter()<>
+
+Returns: <c>core::slice::iter::Iter\<<v>type<>><>
+
+
+Returns an iterator to the values in the vector.
+
+
+Example:
+
+<cb>let <v>vec_1<> = vec!["<v>a<>", "<v>b<>", "<v>c<>"];
+
+for <v>item<> in <v>vec_1<>.iter() {
+    print!("{} ", <v>item<>);
+}
+println!();
+
+<#>// Prints: "a b c "<><>
+@
+@ vec.iter(), .iter()
+
+
+
+### Vec - Size
+
+<cb>= <v>vec_1<>.len()<>
+
+Returns: <c>usize<>
+
+
+Returns the number of items in the vec.
+
+
+Example:
+
+<cb>let <v>vec_1<> = vec!["<v>a<>", "<v>b<>", "<v>c<>"];
+
+println!("Size {}.", <v>vec_1<>.len());
+
+<#>// Prints: "Size 3."<><>
+@
+@ count, length
+@ vec.len(), .len()
+
+
+
+# Functions
+@
+@ fn, fns, fn-only, fns-only
+@ funcs, func-only, funcs-only
+@ fuctions, function-only, functions-only
+
+
+
+## Functions - Basics
+
+Define - No Parameters:
+
+<cb>fn <v>name<>() {
+   <v>...<> 
+}<>
+
+Define - With Parameters:
+
+<cb>fn <v>name<>(param_1: <v>type<>, param_2: <v>type<>) {
+   <v>...<> 
+}<>
+
+Return Value (Explicit):
+
+<cb>fn <v>name<>() {
+   return <v>return_value<>; 
+}<>
+
+Return Value (Implicit):
+
+<cb>fn <v>name<>() {
+   <v>return_expression<>
+}<>
+
+Return Multiple Values:
+
+<cb>fn <v>name<>() {
+   return (<v>value_1<>, <v>value_2<>); <#>// Return as tuple.<>
+}<>
+
+
+
+## Function - Define
+
+<cb>fn <v>name<>() {
+    <v>...<>
+}<>
+
+<cb>fn <v>name<>(<v>param_1<>: <v>type<>, <v>param_2<>: <v>type<>) -> <v>return_type<> {
+    return <v>return_value<>;
+}<>
+
+
+Defines a function.
+
+
+Example:
+
+<cb>fn square(<v>value<>: f64) -> f64 {
+    return <v>value<>
+}
+@
+@ definition
+
+
+
+## Function - Details
+
+
+### Function - Return Value (Explicit)
+
+<cb>return <v>return_value<>;<>
+
+<cb>fn <v>name<>() -> <v>return_type<> {
+   return <v>return_value<>;
+}<>
+
+
+Use the keyword <c>return<> to explicitly return a value.
+
+
+Example:
+
+<cb>fn <v>square<>(<v>x<>: i32) -> i32 {
+    return <v>x<> * <v>x<>;
+}
+
+fn main() {
+
+    let <v>value<> = <v>4<>;
+    let <v>square<> = square(<v>value<>);
+
+    println!("{} squared is {}.", <v>value<>, <v>square<>);
+}<>
+@
+@ return
+
+
+
+### Function - Return Value (Implicit)
+
+<cb>fn <v>name<>() -> <v>return_type<> {
+   <v>return_expression<>
+}<>
+
+
+If the last expression has no semicolon (;), it is the return value.
+
+
+Example:
+
+<cb>fn <v>square<>(<v>x<>: i32) -> i32 {
+    <v>x<> * <v>x<>
+}
+
+fn main() {
+
+    let <v>value<> = <v>4<>;
+    let <v>square<> = square(<v>value<>);
+
+    println!("{} squared is {}.", <v>value<>, <v>square<>);
+}<>
+
+
+
+### Function - Return Multiple Values
+
+<cb>return (<v>value_1<>, <v>value_2<>, <v>value_3<>);<>
+
+Full Form:
+
+<cb>fn <v>name<>() -> (<v>return_type<>, <v>return_type<>, <v>return_type<>) {
+   return (<v>value_1<>, <v>value_2<>, <v>...<>);
+}<>
+
+Call:
+
+<cb>let (<v>return_1<>, <v>return_2<>, <v>...<>) = <v>name<>(<v>value<>);<>
+
+
+Return multiple values in a tuple.
+
+
+Example:
+
+<cb>fn <v>double_and_triple<>(<v>x<>: i32) -> (i32, i32) {
+    let <v>double<> = <v>x<> * 2;
+    let <v>triple<> = <v>x<> * 3;
+    return (<v>double<>, <v>triple<>);
+}
+
+fn main() {
+
+    let <v>value<> = <v>4<>;
+    let (<v>double<>, <v>triple<>) = double_and_triple(<v>value<>);
+
+    println!("{} doubled and tripled is {}, {}.", <v>value<>, <v>double<>, <v>triple<>);
+}<>
+
+
+
+### Function - Return Nothing
+
+<cb>fn <v>name<>() {
+    <v>...<>
+    <#>// Nothing returned.<>
+}<>
+
+
+Returns unit by default.
+
+
+Example:
+
+<cb>use std::any::type_name;
+
+fn type_of<T>(_: T) -> &'static str {
+    type_name::<T>()
+}
+
+<#>/// Returns nothing:<>
+fn <v>print_square<>(<v>x<>: i32) {
+    let <v>squared<> = <v>x<> * <v>x<>;
+    println!("{} squared is {}.", <v>x<>, <v>squared<>);
+}
+
+fn main() {
+    let <v>return_value<> = <v>print_square<>(<v>2<>);
+    println!("returned value type is {}.", type_of(<v>return_value<>));
+}
+
+<#>// Prints:
+//
+//    2 squared is 4.
+//    returned value type is ().<><>
+@
+@ unit, ()
+
+
+
+## Function Passing / Referencing
+
+
+### Function Passing / Reference - Basics
+
+Function:
+
+<cb>fn <v>square_a_value<>(<v>value<>: i32) -> i32 {
+    <v>value<> * <v>value<>
+}<>
+
+Create Reference:
+
+<cb>let <v>square<>: fn(i32) -> i32 = <v>square_a_value<>;<>
+
+Call:
+
+<cb>let <v>squared_value<> = <v>square<>(4);<>
+
+
+### Function Type
+
+<cb>fn(<v>type<>) -> <v>return_type<><>
+
+<cb>let <v>function_reference<>: fn(<v>type<>) -> <v>return_type<> = <v>function_1<>;<>
+
+
+Example:
+
+<cb>fn <v>square_a_value<>(<v>value<>: i32) -> i32 {
+    <v>value<> * <v>value<>
+}
+
+let <v>square<>: fn(i32) -> i32 = <v>square_a_value<>;
+
+let <v>squared_value<> = <v>square<>(4);
+
+println!("4 squared is {}.", <v>squared_value<>);
+
+<#>// Prints: "4 squared is 16."<><>
+@
+@ fn
+
+
+
+# Closure
+
+A closure is a function that 'closes over' the environment itwas defined in.
+
+It has access to all the variables that are in scope.
+@
+@ functions, closures
+@ closure-only, closures-only
+
+
+## Closure - Create
+@
+@ new, define
+
+
+### Closure - Create With No Arguments
+
+<cb>= || <v>...<><>
+
+<cb>let <v>closure_1<> = || <v>...<>;<>
+
+
+Closure with 0 arguments.
+
+
+Example:
+
+<cb>let <v>closure_1<> = || println!("Closure 1 called.");
+
+closure_1();<>
+@
+@ ||, zero, 0
+
+
+
+### Closure - Create With Arguments
+
+<cb>= |<v>param_1<>: <v>type<>| <v>...<><>
+
+<cb>let <v>closure_1<> = |<v>param_1<>: <v>type<>| <v>...<>;<>
+
+
+Closure with one or more arguments.
+
+
+Example:
+
+<cb>let <v>closure_1<> = |<v>param_1<>: &str| println!("Parameter 1 = {}.", <v>param_1<>);
+
+closure_1("Value 1");<>
+
+
+
+### Closure - Create Referencing Enclosed Variable
+
+Example:
+
+<cb>let <v>value<> = 42;
+
+let <v>closure_1<> = || println!("Value 1 = {}", <v>value<>);
+<v>closure_1<>();
+
+<#>// Prints "Value 1 = 42"<><>
+
+
+
+# Traits
+@
+@ trait-only, traits-only
+
+
+Traits defines a group of methods for an unknown type <c>Self<>.
+Traits can only access other methods defined in the trait itself.
+
+
+## Trait - Basics
+
+<cb>trait <v>Trait1<> {
+    fn <v>function_1<>();
+}
+
+imp <v>Trait1<> for <v>Type<> {
+    fn <v>function_1<>() {
+        <v>...<>
+    }
+}
+
+let <v>instance_1<> = <v>Type<>::new();
+<v>instance_1<>.<v>function_1<>();<>
+
+
+
+## Trait - Define
+
+
+## Trait - Operations
+
+
+### Trait - Get Self
+
+<cb>= <v>Self<><>
+
+
+
+# Formatting
+@
+@ formats, format-only, formats-only
+@ formatting, formatting-only, formattings-only
+
+
+### Format - To Binary
+
+<cb>= format!("{:b}", <v>value<>)<>
+
+Prints the binary form of a value.
+
+Example:
+
+<cb>let <v>value<> = 11;
+let <b>binary<> = format!("{:b}", value);
+
+println!("11 decimal is 1011 binary.", <v>value<>, <v>binary<>);<>
+
+<#>// Prints ""<><>
+@
+@ integer, i8, i16, i32, i64, i128
+@ u8, u16, u32, u64, fu128, usize 
+@ convert, conversion
+
 
 
 # How To
 @
 @ how-to
+
+
+
+### Command Line Arguments - Get
+
+<cb>= env::args().collect()<>
+
+Full Form:
+
+<cb>use std::env;
+
+let <v>args<>: Vec\<String> = env::args().collect();<>
+
+Returns: <c>Vec
+
+
+Example:
+
+<cb>use std::env;
+
+fn main() {
+
+    let <v>args<>: Vec\<String> = env::args().collect();
+
+    let <v>command<> = &<v>args<>[0];
+    let <v>first<> = &<v>args<>[1];
+
+    println!("All:     {:?}", <v>args<>);
+    println!("Command: {}", <v>command<>);
+    println!("First:   {}", <v>first<>);
+}<>
+@
+@ parameters, params, args
+@ env::args(), args(), args().collect()
+
+
+
+### Print
+
+<cb>print!("Print this.");<>
+
+<cb>print!("Values {} and {}.", <v>a<>, <v>b<>);<>
+
+
+Prints to the standard out.
+No newline is sent.
+
+
+Example:
+
+<cb>for <v>value<> in 0..=3 {
+    print!("{} ", <v>value<>);
+}
+println!();
+
+<#>// Prints: "0 1 2 3 "<><>
+@
+@ printline
+
+
+
+### Println
+
+<cb>println!()<>
+
+<cb>println!("Print this.");<>
+
+<cb>println!("Values {} and {}.", <v>a<>, <v>b<>);<>
+
+
+Prints a line followed by newline to the standard out.
+
+
+Examples:
+
+Print Empty Line:
+
+<cb>println!()<>
+
+Print Variable Value:
+
+<cb>let <v>name<> = "<v>your_name_here<>";
+
+println!("My name is {}.", <v>name<>);
+
+<#>// Prints "My name is your_name_here".<><>
+@
+@ printline
+
 
 
 # Reference - Directories
@@ -787,10 +3965,446 @@ Configure to this directory with <c>RUSTUP_HOME<>
 @ .rustup
 
 
+
+# Reference - Symbols
+
+
+### Symbol .
+
+The dot operator indentifies the next item as an instance field or method.
+@
+@ dot operator
+
+
+
+### Symbol ..
+
+An iterator.
+Returns values starting with the minimum value to up to the value before the maximum value.
+
+<cb>= <v>min<>..<v>max_plus_one<><>
+@
+@ dot operator
+
+
+
+### Symbol ..=
+
+An iterator.
+Returns values starting with the minimum value to up to and including the maximum value.
+
+<cb>= <v>min<>..=<v>max<><>
+@
+@ dot operator
+
+
+
+### Symbol ::
+
+Namespace Path Separator:
+
+<cb><v>std<>::<v>vec<>::<v>Vec<><>
+
+Static Method Accessor:
+
+<cb><v>Type<>::<v>static_method<>()<>
+@
+@ double colon
+
+
+
+### Symbol '
+
+Loop Name:
+
+<cb>'<v>loop_name<> {
+    <v>...<>
+    break <v>loop_name<>;
+}<>
+
+
+
+### Symbol &
+
+Borrow Resource
+
+<cb>= &<v>variable_1<><><>
+
+
+Examples:
+
+<cb>let <v>owner<> = Box::new(<v>42<>_i32);
+
+let <v>borrower<> = &<v>owner<>;
+
+println!("{}", &<v>owner<>);
+println!("{}", <v>borrower<>);
+
+<#>// Prints:
+//
+//    "42"
+//    "42"<><>
+@
+@ binary
+
+
+
+### Symbol &
+
+Bitwise And:
+
+<cb>= <v>a<> & <v>b<><><>
+
+
+Example:
+
+<cb>let <v>a<> = 0b1100;
+let <v>b<> = 0b0101;
+
+let <v>bitwise_and<> = <v>a<> & <v>b<>;
+
+println!("Bitwise And = {:b}.", <v>bitwise_and<>);
+
+<#>// Prints "Bitwise And = 100"<><>
+@
+@ binary
+
+
+
+### Symbol &&
+
+Logical And Operator:
+
+<cb>= <v>a<> && <v>b<><><>
+
+
+Example:
+
+<cb>let <v>a<> = true;
+let <v>b<> = false;
+
+let <v>logical_and<> = <v>a<> && <v>b<>;
+
+println!("Locigal And = {}", <v>logical_and<>);
+
+<#>// Prints "Locigal And = false"<><>
+@
+@ double ampersand
+
+
+
+### Symbol |
+
+Bitwise Or
+
+<cb>= <v>a<> | <v>b<><><>
+
+
+Examples:
+
+<cb>let <v>a<> = 0b1100;
+let <v>b<> = 0b0101;
+
+let <v>bitwise_or<> = <v>a<> | <v>b<>;
+
+println!("Bitwise Or = {:b}.", <v>bitwise_or<>);
+
+<#>// Prints "Bitwise Or = 1101"<><>
+@
+@ binary
+
+
+
+### Symbol ||
+
+A Logical Or Operator:
+
+<cb>= <v>a<> || <v>b<><><>
+
+A Closure With No Parameters:
+
+<cb>= || <v>...<><>
+
+A Closure With A Parameter:
+
+<cb>= |<v>param_1<>: <v>type<>| <v>...<><>
+
+
+Examples:
+
+Logical Or:
+
+<cb>let <v>a<> = true;
+let <v>b<> = false;
+
+let <v>logical_or<> = <v>a<> || <v>b<>;
+
+println!("Locigal Or = {}", <v>logical_or<>);
+
+<#>// Prints "Locigal Or = true"<><>
+
+Closure:
+
+<cb>let <v>closure_1<> = || println!("This is a closure.");
+
+<v>closure_1<>();
+
+<#>// Prints "This is a closure."<><>
+@
+@ double pipe
+
+
+
+### Symbol ()
+Unit.
+
+<cb> = ()<>
+
+The empty value returned by a function that does not return a value.
+@
+@ unit
+
+
+
+### Symbol //
+Comment.
+
+<cb><#>/// this is a comment.<><>
+
+
+
+### Symbol ///
+Document comment.
+
+<cb><#>/// Function document.<>
+fn <v>function_1<>() {
+    <v>...<>
+}<>
+
+
+
+# Reference - Traits
+
+
+### Trait - Drop
+
+<cb>trait Drop {
+    fn drop(&mut self)
+}<>
+@
+@ drop()
+
+
+
+# Memory
+
+<*>Data Memory
+Stack Memory
+Heap Memory<>
+
+
+
+### Memory - Data Memory
+Used for data that is both static and fixed in size data.
+
+Static - Data that is alive for the entire life of the application.
+
+Example: String
+
+
+### Memory - Stack Memory
+Stores function variables.
+
+Memory locations wouldn't change for the life of the function call.
+The compiler optimizes this memory very efficiently.
+
+
+### Memory - Heap Memory
+For dynamically allocated memory, memory that may need to be moved, resized, added, deleted, etc.
+
+This is the slowest and relatively most costly memory to use.
+
+
+#### Heap Memory - Allocation
+Allocating new data to the heap memory.
+
+
+#### Heap Memory - Deallocation
+Removing existing data from the heap memory.
+
+
+
+# Reserved Words
+
+A reserved word is a keyword that has special meaning or purpose to Rust.
+It can not be used as the name of variable, function or anything else.
+
+<in><table><col><c>abstract<>       <><col><s>(For Future Use)<><>
+<col><c>as<><><col>Casts a Variable, or Renames a Item<>
+<col><c>async<><><col>Returns a Future<>
+<col><c>await<><><col>Suspend Execution Until Future Is Done<>
+<col><c>become<><><col><s>(For Future Use)<><>
+<col><c>box<><><col><s>(For Future Use)<><>
+<col><c>break<><><col>Exits a Loop<>
+<col><c>const<><><col>Defines a Constant<>
+<col><c>continue<><><col>Continue to Next Loop Iteration<>
+<col><c>crate<><><col>Links to an External Crate<>
+<col><c>do<><><col><s>(For Future Use)<><>
+<col><c>dyn<><><col>Dynamic Dispatch To Trait<>
+<col><c>else<><><col>Conditional If Statement, Falback Clause<>
+<col><c>enum<><><col>Defines an Enum<>
+<col><c>extern<><><col>Link To an External Crate, Function, or Variable<>
+<col><c>false<><><col>Boolean Literal<>
+<col><c>final<><><col><s>(For Future Use)<><>
+<col><c>fn<><><col>Defines a Function or Function Pointer<>
+<col><c>for<><><col>For Loop, or Implements a Trait, or Specifiesa Higher-ranked Lifetime<>
+<col><c>if<><><col>Conditional If Statement<>
+<col><c>impl<><><col>Implement Inherent or Trait<>
+<col><c>in<><><col>For Loop<>
+<col><c>let<><><col>Create a Variable<>
+<col><c>loop<><><col>Unconditional Loop<>
+<col><c>macro<><><col><s>(For Future Use)<><>
+<col><c>match<><><col>Match Control Statement<>
+<col><c>mod<><><col>Defines a Module<>
+<col><c>move<><><col>Gives Ownership To Closure<>
+<col><c>mut<><><col>Mutable Value / Pointer<>
+<col><c>override<><><col><s>(For Future Use)<><>
+<col><c>priv<><><col><s>(For Future Use)<><>
+<col><c>pub<><><col>Set Public Visibility<>
+<col><c>ref<><><col>Reference Binding<>
+<col><c>return<><><col>Return A Value<>
+<col><c>Self<><><col>Alias For Type Being Defined or Being Implemented<>
+<col><c>self<><><col>Method Subject or Current Module<>
+<col><c>static<><><col>Global Variable<>
+<col><c>struct<><><col>Defines a Structure<>
+<col><c>super<><><col>Parent Module<>
+<col><c>trait<><><col>Defines a Trait<>
+<col><c>true<><><col>Boolean Literal<>
+<col><c>try<><><col><s>(For Future Use)<><>
+<col><c>type<><><col>Defines an Alias<>
+<col><c>typeof<><><col><s>(For Future Use)<><>
+<col><c>union<><><col>Defines a Union<>
+<col><c>unsafe<><><col>Enables Unsafe Operations<>
+<col><c>unsized<><><col><s>(For Future Use)<><>
+<col><c>use<><><col>Bring Into Scope<>
+<col><c>virtual<><><col><s>(For Future Use)<><>
+<col><c>where<><><col>Type Constraint<>
+<col><c>while<><><col>Conditional Loop<>
+<col><c>yield<><><col><s>(For Future Use)<><><><>
+@
+@ abstract, as, async, await, become, box
+@ break, const, continue, crate, do, dyn
+@ else, enum, extern, false, final, fn
+@ for, if, impl, in, let, loop, macro
+@ match, mod, move, mut, override, priv
+@ pub, ref, return, Self, self, static
+@ struct, super, trait, true, try, type
+@ typeof, union, unsafe, unsized, use
+@ virtual, where, while, yield
+@ keywords, reserved words
+
+
+
+# Reference - Coming From Other Languages
+
+
+### Dictionary, Map
+
+Use: HashMap
+@
+@ dict
+
+
+
 # Acronyms
+
+
+### RAII
+Resource Acquisition Is Initialization
+@
+@ RALL
+
 
 
 # Terms
 @
 @ glossary
+
+
+
+### Borrow Checker
+A component of the compiler that tracks lifetime and borrowing of a resource.
+
+It ensures the borrows are valid and end before the owner is destroyed.
+
+
+
+### Cargo
+Rust's build system and package manager.
+
+
+
+### Destructor
+An object's destructor releases any owned resources, freeing up memory.
+
+Rust automatically calls an objects destructor when the object goes out of scope.
+Rust calls the <c>Drop<> trait to execute the destructor.
+@
+@ drop
+
+
+
+### Expression
+Something that evaluates to a value.
+
+
+
+### Ferris
+The unofficial mascot of Rust
+@
+@ mascot
+
+
+
+### Function Overloading
+Not supported in Rust.
+
+Use traits instead.
+
+
+### Method - Instance Method
+
+This is a method associated with an instance of a type and is accessed with the <c>.<> operator.
+
+
+
+### Method - Static Method
+
+This is a method associated with a type and is accessed with the <c>::<> operator.
+
+
+
+### Method Overloading
+Not supported in Rust.
+
+Use traits instead.
+
+
+
+### Rustacean
+Someone who likes and uses Rust.
+
+
+
+### Statement
+A command that performs some action but does not return a value.
+This is usually in aid of evaluating an expression.
+
+
+
+### Unit
+An empty tuple.
+
+These are returned by functions that do not return any value.
+
 
