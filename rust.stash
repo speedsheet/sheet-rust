@@ -594,11 +594,11 @@ println!("{} is {} than 5.", <v>a<>, <v>more_or_less<>);
 
 ### For - In Range
 
-<cb>for <v>value<> in <v>min<>..<v>max_plus_one<> {
+<cb>for <v>value<> in <v>start<>..<v>end_plus_one<> {
     <v>...<>
 }<>
 
-<cb>for <v>value<> in <v>min<>..=<v>max<> {
+<cb>for <v>value<> in <v>start<>..=<v>end<> {
     <v>...<>
 }<>
 
@@ -732,27 +732,30 @@ loop {
     <v>...<>
     break <v>return_value<>;
     <v>...<>
-}<>
+};<>
 
+
+Loops and then returns a value on break.
 
 Loops continuously until break is called.
-Use to create an infinite loop.
+Requires a semicolon (;) after the block.
 
 
 Example:
 
 <cb>let mut <v>value<> = <v>0<>;
 
-let <v>final<> = loop {
-    <v>value<> += 1;
-    println!("{}", <v>value<>);
+let <v>result<> = loop {
 
+    <v>value<> += 1;
     if <v>value<> > 4 {
         break <v>value<>;
     }
-}
+};
 
-<#>// Prints values 1, 2, 3, 4.<><>
+println!("Result = {}.", <v>result<>);
+
+<#>// Prints: "Result = 5."<><>
 @
 @ break
 @ loop-only, expression, with return value
@@ -983,7 +986,9 @@ Float - One of:
 
 <cb>= false<>
 
-Returns: <c>bool<>
+Returns:
+
+<cb>bool<>
 @
 @ true, false
 
@@ -993,7 +998,9 @@ Returns: <c>bool<>
 
 <cb>= b'<v>A<>'<>
 
-Returns: <c>u8<>
+Returns:
+
+<cb>u8<>
 @
 @ b'', u8
 
@@ -1084,7 +1091,9 @@ The return type depends on the type inference engine or the declared variable ty
 
 <cb>= '<v>c<>'<>
 
-Returns: <c>char<>
+Returns:
+
+<cb>char<>
 @
 @ '', char
 
@@ -1094,7 +1103,9 @@ Returns: <c>char<>
 
 <cb>= "<v>A String<>"<>
 
-Returns: <c>str<>
+Returns:
+
+<cb>str<>
 @
 @ "", str
 
@@ -1356,13 +1367,15 @@ println!("Size of value = {}.", size_of_val(&<v>value<>));
 
 <cb>= type_name::\<<v>T<>>()<>
 
-Use in a Function:
+Use as a Function:
 
 <cb>use std::any::type_name;
 
 fn type_of\<<v>T<>>(_: <v>T<>) -> &'static str {
     type_name::\<<v>T<>>()
-}<>
+}
+
+let <v>type_1<> = type_of(<v>variable_1<>);<>
 
 
 Returns the variable type as a string.
@@ -1379,7 +1392,7 @@ fn type_of\<<v>T<>>(_: <v>T<>) -> &'static str {
     type_name::\<<v>T<>>()
 }
 
-let <v>type_name<> = type_of(1_i32);
+let <v>type_name<> = type_of(<v>1<>_i32);
 println! ("Type = {}", <v>type_name<>);
 
 <#>// Prints "Type = i32"<><>
@@ -1472,7 +1485,7 @@ println!("{}", <v>borrower<>);
 
 
 
-### Ownership - Borrowing Mutable
+### Ownership - Borrow Mutable
 
 <cb>&mut <v>owner<><>
 
@@ -1674,7 +1687,9 @@ Table<col>Vec\<<v>T<>><><col>Vector (Mutable List)<><>
 
 <cb>let <v>bool_1<>: bool = true;<>
 
-Type: <c>bool<>
+Type:
+
+<cb>bool<>
 
 
 Creates a boolean variable.
@@ -1713,7 +1728,9 @@ println!("{}", <v>bool_1<>);
 
 <cb>let <v>byte_1<>: u8 = b'<v>c<>';<>
 
-Returns: <c>u8<>
+Returns:
+
+<cb>u8<>
 
 
 Creates a byte value.
@@ -1789,7 +1806,9 @@ println!("{}", <v>char_1<>);
 
 <cb>let <v>char_1<>: char = '<v>c<>';<>
 
-Type: <c>char<>
+Type:
+
+<cb>char<>
 Size: 4 Bytes
 
 
@@ -1831,7 +1850,9 @@ println!("{}", <v>char_1<>);
 <cb>let <v>float_1<>: f32 = <v>number<>;<>
 
 
-Type: <c>f32<>
+Type:
+
+<cb>f32<>
 
 
 Float, 32-Bit, Single Precision
@@ -1868,7 +1889,9 @@ println!("{}", <v>float_1<>);
 <cb>let <v>float_1<>: f64 = <v>number<>;<>
 
 
-Type: <c>f64<>
+Type:
+
+<cb>f64<>
 
 
 Float, 64-Bit, Double Precision
@@ -1935,7 +1958,9 @@ println!("{} squared is {}.", <v>value<>, <v>square<>);
 
 <cb>let <v>int_1<>: i8 = <v>number<>;<>
 
-Type: <c>i8<>
+Type:
+
+<cb>i8<>
 
 
 Integer, 8-bit Signed
@@ -1971,7 +1996,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: u8 = <v>number<>;<>
 
-Type: <c>u8<>
+Type:
+
+<cb>u8<>
 
 
 Integer, 8-bit Unsigned
@@ -2040,7 +2067,9 @@ println!("{}", <v>char_1<>);
 
 <cb>let <v>int_1<>: i16 = <v>number<>;<>
 
-Type: <c>i16<>
+Type:
+
+<cb>i16<>
 
 
 Integer, 16-bit Signed
@@ -2077,7 +2106,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: u16 = <v>number<>;<>
 
-Type: <c>u16<>
+Type:
+
+<cb>u16<>
 
 
 Integer, 16-bit Unsigned
@@ -2114,7 +2145,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: i32 = <v>number<>;<>
 
-Type: <c>i32<>
+Type:
+
+<cb>i32<>
 
 
 Integer, 32-bit Signed
@@ -2151,7 +2184,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: u32 = <v>number<>;<>
 
-Type: <c>u32<>
+Type:
+
+<cb>u32<>
 
 
 Integer, 32-bit Unsigned
@@ -2188,7 +2223,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: i64 = <v>number<>;<>
 
-Type: <c>i64<>
+Type:
+
+<cb>i64<>
 
 
 Integer, 64-bit Signed
@@ -2225,7 +2262,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: u64 = <v>number<>;<>
 
-Type: <c>u64<>
+Type:
+
+<cb>u64<>
 
 
 Integer, 64-bit Unsigned.
@@ -2262,7 +2301,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: i128 = <v>number<>;<>
 
-Type: <c>i128<>
+Type:
+
+<cb>i128<>
 
 
 Integer, 128-bit Signed
@@ -2299,7 +2340,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: u128 = <v>number<>;<>
 
-Type: <c>u128<>
+Type:
+
+<cb>u128<>
 
 
 Integer, 128-bit Unsigned
@@ -2336,7 +2379,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: isize = <v>number<>;<>
 
-Type: <c>isize<>
+Type:
+
+<cb>isize<>
 
 
 Integer, Pointer Sized, Signed
@@ -2378,7 +2423,9 @@ println!("{}", <v>int_1<>);
 
 <cb>let <v>int_1<>: usize = <v>number<>;<>
 
-Type: <c>usize<>
+Type:
+
+<cb>usize<>
 
 
 Integer, Pointer Sized, Unsigned
@@ -2500,7 +2547,9 @@ println!("{}", <v>str_1<>);
 
 <cb>= <v>str_1<>.chars().count()<>
 
-Returns: <c>usize<>
+Returns:
+
+<cb>usize<>
 
 
 Returns the number of actual characters in the string accounting for Unicode encoding.
@@ -2527,7 +2576,9 @@ println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>lengt
 
 <cb>= <v>str_1<>.to_string() + <v>str_2<><>
 
-Returns: <c>String<>
+Returns:
+
+<cb>String<>
 
 
 Joins 2 or more strings together.
@@ -2554,7 +2605,9 @@ println!("{}", <v>concatenated<>);
 
 <cb>= <v>string_1<>.len()<>
 
-Returns: <c>usize<>
+Returns:
+
+<cb>usize<>
 
 
 Returns the byte length of the string.
@@ -2581,7 +2634,9 @@ println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>lengt
 
 <cb>= <v>string_1<>.repeat(<v>count<>)<>
 
-Returns: <c>String<>
+Returns:
+
+<cb>String<>
 
 
 Repeats a string.
@@ -2608,7 +2663,9 @@ println!("{}", <v>stars<>);
 = <v>str_1<>.into()
 = String::from(<v>str_1<>)<>
 
-Returns: <c>String<>
+Returns:
+
+<cb>String<>
 
 
 Converts an <c>str<> to a <c>String<>.
@@ -2759,7 +2816,9 @@ println!("{}", <v>formatted<>);
 
 <cb>let <v>string_1<> = [<v>string_1<>, <v>string_2<>, <v>...<>].join(<v>join_str<>);<>
 
-Returns: <c>String<>
+Returns:
+
+<cb>String<>
 
 
 Joins all the strings in the array separated by <c>join_str<>.
@@ -2907,7 +2966,9 @@ Returns: Integer
 
 <cb>let <v>box_1<>: Box\<<v>T<>> = Box::new(<v>value<>);<>
 
-Type: <c>Box\<<v>T<>><>
+Type:
+
+<cb>Box\<<v>T<>><>
 
 
 Creates data on the heap.
@@ -3106,12 +3167,12 @@ println!("Point 1: {}, {}", <v>point_1<>.0, <v>point_1<>.1);
     <v>Value3<>
 }
 
-let <v>value_1<> = <v>Enum1<>::<v>Value1<>;
+let <v>value_1<> = <v>Enum1<>::<v>Value1<>;<>
 
-match <v>value_1<> {
-    <v>Enum1<>:Value1<> => <v>...<>,
-    <v>Enum1<>:Value2<> => <v>...<>,
-    <v>Enum1<>:Value3<> => <v>...<>
+<cb>match <v>value_1<> {
+    <v>Enum1<>:<v>Value1<> => <v>...<>,
+    <v>Enum1<>:<v>Value2<> => <v>...<>,
+    <v>Enum1<>:<v>Value3<> => <v>...<>
 }<>
 
 Enums With Properties:
@@ -3137,7 +3198,7 @@ Type:
 
 <cb>: Option\<<v>type<>><>
 
-From
+From:
 
 <cb>std::option::Option<>
 
@@ -3154,6 +3215,7 @@ Example:
 @
 @ None, Some(), optional
 @ options, optionals, option-only, options-only
+@ std::option::Option
 @ data type
 
 
@@ -3161,6 +3223,7 @@ Example:
 # Option - Operations
 @
 @ options, optionals, option-only, options-only
+@ std::option::Option
 @ data type
 
 
@@ -3234,15 +3297,24 @@ match <v>optional_int<> {
 
 Type:
 
-<cb>HashMap\<<v>key_type<>, <v>value_type<>><>
-
-<cb>use std::collections::HashMap;<>
+<cb>HashMap\<<v>Key<>, <v>Value<>><>
 
 Usage:
 
 <cb>use std::collections::HashMap;
 
-let mut <v>map<>\<<v>...<>> = HashMap::new();<>
+let mut <v>hashmap_1<>\<<v>K<>,<v>V<>> = HashMap::new();<>
+@
+@ hashmaps, hashmap-only, hashmaps-only
+@ std::collections::HashMap
+@ data type
+
+
+## HashMap - Basics
+
+<cb>use std::collections::HashMap;
+
+let mut <v>hashmap_1<>\<<v>K<>,<v>V<>> = HashMap::new();<>
 
 <cb>= HashMap::from(<v>list_of_key_value_tuples<>);
 
@@ -3271,8 +3343,49 @@ for (<v>key<>, <v>value<>) in <v>hashmap_1<>.iter() { <v>...<> }
 Official Doc:
 <l>https://doc.rust-lang.org/std/collections/struct.HashMap.html<>
 @
-@ hashmaps, hashmap-only, hashmaps-only
 @ data type
+
+
+
+## HashMap - Create
+
+<cb>= HashMap::new()<>
+
+Usage:
+
+<cb>use std::collections::HashMap;
+
+let mut <v>hashmap_1<>\<<v>K<>,<v>V<>> = HashMap::new();<>
+
+Returns:
+
+<cb>HashMap\<<v>Key<>, <v>Value<>><>
+
+
+Creates an instance of HashMap.
+
+
+Example:
+
+<cb>use std::collections::HashMap;
+
+let mut <v>hashmap_1<> = HashMap::new();
+
+<v>hashmap_1<>.insert("<v>one<>", "<v>Value 1<>");
+<v>hashmap_1<>.insert("<v>two<>", "<v>Value 2<>");
+
+let <v>value<> = &<v>hashmap_1<>.get(&"<v>one<>");
+
+println!("{}", <v>value<>.unwrap());
+
+<#>// Prints: "Value 1"<><>
+@
+@ new, define, instantiate
+@ hashmap::new(), new()
+@ _model_
+
+
+## HashMap - Operations
 
 
 
@@ -3282,15 +3395,15 @@ Official Doc:
 
 <cb>= <v>start<>..=<v>end<><>
 
-Type:
-
-<cb>Range\<<v>type<>><>
-
 Usage:
 
 <cb>use std::ops::Range;
 
 let <v>range_1<>: Range\<i32> = <v>0<>..<v>4<>;<>
+
+Type:
+
+<cb>Range\<<v>type<>><>
 
 
 Official Docs:
@@ -3298,6 +3411,8 @@ Official Docs:
 
 
 Examples:
+
+With <c>..<> :
 
 <cb>use std::ops::Range;
 
@@ -3308,8 +3423,9 @@ for <v>value<> in <v>range_1<> {
 }
 println!();
 
-
 <#>// Prints: 0 1 2 3 <><>
+
+With <c>..=<> :
 
 <cb>use std::ops::Range;
 
@@ -3335,7 +3451,15 @@ Type:
 
 <cb>Vec\<<v>type<>><>
 
-<cb>use std::vec::Vec;<>
+Usage:
+
+<cb>use std::vec::Vec;
+
+let <v>vec_1<> = Vec::new()<>
+
+From:
+
+<cb>std::vec::Vec<>
 
 
 Mutable array of items.
@@ -3355,13 +3479,17 @@ Official Docs:
 
 <cb>= Vec::new()<>
 
+Full Usage:
+
+<cb>let <v>vec_1<>: Vec\<i32> = Vec::new();<>
+
 Type:
 
 <cb>Vec\<<v>type<>><>
 
-<cb>let <v>vec_1<>: Vec\<i32> = Vec::new();<>
+Returns:
 
-Returns: <c>std::vec::vec<>
+<cb>std::vec::Vec<>
 @
 @ vec::new()
 @ new, define, instantiate
@@ -3372,11 +3500,15 @@ Returns: <c>std::vec::vec<>
 
 <cb>= vec![]<>
 
+Usage:
+
 <cb>let <v>vec_1<>: Vec\<<v>i32<>> = vec![];<>
 
-<cb>let <v>vec_1<> = vec![<v>item_1<>, <v>item_2<>, <v>...<>];<>
+let <v>vec_1<> = vec![<v>item_1<>, <v>item_2<>, <v>...<>];<>
 
-Returns: <c>std::vec::vec<>
+Returns:
+
+<cb>std::vec::vec<>
 
 
 Creates a vec.
@@ -3397,6 +3529,7 @@ println!();
 @ new, define, instantiate
 
 
+
 # Vec Operations
 @
 @ std::vec::vec, vec::vec
@@ -3409,7 +3542,9 @@ println!();
 
 <cb>= <v>vec_1<>.iter()<>
 
-Returns: <c>core::slice::iter::Iter\<<v>type<>><>
+Returns:
+
+<cb>core::slice::iter::Iter\<<v>type<>><>
 
 
 Returns an iterator to the values in the vector.
@@ -3434,7 +3569,9 @@ println!();
 
 <cb>= <v>vec_1<>.len()<>
 
-Returns: <c>usize<>
+Returns:
+
+<cb>usize<>
 
 
 Returns the number of items in the vec.
@@ -3845,7 +3982,9 @@ Full Form:
 
 let <v>args<>: Vec\<String> = env::args().collect();<>
 
-Returns: <c>Vec
+Returns:
+
+<cb>Vec\<String><>
 
 
 Example:
@@ -3865,7 +4004,7 @@ fn main() {
 }<>
 @
 @ parameters, params, args
-@ env::args(), args(), args().collect()
+@ std::env::args(), env::args(), args(), args().collect()
 
 
 
@@ -3980,9 +4119,9 @@ The dot operator indentifies the next item as an instance field or method.
 ### Symbol ..
 
 An iterator.
-Returns values starting with the minimum value to up to the value before the maximum value.
+Returns values starting with the minimum value to up to the value before the end value.
 
-<cb>= <v>min<>..<v>max_plus_one<><>
+<cb>= <v>start<>..<v>end_plus_one<><>
 @
 @ dot operator
 
@@ -3991,9 +4130,9 @@ Returns values starting with the minimum value to up to the value before the max
 ### Symbol ..=
 
 An iterator.
-Returns values starting with the minimum value to up to and including the maximum value.
+Returns values starting with the starting value to up to and including the end value.
 
-<cb>= <v>min<>..=<v>max<><>
+<cb>= <v>start<>..=<v>end<><>
 @
 @ dot operator
 
