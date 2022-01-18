@@ -1185,6 +1185,7 @@ println!("Value is {}.", <v>value<>);<>
 
 
 Creates an immutable variable.
+
 If the type is not included, the inference engine will try to determine it from the use of the variable.
 
 
@@ -1202,6 +1203,7 @@ Example:
 
 
 Creates a global immutable variable.
+
 Static data is stored in the binary
 Statics can be created inside or outside functions.
 You must declare the type for a static variable (no type inferencing).
@@ -1225,6 +1227,7 @@ println!("{}", <v>INT_1<>);
 
 
 Creates a global immutable variable.
+
 Static data is stored in the binary
 Statics can be created inside or outside functions.
 You must declare the type for a static variable (no type inferencing).
