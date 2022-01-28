@@ -1,48 +1,5 @@
-# Rust
-
-Add:
-
-    destructuring
-        let (a, b) = ...
-
-
-Symbols / Operators:
-<l>https://doc.rust-lang.org/book/appendix-02-operators.html<>
-
-Primitives:
-<l>https://doc.rust-lang.org/rust-by-example/primitives.html<>
-
-Rust by Example (Docs):
-<l>https://doc.rust-lang.org/rust-by-example/index.html<>
-
-<in-2>Next (Conversion):
-<l>https://doc.rust-lang.org/rust-by-example/conversion/from_into.html<>
-
-char:
-<l>https://doc.rust-lang.org/std/primitive.char.html<>
-
-float:
-<l>https://doc.rust-lang.org/std/primitive.f32.html<>
-
-Array Slicing:
-<l>https://doc.rust-lang.org/rust-by-example/primitives/array.html<>
-
-Enums With Properties:
-<l>https://doc.rust-lang.org/rust-by-example/custom_types/enum.html<>
-
-Match Destructuring:
-<l>https://doc.rust-lang.org/rust-by-example/flow_control/match/destructuring.html<><>
-
-
-
-### Use Module
-
-<cb>use <v>module<>::<v>component<>;<>
-
-<m>(Incorporate)<>
-@
-@ import
-
+# <#>Rust<> SpeedSheet
+<b>Find what you need, faster.<>
 
 
 # Online Links
@@ -70,8 +27,33 @@ Code interactively on this page, no setup required.
 @ repl, interactively
 
 
+### Rust - Crates.io
+<l>crates.io<>
+
+The official Rust package registry.
+
+
 
 # Hello World
+
+File Name:
+
+<cb>main.rs<>
+
+File Contents:
+
+<cb>fn main() {
+    println!("Hello world!");
+}<>
+
+Compile:
+
+<cb>rustc main.rs<>
+
+Run:
+
+<cb>main<>
+
 
 
 # Language Fundamentals
@@ -261,156 +243,6 @@ Typically:
 
 
 
-# Naming Conventions
-@
-@ names naming
-
-## Naming Conventions - Basics
-
-<table><col>Constant<><col><c><v>UPPER_SNAKE_CASE<><><>
-<col> <>
-<col>Constructor - General<><col>new
-
-<c>with_<v>more_details<><><>
-<col> <>
-<col>Constructor - Conversion<><col><c>from_<v>some_other_type<><><>
-<col> <>
-<col>Crate<><col>No Convention?<>
-<col> <>
-<col>Enum Variant<><col><c><v>TitleCase<><><>
-<col> <>
-<col>Feature<><col>No Convention?<>
-<col> <>
-<col>Function<><col><c><v>snake_case<><><>
-<col> <>
-<col>Lifetime<><col><c><v>lowercase<><><>
-<col> <>
-<col>Method<><col><c><v>snake_case<><><>
-<col> <>
-<col>Macro<><col><c><v>snake_case<>!<><>
-<col> <>
-<col>Module<><col><c><v>snake_case<><><>
-<col> <>
-<col>Static<><col><c><v>UPPER_SNAKE_CASE<><><>
-<col> <>
-<col>Trait<><col><c><v>TitleCase<><><>
-<col> <>
-<col>Type<><col><c><v>TitleCase<><><>
-<col> <>
-<col>Type Parameter<><col><c><v>T<><>  (Upper Case Letter)
-
-<c><v>TitleCase<><><>
-<col> <>
-<col>Variable<><col><c><v>snake_case<><><>
-<col> <>
-<col>Variable - Constants<><col><c><v>UPPER_SNAKE_CASE<><><><>
-
-See:
-<l>https://rust-lang.github.io/api-guidelines/naming.html<>
-
-
-## Naming Convention Details
-
-
-### Convention - Constants
-
-<cb><v>UPPER_SNAKE_CASE<><>
-
-
-### Convention - Constructors - General
-
-<cb>new<>
-
-<cb>with_<v>more_details<><>
-
-
-### Convention - Constructors - Conversion
-
-<cb>from_<v>some_other_type<><>
-
-
-### Convention - Crates
-
-No convention?
-
-
-### Convention - Modules
-
-<cb><v>snake_case<><>
-
-
-### Convention - Enum Variants
-
-<cb><v>TitleCase<><>
-
-
-### Convention - Features
-
-No convention?
-
-<m>See: C-FEATURE
-<l>https://rust-lang.github.io/api-guidelines/naming.html#c-feature<><>
-
-
-### Convention - Functions
-
-<cb><v>snake_case<><>
-
-
-### Convention - Lifetimes
-
-<cb>lowercase<>
-
-Use short words.
-Some recommend a single letter but I strongly disagree.
-
-
-### Convention - Macros
-
-<cb><v>snake_case<>!<>
-
-
-### Convention - Methods
-
-<cb><v>snake_case<><>
-
-
-### Convention - Statics
-
-<cb><v>UPPER_SNAKE_CASE<><>
-
-
-### Convention - Traits
-
-<cb><v>TitleCase<><>
-
-
-### Convention - Types
-
-<cb><v>TitleCase<><>
-
-
-### Convention - Type Parameters
-
-<cb><v>TitleCase<><>
-
-<cb><v>T<><>
-
-Short concise name in TitleCase.
-Some recommend a single uppercase letter.
-
-
-### Convention - Variables
-
-<cb><v>snake_case<><>
-
-
-### Convention - Variables - Constants
-
-<cb><v>UPPER_SNAKE_CASE<><>
-
-
-
 # Install
 
 Install Page:
@@ -436,11 +268,23 @@ From Terminal:
 # Command Line
 
 
-### Program - Compile
+### Program - Compile Executable
 
 <cb>rustc <v>program_name.rs<><>
+
+Creates a binary file that can be executed.
 @
-@ rustc
+@ rustc, create binary
+
+
+
+### Program - Compile Library
+
+<cb>rustc --crate-type=lib <v>program_name.rs<><>
+
+Creates a library file (extension .lib).
+@
+@ rustc, create, .lib
 
 
 
@@ -1465,8 +1309,9 @@ When Passing:
 <cb><v>function_1<>(&<v>owner<>);<>
 
 
-Borrow (pass) a resource without passing ownership of it with ampersand (<c>&<>).
+Borrow (pass) a resource without passing ownership of it.
 
+Use ampersand (<c>&<>) to denote borrowing.
 There is no limit on the number of borrowers for an immutable resource.
 
 
@@ -1501,8 +1346,9 @@ When Passing:
 <cb><v>function_1<>(&mut <v>owner<>);<>
 
 
-Borrow (pass) a mutable resource without passing ownership of it with ampersand mut (<c>&mut<>).
+Borrow (pass) a mutable resource without passing ownership of it.
 
+Use ampersand mut (<c>&mut<>) to denote borrowing.
 There can only be one mutable borrower at a time for a mutable resource.
 There can be any number of immutable borrowers, but if there are, no mutable borrowers are allowed.
 
@@ -2730,7 +2576,10 @@ The value returned from a function where no value was explicitly returned.
 
 # String
 
-Stored on the heap.
+Stored a dynamic string on the heap.
+
+Official Docs:
+<l>https://doc.rust-lang.org/stable/std/string/struct.String.html<>
 @
 @ strings, string-only, strings-only
 
@@ -2891,6 +2740,10 @@ Type:
 
 Immutable list of items.
 Must be of the same type.
+
+
+Official Docs:
+<l>https://doc.rust-lang.org/std/primitive.array.html<>
 @
 @ arrays, array-only, arrays-only
 @ data type
@@ -2974,7 +2827,9 @@ Type:
 <cb>Box\<<v>T<>><>
 
 
-Creates data on the heap.
+A box is a pointer to memory on the heap.
+
+Creating a box creates data on the heap.
 
 
 Example:
@@ -2984,6 +2839,10 @@ Example:
 println!("{}", <v>box_1<>);
 
 <#>// Prints: "42"<><>
+
+
+Official Docs:
+<l>https://doc.rust-lang.org/std/boxed/struct.Box.html<>
 @
 @ Box::new(), Box\<T>
 
@@ -3505,7 +3364,7 @@ Returns:
 
 Usage:
 
-<cb>let <v>vec_1<>: Vec\<<v>i32<>> = vec![];<>
+<cb>let <v>vec_1<>: Vec\<<v>i32<>> = vec![];
 
 let <v>vec_1<> = vec![<v>item_1<>, <v>item_2<>, <v>...<>];<>
 
@@ -3538,6 +3397,14 @@ println!();
 @ std::vec::vec, vec::vec
 @ vecs, vec-only, vecs-only
 @ vectors, vector-only, vectors-only
+
+
+
+### Vec - Append
+
+<cb><v>vec_1<>.push(<v>item<>)<>
+@
+@ vec.push, .push(), push
 
 
 
@@ -3590,6 +3457,156 @@ println!("Size {}.", <v>vec_1<>.len());
 @
 @ count, length
 @ vec.len(), .len()
+
+
+
+# Attributes
+
+Anything in Form:
+
+<cb>#[<v>...<>]<>
+
+<cb>#![<v>...<>]<>
+
+
+An attribute is metadata relating to some module or item. It is used by the compiler.
+
+
+Apply To Module, Item:
+
+<cb>#[<v>...<>]<>
+
+Apply To Entire Crate:
+
+<cb>#![<v>...<>]<>
+
+Official Docs:
+<l>https://doc.rust-lang.org/reference/attributes.html<>
+@
+@ #[, ], #[]
+@ #![, ], #![]
+
+
+
+### Attribute - Apply To Module Or Item
+
+<cb>#[<v>...<>]<>
+
+
+Example:
+
+<cb>#[deprecated]
+fn <v>deprecated_function<>() {
+    <v>...<>
+}<>
+
+
+
+### Attribute - Apply To Entire Crate
+
+<cb>#![<v>...<>]<>
+
+
+Example:
+
+<cb>#![allow(dead_code)]<>
+
+
+
+### Attribute Types
+
+4 Types:
+
+<*>Built-in
+Macro
+Derive Macro Helper
+Tool<>
+
+
+
+# Attribute - Reference
+
+
+### Attribute - Config / cfg
+
+<cb>#[cfg(<v>property<> = <v>value<>)]<>
+@
+@ #[cfg], #[cfg()]
+
+
+#### Config Property - Target Architecture
+
+<cb>#[cfg(<v>target_arch<> = "<v>x86_64<>"")]<>
+
+Values:
+
+<cb>"x86"
+"x86_64"
+"mips"
+"powerpc"
+"powerpc64"
+"arm"
+"aarch64"<>
+@
+@ #[cfg(target_arch=)], target_arch
+
+
+
+
+### Attribute - Debug
+
+<cb>#[derive(Debug)]<>
+
+Tells the compiler to auto-generate an implementation of the Debug trait.
+Provides an implementation for <c>"{:?}"<> as used by <c>println!()<>, <c>format!()<>, etc..
+
+<m>Example<>
+@
+@ #[derive(Debug)]
+
+
+
+### Attribute - Deprecated
+
+<cb>#[deprecated]<>
+
+Marks a component as deprecated.
+
+<m>Example<>
+@
+@ #[deprecated]
+
+
+
+### Attribute - Linter - Allow
+
+<cb>[allow(<v>...<>)]<>
+
+
+
+#### Attribute - Linter - Allow Dead Code
+
+<cb>#![allow(dead_code)]<>
+@
+@ #![allow(dead_code)]
+
+
+
+#### Attribute - Linter  - Allow Unused Varibles
+
+<cb>#[allow(unused_variables)]
+@
+@ #[allow(unused_variables)]
+
+
+
+### Attribute - Unused Imports - Silence Warning
+
+<cb>#[warn(unused_imports)]<>
+
+<m>Example<>
+@
+@ #[warn(unused_imports)]
 
 
 
@@ -3904,6 +3921,120 @@ let <v>closure_1<> = || println!("Value 1 = {}", <v>value<>);
 
 
 
+# Modules
+
+A module is a container for functions and types.
+
+A module also defines a namespace for those functions and types.
+
+
+Types:
+
+<in>Inline Module
+File Module (<m>term?<>)<>
+
+Official Docs:
+<l>https://doc.rust-lang.org/reference/items/modules.html<>
+@
+@ mod-only, mods-only, module-only, modules-only
+
+
+### Modules - Inline Module
+
+
+
+#### Modules - Inline Module - Define
+
+<cb>mod <v>name<> {
+    <v>...<>
+}<>
+
+
+### Modules - Visibility
+
+Types:
+
+    public / private
+
+Default:
+
+    private
+
+Applies to:
+
+    mod
+    function, type
+
+Keyword:
+
+    pub
+
+#### Module - Public Function
+
+<cb>pub fn <v>public_function_1<>() {<v>...<>}<>
+
+<cb>mod <v>name<> {
+    pub fn <v>public_function_1<>() {
+        <v>...<>
+    }
+}<>
+
+
+Use the keyword <v>pub<> to make a function public.
+@
+@ pub
+
+
+
+#### Module - Private Function
+
+No keyword <c>pub<>:
+
+<cb>fn <v>public_function_1<>() {<v>...<>}<>
+
+<cb>mod <v>name<> {
+    fn <v>private_function_1<>() {
+        <v>...<>
+    }
+}<>
+
+
+
+### Module - Interface
+The set of public functions and types in a module
+
+
+
+### Module - Nested
+
+<cb>mod <v>parent_mod<> {
+    pub mod <v>nested_mod<> {
+        <v>...<>
+        pub fn <v>public_nested_func<>() {<v>...<>}
+
+        fn <v>private_nested_func<>() {<v>...<>}
+    }
+
+    <v>nested_mod<>::<v>public_nested_func<>();
+}
+
+<v>parent_mod<>::<v>nested_mod<>::<v>public_nested_func<>();
+<>
+
+
+
+### Module - Structure - Public / Private Fields
+
+<cb>mod <v>mod_1<> {
+    
+    pbu struct <v>Struct1<> {
+        pub <v>publi_id<>: usize,
+        <v>private_id<>: usize,
+    }
+}<>
+
+
+
 # Traits
 @
 @ trait-only, traits-only
@@ -3966,6 +4097,126 @@ println!("11 decimal is 1011 binary.", <v>value<>, <v>binary<>);<>
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize 
 @ convert, conversion
+
+
+
+# Files
+
+
+### Binary File - Read
+
+<cb>= fs::read(<v>path<>).expect(<v>error_message<>)<>
+
+Usage:
+
+<cb>use std::fs;
+
+= fs::read(<v>path<>).expect(<v>error_message<>)<>
+
+Returns: <c>Vec\<u8><>
+
+
+Reads a file in as bytes (u8).
+
+<m>Untested<>
+@
+@ std::fs
+@ fs::read().expect(), read().expect(), read(), .expect()
+@ u8, vec\<u8>
+
+
+
+### Binary File - Write
+
+<cb>= fs::write(<v>path<>).expect(<v>error_message<>)<>
+
+Usage:
+
+<cb>use std::fs;
+
+fs::write(<v>path<>).expect(<v>error_message<>)<>
+
+
+Reads a file in as bytes (u8).
+
+<m>Untested<>
+@
+@ std::fs
+@ fs::write().expect(), write().expect(), write(), .expect()
+@ String
+
+
+
+### Text File - Read
+
+<cb>= fs::read_to_string(<v>path<>).expect(<v>error_message<>)<>
+
+Usage:
+
+<cb>use std::fs;
+
+= fs::read_to_string(<v>path<>).expect(<v>error_message<>)<>
+
+Returns: <c>String<>
+
+
+Reads a file in as bytes (u8).
+
+<m>Untested<>
+@
+@ std::fs
+@ fs::read_to_string().expect(), read_to_string().expect(), read_to_string(), .expect()
+@ String
+
+
+
+### Text File - Read Lines
+
+<cb>= fs::read_to_string(<v>path<>).expect(<v>error_message<>)<>
+
+Usage:
+
+<cb>use std::fs::File;
+use std::io::BufReader;
+
+let <v>file<> = File::open(<v>path<>).expect(<v>error_message<>);
+let <v>buffer<> = BufReader::new(<v>file<>);
+
+let <v>lines<>: Vec\<String> = Vec::new();;
+
+for <v>line<> in <v>buffer<>.lines() {
+    <v>lines<>.push(<v>line<>);
+}<>
+
+Returns: <c>Vec\<String><>
+
+
+Reads a file in as a vectors of lines.
+
+<m>Untested<>
+@
+@ std::fs::File, file::open().expect(), .open()
+@ std::io::BufReader, .lines()
+@ String, Vec\<String>
+
+
+
+### Text File - Write
+
+<cb>= fs::write(<v>path<>, <v>contents<>).expect(<v>error_message<>)<>
+
+Usage:
+
+<cb>use std::fs;
+
+fs::write(<v>path<>, <v>contents<>).expect(<v>error_message<>)<>
+
+
+Reads a file in as bytes (u8).
+@
+@ std::fs
+@ fs::write().expect(), write().expect(), write(), .expect()
+@ String
 
 
 
@@ -4105,6 +4356,156 @@ Contains metadata, toolchains.
 Configure to this directory with <c>RUSTUP_HOME<>
 @
 @ .rustup
+
+
+
+# Reference - Naming Conventions
+@
+@ names naming
+
+## Naming Conventions - Basics
+
+<table><col>Constant<><col><c><v>UPPER_SNAKE_CASE<><><>
+<col> <>
+<col>Constructor - General<><col>new
+
+<c>with_<v>more_details<><><>
+<col> <>
+<col>Constructor - Conversion<><col><c>from_<v>some_other_type<><><>
+<col> <>
+<col>Crate<><col>No Convention?<>
+<col> <>
+<col>Enum Variant<><col><c><v>TitleCase<><><>
+<col> <>
+<col>Feature<><col>No Convention?<>
+<col> <>
+<col>Function<><col><c><v>snake_case<><><>
+<col> <>
+<col>Lifetime<><col><c><v>lowercase<><><>
+<col> <>
+<col>Method<><col><c><v>snake_case<><><>
+<col> <>
+<col>Macro<><col><c><v>snake_case<>!<><>
+<col> <>
+<col>Module<><col><c><v>snake_case<><><>
+<col> <>
+<col>Static<><col><c><v>UPPER_SNAKE_CASE<><><>
+<col> <>
+<col>Trait<><col><c><v>TitleCase<><><>
+<col> <>
+<col>Type<><col><c><v>TitleCase<><><>
+<col> <>
+<col>Type Parameter<><col><c><v>T<><>  (Upper Case Letter)
+
+<c><v>TitleCase<><><>
+<col> <>
+<col>Variable<><col><c><v>snake_case<><><>
+<col> <>
+<col>Variable - Constants<><col><c><v>UPPER_SNAKE_CASE<><><><>
+
+See:
+<l>https://rust-lang.github.io/api-guidelines/naming.html<>
+
+
+## Naming Convention Details
+
+
+### Convention - Constants
+
+<cb><v>UPPER_SNAKE_CASE<><>
+
+
+### Convention - Constructors - General
+
+<cb>new<>
+
+<cb>with_<v>more_details<><>
+
+
+### Convention - Constructors - Conversion
+
+<cb>from_<v>some_other_type<><>
+
+
+### Convention - Crates
+
+No convention?
+
+
+### Convention - Modules
+
+<cb><v>snake_case<><>
+
+
+### Convention - Enum Variants
+
+<cb><v>TitleCase<><>
+
+
+### Convention - Features
+
+No convention?
+
+<m>See: C-FEATURE
+<l>https://rust-lang.github.io/api-guidelines/naming.html#c-feature<><>
+
+
+### Convention - Functions
+
+<cb><v>snake_case<><>
+
+
+### Convention - Lifetimes
+
+<cb>lowercase<>
+
+Use short words.
+Some recommend a single letter but I strongly disagree.
+
+
+### Convention - Macros
+
+<cb><v>snake_case<>!<>
+
+
+### Convention - Methods
+
+<cb><v>snake_case<><>
+
+
+### Convention - Statics
+
+<cb><v>UPPER_SNAKE_CASE<><>
+
+
+### Convention - Traits
+
+<cb><v>TitleCase<><>
+
+
+### Convention - Types
+
+<cb><v>TitleCase<><>
+
+
+### Convention - Type Parameters
+
+<cb><v>TitleCase<><>
+
+<cb><v>T<><>
+
+Short concise name in TitleCase.
+Some recommend a single uppercase letter.
+
+
+### Convention - Variables
+
+<cb><v>snake_case<><>
+
+
+### Convention - Variables - Constants
+
+<cb><v>UPPER_SNAKE_CASE<><>
 
 
 
@@ -4324,6 +4725,35 @@ fn <v>function_1<>() {
 }<>
 
 
+### Symbol #[]
+An attribute.
+Applies to item or module.
+
+<cb>#[<v>...<>]<>
+
+
+Example:
+
+<cb>#[deprecated]<>
+@
+@ #[, ]
+
+
+
+### Symbol #![]
+An attribute.
+Applies to the entire crate.
+
+<cb>#![<v>...<>]<>
+
+
+Example:
+
+<cb>#![allow(dead_code)]<>
+@
+@ #![, ]
+
+
 
 # Reference - Traits
 
@@ -4377,6 +4807,8 @@ Removing existing data from the heap memory.
 
 
 # Reserved Words
+
+### Reserved Words - Summary
 
 A reserved word is a keyword that has special meaning or purpose to Rust.
 It can not be used as the name of variable, function or anything else.
@@ -4447,6 +4879,17 @@ It can not be used as the name of variable, function or anything else.
 
 
 
+### Keyword - pub
+Defines a function, type or module as public.
+
+The default visibility is private.
+
+<cb>pub fn <v>public_function_1<>() {
+    <v>...<>
+}<>
+
+
+
 # Reference - Coming From Other Languages
 
 
@@ -4474,6 +4917,13 @@ Resource Acquisition Is Initialization
 
 
 
+### Attribute
+Metadata that relates to some crate, module or item.
+
+It is used by the compiler.
+
+
+
 ### Borrow Checker
 A component of the compiler that tracks lifetime and borrowing of a resource.
 
@@ -4484,6 +4934,11 @@ It ensures the borrows are valid and end before the owner is destroyed.
 ### Cargo
 Rust's build system and package manager.
 
+
+
+### Crate
+A compiled unit of a program.
+A libary that can be pulled into a project. Includes a list of dependencies.
 
 
 ### Destructor
@@ -4531,6 +4986,18 @@ Not supported in Rust.
 
 Use traits instead.
 
+
+
+### Module
+A group of functions and types within a crate.
+
+
+### Resource Acquisition Is Initialization (RAII)
+This simply means the constructor aquires a resource, the destructor releases it.
+
+Rust enforces this. So when a resource goes out of scope, it's destructor is called and the resource is released.
+
+(yes, RAII is a terrible name)
 
 
 ### Rustacean
