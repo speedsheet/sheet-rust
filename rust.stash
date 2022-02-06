@@ -178,6 +178,38 @@ println!("value = {}", <v>value<>);
 
 
 
+### Identifiers
+
+<cb>( <v>letter<> | <v>unicode letter<> | _ )   ( <v>digit<> | <v>letter<> | <v>unicode letter<> | _ ) *<>
+
+<cb>[_a-zA-Z<v>unicode<>][_0-9a-zA-Z<v>unicode<>]*<>
+
+Case sensitive.
+
+The first character must be an alphabet letter, unicode letter or underscore.
+The first character can not be a digit.
+All other characters can be alphabet letters, unicode letters, underscores or digits.
+A single underscore ('_') is not allowed.
+
+
+Examples:
+
+<cb><v>_identifier
+identifier
+식별자
+item_1<><>
+
+Invalid:
+
+<cb><v>_
+3_items
+🎈<><>
+@
+@ rust names, variable names, module names, class names
+@ rules, Valid, Name, Correct
+
+
+
 ### Program Entry Point / Main Function
 
 <cb>fn main() {
@@ -4282,7 +4314,7 @@ println!();
 
 <#>// Prints: "0 1 2 3 "<><>
 @
-@ printline
+@ print, no newline, macro
 
 
 
@@ -4312,7 +4344,7 @@ println!("My name is {}.", <v>name<>);
 
 <#>// Prints "My name is your_name_here".<><>
 @
-@ printline
+@ printline, macro
 
 
 
@@ -4514,6 +4546,8 @@ Some recommend a single uppercase letter.
 
 ### Symbol .
 
+Dot Operator
+
 The dot operator indentifies the next item as an instance field or method.
 @
 @ dot operator
@@ -4522,7 +4556,8 @@ The dot operator indentifies the next item as an instance field or method.
 
 ### Symbol ..
 
-An iterator.
+Iterator
+
 Returns values starting with the minimum value to up to the value before the end value.
 
 <cb>= <v>start<>..<v>end_plus_one<><>
@@ -4533,7 +4568,8 @@ Returns values starting with the minimum value to up to the value before the end
 
 ### Symbol ..=
 
-An iterator.
+Iterator
+
 Returns values starting with the starting value to up to and including the end value.
 
 <cb>= <v>start<>..=<v>end<><>
@@ -4544,7 +4580,7 @@ Returns values starting with the starting value to up to and including the end v
 
 ### Symbol ::
 
-Namespace Path Separator:
+Namespace Path Separator
 
 <cb><v>std<>::<v>vec<>::<v>Vec<><>
 
@@ -4558,7 +4594,7 @@ Static Method Accessor:
 
 ### Symbol '
 
-Loop Name:
+Defines Loop Name
 
 <cb>'<v>loop_name<> {
     <v>...<>
@@ -4594,7 +4630,7 @@ println!("{}", <v>borrower<>);
 
 ### Symbol &
 
-Bitwise And:
+Bitwise And
 
 <cb>= <v>a<> & <v>b<><><>
 
@@ -4616,7 +4652,7 @@ println!("Bitwise And = {:b}.", <v>bitwise_and<>);
 
 ### Symbol &&
 
-Logical And Operator:
+Logical And Operator
 
 <cb>= <v>a<> && <v>b<><><>
 
@@ -4660,7 +4696,7 @@ println!("Bitwise Or = {:b}.", <v>bitwise_or<>);
 
 ### Symbol ||
 
-A Logical Or Operator:
+A Logical Or Operator
 
 <cb>= <v>a<> || <v>b<><><>
 
@@ -4699,7 +4735,8 @@ Closure:
 
 
 ### Symbol ()
-Unit.
+
+Unit
 
 <cb> = ()<>
 
@@ -4710,6 +4747,7 @@ The empty value returned by a function that does not return a value.
 
 
 ### Symbol //
+
 Comment.
 
 <cb><#>/// this is a comment.<><>
@@ -4717,7 +4755,8 @@ Comment.
 
 
 ### Symbol ///
-Document comment.
+
+Document Comment
 
 <cb><#>/// Function document.<>
 fn <v>function_1<>() {
@@ -4726,7 +4765,9 @@ fn <v>function_1<>() {
 
 
 ### Symbol #[]
-An attribute.
+
+Attribute
+
 Applies to item or module.
 
 <cb>#[<v>...<>]<>
@@ -4741,7 +4782,9 @@ Example:
 
 
 ### Symbol #![]
-An attribute.
+
+Attribute
+
 Applies to the entire crate.
 
 <cb>#![<v>...<>]<>
