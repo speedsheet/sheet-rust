@@ -328,6 +328,32 @@ Run after compiling with rustc.
 
 
 
+# Configuration
+@
+@ cargo.toml
+
+
+### Configuration File
+
+<cb>Cargo.toml<>>
+
+
+
+### Configuration File - Sample
+
+<cb><#># Comments<>
+
+[package]
+name = "<v>AppName<>"
+version = "<v>v<>.<v>v<>.<v>v<>"
+edition = "<v>yyyy<>"
+
+[dependency]
+<v>library_1<> = "<v>v<>.<v>v<>.<v>v<>"
+<v>library_2<> = "^<v>v<>.<v>v<>"<>
+
+
+
 # Compiler
 
 
@@ -1555,7 +1581,10 @@ Floats: IEEE-754 Standard
 
 ## Collection Types
 
-Table<col>Vec\<<v>T<>><><col>Vector (Mutable List)<><>
+<table><col>Array<><col>Immutable List<>
+<col><c>HashMap\<<v>K<>, <v>V<>><><><col>Key Value Map<>
+<col>Tuple<><col>Immutable List of Mixed Items<>
+<col><c>Vec\<<v>T<>><><><col>Vector (Mutable List)<><>
 
 
 
@@ -1802,7 +1831,7 @@ println!("{}", <v>float_1<>);
 
 
 
-## Float Operations
+# Float Operations
 @
 @ f32, f64
 
@@ -1918,7 +1947,7 @@ println!("{}", <v>int_1<>);
 
 
 
-### Integer - 8-Bit, Unsigned - To Character
+## Integer - 8-Bit, Unsigned - To Character
 
 <cb>= <v>u8_1<> as char<>
 
@@ -2342,7 +2371,7 @@ println!("{}", <v>int_1<>);
 
 
 
-## Integer Operations
+# Integer Operations
 @
 @ i8, i8-only, i8s-only
 @ i16, i16-only, i16s-only
@@ -2591,21 +2620,6 @@ println!("{}", <v>string_4<>);
 
 
 
-# Unit
-
-<cb>= ()<>
-
-<cb>let <v>unit<> = ();<>
-
-
-The value returned from a function where no value was explicitly returned.
-@
-@ ()
-@ units, unit-only, units-only
-@ data type
-
-
-
 # String
 
 Stored a dynamic string on the heap.
@@ -2764,6 +2778,21 @@ println!("{}", <v>str_2<>);
 @ deref coercion, string.as_str(), .as_str()
 
 
+# Unit
+
+<cb>= ()<>
+
+<cb>let <v>unit<> = ();<>
+
+
+The value returned from a function where no value was explicitly returned.
+@
+@ ()
+@ units, unit-only, units-only
+@ data type
+
+
+
 # Array
 
 Type:
@@ -2797,10 +2826,10 @@ Example:
 @ new, define, instantiate
 
 
-## Array - Operations
+# Array - Operations
 
 
-### Array - Get
+## Array - Get
 
 <cb>= <v>array_1<>[<v>index<>]<>
 
@@ -2813,7 +2842,7 @@ Example:
 
 
 
-### Array - Get First
+## Array - Get First
 
 <cb>= <v>array_1<>[0]<>
 
@@ -2826,7 +2855,7 @@ Example:
 
 
 
-### Array - Get Last
+## Array - Get Last
 
 <cb>= <v>array_1<>[<v>index<>]<>
 
@@ -2837,7 +2866,7 @@ Example:
 
 
 
-### Array - Get Size
+## Array - Get Size
 
 <cb>= <v>array_1<>.len()<>
 
@@ -2888,7 +2917,7 @@ Empty Tuple:
 
 <cb>= ()<>
 
-Immutable listu of items.
+Immutable list of items.
 Can be of mixed types.
 
 
