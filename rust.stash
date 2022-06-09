@@ -2,22 +2,87 @@
 <b>Find what you need, faster.<>
 
 
-# Online Links
+<table><col><b>Basics<>
 
+<*><link "?q=hello+world">Hello World<>
+<link "?q=fundamentals-only">Language Fundamentals<>
+<link "?q=conventions-only">Naming Conventions<><>
+
+<*><link "?q=attributes-only">Attributes<>
+<link "?q=closure-only">Closures<>
+<link "?q=control-structure-only">Control Structures<>
+<link "?q=file+io">File IO<>
+<link "?q=functions-only">Functions<>
+<link "?q=macro-only">Macros<>
+<link "?q=module-only">Modules<>
+<link "?q=operators-only">Operators<>
+<link "?q=traits-only">Traits<><>
+
+<b>Control Structures<>
+
+<*><link "?q=if-else-only">If Else<>
+<link "?q=ternary-only">If / Inline<>
+<link "?q=for-only#for_-_basics">For Loop<>
+<link "?q=match-only#match_-_basics">Match<>
+<link "?q=while-only#while_-_basics">While<><>
+
+<b>Running Rust<>
+
+<*><link "?q=command-line-only">Command Line<>
+<link "?q=configuration-only">Configuration<><>
+
+<b>Reference<>
+
+<*><link "?q=online-docs-only">Online Docs<>
+<link "?q=reserved-only">Reserved Words<>
+<link "?q=terms-only">Rust Terms<>
+<link "?q=symbols-only">Symbol Lookup<><>
+
+<><col><b>Data Types<>
+
+<*><link "?q=variables-only">Variables<>
+<link "?q=ownership-only">Ownership<>
+<link "?q=literals-only">Literals<>
+<link "?q=data-types-only">Data Types<><>
+
+<*><link "?q=boolean-only">Bool<>
+<link "?q=byte-only">Byte<>
+<link "?q=char-only">Char<>
+<link "?q=float-only">Float<>
+<link "?q=integer-only">Integer<>
+<link "?q=str-only">Str<>
+<link "?q=string-only">String<><>
+
+<*><link "?q=unit-only">Unit<>
+<link "?q=box-only">Box<>
+<link "?q=enum-only">Enum<>
+<link "?q=option-only">Option<>
+<link "?q=range-only">Range<><>
+
+<*><link "?q=struct-only">Struct<>
+<link "?q=tuple-only">Tuple<>
+<link "?q=tuple-struct-only">Tuple Struct<><>
+
+<*><link "?q=array-only">Array<>
+<link "?q=hashmap-only">HashMap<>
+<link "?q=vec-only">Vec<><><>
+
+
+
+# Online Documents
+@
+@ links, online, online-docs-only
 
 ### Rust Official Site
 <l>https://www.rust-lang.org/<>
-
 
 ### Rust Documents
 <l>https://doc.rust-lang.org/book/title-page.html<>
 @
 @ documentation
 
-
 ### Rust - Download / Install Page
 <l>https://www.rust-lang.org/tools/install<>
-
 
 ### Rust - Online Playground
 <l>https://play.rust-lang.org/<>
@@ -25,7 +90,6 @@
 Code interactively on this page, no setup required.
 @
 @ repl, interactively
-
 
 ### Rust - Crates.io
 <l>crates.io<>
@@ -53,10 +117,14 @@ Compile:
 Run:
 
 <cb>main<>
+@
+@ Examples
 
 
 
 # Language Fundamentals
+@
+@ language-fundamentals-only, fundamentals-only
 
 
 
@@ -180,7 +248,7 @@ println!("value = {}", <v>value<>);
 
 ### Identifiers
 
-<cb>( <v>letter<> | <v>unicode letter<> | _ )   ( <v>digit<> | <v>letter<> | <v>unicode letter<> | _ ) *<>
+<cb>( <v>letter<> | <v>unicode_letter<> | _ )   ( <v>digit<> | <v>letter<> | <v>unicode_letter<> | _ ) *<>
 
 <cb>[_a-zA-Z<v>unicode<>][_0-9a-zA-Z<v>unicode<>]*<>
 
@@ -297,7 +365,42 @@ From Terminal:
 
 
 
-# Command Line
+# Command-line
+@
+@ commandline, command line, cli, cli-only, command-line-only, commandline-only
+
+
+
+### Rust - Update
+
+<cb>rustup update<>
+@
+@ rustup
+
+
+
+### Program - Create
+
+<cb>cargo new <v>program_name<><>
+
+Creates a skeleton program complete with source folder, git files and Cargo.toml.
+
+
+Creates:
+
+<cb><v>program_name<>/
+
+    .gitignore
+    Cargo.toml
+
+    .git/
+
+    src/
+
+        main.rs<>
+@
+@ cargo new, skeleton, scaffolding
+
 
 
 ### Program - Compile Executable
@@ -330,12 +433,12 @@ Run after compiling with rustc.
 
 # Configuration
 @
-@ cargo.toml
+@ cargo.toml, configuration-only
 
 
 ### Configuration File
 
-<cb>Cargo.toml<>>
+<cb>Cargo.toml<>
 
 
 
@@ -368,6 +471,7 @@ edition = "<v>yyyy<>"
 # Operators
 @
 @ Operators, Operations, Expressions
+@ operators-only
 
 
 ## Arithmetic Operators
@@ -478,13 +582,124 @@ println!("{} is {} than 5.", <v>a<>, <v>more_or_less<>);
 
 <#>// Prints "10 is more than 5."<><>
 @
-@ Conditional, iif, expression
+@ Ternary conditional operator, tertiary, expression
+@ Inline If, iif, if else
+@ ternary-only
 
 
 
 # Control Structures
 @
-@ statements, flow, control-only
+@ statements, flow
+@ control-only, control-structure-only, control-structures-only
+@ control-statements-only
+
+
+
+## Control Structures - Basics
+
+<table><col>If Else     <><col><c>if <v>expression<> {
+    <v>...<>
+}<><>
+<col> <>
+<col> <>
+<col><><col><c>if <v>expression<> {
+    <v>...<>
+}
+else if <v>expression<> {
+    <v>...<>
+}
+else {
+    <v>...<>
+}<><>
+<col> <>
+<col> <>
+<col>For<><col><c>for <v>value<> in <v>start<>..<v>end_plus_one<> {
+    <v>...<>
+}<><>
+<col> <>
+<col> <>
+<col><><col><c>for <v>value<> in <v>start<>..=<v>end<> {
+    <v>...<>
+}<><>
+<col> <>
+<col> <>
+<col><><col><c>for <v>value<> in <v>iterator<> {
+    <v>...<>
+}<><>
+<col> <>
+<col> <>
+<col>Loop<><col><c>loop {
+    <v>...<>
+}<><>
+<col> <>
+<col> <>
+<col><><col><c>loop {
+    <v>...<>
+    continue;
+    <v>...<>
+    break;
+    <v>...<>
+}<><>
+<col> <>
+<col> <>
+<col>Match<><col><c>match <v>item<> {
+    <v>value_1<> => {
+        <v>...<>
+    }
+    <v>value_2<> | <v>value_3<> => {
+        <v>...<>
+    }
+    <v>min_1<>..<v>max_plus_one_1<> => {
+        <v>...<>
+    }
+    <v>bind_value<> @ <v>min_2<>..<v>max_plus_one_2<> => {
+        <v>...<>
+    }
+    _ => {
+        <v>...<>
+    }
+}<><>
+<col> <>
+<col> <>
+<col>While<><col><c>while <v>expression<> {
+    <v>...<>
+}<><><>
+
+
+
+## If Else
+
+<cb>if <v>expression<> {
+    <v>...<>
+}<>
+
+<cb>if <v>expression<> {
+    <v>...<>
+}
+else if <v>expression<> {
+    <v>...<>
+}
+else {
+    <v>...<>
+}<>
+
+
+Example:
+
+<cb>let <v>value<> = 42;
+
+if <v>value<> \< 42 {
+    println!("{} is less than 42.", <v>value<>);
+}
+else if <v>value<> == 42 {
+    println!("{} is 42.", <v>value<>);
+}
+else  {
+    println!("{} is greater than 42.", <v>value<>);
+}<>
+@
+@ else, if-only, if-else, if-else-only
 
 
 
@@ -550,44 +765,9 @@ println!();
 
 
 
-## If Else
-
-<cb>if <v>expression<> {
-    <v>...<>
-}<>
-
-<cb>if <v>expression<> {
-    <v>...<>
-}
-else if <v>expression<> {
-    <v>...<>
-}
-else {
-    <v>...<>
-}<>
-
-
-Example:
-
-<cb>let <v>value<> = 42;
-
-if <v>value<> \< 42 {
-    println!("{} is less than 42.", <v>value<>);
-}
-else if <v>value<> == 42 {
-    println!("{} is 42.", <v>value<>);
-}
-else  {
-    println!("{} is greater than 42.", <v>value<>);
-}<>
-@
-@ else, if-only, if-else
-
-
-
 ## Loop
 @
-@ loop-only
+@ loop-only, loops-only
 
 
 ### Loop
@@ -834,6 +1014,8 @@ while <v>value<> \< 5 {
 }
 
 <#>\\ Prints values 0, 1, 2, 3, 4.<><>
+@
+@ while-only
 
 
 
@@ -1106,7 +1288,7 @@ Example:
 
 Creates a global immutable variable.
 
-Static data is stored in the binary
+Static data is stored in the compiled binary.
 Statics can be created inside or outside functions.
 You must declare the type for a static variable (no type inferencing).
 
@@ -1118,6 +1300,9 @@ Example:
 println!("{}", <v>INT_1<>);
 
 <#>// Prints: "42"<><>
+
+
+Official Rust Doc: <l "https://doc.rust-lang.org/std/keyword.static.html">Static<>
 @
 @ immutable, static, global, scope
 
@@ -1130,7 +1315,9 @@ println!("{}", <v>INT_1<>);
 
 Creates a global immutable variable.
 
-Static data is stored in the binary
+<c>'static<> indicates the value lives for the entire life of the program.
+
+Static data is stored in the compiled binary.
 Statics can be created inside or outside functions.
 You must declare the type for a static variable (no type inferencing).
 
@@ -1149,6 +1336,7 @@ println!("{}", <v>STR_1<>);
 
 <#>// Prints: "42"<><>
 @
+@ static, 'static
 @ immutable, static, global, scope
 
 
@@ -1344,6 +1532,8 @@ The compiler replace every use of the constant with the actual value at compile 
 
 
 # Ownership
+@
+@ ownership-only
 
 
 ### Ownership - Rules
@@ -1529,12 +1719,9 @@ fn main() {
 
 
 
-<>
-
-
 # Data Types
 @
-@ basics
+@ standard, builtin, data-types-only
 
 
 ## Standard Types
@@ -1674,14 +1861,14 @@ println!("{}", <v>byte_1<> as char);
 //    x<><>
 @
 @ u8, b''
-@ bytes, bytes-only, bytess-only
+@ bytes, byte-only, bytes-only
 @ data type
 
 
 # Byte - Operations
 @
 @ u8, b''
-@ bytes, bytes-only, bytess-only
+@ bytes, byte-only, bytes-only
 @ data type
 
 
@@ -1860,6 +2047,8 @@ println!("{} squared is {}.", <v>value<>, <v>square<>);
 
 
 # Integer
+@
+@ int-only, integer-only, integers-only
 
 
 ## Integer - 8-Bit, Signed
@@ -2793,289 +2982,6 @@ The value returned from a function where no value was explicitly returned.
 
 
 
-# Array
-
-Type:
-
-<cb>: [<v>type<>, <v>size<>]<>
-
-Immutable list of items.
-Must be of the same type.
-
-
-Official Docs:
-<l>https://doc.rust-lang.org/std/primitive.array.html<>
-@
-@ arrays, array-only, arrays-only
-@ data type
-
-
-## Array - Create
-
-<cb>= [<v>value_1<>, <v>value_2<>, <v>value_3<>]<>
-
-<cb>let <v>array_1<>: [<v>type<>, <v>size<>] = [<v>...<>]<>
-
-
-Example:
-
-<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];<>
-
-<cb>let <v>array_1<>: [<v>i32<>, <v>3<>] = [<v>1<>, <v>2<>, <v>3<>];<>
-@
-@ new, define, instantiate
-
-
-# Array - Operations
-
-
-## Array - Get
-
-<cb>= <v>array_1<>[<v>index<>]<>
-
-
-Example:
-
-<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
-
-<v>first<> = <v>array_1<>[<v>0<>];<>
-
-
-
-## Array - Get First
-
-<cb>= <v>array_1<>[0]<>
-
-
-Example:
-
-<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
-
-<v>first = <v>array_1<>[<v>0<>];<>
-
-
-
-## Array - Get Last
-
-<cb>= <v>array_1<>[<v>index<>]<>
-
-
-Example:
-
-<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
-
-
-
-## Array - Get Size
-
-<cb>= <v>array_1<>.len()<>
-
-Returns: Integer
-@
-@ .len()
-@ length, count
-
-
-
-# Box
-
-<cb>= Box::new(<v>value<>)<>
-
-<cb>let <v>box_1<>: Box\<<v>T<>> = Box::new(<v>value<>);<>
-
-Type:
-
-<cb>Box\<<v>T<>><>
-
-
-A box is a pointer to memory on the heap.
-
-Creating a box creates data on the heap.
-
-
-Example:
-
-<cb>let <v>box_1<> = Box::new(<v>42<>_i32);
-
-println!("{}", <v>box_1<>);
-
-<#>// Prints: "42"<><>
-
-
-Official Docs:
-<l>https://doc.rust-lang.org/std/boxed/struct.Box.html<>
-@
-@ Box::new(), Box\<T>
-
-
-
-# Tuple
-
-<cb>= (<v>value_1<>, <v>value_2<>, <v>value_3<>)<>
-
-Empty Tuple:
-
-<cb>= ()<>
-
-Immutable list of items.
-Can be of mixed types.
-
-
-Example:
-
-<cb>let <v>tuple_1<> = [<v>1<>, <v>'2'<>, <v>true<>]<>
-@
-@ tuples, tuple-only, tuples-only
-@ data type
-
-
-
-# Struct
-@
-@ structs, struct-only, structs-only, structures, structure-only, structures-only
-@ tuple-struct-only, tuple-structs-only
-@ data type
-
-
-## Struct - Basics
-
-Standard Struct:
-
-<cb>struct <v>Struct1<> {
-   <v>field_1<>: <v>type<>,
-   <v>field_2<>: <v>type<>,
-   <v>field_3<>: <v>type<>
-}
-
-let <v>value_1<> = <v>Strut1<> {
-   <v>field_1<>: <v>value<>,
-   <v>field_2<>: <v>value<>,
-   <v>field_3<>: <v>value<>
-};
-
-let <v>field_1<> = <v>value_1<>.<v>field_1<>;<>
-
-
-Tuple Struct:
-
-<cb>struct <v>Struct1<> { <v>type<>, <v>type<>, <v>type<> };
-
-let <v>value_1<> = <v>Strut1<> {<v>value<>, <v>value<>, <v>value<>};
-
-let <v>first_field<> = <v>value_1<>.<v>0<>;<>
-@
-@ struct-only, structs-only, structure-only, structures-only
-
-
-
-# Struct - Define
-
-<cb>struct <v>Struct1<> {
-   <v>field_1<>: <v>type<>,
-   <v>field_2<>: <v>type<>,
-   <v>field_3<>: <v>type<>
-}<>
-
-
-Defines a structure type.
-
-Note:
-No semicolon (<c>;<>) is required at the end of the definition.
-
-
-Example:
-
-<cb>struct <v>Point<> {
-    <v>x<>: i32,
-    <v>y<>: i32
-}
-
-let <v>point_1<> = <v>Point<> {
-    x: 10,
-    y: 20
-};
-
-println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
-
-<#>// Prints: "Point 1: 10, 20"<><>
-@
-@ structs, struct-only, structs-only, structures, structure-only, structures-only
-@ tuple-struct-only, tuple-structs-only
-@ data type
-
-
-
-# Struct - Operations
-@
-@ structs, struct-only, structs-only, structures, structure-only, structures-only
-@ tuple-struct-only, tuple-structs-only
-@ data type
-
-
-
-### Struct - Assign
-
-<cb>let <v>struct_1<> = <v>Strut1<> {
-   <v>field_1<> = <v>value<>,
-   <v>field_2<> = <v>value<>,
-   <v>field_3<> = <v>value<>,
-};<>
-
-
-
-### Structure - Get Field Value
-
-<cb>= <v>struct_1<>.<v>field_1<><>
-
-<cb>let <v>field_1<> = <v>struct_1<>.<v>field_1<>;<>
-
-
-
-# Tuple Struct - Define
-
-<cb>struct <v>TupleStruct1<> { <v>type<>, <v>type<>, <v>type<> }<>
-
-
-Defines a tuple struct.
-
-Note:
-A semicolon (<c>;<>) is required at the end of the definition.
-
-
-Example:
-
-<cb>struct <v>Point<> (<v>i32<>, <v>i32<>);
-
-let <v>point_1<> = <v>Point<>(<v>10<>, <v>20<>);
-
-println!("Point 1: {}, {}", <v>point_1<>.0, <v>point_1<>.1);
-
-<#>// Prints: "Point 1: 10, 20"<><>
-
-
-
-# Tuple Struct - Operations
-@
-@ tuple structs
-@ tuple-struct-only, tuple-structs-only, tuple-structure-only, tuple-structures-only
-@ data type
-
-
-
-### Tuple Struct - Assign
-
-<cb>let <v>value_1<> = <v>TupleStrut1<> {<v>value<>, <v>value<>, <v>value<>};<>
-
-
-
-### Tuple Structure - Get Field Value
-
-<cb>= <v>value_1<>.<v>0<>;<>
-
-<cb>let <v>first_field<> = <v>value_1<>.<v>0<>;<>
-
-
-
 # Enum
 @
 @ enums, enum-only, enums-only
@@ -3216,6 +3122,350 @@ match <v>optional_int<> {
 
 
 
+# Box
+
+<cb>= Box::new(<v>value<>)<>
+
+<cb>let <v>box_1<>: Box\<<v>T<>> = Box::new(<v>value<>);<>
+
+Type:
+
+<cb>Box\<<v>T<>><>
+
+
+A box is a pointer to memory on the heap.
+
+Creating a box creates data on the heap.
+
+
+Example:
+
+<cb>let <v>box_1<> = Box::new(<v>42<>_i32);
+
+println!("{}", <v>box_1<>);
+
+<#>// Prints: "42"<><>
+
+
+Official Docs:
+<l>https://doc.rust-lang.org/std/boxed/struct.Box.html<>
+@
+@ Box::new(), Box\<T>
+@ box-only
+
+
+
+# Range
+
+<cb>= <v>start<>..<v>end_plus_one<><>
+
+<cb>= <v>start<>..=<v>end<><>
+
+Usage:
+
+<cb>use std::ops::Range;
+
+let <v>range_1<>: Range\<i32> = <v>0<>..<v>4<>;<>
+
+Type:
+
+<cb>Range\<<v>type<>><>
+
+
+Official Docs:
+<l>https://doc.rust-lang.org/std/ops/struct.Range.html<>
+
+
+Examples:
+
+With <c>..<> :
+
+<cb>use std::ops::Range;
+
+let <v>range_1<>: Range\<i32> = <v>0<>..<v>4<>;
+
+for <v>value<> in <v>range_1<> {
+    print!("{} ", <v>value<>);
+}
+println!();
+
+<#>// Prints: 0 1 2 3 <><>
+
+With <c>..=<> :
+
+<cb>use std::ops::Range;
+
+let <v>range_1<>: Range\<i32> = <v>0<>..=<v>3<>;
+
+for <v>value<> in <v>range_1<> {
+    print!("{} ", <v>value<>);
+}
+println!();
+
+<#>// Prints: 0 1 2 3 <><>
+@
+@ std::ops::Range
+@
+@ ranges, range-only, ranges-only
+@ data type
+
+
+
+# Struct
+@
+@ structs, struct-only, structs-only, structures, structure-only, structures-only
+@ tuple-struct-only, tuple-structs-only
+@ data type
+
+
+## Struct - Basics
+
+Standard Struct:
+
+<cb>struct <v>Struct1<> {
+   <v>field_1<>: <v>type<>,
+   <v>field_2<>: <v>type<>,
+   <v>field_3<>: <v>type<>
+}
+
+let <v>value_1<> = <v>Strut1<> {
+   <v>field_1<>: <v>value<>,
+   <v>field_2<>: <v>value<>,
+   <v>field_3<>: <v>value<>
+};
+
+let <v>field_1<> = <v>value_1<>.<v>field_1<>;<>
+
+
+Tuple Struct:
+
+<cb>struct <v>Struct1<> { <v>type<>, <v>type<>, <v>type<> };
+
+let <v>value_1<> = <v>Strut1<> {<v>value<>, <v>value<>, <v>value<>};
+
+let <v>first_field<> = <v>value_1<>.<v>0<>;<>
+@
+@ struct-only, structs-only, structure-only, structures-only
+
+
+
+# Struct - Define
+
+<cb>struct <v>Struct1<> {
+   <v>field_1<>: <v>type<>,
+   <v>field_2<>: <v>type<>,
+   <v>field_3<>: <v>type<>
+}<>
+
+
+Defines a structure type.
+
+Note:
+No semicolon (<c>;<>) is required at the end of the definition.
+
+
+Example:
+
+<cb>struct <v>Point<> {
+    <v>x<>: i32,
+    <v>y<>: i32
+}
+
+let <v>point_1<> = <v>Point<> {
+    x: 10,
+    y: 20
+};
+
+println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
+
+<#>// Prints: "Point 1: 10, 20"<><>
+@
+@ structs, struct-only, structs-only, structures, structure-only, structures-only
+@ tuple-struct-only, tuple-structs-only
+@ data type
+
+
+
+# Struct - Operations
+@
+@ structs, struct-only, structs-only, structures, structure-only, structures-only
+@ tuple-struct-only, tuple-structs-only
+@ data type
+
+
+
+### Struct - Assign
+
+<cb>let <v>struct_1<> = <v>Strut1<> {
+   <v>field_1<> = <v>value<>,
+   <v>field_2<> = <v>value<>,
+   <v>field_3<> = <v>value<>,
+};<>
+
+
+
+### Structure - Get Field Value
+
+<cb>= <v>struct_1<>.<v>field_1<><>
+
+<cb>let <v>field_1<> = <v>struct_1<>.<v>field_1<>;<>
+
+
+
+# Tuple
+
+<cb>= (<v>value_1<>, <v>value_2<>, <v>value_3<>)<>
+
+Empty Tuple:
+
+<cb>= ()<>
+
+Immutable list of items.
+Can be of mixed types.
+
+
+Example:
+
+<cb>let <v>tuple_1<> = [<v>1<>, <v>'2'<>, <v>true<>]<>
+@
+@ tuples, tuple-only, tuples-only
+@ data type
+
+
+
+# Tuple Struct - Define
+
+<cb>struct <v>TupleStruct1<> { <v>type<>, <v>type<>, <v>type<> }<>
+
+
+Defines a tuple struct.
+
+Note:
+A semicolon (<c>;<>) is required at the end of the definition.
+
+
+Example:
+
+<cb>struct <v>Point<> (<v>i32<>, <v>i32<>);
+
+let <v>point_1<> = <v>Point<>(<v>10<>, <v>20<>);
+
+println!("Point 1: {}, {}", <v>point_1<>.0, <v>point_1<>.1);
+
+<#>// Prints: "Point 1: 10, 20"<><>
+@
+@ tuple structs
+@ tuple-struct-only, tuple-structs-only, tuple-structure-only, tuple-structures-only
+@ data type
+
+
+
+# Tuple Struct - Operations
+@
+@ tuple structs
+@ tuple-struct-only, tuple-structs-only, tuple-structure-only, tuple-structures-only
+@ data type
+
+
+
+### Tuple Struct - Assign
+
+<cb>let <v>value_1<> = <v>TupleStrut1<> {<v>value<>, <v>value<>, <v>value<>};<>
+
+
+
+### Tuple Structure - Get Field Value
+
+<cb>= <v>value_1<>.<v>0<>;<>
+
+<cb>let <v>first_field<> = <v>value_1<>.<v>0<>;<>
+
+
+
+# Array
+
+Type:
+
+<cb>: [<v>type<>, <v>size<>]<>
+
+Immutable list of items.
+Must be of the same type.
+
+
+Official Docs:
+<l>https://doc.rust-lang.org/std/primitive.array.html<>
+@
+@ arrays, array-only, arrays-only
+@ data type
+
+
+## Array - Create
+
+<cb>= [<v>value_1<>, <v>value_2<>, <v>value_3<>]<>
+
+<cb>let <v>array_1<>: [<v>type<>, <v>size<>] = [<v>...<>]<>
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];<>
+
+<cb>let <v>array_1<>: [<v>i32<>, <v>3<>] = [<v>1<>, <v>2<>, <v>3<>];<>
+@
+@ new, define, instantiate
+
+
+# Array - Operations
+
+
+## Array - Get
+
+<cb>= <v>array_1<>[<v>index<>]<>
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
+
+<v>first<> = <v>array_1<>[<v>0<>];<>
+
+
+
+## Array - Get First
+
+<cb>= <v>array_1<>[0]<>
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
+
+<v>first = <v>array_1<>[<v>0<>];<>
+
+
+
+## Array - Get Last
+
+<cb>= <v>array_1<>[<v>index<>]<>
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
+
+
+
+## Array - Get Size
+
+<cb>= <v>array_1<>.len()<>
+
+Returns: Integer
+@
+@ .len()
+@ length, count
+
+
+
 # HashMap
 
 Type:
@@ -3309,62 +3559,6 @@ println!("{}", <v>value<>.unwrap());
 
 
 ## HashMap - Operations
-
-
-
-# Range
-
-<cb>= <v>start<>..<v>end_plus_one<><>
-
-<cb>= <v>start<>..=<v>end<><>
-
-Usage:
-
-<cb>use std::ops::Range;
-
-let <v>range_1<>: Range\<i32> = <v>0<>..<v>4<>;<>
-
-Type:
-
-<cb>Range\<<v>type<>><>
-
-
-Official Docs:
-<l>https://doc.rust-lang.org/std/ops/struct.Range.html<>
-
-
-Examples:
-
-With <c>..<> :
-
-<cb>use std::ops::Range;
-
-let <v>range_1<>: Range\<i32> = <v>0<>..<v>4<>;
-
-for <v>value<> in <v>range_1<> {
-    print!("{} ", <v>value<>);
-}
-println!();
-
-<#>// Prints: 0 1 2 3 <><>
-
-With <c>..=<> :
-
-<cb>use std::ops::Range;
-
-let <v>range_1<>: Range\<i32> = <v>0<>..=<v>3<>;
-
-for <v>value<> in <v>range_1<> {
-    print!("{} ", <v>value<>);
-}
-println!();
-
-<#>// Prints: 0 1 2 3 <><>
-@
-@ std::ops::Range
-@
-@ ranges, range-only, ranges-only
-@ data type
 
 
 
@@ -3546,6 +3740,7 @@ Official Docs:
 @
 @ #[, ], #[]
 @ #![, ], #![]
+@ attribute-only, attributes-only
 
 
 
@@ -3982,6 +4177,34 @@ let <v>closure_1<> = || println!("Value 1 = {}", <v>value<>);
 
 
 
+# Macros
+@
+@ macro-only, macros-only
+
+
+# Macros - Standard
+
+
+### Todo Macro
+
+<cb>todo!();<>
+
+
+Use in functions where you haven't coded the result.
+
+Prevents compiler errors while coding.
+
+
+<cb>fn <v>incomplete_function<>() {
+    todo!();
+}<>
+
+Official Doc: <l https://doc.rust-lang.org/std/macro.todo.html>Macro std::todo<>
+@
+@ todo!()
+
+
+
 # Modules
 
 A module is a container for functions and types.
@@ -4161,7 +4384,10 @@ println!("11 decimal is 1011 binary.", <v>value<>, <v>binary<>);<>
 
 
 
-# Files
+# File IO
+@
+@ files-only, file-only, file-io-only
+
 
 
 ### Binary File - Read
@@ -4420,9 +4646,10 @@ Configure to this directory with <c>RUSTUP_HOME<>
 
 
 
-# Reference - Naming Conventions
+# Naming Conventions
 @
-@ names naming
+@ Names, naming-conventions-only, conventions-only
+
 
 ## Naming Conventions - Basics
 
@@ -4466,6 +4693,7 @@ Configure to this directory with <c>RUSTUP_HOME<>
 
 See:
 <l>https://rust-lang.github.io/api-guidelines/naming.html<>
+
 
 
 ## Naming Convention Details
@@ -4571,6 +4799,8 @@ Some recommend a single uppercase letter.
 
 
 # Reference - Symbols
+@
+@ symbols-only
 
 
 ### Symbol .
@@ -4654,6 +4884,27 @@ println!("{}", <v>borrower<>);
 //    "42"<><>
 @
 @ binary
+
+
+
+### Symbol &
+
+Pointer to memory location.
+
+
+Examples:
+
+New pointer to a variable:
+
+<cb>let <v>a<> = &<v>b<>;<>
+
+Pointer parameter to outside variable:
+
+<cb>fn print(<v>value<>: &str) {
+    <v>...<>
+}<>
+@
+@ pointer
 
 
 
@@ -4827,6 +5078,14 @@ Example:
 
 
 
+### Symbol 'static
+
+Defines the lifetime of a variable to the lifetime of the program.
+
+Official Rust Doc: <l "https://doc.rust-lang.org/rust-by-example/scope/lifetime/static_lifetime.html">Static Lifetime<>
+
+
+
 # Reference - Traits
 
 
@@ -4879,6 +5138,10 @@ Removing existing data from the heap memory.
 
 
 # Reserved Words
+@
+@ reserved-words-only, reserved-only
+@ keywords-only, keyword-only
+
 
 ### Reserved Words - Summary
 
@@ -4963,6 +5226,37 @@ The default visibility is private.
 
 
 # Reference - Coming From Other Languages
+
+
+### Classes
+Rust does not support classes.
+
+Use <l "?=struct-only">structures<> and <l "?trait-only">traits<> instead.
+
+
+
+### Class Constructors
+Rust does not support constructors.
+
+Implement a static function called <c>new<> instead.
+<c>new<> is by convention.
+
+Example:
+
+<cb>pub struct <v>Item<> {
+    pub <v>id<>: usize,
+    pub <v>name<>: Option\<String>
+}
+
+impl <v>Item<> {
+    pub fn new(<v>name<>: &str) {
+        let <v>id<> = <v>next_id_function<>();
+        <v>Item<> {
+            <v>id<>: <v>id<>,
+            <v>name<>: Some(<v>name<>.to_owned())
+        }
+    }
+}<>
 
 
 ### Dictionary, Map

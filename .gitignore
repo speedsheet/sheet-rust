@@ -1,2 +1,4 @@
 .DS_Store
-rust-next.stash
+*next.stash
+backups/
+wip/
