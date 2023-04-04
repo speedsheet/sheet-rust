@@ -85,6 +85,11 @@
 @
 @ documentation
 
+### Rust Reference
+<l>https://doc.rust-lang.org/stable/std/<>
+@
+@ documents
+
 ### Rust - Download / Install Page
 <l>https://www.rust-lang.org/tools/install<>
 
@@ -94,6 +99,11 @@
 Code interactively on this page, no setup required.
 @
 @ repl, interactively
+
+### Rust - Source Code
+<l>https://github.com/rust-lang/rust<>
+@
+@ github
 
 ### Rust - Crates.io
 <l>crates.io<>
@@ -261,9 +271,9 @@ println!("value = {}", <v>value<>);
 
 Case sensitive.
 
-The first character must be an alphabet letter, unicode letter or underscore.
+The first character must be an alphabet letter, Unicode letter or underscore.
 The first character can not be a digit.
-All other characters can be alphabet letters, unicode letters, underscores or digits.
+All other characters can be alphabet letters, Unicode letters, underscores or digits.
 A single underscore ('_') is not allowed.
 
 
@@ -390,7 +400,7 @@ Typically:
 
 <cb>RUSTUP_HOME<>
 
-Locates the RustUp directory.
+Locates the Rustup directory.
 
 Typically:
 
@@ -435,6 +445,13 @@ From Terminal:
 ### Rustup - Linux / Mac - Uninstall
 
 <cb>rustup self uninstall<>
+
+
+### Rustup - Windows - Install
+
+<l>https://www.rust-lang.org/tools/install<>
+
+Download <c>rustup<> installer from the official download page.
 
 
 
@@ -537,7 +554,17 @@ Creates:
 └── src/
 	└── lib.rs<>
 @
-@ cargo new, skeleton, scaffolding
+@ cargo new, skeleton, scaffolding, crate
+
+
+
+### Cargo - Add Library / Crate
+
+<cb>cargo add <v>crate_name<><>
+
+Adds the crate dependency to the cargo.toml file.
+@
+@ dependency, dependencies, crates, libraries
 
 
 
@@ -593,11 +620,11 @@ Requires the target be added with rustup.
 
 
 
-### Cargo - Check Depedencies
+### Cargo - Check Dependencies
 
 <cb>cargo check<>
 
-Checks that all the depedencies are present and have the correct versions.
+Checks that all the dependencies are present and have the correct versions.
 
 
 
@@ -631,6 +658,32 @@ Tests Directory:
 └── tests/<>
 @
 @ project, application
+
+
+
+### Cargo - Update Library
+
+<cb>cargo update -p <v>library_name<><>
+
+
+Updates a library or crate.
+
+Lists any changes.
+@
+@ crates
+
+
+
+### Cargo - Update Libraries
+
+<cb>cargo update<>
+
+
+Updates all libraries and crates.
+
+Lists the changes.
+@
+@ crates, all
 
 
 
@@ -758,7 +811,7 @@ Creates a production ready version with compiler debug code removed.
 
 Creates a library file (extension .lib).
 @
-@ rustc, create, .lib
+@ rustc, create, .lib, crate
 
 
 
@@ -785,20 +838,56 @@ Run after compiling with <c>rustc<>.
 Run after compiling with <c>rustc --test<>.
 
 
-
-## Rustup - Targets
+## Rustup
 @
-@ target-only, targets-only
 @ rustup-only
 
 
-### Rustup - Target - Install Target
+### Rustup - Components - List Installed
+
+<cb>rustup component list --installed<>
+
+Lists all installed Rustup components.
+@
+@ --installed
+
+
+
+### Rustup - Configuration - Show
+
+<cb>rustup show<>
+
+Shows rustup configuration including available targets, default target and current tool chains.
+
+
+
+### Rustup - Targets
+@
+@ target-only, targets-only
+
+
+#### Rustup - Target - Install Target
 
 <cb>rustup target add <v>target_name<><>
 
 
 
-### Rustup - Target - Install Target - MacOS x86
+#### Rustup - Target - Install Target - MacOS Apple Silicon
+
+<cb>rustup target add aarch64-apple-darwin<>
+
+Usage:
+
+<cb>rustup target add aarch64-apple-darwin
+cargo build --release --target aarch64-apple-darwin<>
+@
+@ apple, darwin
+@ add, install
+@ aarch64-apple-darwin, m1, m2
+
+
+
+#### Rustup - Target - Install Target - MacOS x86
 
 <cb>rustup target add x86_64-apple-darwin<>
 
@@ -813,7 +902,7 @@ cargo build --release --target x86_64-apple-darwin<>
 
 
 
-### Rustup - Target - Install Target - Raspberry Pi 4
+#### Rustup - Target - Install Target - Raspberry Pi 4
 
 <cb>rustup target add armv7-unknown-linux-gnueabihf<>
 
@@ -834,38 +923,108 @@ Requires:
 
 
 
-### Rustup - Target - Install Target - Windows
+#### Rustup - Target - Install Target - Windows ARM
+
+<cb>rustup target add i686-pc-windows-msvc<>
+
+Usage:
+
+<cb>rustup target add i686-pc-windows-msvc
+rustup toolchain install stable-i686-pc-windows-msvc
+cargo build --release --target i686-pc-windows-msvc<>
+
+
+Requires:
+
+<cb>stable-i686-pc-windows-msvc<>
+
+<cb>brew install stable-i686-pc-windows-msvc
+
+	<#># Or...<>
+
+rustup toolchain install stable-i686-pc-windows-msvc<>
+@
+@ add, install
+@ i686-pc-windows-msvc, stable-i686-pc-windows-msvc
+
+
+
+#### Rustup - Target - Install Target - Windows Intel
+
+Preferred:
+
+<cb>rustup target add x86_64-pc-windows-msvc<>
+
+From Non Windows System:
 
 <cb>rustup target add x86_64-pc-windows-gnu<>
 
 Usage:
 
-<cb>rustup target add x86_64-pc-windows-gnu
-rustup toolchain install stable-x86_64-pc-windows-gnu
-cargo build --release --target stable-x86_64-pc-windows-gnu<>
+<cb>rustup target add x86_64-pc-windows-msvc
+rustup toolchain install stable-x86_64-pc-windows-msvc
+cargo build --release --target stable-x86_64-pc-windows-msvc<>
 
 
 Requires:
 
-<cb>stable-x86_64-pc-windows-gnu<>
+<cb>stable-x86_64-pc-windows-msvc<>
 
-<cb>brew install stable-x86_64-pc-windows-gnu
+<cb>brew install stable-x86_64-pc-windows-msvc
 
 	<#># Or...<>
 
-rustup toolchain install stable-x86_64-pc-windows-gnu<>
+rustup toolchain install stable-x86_64-pc-windows-msvc<>
 @
 @ add, install
+@ x86_64-pc-windows-msvc, stable-x86_64-pc-windows-msvc
 @ x86_64-pc-windows-gnu, stable-x86_64-pc-windows-gnu
 
 
 
-### Rustup - Targets - List All
+#### Rustup - Target - Uninstall Target
+
+<cb>rustup target remove <v>target_name<><>
+@
+@ remove, delete
+
+
+
+#### Rustup - Targets - List All
 
 <cb>rustup target list<>
 
 
 Lists all available targets.
+
+
+
+## Clippy
+@
+@ clippy-only
+
+
+### Clippy - Help
+
+<cb>cargo clippy -- -h<>
+@
+@ cargo clippy, --, -h, --help
+
+
+
+### Clippy - Lint
+
+<cb>cargo clippy<>
+@
+@ cargo clippy
+
+
+
+### Clippy - Lint Pedantic
+
+<cb>cargo clippy -- -W clippy::pedantic<>
+@
+@ cargo clippy, --, -W, clippy::pedantic, pedantic
 
 
 
@@ -1152,7 +1311,7 @@ else {
 @ else, if-only, if-else, if-else-only
 
 
-### If Else
+### If - If Else
 
 
 <cb>if <v>expression<> {
@@ -1186,9 +1345,9 @@ else  {
 
 
 
-### If Else - If Let
+### If - If Let
 ,
-<cb>if let <v>value<> = <v>expression<> {
+<cb>if let <v>pattern<> = <v>expression<> {
 	<v>...<>
 }
 else {
@@ -1199,7 +1358,7 @@ else {
 Equivalent To:
 
 <cb>match <v>expression<> {
-	<v>value<> => {
+	<v>pattern<> => {
 		<v>...<>
 	}
 	_ => {
@@ -1209,7 +1368,7 @@ Equivalent To:
 
 
 Use where you need to test for a single value of an enum and instead of using a more verbose match statement.
-(eg: where Some() is involved)
+(e.g. where Some() is involved)
 
 Uses <c>let<>'s refutability test.
 
@@ -1342,6 +1501,24 @@ for <v>item<> in <v>iterator<> {
 	break;
 	<v>...<>
 }<>
+
+
+
+## Let
+
+
+### Let - Let Else
+
+<cb>let <v>pattern<> = <v>expression<> else {
+	<#>// Handle exception here.<>
+}<>
+
+
+Implements a guard around the pattern if the pattern doesn't match.
+
+Results are returned to the surrounding scope.
+@
+@ guard expression
 
 
 
@@ -1748,6 +1925,52 @@ Returns:
 
 
 
+### Character Literal - Hex Character
+
+<cb>'\\x<v>7f<>'<>
+
+
+Defines an 7-bit character.
+
+
+Range: 0 - 7f
+
+
+Equivalent:
+
+<cb>= '\\x<v>41<>''
+
+= 'A'<>
+@
+@ ascii code, hex code, hexadecimal value, escaped
+
+
+
+### Character Literal - Unicode Hex Character
+
+<cb>'\\u{<v>f<>}'
+'\\u{<v>ffffff<>}'<>
+
+
+Defines a Unicode character.
+
+Must be a valid code point.
+
+
+Range: 0 ... 0x10FFFF
+
+
+
+Equivalent:
+
+<cb>= '\\u{<v>41<>}'
+
+= 'A'<>
+@
+@ unicode, ascii code, hex code, hexadecimal value, escaped
+
+
+
 ### Float Literal
 
 <cb>= <v>11.23<><>
@@ -1813,7 +2036,7 @@ Returns: Integer Type
 
 The return type depends on the type inference engine or the declared variable type.
 @
-@ 0x
+@ 0x, hexadecimal, value
 
 
 
@@ -1857,35 +2080,53 @@ Stored in the code.
 <col>Null<><col><c>\\0<><><>
 @
 @ tab, newline, backslash, carriage return, null
+@ \\\\, \\r, \\n, \\t, \\0
 
 
 
-### String Literal - Escaped Character
+### String Literal - Hex Character
 
-<cb>"\\x<v>ff<>"<>
+<cb>"\\x<v>7f<>"<>
 
 
-Defines an 8-bit character.
+Defines an 7-bit character.
+
+
+Range: 0 - 7f
+
 
 Equivalent:
 
-<cb>= "\\x<v>65<>"
+<cb>= "\\x<v>41<>"
 
 = "A"<>
 @
-@ ascii code
+@ ascii code, hex code, hexadecimal value, escaped
 
 
 
-### String Literal - Escaped Unicode Character
+### String Literal - Unicode Hex Character
 
-<cb>"\\x{<v>ffff<>}"<>
+<cb>"\\u{<v>f<>}"
+"\\u{<v>ffffff<>}"<>
+
+
+Defines a Unicode character.
+
+Must be a valid code point.
+
+
+Range: 0 ... 0x10FFFF
+
+
 
 Equivalent:
 
-<cb>= "\\x<v>65<>"
+<cb>= "\\u{<v>41<>}"
 
 = "A"<>
+@
+@ unicode, ascii code, hex code, hexadecimal value, escaped
 
 
 
@@ -2333,7 +2574,7 @@ Ownership only applies to items on the heap.
 
 
 
-### Ownership - Borrow
+### Ownership - Borrow Immutable
 
 <cb>&<v>owner<><>
 
@@ -2367,6 +2608,13 @@ println!("{}", <v>borrower<>);
 //    "42"<><>
 @
 @ &, borrowing
+
+
+
+### Ownership - Borrow Immutable - Rules
+
+1. There is no limit on the number of borrowers.
+2. Immutable borrowers prevents any mutable borrows.
 
 
 
@@ -2404,6 +2652,13 @@ println!("{}", <v>borrower<>);
 //    "42"<><>
 @
 @ &, mut
+
+
+
+### Ownership - Borrow Mutable - Rules
+
+1. One and only one mutable borrower at a time.
+2. Mutable borrow is not allowed while there are immutable borrowers.
 
 
 
@@ -2638,7 +2893,7 @@ println!("{}", <v>bool_1<>);
 <#>// Prints: "false"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.bool.html">bool<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.bool.html">bool<>
 @
 @ true, false
 @ bool-only, bools-only
@@ -2691,7 +2946,7 @@ println!("{}", <v>byte_1<> as char);
 //    x<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.u8.html">u8<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u8.html">u8<>
 @
 @ u8, b''
 @ bytes, byte-only, bytes-only
@@ -2730,7 +2985,13 @@ println!("{}", <v>char_1<>);
 
 
 
-# Character
+# Char
+@
+@ character, characters
+@ char-only, chars-only, character-only, characters-only
+
+
+## Char - Create
 
 <cb>= '<v>c<>'<>
 
@@ -2743,7 +3004,7 @@ Type:
 Size: 4 Bytes
 
 
-Represents a unicode scalar value.
+Represents a Unicode scalar value.
 
 
 Examples:
@@ -2765,10 +3026,87 @@ println!("{}", <v>char_1<>);
 <#>// Prints: "*"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.char.html">char<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>
 @
 @ char, char-only, chars, chars-only
 @ character-only, characters-only
+
+
+
+## Char - Convert
+@
+@ from, convert, conversion, converting, into, char
+@ from-char, char-to, char-into
+@ from-character, character-to, character-into
+
+
+### Char - To Bytes
+
+<cb>fn to_bytes(<v>value<>: char) -> vec\<u8> {
+    let mut <v>bytes<> = vec![0; 4];
+    let length = <v>value<>.encode_utf8(&mut <v>bytes<>).len();
+    <v>bytes<>.truncate(length);
+    <v>bytes<>
+}
+
+let bytes = to_bytes(<v>char_1<>);<>
+
+
+Converts a char to bytes.
+
+Works by first converting to a utf-8 string.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>::<l https://doc.rust-lang.org/std/primitive.char.html#method.encode_utf8>encode_utf8<>
+@
+@ to-bytes
+
+
+
+### Char - To Hex
+
+<cb>= format!("{:x}", <v>value<> as u32)<>
+
+Usage:
+
+<cb>println!("{:x}", &<v>value<>)<>
+
+
+Converts a character into a hexadecimal value.
+
+Convert to <c>u32<> and then format like any integer.
+@
+@ to-hex, to-hexadecimal
+
+
+
+### Char - To Integer
+
+<cb>= <v>value<> as u32<>
+@
+@ to-integer, to-u32
+@ as u32
+
+
+
+### Char - To Str
+
+<cb>let mut <v>bytes<> = vec![0; 4];
+= <v>value<>.encode_utf8(&mut <v>bytes<>)<>
+
+Returns: <c>&mut str<>
+
+
+Converts a char to a string.
+
+Returns the sub-slice of the bytes that is the character.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>::<l https://doc.rust-lang.org/std/primitive.char.html#method.encode_utf8>encode_utf8<>
+@
+@ string
+@ to-str, to-string
+@ char.encode_utf8(), .encode_utf8()
 
 
 
@@ -2815,7 +3153,7 @@ println!("{}", <v>float_1<>);
 <#>// Prints: "11.23"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.f32.html">f32<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.f32.html">f32<>
 @
 @ f32, f32-only, f32s-only
 @ data type
@@ -2861,7 +3199,7 @@ println!("{}", <v>float_1<>);
 <#>// Prints: "11.23"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.f64.html">f64<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.f64.html">f64<>
 @
 @ f64, f64-only, f64s-only
 @ floats, float-only, floats-only
@@ -3003,7 +3341,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.i8.html">i8<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i8.html">i8<>
 @
 @ i8, i8-only, i8s-only
 @ ints, int-only, ints-only
@@ -3049,9 +3387,10 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.u8.html">u8<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u8.html">u8<>
 @
 @ u8, u8-only, u8s-only
+@ byte, byte-only, bytes-only
 @ ints, int-only, ints-only
 @ integers, integer-only, integers-only
 @ data type, 255
@@ -3062,9 +3401,11 @@ Rust Docs: <l "https://doc.rust-lang.org/std/primitive.u8.html">u8<>
 @
 @ u8, u8-only
 @ u8s, u8s-only, byte
+@ byte, byte-only, bytes-only
 @ data type
 @ from, convert, conversion, converting
 @ from-integer, integer-to
+
 
 
 ### Integer - 8-Bit, Unsigned - To Character
@@ -3157,7 +3498,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.i16.html">i16<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i16.html">i16<>
 @
 @ i16, i16-only, i16s-only
 @ ints, int-only, ints-only
@@ -3203,7 +3544,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.u16.html">u16<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u16.html">u16<>
 @
 @ u16, u16-only, u16s-only
 @ ints, int-only, ints-only
@@ -3249,7 +3590,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.i32.html">i32<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i32.html">i32<>
 @
 @ i32, i32-only, i32s-only
 @ ints, int-only, ints-only
@@ -3295,7 +3636,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.u32.html">u32<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u32.html">u32<>
 @
 @ u32, u32-only, u32s-only
 @ ints, int-only, ints-only
@@ -3341,7 +3682,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.i64.html">i64<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i64.html">i64<>
 @
 @ i64, i64-only, i64s-only
 @ ints, int-only, ints-only
@@ -3387,7 +3728,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.u64.html">u64<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u64.html">u64<>
 @
 @ u64, u64-only, u64s-only
 @ ints, int-only, ints-only
@@ -3433,7 +3774,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.i128.html">i128<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i128.html">i128<>
 @
 @ i128, i128-only, i128s-only
 @ ints, int-only, ints-only
@@ -3479,7 +3820,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.u128.html">u128<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u128.html">u128<>
 @
 @ u128, u128-only, u128s-only
 @ ints, int-only, ints-only
@@ -3526,7 +3867,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.isize.html">isize<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.isize.html">isize<>
 @
 @ isize, isize-only, isizes-only
 @ ints, int-only, ints-only
@@ -3573,7 +3914,7 @@ println!("{}", <v>int_1<>);
 <#>// Prints: "42"<><>
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/primitive.usize.html">usize<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.usize.html">usize<>
 @
 @ usize, usize-only, usizes-only
 @ ints, int-only, ints-only
@@ -3642,7 +3983,7 @@ println!("{} squared is {}.", <v>value<>, <v>square<>);
 @ i64, i64-only, i64s-only
 @ i128, i128-only, i128s-only
 @ isize, isize-only, isizes-only
-@ u8, u8-only, u8s-only
+@ u8, u8-only, u8s-only, byte, byte-only, bytes-only
 @ u16, u16-only, u16s-only
 @ u32, u32-only, u32s-only
 @ u64, u64-only, u64s-only
@@ -3651,9 +3992,93 @@ println!("{} squared is {}.", <v>value<>, <v>square<>);
 @ ints, int-only, ints-only
 @ integers, integer-only, integers-only
 @ data type, bytes
-@
 @ from, convert, conversion, converting
 @ from-integer, integer-to, integer-into, int-to, int-into, into
+
+
+
+### Integer - From Hex - To 8-Bit, Unsigned
+
+<cb>= u8::from_str_radix(&<v>value<>, 16)<>
+
+Returns: <c>Result\<u8, ParseIntError><>
+
+
+Converts a hex string into a u8 integer.
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/primitive.u8.html>u8<>::<l https://doc.rust-lang.org/std/primitive.u8.html#method.from_str_radix>from_str_radix<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/num/index.html>num<>::<l https://doc.rust-lang.org/std/num/struct.ParseIntError.html>ParseIntError<>
+@
+@ value, hexadecimal, string, radix, bytes
+@ std::u8::from_str_radix, u8::from_str_radix, from_str_radix()
+@ from-hex, into-u8, to-u8, into-byte, to-byte
+
+
+
+### Integer - From Hex - To 32-Bit, Unsigned
+
+<cb>= u32::from_str_radix(&<v>value<>, 16)<>
+
+Returns: <c>Result\<u32, ParseIntError><>
+
+
+Converts a hex string into a u32 integer.
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/primitive.u32.html>u32<>::<l https://doc.rust-lang.org/std/primitive.u32.html#method.from_str_radix>from_str_radix<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/num/index.html>num<>::<l https://doc.rust-lang.org/std/num/struct.ParseIntError.html>ParseIntError<>
+@
+@ value, hexadecimal, string, radix
+@ std::u32::from_str_radix, u32::from_str_radix, from_str_radix()
+@ from-hex, into-u32, to-u32
+
+
+
+
+
+
+### Integer - To Char - From 8-Bit, Unsigned
+
+<cb>= <v>value<> as char<>
+
+
+Converts an 8-bit unsigned integer into a char.
+@
+@ as char
+@ to-char, into-char
+
+
+
+### Integer - To Char - From 32-Bit, Unsigned
+
+<cb>= char::from_u32(<v>value<>)<>
+
+Returns: <c>Option\<char><>
+
+
+Converts a 32-bit (4 byte) integer into a character.
+
+The value must be a valid utf-8 character.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>::<l https://doc.rust-lang.org/std/primitive.char.html#method.from_u32>from_32<>
+@
+@ utf-8
+
+
+
+
+### Integer - To Hex
+
+<cb>= format!("{:x}", <v>value<>)<>
+
+Usage:
+
+<cb>println!("{:x}", &<v>value<>)<>
+
+
+Converts an integer into a printable hexadecimal value.
+@
+@ to-hex, to-hexadecimal
 
 
 
@@ -3700,10 +4125,12 @@ With Type Declaration:
 println!("{}", <v>str_1<>);
 
 <#>// Prints: "abc"<><>
+@
+@ to-str, to-string, into-str, into-string
 
 
 
-Rust Docs: <l https://doc.rust-lang.org/stable/std/primitive.str.html>str<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/stable/std/primitive.str.html>str<>
 @
 @ strs, str-only, strs-only
 @ &strs, &str-only, &strs-only
@@ -3718,33 +4145,30 @@ Rust Docs: <l https://doc.rust-lang.org/stable/std/primitive.str.html>str<>
 
 
 
-### Str - Character Count
+### Str - Contains?
 
-<cb>= <v>str_1<>.chars().count()<>
+<cb>= <v>str_1<>.contains("<v>match<>")<>
 
 Returns:
 
-<cb>usize<>
+<cb>bool<>
 
 
-Returns the number of actual characters in the string accounting for Unicode encoding.
-
-Takes O(N) Time due to unicode complexity.
-
-
-Example:
-
-<cb>let <v>str_1<> = "🙂⭐️";
-
-let <v>length<> = <v>str_1<>.len();
-let <v>characters<> = <v>str_1<>.chars().count();
-
-println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>length<>, <v>characters<>);
-
-<#>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+Returns true when the match exists in the string slice.
 @
-@ size, length
-@ str.chars().count(), .chars().count(), .count()
+@ is substring, in, includes
+@ str.contains(), .contains()
+
+
+
+### Str - Contains Char?
+
+<cb>= <v>string_1<>.chars().any(|item| item == <v>character<>)<>
+
+
+Returns true if the string slice contains the characters.
+@
+@ .any(), char?
 
 
 
@@ -3764,6 +4188,38 @@ Returns true if the string starts with or equals another string.
 
 
 
+### Str - Is Blank?
+
+<cb>= <v>str_1<>.trim().is_empty()<>
+
+Returns:
+
+<cb>bool<>
+
+
+Tests if the string slice is empty (0 length) or all white space.
+@
+@ whitespace, white space
+@ str.is_blank(), .is_blank()
+
+
+
+### Str - Not Blank?
+
+<cb>= ! <v>str_1<>.trim().is_empty()<>
+
+Returns:
+
+<cb>bool<>
+
+
+Tests if the string slice is not empty and is not all white space.
+@
+@ whitespace, white space, none
+@ str.is_blank(), .is_blank()
+
+
+
 ### Str - Is Empty?
 
 <cb>= <v>str_1<>.is_empty()<>
@@ -3773,13 +4229,29 @@ Returns:
 <cb>bool<>
 
 
-Tests if the string slice is an empty string (0 length).
+Tests if the string slice is empty (0 length).
 @
 @ str.is_empty(), .is_empty()
 
 
 
-### Str - Length
+### Str - Not Empty?
+
+<cb>= ! <v>str_1<>.is_empty()<>
+
+Returns:
+
+<cb>bool<>
+
+
+Tests if the string slice is not empty (0 length).
+@
+@ str.is_empty(), .is_empty()
+@ no size
+
+
+
+### Str - Length in Bytes
 
 <cb>= <v>string_1<>.len()<>
 
@@ -3808,6 +4280,36 @@ println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>lengt
 
 
 
+### Str - Length in Character
+
+<cb>= <v>str_1<>.chars().count()<>
+
+Returns:
+
+<cb>usize<>
+
+
+Returns the number of actual characters in the string accounting for Unicode encoding.
+
+Takes O(N) Time due to unicode complexity.
+
+
+Example:
+
+<cb>let <v>str_1<> = "🙂⭐️";
+
+let <v>length<> = <v>str_1<>.len();
+let <v>characters<> = <v>str_1<>.chars().count();
+
+println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>length<>, <v>characters<>);
+
+<#>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+@
+@ size, length, count
+@ str.chars().count(), .chars().count(), .count()
+
+
+
 ### Str - Starts With?
 
 <cb>= <v>str_1<>.starts_with(<v>str_2<>)<>
@@ -3826,13 +4328,13 @@ Returns true if the string starts with or equals another string.
 
 ### Str - Substring
 
-<cb>= <v>str_1<>[<v>index<>..]
+<cb>= <v>str_1<>[<v>start<>..]
 
+= <v>str_1<>[<v>start<>..=<v>end<>]
 = <v>str_1<>[<v>start<>..<v>end_plus_1<>]
-= <v>str_1<>[..<v>end_plus_1<>]
 
-= <v>str_1<>[<v>start<>..=<v>ends<>]
-= <v>str_1<>[..=<v>end<>]<>
+= <v>str_1<>[..=<v>end<>]
+= <v>str_1<>[..<v>end_plus_1<>]<>
 
 
 Returns a substring form a string
@@ -3842,17 +4344,17 @@ Examples:
 
 <cb>let <v>str_1<> = "<v>12345<>";
 
-let <v>first<> = &<v>str_1<>[0..=0];                 <#>// Returns '1'<>
+let <v>first<> = &<v>str_1<>[0..=0];                 <#>// "1"<>
 
-let <v>last<> = &<v>str_1<>[str_1.len() - 1.. str_1.len()];   <#>// Returns '5'<>
+let <v>last<> = &<v>str_1<>[str_1.len() - 1.. str_1.len()];   <#>// "5"<>
 
-let <v>index_1<> = &<v>str_1<>[1..=1];               <#>// Returns '2'<>
+let <v>index_1<> = &<v>str_1<>[1..=1];               <#>// "2"<>
 
-let <v>index_1_to_3<> = &<v>str_1<>[1..4];           <#>// Returns '234'<>
+let <v>index_1_to_3<> = &<v>str_1<>[1..4];           <#>// "234"<>
 
-let <v>index_1_to_end<> = &<v>str_1<>[1..];          <#>// Returns '2345'<>
+let <v>index_1_to_end<> = &<v>str_1<>[1..];          <#>// "2345"<>
 
-let <v>start_to_index_3<> = &<v>str_1<>[..4];        <#>// Returns '1234'<><>
+let <v>start_to_index_3<> = &<v>str_1<>[..4];        <#>// "1234"<><>
 @
 @ Partial, Slice, .substring(), []
 
@@ -3874,6 +4376,30 @@ println!("{}", &<v>substring<>);
 <#>// Prints: 123<><>
 @
 @ Start, Beginning, slice, partial, .left(), []
+
+
+ 
+### Str - Substring - Middle
+
+<cb>= &<v>str_1<>[<v>start<>..<v>end_plus_1<>]<>
+
+<cb>= &<v>str_1<>[<v>start<>..=<v>end<>]<>
+
+
+Returns a substring from a string.
+
+
+Example:
+
+<cb>let <v>str_1<> = "12345";
+
+let <v>substring<> = &<v>str_1<>[1..3];
+
+println!("{}", &<v>substring<>);
+
+<#>// Prints: 23<><>
+@
+@ slice, partial, []
 
 
  
@@ -4011,11 +4537,11 @@ else {
 
 ### Str - Concatenate
 
-<cb>= <v>str_1<>.to_string() + <v>str_2<><>
+<cb>= [<v>str_1<>, <v>str_2<>].concat()<>
 
-<cb>= <v>str_1<>.to_string() + <v>str_2<>
+<cb>= [<v>str_1<>, <v>str_2<>].concat()
 
-= [<v>str_1<>, <v>str_2<>].concat()
+= <v>str_1<>.to_string() + <v>str_2<>
 
 = format!("{}{}", <v>str_1<>, <v>str_2<>)<>
 
@@ -4064,6 +4590,7 @@ println!("{}", <v>stars<>);
 
 <#>// Prints: "**********"<><>
 @
+@ expand, multiply
 @ str.repeat(), .repeat()
 
 
@@ -4077,7 +4604,7 @@ Returns:
 <cb>String<>
 
 
-Replaces all occurrenceses of a substring with another.
+Replaces all occurrences of a substring with another.
 
 Replace is case sensitive.
 
@@ -4092,12 +4619,12 @@ println!("{}", <v>replaced<>);
 
 <#>// Prints: Replace <b>that<> and <b>that<> and <b>that<>.<><>
 @
-@ Update, Modify, Change, substitute, all occurences, matches
+@ Update, Modify, Change, substitute, all occurrences, matches
 @ str.replace(), .replace()
 
 
 
-### str - Replace First Occurence
+### str - Replace First Occurrence
 
 <cb>= <v>str_1<>.replacen(<v>match<>, <v>replacement<>, 1)<>
 
@@ -4106,7 +4633,7 @@ Returns:
 <cb>String<>
 
 
-Replaces the first occurrencese only of a substring with another.
+Replaces the first occurrences only of a substring with another.
 
 Replace is case sensitive.
 
@@ -4121,7 +4648,7 @@ println!("{}", <v>replaced<>);
 
 <#>// Prints: Replace <b>that<> but not this or this.<><>
 @
-@ Update, Modify, Change, substitute, 1st occurence only, match, 1st
+@ Update, Modify, Change, substitute, 1st occurrence only, match, 1st
 @ str.replacen(), .replacen()
 
 
@@ -4251,7 +4778,7 @@ Returns:
 <cb>&str<>
 
 
-Trims leadind and trailing whitespaces from the string.
+Trims leading and trailing whitespaces from the string.
 @
 @ strip, remove, delete, whitespaces, white spaces
 @ str.trim(), .trim()
@@ -4283,7 +4810,7 @@ Returns:
 <cb>&str<>
 
 
-Trims leadind whitespaces from the string.
+Trims leading whitespaces from the string.
 @
 @ strip, remove, delete, whitespaces, white spaces, starting, left
 @ str.trim_start(), .trim_start()
@@ -4322,7 +4849,7 @@ Returns:
 
 Returns an iterator to the characters in the string slice.
 @
-@ str.chars(), .chars(), get
+@ str.chars(), .chars(), get, characters
 
 
 
@@ -4338,6 +4865,9 @@ Returns:
 Converts a string slice to an int.
 
 Use turbofish (::\<>) to define returned type if needed (<c>parse::\<i32>()<>).
+
+
+Rust Doc: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/stable/std/primitive.str.html#method.parse>parse<>
 @
 @ str.parse(), .parse()
 @ signed, unsigned
@@ -4482,7 +5012,9 @@ Type:
 <cb>String<>
 
 
-Creates a string with an initial value
+Creates a string with an initial value.
+
+All three ways above are equivalent.
 @
 @ initial value
 @ string.to_string(), "".to_string(), .to_string(), string::from(), ::from()
@@ -4511,29 +5043,31 @@ Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https
 ## String - Properties
 
 
-### String - Character Count
 
-<cb>= <v>string_1<>.chars().count()<>
+### String - Contains?
+
+<cb>= <v>string_1<>.contains("<v>match<>")<>
+
+Returns:
+
+<cb>bool<>
 
 
-Returns the number of actual characters in the string accounting for Unicode encoding.
-
-Takes O(N) Time due to unicode complexity.
-
-
-Example:
-
-<cb>let <v>string_1<> = "🙂⭐️".to_string();
-
-let <v>length<> = <v>string_1<>.len();
-let <v>characters<> = <v>string_1<>.chars().count();
-
-println!("String {}, length(bytes) = {}, characters = {}.", <v>string_1<>, <v>length<>, <v>characters<>);
-
-<#>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+Returns true when the match exists in the string.
 @
-@ length, size
-@ string.chars().count(), .chars().count(), .count()
+@ is substring, in, includes
+@ string.contains(), .contains()
+
+
+
+### String - Contains Char?
+
+<cb>= <v>string_1<>.chars().any(|item| item == <v>character<>)<>
+
+
+Returns true if the string contains the characters.
+@
+@ .any(), char?
 
 
 
@@ -4583,6 +5117,38 @@ Returns true if the string starts with or equals another string.
 
 
 
+### String - Is Blank?
+
+<cb>= <v>string_1<>.trim().is_empty()<>
+
+Returns:
+
+<cb>bool<>
+
+
+Tests if the string is empty (0 length) or all white space.
+@
+@ whitespace, white space
+@ string.is_blank(), .is_blank()
+
+
+
+### String - Not Blank?
+
+<cb>= ! <v>string_1<>.trim().is_empty()<>
+
+Returns:
+
+<cb>bool<>
+
+
+Tests if the string is not empty and is not all white space.
+@
+@ whitespace, white space, none
+@ string.is_blank(), .is_blank()
+
+
+
 ### String - Is Empty
 
 <cb>= <v>string_1<>.is_empty()<>
@@ -4598,7 +5164,23 @@ Tests if the string is an empty string (0 length).
 
 
 
-### String - Length
+### String - Not Empty?
+
+<cb>= ! <v>string_1<>.is_empty()<>
+
+Returns:
+
+<cb>bool<>
+
+
+Tests if the string is not empty (0 length).
+@
+@ string.is_empty(), .is_empty()
+@ no size
+
+
+
+### String - Length in Bytes
 
 <cb>= <v>string_1<>.len()<>
 
@@ -4610,6 +5192,32 @@ Returns the length of the string in bytes
 @
 @ size, count
 @ string.len(), .len()
+
+
+
+### String - Length in Characters
+
+<cb>= <v>string_1<>.chars().count()<>
+
+
+Returns the number of actual characters in the string accounting for Unicode encoding.
+
+Takes O(N) Time due to utf-8 complexity.
+
+
+Example:
+
+<cb>let <v>string_1<> = "🙂⭐️".to_string();
+
+let <v>length<> = <v>string_1<>.len();
+let <v>characters<> = <v>string_1<>.chars().count();
+
+println!("String {}, length(bytes) = {}, characters = {}.", <v>string_1<>, <v>length<>, <v>characters<>);
+
+<#>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+@
+@ length, size, count
+@ string.chars().count(), .chars().count(), .count()
 
 
 
@@ -4631,33 +5239,33 @@ Returns true if the string starts with or equals another string.
 
 ### String - Substring
 
-<cb>= <v>string_1<>[<v>index<>..]
-
-= <v>string_1<>[<v>start<>..<v>end_plus_1<>]
-= <v>string_1<>[..<v>end_plus_1<>]
+<cb>= <v>string_1<>[<v>start<>..]
 
 = <v>string_1<>[<v>start<>..=<v>ends<>]
-= <v>string_1<>[..=<v>end<>]<>
+= <v>string_1<>[<v>start<>..<v>end_plus_1<>]
+
+= <v>string_1<>[..=<v>end<>]
+= <v>string_1<>[..<v>end_plus_1<>]<>
 
 
-Returns a substring form a string
+Returns a substring from a string.
 
 
 Examples:
 
 <cb>let <v>string_1<> = "<v>12345<>".to_string();
 
-let <v>first<> = &<v>string_1<>[0..=0];                 <#>// Returns '1'<>
+let <v>first<> = &<v>string_1<>[0..=0];                 <#>// "1"<>
 
-let <v>last<> = &<v>string_1<>[string_1.len() - 1.. string_1.len()];   <#>// Returns '5'<>
+let <v>last<> = &<v>string_1<>[string_1.len() - 1.. string_1.len()];   <#>// "5"<>
 
-let <v>index_1<> = &<v>string_1<>[1..=1];               <#>// Returns '2'<>
+let <v>index_1<> = &<v>string_1<>[1..=1];               <#>// "2"<>
 
-let <v>index_1_to_3<> = &<v>string_1<>[1..4];           <#>// Returns '234'<>
+let <v>index_1_to_3<> = &<v>string_1<>[1..4];           <#>// "234"<>
 
-let <v>index_1_to_end<> = &<v>string_1<>[1..];          <#>// Returns '2345'<>
+let <v>index_1_to_end<> = &<v>string_1<>[1..];          <#>// "2345"<>
 
-let <v>start_to_index_3<> = &<v>string_1<>[..4];        <#>// Returns '1234'<><>
+let <v>start_to_index_3<> = &<v>string_1<>[..4];        <#>// "1234"<><>
 @
 @ Partial, Slice, .substring(), []
 
@@ -4666,6 +5274,9 @@ let <v>start_to_index_3<> = &<v>string_1<>[..4];        <#>// Returns '1234'<><>
 ### String - Substring - Left
 
 <cb>= <v>string_1<>[..<v>length_plus_1<>]<>
+
+
+Returns the left substring from a string.
 
 
 Example:
@@ -4682,14 +5293,41 @@ println!("{}", &<v>substring<>);
 
 
  
+### String - Substring - Middle
+
+<cb>= &<v>string_1<>[<v>start<>..<v>end_plus_1<>]<>
+
+<cb>= &<v>string_1<>[<v>start<>..=<v>end<>]<>
+
+
+Returns a substring from a string.
+
+
+Example:
+
+<cb>let <v>string_1<> = "12345".to_string();
+
+let <v>substring<> = &<v>string_1<>[1..3];
+
+println!("{}", &<v>substring<>);
+
+<#>// Prints: 23<><>
+@
+@ slice, partial, []
+
+
+ 
 ### String - Substring - Right
 
 <cb>= <v>string_1<>[<v>start<>..]<>
 
 
+Returns the right substring from a string.
+
+
 Example:
 
-<cb>let <v>string_1<> = "12345";
+<cb>let <v>string_1<> = "12345".to_string();
 
 let <v>substring<> = &<v>string_1<>[2..];
 
@@ -5001,8 +5639,6 @@ println!("{}", <v>joined<>);
 
 <cb>= <v>vec_of_strings<>.join(<v>join_str<>)<>
 
-<cb>let <v>string_1<> = [<v>string_1<>, <v>string_2<>, <v>...<>].join(<v>join_str<>);<>
-
 Returns:
 
 <cb>String<>
@@ -5040,6 +5676,33 @@ Removes the last character from a string.
 
 
 
+### String - Repeat
+
+<cb>= <v>string_1<>.repeat(<v>count<>)<>
+
+Returns:
+
+<cb>String<>
+
+
+Repeats a string.
+
+
+Example:
+
+<cb>let <v>star<> = "*".to_string();
+
+let <v>stars<> = <v>star<>.repeat(10);
+
+println!("{}", <v>stars<>);
+
+<#>// Prints: "**********"<><>
+@
+@ expand, multiply
+@ string.repeat(), .repeat()
+
+
+
 ### String - Replace
 
 <cb>= <v>string_1<>.replace(<v>match<>, <v>replacement<>)<>
@@ -5049,7 +5712,7 @@ Returns:
 <cb>String<>
 
 
-Replaces all occurrenceses of a substring with another.
+Replaces all occurrences of a substring with another.
 
 Replace is case sensitive.
 
@@ -5064,12 +5727,12 @@ println!("{}", <v>replaced<>);
 
 <#>// Prints: Replace <b>that<> and <b>that<> and <b>that<>.<><>
 @
-@ Update, Modify, Change, substitute, all occurences, matches
+@ Update, Modify, Change, substitute, all occurrences, matches
 @ string.replace(), .replace()
 
 
 
-### String - Replace First Occurence
+### String - Replace First Occurrence
 
 <cb>= <v>string_1<>.replacen(<v>match<>, <v>replacement<>, 1)<>
 
@@ -5093,7 +5756,7 @@ println!("{}", <v>replaced<>);
 
 <#>// Prints: Replace <b>that<> but not this or this.<><>
 @
-@ Update, Modify, Change, substitute, 1st occurence only, match, 1st
+@ Update, Modify, Change, substitute, 1st occurrence only, match, 1st
 @ string.replacen(), .replacen()
 
 
@@ -5111,7 +5774,7 @@ Returns:
 
 Replaces the character at the given position with the replacement string.
 
-Updates the original string in plcae.
+Updates the original string in place.
 Can replace match with a larger string as long as the original string has capacity.
 
 
@@ -5300,7 +5963,7 @@ Returns:
 <cb>&str<>
 
 
-Trims leadind and trailing whitespaces from the string.
+Trims leading and trailing whitespaces from the string.
 @
 @ strip, remove, delete, whitespaces, white spaces
 @ string.trim(), .trim()
@@ -5332,7 +5995,7 @@ Returns:
 <cb>&str<>
 
 
-Trims leadind whitespaces from the string.
+Trims leading whitespaces from the string.
 @
 @ strip, remove, delete, whitespaces, white spaces, starting, left
 @ string.trim_start(), .trim_start()
@@ -5366,6 +6029,9 @@ let <v>bytes<>: &[u8] = <v>text<>.as_bytes();
 println!("{:?}", <v>bytes<>);
 
 <#>// Prints: [84, 101, 120, 116, 33]<><>
+
+
+Rust Doc: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/string/index.html">string<>::<l "https://doc.rust-lang.org/stable/std/string/struct.String.html">String<>::<l https://doc.rust-lang.org/stable/std/string/struct.String.html#method.as_bytes-1>as_bytes<>
 @
 @ string.as_bytes(), .as_bytes(), get, u8
 
@@ -5381,8 +6047,11 @@ Returns:
 
 
 Returns an array of characters from a string.
+
+
+Rust Doc: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/string/index.html">string<>::<l "https://doc.rust-lang.org/stable/std/string/struct.String.html">String<>::<l https://doc.rust-lang.org/stable/std/string/struct.String.html#method.chars>chars<>
 @
-@ string.chars(), .chars()
+@ string.chars(), .chars(), characters
 
 
 
@@ -5392,16 +6061,20 @@ Returns an array of characters from a string.
 
 Returns:
 
-<cb>Result\<<v>T<>, ParseIntError<>><>
+<cb>Result\<<v>T<>, ParseIntError><>
 
 
 Converts a string to an int.
 
 Use turbofish (::\<>) to define returned type if needed (<c>parse::\<i32>()<>).
+
+
+Rust Doc: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/string/index.html">string<>::<l "https://doc.rust-lang.org/stable/std/string/struct.String.html">String<>::<l https://doc.rust-lang.org/stable/std/string/struct.String.html#method.parse>parse<>
 @
 @ signed, unsigned
 @ i8, i16, i32, i64
 @ u8, u16, u32, u64
+@ to-int, into-int
 
 
 
@@ -5587,14 +6260,14 @@ String  =  │ pointer:  usize ──│──▶ │ T │ E │ X │ T │
 <col> <>
 <col>Heap Allocated Value<><col>Box\<<v>T<>><><col>Single Read / Write Owner<>
 <col>Heap Allocated Value<><col>Rc\<<v>T<>><><col>Single Owner / Multiple Readers<>
-<col>Heap Allocated Value<><col>Arc\<<v>T<>><><col>Single Owner / Mulitple Readers / Thread Safe<><>
+<col>Heap Allocated Value<><col>Arc\<<v>T<>><><col>Single Owner / Multiple Readers / Thread Safe<><>
 
 
 <b>Assignment:<>
 
 <table><col>Value<><col>= <v>var_1<><>
 <col>Borrow (Reference, Pointer)<><col>= &<v>var_1<><>
-<col>Borrow, mutabl (Reference, Pointer)<><col>= &mut <v>var_1<><>
+<col>Borrow, mutable (Reference, Pointer)<><col>= &mut <v>var_1<><>
 <col>Dereferenced Pointer<><col>= *<v>var_1<><><>
 
 <image "pointers.png">
@@ -5605,7 +6278,11 @@ String  =  │ pointer:  usize ──│──▶ │ T │ E │ X │ T │
 
 <cb>= *<v>item1<>;<>
 
+
 Access the data stored in <c>item1<>'s memory address.
+
+
+Visualized:
 
 <cb><v>item1<> ───▶ pointer ───▶ data
 						 ▲
@@ -5751,7 +6428,7 @@ println!("Blue = {}", <v>Color<>::<v>Blue<> as u8);
 
 Creates an enum where each item has a custom value.
 
-Items with no explicit values will continue in assending values from the last set value.
+Items with no explicit values will continue in ascending values from the last set value.
 
 
 Example:
@@ -6168,6 +6845,42 @@ println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
 @ shorthand
 
 
+
+### Struct - Create, With Update Syntax
+
+<cb>= <v>Struct1<> {
+	<v>field_1<>: <v>value<>,
+	<v>field_1<>: <v>value<>,
+	..<v>other_struct_1<>
+};<>
+
+
+Creates a struct but updates the non-included fields from the other instance of the struct.
+
+
+Example:
+
+<cb>struct <v>Point<> {
+	<v>x<>: i32,
+	<v>y<>: i32,
+	<v>z<>: i32
+}
+
+let <v>point_1<> = <v>Point<> { <v>x<>: 10, <v>y<>: 20, <v>z<>: 100 };
+
+let <v>point_2<> = <v>Point<> {
+	<v>x<>: -10,
+	<v>y<>: -20,
+	..<v>point_1<>
+};
+
+println!("Point 2: {}, {}, {}", <v>point_2<>.<v>x<>, <v>point_2<>.<v>y<>, <v>point_2<>.<v>z<>);
+
+<#>// Prints: "Point 2: -10, -20, 100"<><>
+
+
+
+
 ## Struct - Properties
 
 
@@ -6342,7 +7055,7 @@ println!("{}, {}, {}", <v>one<>, <v>two<>, <v>three<>);
 
 <#>// Prints: 1, 2, 3<><>
 @
-@ get
+@ get, destructuring
 
 
 
@@ -6419,6 +7132,60 @@ println!("Point 1: {}, {}", <v>point_1<>.0, <v>point_1<>.1);
 
 
 
+# Unit-Like Struct
+
+A unit-like struct is a struct with no fields.
+@ structs, struct-only, structs-only, structures, structure-only, structures-only
+@ data type
+
+
+
+## Unit-Like Structure - Basics
+
+<cb>struct <v>UnitLikeStruct<>;<>
+
+<cb>let <v>value_1<> = <v>UnitLikeStruct<>;<>
+
+
+
+## Unit-Like Struc - Define
+@
+@ new
+
+
+### Unit-Like Struc - Define
+
+<cb>struct <v>StructName<>;<>
+
+
+Defines a struct with no fields.
+
+
+
+### Unit-Like Struc - Create
+
+<cb>let <v>value_1<> = <v>StructName<>;<>
+
+
+Creates the unit-like struct.
+@
+@ instantiate
+
+
+
+## Unit-Like Struc - Example
+
+<cb>#[derive(Debug)]
+struct <v>UnitLikeStruct<>;
+
+let <v>value_1<> = <v>UnitLikeStruct<>;
+
+println!("{:?}", <v>value_1<>);
+
+<#>// Prints: UnitLikeStruct<><>
+
+
+
 # Array
 
 Type:
@@ -6440,15 +7207,25 @@ Rust Docs: <l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
 
 
 
-### Array - Create - Empty
+### Array - Create - Initialize To Single Value
 
-<cb>let <v>array_1<>: [<v>Type<>; <v>size<>] = [<v>empty_value<>; <v>size<>];<>
+<cb>let <v>array_1<> = [<v>initial_value<>; <v>size<>];<>
+
+<cb>let <v>array_1<>: [<v>Type<>; <v>size<>] = [<v>initial_value<>; <v>size<>];<>
 
 
-Creates an array with the given initial value.
+Creates an array of given size.
+
+Every element will be set to the initial value.
 
 
-Example:
+Examples:
+
+<cb>let <v>array_1<> = [0; 3];
+
+println!("{:?}", &<v>array_1<>);
+
+<#>// Prints: [0, 0, 0]<><>
 
 <cb>let <v>array_1<>: [<v>i32<>; 3] = [0; 3];
 
@@ -6456,12 +7233,12 @@ println!("{:?}", &<v>array_1<>);
 
 <#>// Prints: [0, 0, 0]<><>
 @
-@ new, define, instantiate, initial values
+@ new, define, instantiate, initial values, set to
 @ []
 
 
 
-### Array - Create - With Values
+### Array - Create - Initialize To Values
 
 <cb>= [<v>value_1<>, <v>value_2<>, <v>value_3<>]<>
 
@@ -6474,12 +7251,21 @@ Example:
 
 <cb>let <v>array_1<>: [<v>i32<>; <v>3<>] = [<v>1<>, <v>2<>, <v>3<>];<>
 @
-@ new, define, instantiate
+@ new, define, instantiate, set to
 @ []
 
 
 
 ## Array - Properties
+
+
+
+### Array - Destructure
+
+<cb>let [<v>item_1<>, <v>item_2<>, <v>item_3<>, <v>...<>] = <v>items<>;<>
+@
+@ destructuring, get
+
 
 
 ### Array - Get
@@ -6546,6 +7332,138 @@ Returns:
 @ .len(), get
 @ length, count, size
 
+
+
+### Array - Slice
+
+<cb>= <v>array_1<>[<v>start<>..]
+
+= <v>array_1<>[<v>start<>..=<v>end<>]
+= <v>array_1<>[<v>start<>..<v>end_plus_1<>]
+
+= <v>array_1<>[..=<v>end<>]
+= <v>array_1<>[..<v>end_plus_1<>]<>
+
+
+Returns a slice from a array.
+
+
+Examples:
+
+<cb>let <v>array_1<> = [1, 2, 3, 4, 5];
+
+let <v>first<> = &<v>array_1<>[0..=0];                 <#>// [1]<>
+
+let <v>last<> = &<v>array_1<>[array_1.len() - 1.. array_1.len()];   <#>// [5]<>
+
+let <v>index_1<> = &<v>array_1<>[1..=1];               <#>// [2]<>
+
+let <v>index_1_to_3<> = &<v>array_1<>[1..4];           <#>// [2, 3, 4]<>
+
+let <v>index_1_to_end<> = &<v>array_1<>[1..];          <#>// [2, 3, 4, 5]<>
+
+let <v>start_to_index_3<> = &<v>array_1<>[..4];        <#>// [1, 2, 3, 4]<><>
+@
+@ Partial, subarray, sub-array, subslice, sub-slice
+@ .subarray(), []
+
+
+
+### Array - Slice - Subslice
+
+<cb>= &<v>array_1<>[<v>start<>..<v>end_plus_1<>]<>
+
+<cb>= &<v>array_1<>[<v>start<>..=<v>end<>]<>
+
+
+Returns a slice from inside an array.
+
+
+Example:
+
+<cb>let <v>array_1<> = [1, 2, 3, 4, 5];
+
+let <v>subarray<> = &<v>array_1<>[1..3];
+
+println!("{:?}", &<v>subarray<>);
+
+<#>// Prints: [2, 3]<><>
+@
+@ Partial, subarray, sub-array, subslice, sub-slice
+@ .subarray(), []
+
+
+
+### Array - Slice - Left
+
+<cb>= &<v>array_1<>[..<v>length_plus_1<>]<>
+
+
+Returns the left slice from an array.
+
+
+Example:
+
+<cb>let <v>array_1<> = [1, 2, 3, 4, 5];
+
+let <v>subarray<> = &<v>array_1<>[..3];
+
+println!("{:?}", &<v>subarray<>);
+
+<#>// Prints: [1, 2, 3]<><>
+@
+@ Start, Beginning, slice, subarray, sub-array, subslice, sib-slice, partial, .left(), []
+
+
+ 
+### Array - Slice - Right
+
+<cb>= &<v>array_1<>[<v>start<>..]<>
+
+
+Returns the right slice from an array.
+
+
+Example:
+
+<cb>let <v>array_1<> = [1, 2, 3, 4, 5];
+
+let <v>subarray<> = &<v>array_1<>[2..];
+
+println!("{:?}", &<v>subarray<>);
+
+<#>// Prints: [3, 4, 5]<><>
+@
+@ Last, End, slice, subarray, sub-array, subslice, sib-slice, partial, .right(), []
+
+
+
+## Array - Conversions
+@
+@ from, convert, conversion, converting
+@ from-array, array-to, array-into, into
+
+
+### Array - To Vec
+
+<cb>= <v>array_1<>.to_vec()<>
+
+
+Converts an array into a vec.
+
+
+Example:
+
+<cb>let <v>array_1<> = [1, 2, 3, 4, 5];
+
+let <v>vec_1<>: Vec\<i32> = <v>array_1<>.to_vec();
+
+println!("{:?}", &<v>vec_1<>);
+
+<#>// Prints: [1, 2, 3, 4, 5]<><>
+@
+@ to-vec, into-vec
+@ .to_vec()
 
 
 # Vec
@@ -6752,8 +7670,30 @@ println!();
 
 <cb>= <v>vec_1<>.iter_mut()<>
 
+Usage:
+
+<cb>for <v>item<> in <v>vec_1<>.iter_mut() {
+	= *<v>item<>
+	<v>...<>
+}<>
+
 
 Returns a mutable iterator to the values in the vector.
+
+The vector most be mutable (duh).
+
+
+Example:
+
+<cb>let mut <v>vec_1<> = vec![<v>1<>, <v>2<>, <v>3<>];
+
+for <v>item<> in <v>vec_1<>.iter_mut() {
+	*<v>item<> = *<v>item<> * 2;
+}
+
+println!("{:?}", &<v>vec_1<>);
+
+<#>// Prints: [2, 4, 6]<><>
 @
 @ vec.iter_mut(), .iter_mut()
 
@@ -6940,6 +7880,9 @@ Removes and returns the last item from the vec.
 Reverses the items in the vec.
 
 Reverses in place.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/stable/std/vec/struct.Vec.html">Vec<>::<l https://doc.rust-lang.org/stable/std/vec/struct.Vec.html#method.reverse>reverse()<>
 @
 @ vec.reverse(), .reverse(), reverse
 @ items, elements, values
@@ -6962,7 +7905,7 @@ Sorts in place.
 
 # Associated Functions and Methods
 
-These are functions and methods accosiated with a particular data type.
+These are functions and methods associated with a particular data type.
 
 Functions apply to the type (similar to class static methods).
 Methods apply to an instance of a type.
@@ -7160,11 +8103,101 @@ Tool<>
 # Attribute - Reference
 
 
-### Attribute - Config / cfg
+### Attribute - Config / Conditional Compile
+
+<cb>#[cfg(<v>expression<>)]<>
+
+Usage:
+
+<cb>#[cfg(<v>expression<>)]
+<v>statement<>;<>
+
+Includes the statement when the expression is true.
+
+Otherwise the statement is excluded.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/reference/conditional-compilation.html">Conditional Compilation<>
+@
+@ property
+@ #[cfg], #[cfg()], cfg()
+
+
+
+#### Attribute - Config / cfg - Equals
 
 <cb>#[cfg(<v>property<> = <v>value<>)]<>
+
+Usage:
+
+<cb>#[cfg(<v>property<> = <v>value<>)]
+<v>statement<>;<>
+
+Includes the statement when the property equals the value.
+
+Otherwise the statement is excluded.
 @
-@ #[cfg], #[cfg()]
+@ has value, =
+
+
+
+#### Attribute - Config / cfg - Equals Any
+
+<cb>#[cfg(any(<v>property_1<> = <v>value<>, <v>property_2<> = <v>value<>, <v>...<>)]<>
+
+Usage:
+
+<cb>#[cfg(any(<v>property_1<> = <v>value<>, <v>property_2<> = <v>value<>, <v>...<>)]
+<v>statement<>;<>
+
+Includes the statement when any of the properties equals their value.
+
+Otherwise the statement is excluded.
+@
+@ any(), has, properties, value
+
+
+
+#### Attribute - Config / cfg - Equals All
+
+<cb>#[cfg(all(<v>property_1<> = <v>value<>, <v>property_2<> = <v>value<>, <v>...<>)]<>
+
+Usage:
+
+<cb>#[cfg(all(<v>property_1<> = <v>value<>, <v>property_2<> = <v>value<>, <v>...<>)]
+<v>statement<>;<>
+
+Includes the statement when all properties equal their values.
+
+Otherwise the statement is excluded.
+@
+@ all(), has, properties, values
+
+
+
+#### Attribute - Config / cfg - Not Equal To
+
+<cb>#[cfg(not(<v>property_1<> = <v>value<>)]<>
+
+Usage:
+
+<cb>#[cfg(not(<v>property_1<> = <v>value<>)]
+<v>statement<>;<>
+
+<cb>#[cfg(not(<v>expression<>)]
+<v>statement<>;<>
+
+Includes the statement when the property does not equal the value.
+
+Otherwise the statement is excluded.
+@
+@ all(), properties, value, does not, isn't 
+
+
+
+### Attribute - Config Properties
+@ property
+@ #[cfg], #[cfg()], cfg()
 
 
 #### Config Property - Target Architecture
@@ -7182,6 +8215,28 @@ Values:
 "aarch64"<>
 @
 @ #[cfg(target_arch=)], target_arch
+@ x86, x86_64, mips, powerpc, powerpc64, arm, aarch64
+
+
+
+#### Config Property - Target OS
+
+<cb>#[cfg(<v>target_os<> = "<v>x86_64<>"")]<>
+
+Values:
+
+<cb>"android"
+"dragonfly"
+"freebsd"
+"ios"
+"linux"
+"macos"
+"netbsd"
+"openbsd"
+"windows"<>
+@
+@ #[cfg(target_os=)], target_os
+@ android, dragonfly, freebsd, ios, linux, macos, netbsd, openbsd, windows
 
 
 
@@ -7266,6 +8321,16 @@ This will create a default instance with reasonable initial values.
 
 
 
+#### Attribute - Linter  - Allow Unused Code
+
+<cb>#[allow(unused)]<>
+
+Place at the top of the module.
+@
+@ #[allow(unused)]
+
+
+
 #### Attribute - Linter  - Allow Unused Imports
 
 <cb>#[allow(unused_imports)]<>
@@ -7276,7 +8341,7 @@ Place right before import statement.
 
 
 
-#### Attribute - Linter  - Allow Unused Varibles
+#### Attribute - Linter  - Allow Unused Variables
 
 <cb>#[allow(unused_variables)]<>
 @
@@ -7367,7 +8432,7 @@ Unrecoverable Error:
 
 Use <c>Result\<<v>T<>, <v>E<>> to return errors.
 
-Call <c>OK() 
+Call <c>Ok() 
 @
 @ define, new, instantiate
 
@@ -7550,7 +8615,7 @@ Example:
 
 <cb>fn square(<v>value<>: f64) -> f64 {
 	return <v>value<>
-}
+}<>
 @
 @ definition
 
@@ -7558,18 +8623,21 @@ Example:
 
 ## Function - Arguments
 @
-@ parameters
+@ parameters, args, args-only, arguments-only, params, param-only, params-only
 
 
-### Function - Argument - Pass By Reference
+### Function - Argument - Pass Borrowed
 
-<cb>fn <v>function1<>(<v>by_reference<>: &<v>type<>) {
-	<v>...<>
-}<>
+<cb>fn <v>function_1<>(<v>borrowed<>: &<v>Type<>) <v>...<><>
+
+Call:
+
+<cb><v>function_1<>(&<v>borrowed<>);<>
 
 
-Passes an argument to a function by reference.
+Passes the value as an immutable borrowed value.
 
+Passes by reference (pointer).
 Use <c>&<> in the argument type and also on the function call parameter.
 
 
@@ -7583,18 +8651,65 @@ let <v>value<> = 10;
 
 println!("{} doubled = {}", <v>value<>, <v>double<>(&<v>value<>));<>
 @
+@ pass by reference
 @ &
+
+
+
+### Function - Argument - Pass Borrowed, Mutable
+
+<cb>fn <v>function_1<>(<v>borrowed<>: &mut <v>Type<>) <v>...<><>
+
+Call:
+
+<cb><v>function_1<>(&mut <v>borrowed<>);<>
+
+
+Passes the value as mutable borrowed.
+@
+@ pass by reference
+@ &, mut, &mut
+
+
+
+### Function - Argument - Pass Owned
+
+<cb>fn <v>function_1<>(<v>owned<>: <v>Type<>) <v>...<><>
+
+Call:
+
+<cb><v>function_1<>(<v>owned<>);<>
+
+
+Passes the value as owned.
+
+
+
+### Function - Argument - Pass Owned, Mutable
+
+<cb>fn <v>function_1<>(mut <v>owned<>: <v>Type<>) <v>...<><>
+
+Call:
+
+<cb><v>function_1<>(<v>owned<>);<>
+
+
+Passes the value as mutable owned.
+
+Can convert an immutable value into a mutable one.
+@
+@ mut
 
 
 
 ### Function - Argument - Pass By Value
 
-<cb>fn <v>function1<>(<v>by_value<>: <v>type<>) {
-	<v>...<>
-}<>
+<cb>fn <v>function1<>(<v>by_value<>: <v>type<>) <v>...<><>
 
 
 Passes an argument to the function by value.
+
+Applies to <b>primitive types<> only.
 
 
 Example:
@@ -7606,6 +8721,8 @@ Example:
 let <v>value<> = 10;
 
 println!("{} doubled = {}", <v>value<>, <v>double<>(<v>value<>));<>
+@
+@ by value, primitive
 
 
 
@@ -7763,33 +8880,11 @@ Returns from a function without returning a value.
 
 
 # Function Type
-
-
-### Function Type
-
-<cb>fn(<v>type<>) -> <v>return_type<><>
-
-<cb>let <v>function_reference<>: fn(<v>type<>) -> <v>return_type<> = <v>function_1<>;<>
-
-
-Example:
-
-<cb>fn <v>square_a_value<>(<v>value<>: i32) -> i32 {
-	<v>value<> * <v>value<>
-}
-
-let <v>square<>: fn(i32) -> i32 = <v>square_a_value<>;
-
-let <v>squared_value<> = <v>square<>(4);
-
-println!("4 squared is {}.", <v>squared_value<>);
-
-<#>// Prints: "4 squared is 16."<><>
 @
-@ fn
+@ define, reference, fn
 
 
-### Function Type - Referencing Basics
+### Function Type - Basics
 
 A Function:
 
@@ -7808,12 +8903,45 @@ Call:
 @ reference
 
 
+### Function Type - Define
+
+<cb>fn(<v>type<>) -> <v>return_type<><>
+
+<cb>let <v>reference<>: fn(<v>type<>) -> <v>return_type<> = <v>function_1<>;<>
+
+
+Example:
+
+<cb>fn <v>square_a_value<>(<v>value<>: i32) -> i32 {
+	<v>value<> * <v>value<>
+}
+
+let <v>square<>: fn(i32) -> i32 = <v>square_a_value<>;
+
+let <v>squared_value<> = <v>square<>(4);
+
+println!("4 squared is {}.", <v>squared_value<>);
+
+<#>// Prints: "4 squared is 16."<><>
+
+
+
+### Function Type - Define Function Parameter
+
+<cb>fn <v>do_something<>(<v>function_1<>: fn(<v>type<>) -> <v>return_type<>) { <v>...<><>
+
+
+Defines a function to be passed into another function.
+@
+@ pass, passing
+
+
 
 # Closure
 
-A closure is a function that 'closes over' the environment itwas defined in.
+A closure is a function that 'closes over' the environment it was defined in.
 
-It has access to all the variables that are in scope.
+It has access to all the variables that are in scope in that environment.
 @
 @ functions, closures, anonymous, lambdas
 @ closure-only, closures-only
@@ -7865,18 +8993,47 @@ closure_1("Value 1");<>
 
 
 
-### Closure - Create Referencing Enclosed Variable
+### Closure - Create - Enclosed Variable - Borrow
+
+<cb>move || { <v>...<> <v>external_variable<> <v>...<> }<>
+
+
+Accesses local variables outside the closed function.
+
 
 Example:
 
 <cb>let <v>value<> = 42;
 
 let <v>closure_1<> = || println!("Value 1 = {}", <v>value<>);
+
 <v>closure_1<>();
 
 <#>// Prints "Value 1 = 42"<><>
 @
-@ local scope
+@ local scope, referencing, reference
+
+
+
+### Closure - Create - Enclosed Variable - Own
+
+<cb>move || { <v>...<> }<>
+
+
+Takes ownership local variables outside the closed function.
+
+
+Example:
+
+<cb>let <v>value<> = 42;
+
+let <v>closure_1<> = move || println!("Value 1 = {}", <v>value<>);
+
+<v>closure_1<>();
+
+<#>// Prints "Value 1 = 42"<><>
+@
+@ local scope, referencing, reference, ownership
 
 
 
@@ -7953,7 +9110,7 @@ let <v>value_1<>: <v>Type<> = <v>item_1<>.field_1;<>
 
 
 
-#### Generic Structure Implemenation - Define
+#### Generic Structure Implementation - Define
 
 <cb>impl \<<v>T<>> <v>Struct1<>\<<v>T<>> {
 }<>
@@ -8003,10 +9160,23 @@ let <v>value_1<>: <v>Type<> = <v>item_1<>.field_1;<>
 }<>
 
 
-
 Defines a trait that bounds a generic type to a second trait.
 
 The generic <c>T<> must implement trait <c>Trait2<>.
+@
+@ bind
+
+
+#### Generic Trait - Define, Bounded, Multiple Traits
+
+<cb>trait <v>Trait1<>\<<v>T<>: <v>Trait2<> + <v>Trait3<> + <v>Trait4<>> {
+	<v>...<>
+}<>
+
+
+Defines a trait that bounds a generic type to several other traits.
+@
+@ +, bind
 
 
 
@@ -8062,7 +9232,7 @@ With Reference:
 
 Tells Rust how to determine the scope of variables passed into and out of a function.
 
-Expicit Lifetime Syntax:
+Explicit Lifetime Syntax:
 
 <cb>&'<v>a<> <v>T<>
 &'<v>a<> mut <v>T<>
@@ -8098,13 +9268,38 @@ A lifetime associated with an argument tells the compiler that the associated da
 
 
 
-### Lifetime - Eision Rules
+### Lifetime - Define Struct Lifetime In Impl
+
+<cb>impl \<'<v>a<>> <v>Struct1<>\<'<v>a<>> {
+	<v>...<>
+}<>
+
+
+
+
+### Lifetime - Define Struct Lifetime In Trait
+
+<cb>impl \<'<v>a<>> <v>Trait1<> for <v>Struct1<>\<'<v>a<>> {
+	<v>...<>
+}<>
+
+
+
+### Lifetime - Define Variable Lifetime
+
+<cb><v>value_1<>: '<v>lifetime<> <v>T<><>
+
+<cb>let <v>value_1<>: '<v>lifetime<> <v>T<> = <v>...<>;<>
+
+
+
+### Lifetime - Elision Rules
 
 3 Rules:
 
-<*>Each Argument Is Assigned an Individual Lifetime
-If Exactly 1 Argument, the Return Type Get The Same Lifetime
-If <c>&self<> Is an Argument, the Return Type Gets The <c>self<> Lifetime<>
+<*>Each argument is assigned an individual lifetime.
+If exactly 1 argument, the return type gets the same lifetime.
+If <c>&self<> is an argument, the return type gets the <c>self<> lifetime<>.
 
 
 Rule 1:
@@ -8351,12 +9546,51 @@ The set of public functions and types in a module
 
 
 
+# Importing
+@
+@ import, use, use-only
+@ importing, using
+@ module, library, crate
+
+
+### Import
+
+<cb>use <v>module<>::<v>item<>;<>
+
+
+### Import All
+
+<cb>use <v>module<>::*;<>
+
+
+Import everything in a module by using <c>*<>
+@
+@ *
+
+
+
+### Import with Export
+
+<cb>pub use <v>module<>::<v>item<>;<>
+@
+@ pub
+
+
+
+### Import with Alias
+
+<cb>use <v>module<>::<v>item<> as <v>alias<>;<>
+@
+@ rename
+
+
+
 # Traits
 
-Traits defines shared methods and behaviour across types.
+Traits defines shared methods and behavior across types.
 
 Traits can only access methods defined in the trait itself.
-Traits can NOT be instantiated directly (istantiate the implementing type instead).
+Traits can NOT be instantiated directly (instantiate the implementing type instead).
 @
 @ trait-only, traits-only
 
@@ -8606,7 +9840,7 @@ println!("{} decimal = {} hex.", &<v>value<>, &<v>hex<>);
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize
 @ {:x}, :x, {:02x}, :02x, {:04x}, :04x
-@ convert, conversion
+@ convert, conversion, value
 
 
 
@@ -8644,7 +9878,7 @@ println!("{} decimal = {} hex.", &<v>value<>, &<v>hex<>);
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize 
 @ {:x}, :x, {:02x}, :02x, {:04x}, :04x
-@ convert, conversion
+@ convert, conversion, value
 
 
 
@@ -8686,7 +9920,7 @@ println!("{} decimal = {} hex.", &<v>value<>, &<v>hex<>);
 @
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize 
-@ convert, conversion, hash
+@ convert, conversion, hash, value value
 @ {:x}, :x, {:02x}, :02x, {:04x}, :04x, {:06x}, :06x
 @ {:#x}, :#x, {:#02x}, :#02x, {:#04x}, :04x, {:#06x}, :06x
 
@@ -8863,9 +10097,59 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-## File Operations
+## File - Operations
 @
 @ ops-only
+
+
+### Directory - Create
+
+<cb>create_dir("<v>path<>");<>
+
+Usage:
+
+<cb>use std::fs::create_dir;
+
+create_dir("<v>path<>");<>
+
+Returns:
+
+<cb>Result\<()><>
+
+
+Creates a directory.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/fs/index.html">fs<>::<l https://doc.rust-lang.org/stable/std/fs/fn.create_dir.html>create_dir<>
+@
+@ new, make, folder
+@ std::fs::create_dir(), fs::create_dir(), create_dir(), mkdir()
+
+
+
+### Directory - Create Full Path
+
+<cb>create_dir_all("<v>path<>");<>
+
+Usage:
+
+<cb>use std::fs::create_dir_all;
+
+create_dir_all("<v>path<>");<>
+
+Returns:
+
+<cb>Result\<()><>
+
+
+Creates all the directories needed to make the path.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/fs/index.html">fs<>::<l https://doc.rust-lang.org/stable/std/fs/fn.create_dir_all.html>create_dir_all<>
+@
+@ new, make, folder
+@ std::fs::create_dir_all(), fs::create_dir_all(), create_dir_all(), mkdir()
+
 
 
 ### Directory - Delete - Empty
@@ -9170,7 +10454,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 
 ### Text File - Read
 
-<cb>= read_to_string("<v>path<>)<>
+<cb>= read_to_string("<v>path<>")<>
 
 Usage:
 
@@ -9293,13 +10577,13 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### Text File - Write
 
-<cb>fs::write(<v>path<>, <v>contents<>);<>
+<cb>write(<v>path<>, <v>contents<>);<>
 
 Usage:
 
-<cb>use std::fs;
+<cb>use std::fs::write;
 
-fs::write(<v>path<>, <v>contents<>.as_bytes());<>
+write(<v>path<>, <v>contents<>.as_bytes());<>
 
 Returns:
 
@@ -9324,8 +10608,7 @@ write("example.txt", & <v>contents<>.as_bytes())
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/fs/index.html">fs<>::<l https://doc.rust-lang.org/std/fs/fn.write.html>write<>
 @
-@ std::fs
-@ fs::write(), .write()
+@ std::fs::write(), fs::write(), .write()
 @ String
 
 
@@ -9494,9 +10777,37 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
+## Path Separators
+
+
+### Path Separators - File Separator
+
+<cb>= std::path::MAIN_SEPARATOR<>
+
+
+Returns the OS specific '\\' or '/'.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/constant.MAIN_SEPARATOR.html>MAIN_SEPARATOR<>
+@
+@ \\, /
+@ std::path::MAIN_SEPARATOR, path::MAIN_SEPARATOR, MAIN_SEPARATOR
+
+
+
 # Threads
+
+<cb>std::thread::Thread<>
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/thread/index.html>thread<>::<l https://doc.rust-lang.org/std/thread/struct.Thread.html>Thread<>
 @
 @ thread-only, threads-only
+
+
+## Thread Create
+@
+@ new, instantiate
 
 
 ### Thread - Create
@@ -9511,10 +10822,16 @@ let <v>thread_1<> = spawn(|| {
 	<v>...<>
 });<>
 
+Returns: <cb>JoinHandle<>
+
 
 Spawns a new thread.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/thread/index.html>thread<>::<l https://doc.rust-lang.org/std/thread/fn.spawn.html>spawn<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/thread/index.html>thread<>::<l https://doc.rust-lang.org/std/thread/struct.JoinHandle.html>JoinHandle<>
 @
-@ thread::spawn(), spawn()
+@ std::thread::spawn(), thread::spawn(), spawn()
 
 
 
@@ -9536,6 +10853,11 @@ Spawns a new thread and calls the closure.
 The closure takes ownership of all variables in scope.
 
 
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/thread/index.html>thread<>::<l https://doc.rust-lang.org/std/thread/fn.spawn.html>spawn<>
+@
+@ std::thread::spawn(), thread::spawn(), spawn()
+
+
 
 ### Thread - Create With Builder
 
@@ -9544,9 +10866,17 @@ The closure takes ownership of all variables in scope.
 let <v>thread_1<> = thread::Builder::new().name("<v>thread name<>".to_string()).spawn(move || {
 	println!("Hello, world!");
 });<>
+
+
+Use <c>thread::Builder<> to create a thread with user define properties.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/thread/index.html>thread<>::<l https://doc.rust-lang.org/std/thread/struct.Builder.html>Builder<>
 @
 @ std::thread::builder::new(), builder::new()
 
+
+## Thread - Operations
 
 
 ### Thread - Block For Results
@@ -9565,7 +10895,7 @@ Blocks until the thread completes then captures the returned value.
 
 
 
-## Channels
+# Channels
 
 Creates an asynchronous channel that threads can use to communicate together.
 
@@ -9796,6 +11126,33 @@ Example:
 
 
 
+### Option - Properties
+
+
+#### Option - Has None
+
+<cb>= <v>option_1<>.is_none()<>
+
+
+Returns true if the option has no value.
+@
+@ none, empty, is, has, value, item
+@ option.is_none(), .is_none()
+
+
+
+#### Option - Has Some
+
+<cb>= <v>option_1<>.is_some()<>
+
+
+Returns true if there is a value.
+@
+@ is, has, contains, some, value, item
+@ option.is_some(), .is_some()
+
+
+
 ### Option - Operations
 @
 @ options, optionals, option-only, options-only
@@ -9889,6 +11246,23 @@ match <v>optional_int<> {
 
 
 
+### Option - Propagate None
+
+<cb><v>option_1<>?<>
+
+Usage:
+
+<cb>fn <v>some_function<> -> Option\<<v>T<>> {
+	let <v>value<> = <v>function_returning_an_option<>()?;
+}<>
+
+
+Returns a none immediately without needing a <c>return<>.
+@
+@ ?
+
+
+
 ## Result
 
 <cb>Result\<<v>Type<>, <v>Error<>><>
@@ -9937,6 +11311,9 @@ Handle Result:
 }<>
 
 
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>
+
+
 
 ### Result - Create
 @
@@ -9945,12 +11322,12 @@ Handle Result:
 
 #### Result - Create Result Value
 
-<cb>= OK(<v>value<>)<>
+<cb>= Ok(<v>value<>)<>
 
 Usage:
 
 <cb>fn <v>some_function<>() -> Result\<<v>Type<>, <v>Error<>> {
-	return OK(<v>value<>);
+	return Ok(<v>value<>);
 }<>
 
 
@@ -9960,6 +11337,9 @@ Creates an <c>Result<> variable with a value.
 Example:
 
 <cb>return Ok(<v>42<>);<><>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>::<l https://doc.rust-lang.org/std/result/enum.Result.html#variant.Ok>Ok<>
 @
 @ Ok()
 
@@ -9979,6 +11359,11 @@ Usage:
 Creates an error <c>Result<>.
 
 
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>::<l https://doc.rust-lang.org/std/result/enum.Result.html#variant.Ok>Err<>
+@
+@ err()
+
+
 
 ### Result - Properties
 
@@ -9994,6 +11379,9 @@ Returns:
 
 
 Returns the error value or None.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.err>err<>
 @
 @ result.err(), .err()
 
@@ -10009,8 +11397,64 @@ Returns:
 
 
 Returns the ok value or None.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.ok>ok<>
 @
 @ result.ok(), .ok()
+
+
+
+#### Result - Get Value
+
+<cb>= <v>result_1<>.unwrap()<>
+
+
+Returns the value.
+
+
+Will panic if the result is an error.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.unwrap>unwrap<>
+@
+@ unwrap
+@ result.unwrap(), .unwrap()
+
+
+
+#### Result - Get Value or Error Default Value
+
+<cb>= <v>result_1<>.unwrap_or(<v>value<>)<>
+
+
+Returns a predetermined value when the result is an error.
+Otherwise returns the wrapped value.
+
+
+Will panic if the result is an error.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.unwrap_or>unwrap_or<>
+@
+@ unwrap or, substitute
+@ result.unwrap_or(), .unwrap_or()
+
+
+
+#### Result - Get Value Or Call Function
+
+<cb>= <v>result_1<>.unwrap_or_else(<v>function<>)<>
+
+
+Returns the value from a function if the result is an error.
+Otherwise returns the wrapped value.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.unwrap_or_else>unwrap_or_else<>
+@
+@ unwrap or else
+@ result.unwrap_or_else(), .unwrap_or_else()
 
 
 
@@ -10019,6 +11463,9 @@ Returns the ok value or None.
 <cb>= <v>result_1<>.is_err()<>
 
 Returns true if the result is an error.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.is_err>is_err<>
 @
 @ result.is_err(), .is_err()
 
@@ -10029,6 +11476,9 @@ Returns true if the result is an error.
 <cb>= <v>result_1<>.is_ok()<>
 
 Returns true if the result is successful.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.is_ok>is_ok<>
 @
 @ result.is_ok(), .is_ok()
 
@@ -10040,31 +11490,41 @@ Returns true if the result is successful.
 @ std::result::Result
 
 
-#### Result - Get Value
+#### Result - If Let Error
 
-<cb>= <v>result_1<>.unwrap()<>
+<cb>if let Err(<v>error<>) = <v>result_1<> {
+	<v>...<>
+}<>
+
+
+
+#### Result - Map
+
+<cb>= <v>result_1<>.map(|<v>value<>| <v>...<> )<>
+
+
+Maps the wrapped value from one type to another.
+
+Errors are returned as is.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.map>map<>
 @
-@ .unwrap()
+@ result.map(), .map()
 
 
 
-#### Result - Get Value Or Default Value
+#### Result - Map Error
 
-<cb>= <v>result_1<>.unwrap_or(<v>error_value<>)<>
+<cb>= <v>result_1<>.map_err(|<v>error<>| <v>...<> )<>
 
-Returns unwrapped value or if None, returns a default value.
+
+Maps errors from one type to another.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.map_err>map_err<>
 @
-@ .unwrap_or()
-
-
-
-#### Result - Get Value Or Call Function
-
-<cb>= <v>result_1<>.unwrap_or_else(<v>function_1<>)<>
-
-Returns unwrapped value or if None, calls parameter function.
-@
-@ .unwrap_or_else()
+@ result.map_err(), .map_err()
 
 
 
@@ -10083,6 +11543,23 @@ Returns unwrapped value or if None, calls parameter function.
 Use <c>match<> to process an <c>Result<> variable.
 @
 @ Ok(), Err()
+
+
+
+### Result - Propagate Err
+
+<cb><v>result_1<>?<>
+
+Usage:
+
+<cb>fn <v>some_function<> -> Result\<<v>T<>, <v>E<>> {
+	<v>some_subfunction<>()?;
+}<>
+
+
+Returns an error immediately without needing a <c>return<>.
+@
+@ ?, err()
 
 
 
@@ -10124,7 +11601,7 @@ A Collection of Key Values Stored on the Heap
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>
 @
 @ std::collections::HashMap
-@ hashmap-only, hashmaps-only, hashmaps
+@ hashmap-only, hashmaps-only, hashmaps, hash-only
 
 
 ### HashMap - Create
@@ -10371,7 +11848,7 @@ An Unordered Set of Values Stored on the Heap
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashSet.html>HashSet<>
 @
-@ hashset-only, hashsets-only
+@ hashset-only, hashsets-only, hash-only
 @ std::collections::HashSet
 
 
@@ -10614,13 +12091,13 @@ Returns the current system time.
 
 #### SystemTime - Epoch
 
-<cb>= SystemTime::UNIX_EPOCH<>
+<cb>= UNIX_EPOCH<>
 
 Usage:
 
-<cb>use std::time::SystemTime;
+<cb>use std::time::UNIX_EPOCH;
 
-= SystemTime::UNIX_EPOCH<>
+= UNIX_EPOCH<>
 
 Returns:
 
@@ -10628,9 +12105,13 @@ Returns:
 
 
 Returns the current system time.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/time/index.html">time<>::<l "https://doc.rust-lang.org/std/time/constant.UNIX_EPOCH.html">UNIX_EPOCH<>
+
 @
 @ original epoch time
-@ systemtime::UNIX_EPOCH, UNIX_EPOCH
+@ systemtime::UNIX_EPOCH, UNIX_EPOCH, std::time::UNIX_EPOCH
 
 
 
@@ -10706,9 +12187,182 @@ println!("Time Since Epoch: {} secs", <v>since_epoch<>.as_secs());<>
 
 
 
-# Standard Wrapper Types
+# Smart Pointers
 @
-@ wrapper-only, wrappers-only
+@ smart-only
+@ smart pointer, smart-pointer-only
+@ wrapper-only, wrappers-only, wrap
+
+
+## Arc
+
+Type:
+
+<cb>std::sync::Arc\<<v>T<>><>
+
+
+An Arc is a pointer to memory on the heap that can have multiple owners across multiple threads.
+
+Immutable by default.
+Arc is thread safe.
+
+ARC = Atomically Reference Counted
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Arc.html>Arc<>
+@
+@ arc-only, arc\<t>
+@ std::sync::arc, sync::arc, arc
+
+
+
+### Arc - Create
+
+<cb>= Arc::new(<v>value<>)<>
+
+<cb>use std::sync::Arc;
+
+let <v>arc_1<>: Arc\<<v>T<>> = Arc::new(<v>value<>);<>
+
+
+Creates a new Arc pointer with data placed on the heap.
+
+
+Example:
+
+<cb>use std::sync::Arc;
+
+let <v>arc_1<> = Arc::new(<v>42<>_i32);
+
+println!("{}", <v>arc_1<>);
+
+<#>// Prints: "42"<><>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Arc.html>Arc<>
+@
+@ define, instantiate, new
+@ Arc::new(), new()
+
+
+
+### Arc - Share
+
+<cb>= arc_1.clone()
+
+= Arc::clone(<v>arc_1<>)<>
+
+
+Either of these will create a new Arc instance pointing to the same underlying data.
+@
+@ create, new
+@ arc::clone(), arc.clone(), .clone()
+
+
+
+### Arc - Immutable
+
+
+#### Arc - Create Immutable
+
+<cb>= Arc::new(<v>value<>);<>
+@
+@ arc::new(), new()
+
+
+
+#### Arc - Get To Borrow (Immutable)
+
+Use as if not wrapped in an Rc type.
+
+Rc automatically dereferences into the underlying type.
+
+
+
+#### Arc - Get To Own
+
+<cb>= <v>arc_1<>.try_unwrap()<>
+
+Returns: <c>Result\<T, Arc\<T>><>
+
+
+Returns the underlying item but destroys the arc.
+@
+@ arc::try_unwrap(), arc.try_unwrap(), .try_unwrap()
+
+
+
+#### Arc - Get Underlying Item Directly
+
+Not possible. Use <c>try_unwrap()<>.
+@
+@ reference, data, element
+
+
+
+### Arc - Mutable
+
+
+#### Arc - Create Mutable
+
+<cb>= Arc::new(Mutex::new(<v>value<>));<>
+
+
+Use <c>Arc\<Mutex\<<v>T<>>><> to wrap mutable data.
+
+Mutex Type:
+
+<cb>std::sync::Mutex<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Mutex.html>Mutex<>
+@
+@ arc::new(), new()
+
+
+
+#### Arc - Get Mutable Data - Immutable
+
+<cb>= <v>arc_1<>.get_mut()<>
+
+
+Access the underlying data immutably.
+@
+@ immutably
+@ arc.get_mut(), .get_mut()
+
+
+
+#### Arc - Get Mutable Data with Lock
+
+<cb>= <v>arc_1<>.lock().unwrap()<>
+
+Returns: <c>MutableGuard<>
+
+
+Access the underlying data so it is mutable.
+
+The underlying data is automatically dereferenced. Use as normal.
+The lock automatically releases when the guard goes out of scope.
+@
+@ mutably, mutable, release, releases
+@ arc.lock(), .lock()
+
+
+
+## Arc - Properties
+
+
+#### Arc - Get Reference Count
+
+<cb>= Arc::strong_count(<v>arc_1<>);<>
+
+
+Returns a count of all the arc instances for that arc item.
+@
+@ strong count, instances, existing, current
+@ arc::strong_count(), strong_count()
+
 
 
 ## Box
@@ -10786,11 +12440,64 @@ COW = Clone on Write
 Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/borrow/index.html">borrow<>::<l "https://doc.rust-lang.org/stable/std/borrow/enum.Cow.html">Cow<>
 @
 @ std::borrow::Cow, borrow::cow
-@ cow-only, smart pointer, smart-pointer
+@ cow-only
+
+
+
+### Cow - Operations
+
+
+#### Cow - Match
+
+<cb>match <v>cow_1<> {
+        Borrowed(<v>value<>) => <v>...<>,
+        Owned(<v>value<>) => <v>...<>,
+    }
+}<>
+
+Usage:
+
+<cb>use std::borrow::Cow::{Borrowed, Owned};
+
+match <v>cow_1<> {
+        Borrowed(<v>value<>) => <v>...<>,
+        Owned(<v>value<>) => <v>...<>,
+    }
+}<>
+
+
+
+#### Cow - To Owned
+
+<cb>= <v>cow_1<>.to_owned();<>
+@
+@ cow.to_owned(), .to_owned()
 
 
 
 ## Rc
+
+Type:
+
+<cb>std::rc::Rc\<<v>T<>><>
+
+
+An Rc is a pointer to memory on the heap that can have multiple owners.
+
+Immutable by default.
+Rc is not thread safe.
+
+RC = Reference Counted
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l https://doc.rust-lang.org/std/rc/struct.Rc.html>Rc<>
+@
+@ rc-only, rc\<t>
+@ std::rc::Rc, rc::Rc, rc
+
+
+
+### Rc - Create
 
 <cb>= Rc::new(<v>value<>)<>
 
@@ -10798,18 +12505,8 @@ Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https
 
 let <v>rc_1<>: Rc\<<v>T<>> = Rc::new(<v>value<>);<>
 
-Type:
 
-<cb>std::rc::Rc\<<v>T<>><>
-
-
-An RC is a pointer to memory on the heap that can have multiple owners.
-
-RC = Reference Counted
-
-Creating rc creates data on the heap.
-Rc is not thread safe.
-
+Creates a new Rc pointer with data placed on the heap.
 
 
 Example:
@@ -10825,8 +12522,123 @@ println!("{}", <v>rc_1<>);
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l https://doc.rust-lang.org/std/rc/struct.Rc.html>Rc<>
 @
-@ Rc::new(), Rc\<T>, std::rc::rc, rc:rc
-@ rc-only
+@ define, instantiate, new
+@ Rc::new(), new()
+
+
+
+### Rc - Share Immutable
+
+<cb>= rc_1.clone()
+
+= Rc::clone(<v>rc_1<>)<>
+
+
+Either of these will create a new Rc instance pointing to the same underlying data.
+@
+@ create, new
+@ rc::clone(), rc.clone(), .clone()
+
+
+
+### Rc - Immutable
+
+
+#### Rc - Create Immutable
+
+<cb>= Rc::new(<v>value<>);<>
+@
+@ define, instantiate, new
+@ Rc::new(), new()
+
+
+
+#### Rc - Get To Borrow (Immutable)
+
+Use as if not wrapped in an Rc type.
+
+Rc automatically dereferences into the underlying type.
+
+
+
+#### Rc - Get To Own
+
+<cb>= <v>rc_1<>.try_unwrap()<>
+
+Returns: <c>Result\<T, Rc\<T>><>
+
+
+Returns the underlying item but destroys the Rc.
+@
+@ rc::try_unwrap(), rc.try_unwrap(), .try_unwrap()
+
+
+
+#### Rc - Get Underlying Item Directly
+
+Not possible. Use clone if necessary.
+@
+@ reference, data, element
+
+
+
+### Rc - Mutable
+
+
+#### Rc - Create Mutable
+
+<cb>= Rc::new(RefCell::new(<v>value<>));<>
+
+
+Use <c>Rc\<RefCell\<<v>T<>>><> to wrap mutable data.
+
+RefCell Type:
+
+<cb>std::cell::RefCell<>
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l https://doc.rust-lang.org/std/cell/struct.RefCell.html>RefCell<>
+@
+@ define, instantiate, new
+@ Rc::new(), new()
+
+
+
+#### Rc - Get Mutable Data - Immutable
+
+<cb>= <v>rc_1<>.borrow()<>
+
+
+Access the underlying data immutably.
+@
+@ immutably
+@ rc.borrow(), .borrow()
+
+
+
+#### Rc - Get Mutable Data - Mutable
+
+<cb>= <v>rc_1<>.borrow_mut()<>
+
+
+Access the underlying data so it is mutable.
+@
+@ mutably
+@ rc.borrow_mut(), .borrow_mut()
+
+
+
+## Rc - Properties
+
+
+#### Rc - Get Reference Count
+
+<cb>= Rc::strong_count(<v>rc_1<>);<>
+
+
+Returns a count of all the rc instances for that rc item.
+@
+@ strong count, instances, existing, current
+@ rc::strong_count(), strong_count()
 
 
 
@@ -11035,6 +12847,39 @@ Returns the original error if any.
 
 
 
+### Error - Example Implementation
+
+<cb>use std::error::Error;
+use std::fmt::{Display, Formatter, Result};
+
+\#[derive(Debug)]
+struct <v>CustomError<> {
+    <v>message<>: String,
+}
+
+impl <v>CustomError<> {
+    fn new(<v>message<>: &str) -> Self {
+        Self {
+            <v>message<>: <v>message<>.to_string(),
+        }
+    }
+}
+
+impl Error for <v>CustomError<> {}
+
+impl Display for <v>CustomError<> {
+    fn fmt(&self, formatter: &mut Formatter\<'_>) -> Result {
+        write!(formatter, "{}", self.<v>message<>)
+    }
+}<>
+
+
+This implements a custom error type with one property - <c>message<>.
+@
+@ basic, basics, sample, simple, example, custom
+
+
+
 ## Trait - From
 
 <cb>pub trait From\<<v>T<>> {
@@ -11153,6 +12998,7 @@ Turns an iterator into a collection of values.
 @ to into
 @ iterator.collect(), iter.collect(), .collect(), vec, sequence
 @ turbofish, ::\<>
+@ convert, conversion, converting, from-iterator, to-vec, from, to, into
 
 
 
@@ -11225,6 +13071,24 @@ The final result is returned.
 
 
 
+#### Iterator - For Each
+
+<cb><v>iterator_1<>.for_each(<v>function_1<>);<>
+
+<cb><v>iterator_1<>.for_each(|<v>value<>| <v>...<>);<>
+
+
+Applies a function to each item in the iterator.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>.<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.for_each">for_each()<>
+@
+@ apply function
+@ item, element, value, values
+@ iter().for_each(), .for_each()
+
+
+
 #### Iterator - Last
 
 <cb>= <v>iterator_1<>.last()<>
@@ -11268,7 +13132,7 @@ Returns:
 
 Returns the maximum value from the iterator.
 @
-@ maximum, value
+@ maximum, value, greatest, largest
 @ iter().max(), .max()
 
 
@@ -11284,7 +13148,7 @@ Returns:
 
 Returns the next item from the iterator.
 @
-@ item, element, value
+@ item, element, value, get
 @ iter().next(), .next()
 
 
@@ -11327,6 +13191,25 @@ Returns the position where the match function returns true.
 @
 @ all items, elements, values
 @ iter().sum(), .sum()
+
+
+
+#### Iterator - Take
+
+<cb>= <v>iterator_1<>.take(<v>count<>)<>
+
+Return: <c>Iterator\<<v>T<>><>
+
+
+Returns the next <c><v>count<><> items from the iterator.
+
+Returns a mutable iterator.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.take">take<>
+@
+@ item, element, value, get, n
+@ iter().take(), .take()
 
 
 
@@ -11437,6 +13320,43 @@ The new iterator will have the same number of elements as the shortest list.
 
 
 
+## Iterator - What's The Difference
+
+
+
+### iter() vs iter_mut() vs into_iter()
+
+
+<b>iter():<>
+
+<*>Immutable
+Returns <c>&<v>T<><><>
+
+<in-2>Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/slice/index.html">slice<>::<l "https://doc.rust-lang.org/stable/std/slice/struct.Iter.html">Iter<><>
+
+
+<b>iter_mut():<>
+
+<*>Mutable
+Returns <c><v>T<><><>
+
+<in-2>Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/slice/index.html">slice<>::<l "https://doc.rust-lang.org/stable/std/slice/struct.IterMut.html">IterMut<><>
+
+
+<b>into_iter():<>
+
+<*>Mutability Depends on Context:<>
+
+<in-4><c><v>T<>
+&<v>T<>
+&mut <v>T<><><>
+
+<*>Implements Trait <c>IntoIterator<><>
+
+<in-2>Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/slice/index.html">slice<>::<l "https://doc.rust-lang.org/stable/std/iter/trait.IntoIterator.html">IntoIterator<><>
+
+
+
 ## Trait - ToOwned
 
 <cb>pub trait ToOwned {
@@ -11460,6 +13380,7 @@ Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https
 @
 @ .to_owned(), .clone_into()
 @ std::borrow::ToOwned, toowned-only
+@ to owned
 
 
 
@@ -11483,6 +13404,32 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ .to_string(), tostring, tostring-only
 @ std::string::tostring, string::tostring
+@ to string
+
+
+
+## Trait - TryFrom
+
+<cb>pub trait TryFrom\<<v>T<>> {
+    type Error;
+
+    fn try_from(value: <v>T<>) -> Result\<Self, Self::Error>;
+}<>
+
+Type:
+
+<cb>std::convert::TryFrom<>
+
+
+Converts one type into another.
+
+This operation may fail.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l https://doc.rust-lang.org/stable/std/convert/index.html>convert<>::<l https://doc.rust-lang.org/stable/std/convert/trait.TryFrom.html>TryFrom<>
+@
+@ .try_from(), 
+@ std::convert::TryFrom, tryfrom-only
 
 
 
@@ -11493,9 +13440,103 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ sync-only, synchronized-only
 
 
+
 ## Mutex
 
+<cb>std::sync::Mutex<>
+
+<cb>Mutex\<<v>T<>><>
+
+
+Defines a mutex around some data that can be shared across threads but only allows one single thread access to the data at a time.
+
+
+Mutex = Mutable Exclusion
+
+
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>
+@
+@ mutex-only
+@ std::sync::Mutex, sync::Mutex
+
+
+### Mutex - Create
+
+<cb>= Mutex::new(<v>value<>);<>
+@
+@ mutex::new(), new()
+
+
+
+### Mutex - Get Lock
+
+<cb>= <v>mutex_1<>.lock().unwrap()<>
+
+Returns: <c>std::sync::MutexGuard<>
+
+
+Will panic if another thread panics while holding the lock.
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
+@
+@ mutex.lock(), .lock()
+
+
+
+### Mutex - Get Item (Borrow)
+
+<cb>= <v>guard<>.borrow()<>
+
+Usage:
+
+<cb>let <v>guard<> = <v>mutex_1<>.lock().unwrap()
+let <v>item<> = <v>guard<>.borrow()<>
+
+Returns: <c>&\<<v>T<>><>
+
+
+Borrows the item stored inside the mutex.
+
+The item is borrowed immutably.
+@
+@ immutable, immutably
+@ guard.borrow(), .borrow()
+
+
+
+### Mutex - Get Item (Borrow Mutable)
+
+<cb>= <v>guard<>.borrow_mut()<>
+
+Usage:
+
+<cb>let mut <v>guard<> = <v>mutex_1<>.lock().unwrap()
+let <v>item<> = <v>guard<>.borrow_mut()<>
+
+Returns: <c>&\<<v>T<>><>
+
+
+Borrows the item stored inside the mutex.
+
+The item is mutable.
+@
+@ guard.borrow(), .borrow()
+
+
+
+### Mutex - Release Lock (Automatic)
+
+Locks are automatically released once the mutex guard goes out of scope.
+@
+@ mutexguard, unlock
+
+
+
+### Mutex - Release Lock (Manual)
+
+<cb><v>mutex_guard<>.unlock();<>
+@
+@ mutexguard.unlock(), .unlock()
 
 
 
@@ -11667,6 +13708,19 @@ mod test {
 
 	<v>...<>
 }<>
+
+
+
+### Test - Define Test Module - Import All
+
+<cb>#[cfg(test)]
+mod test {
+	use super::*;
+
+	<v>...<>
+}<>
+@
+@ super, super::*
 
 
 
@@ -11846,9 +13900,10 @@ cargo.toml:
 
 <cb>[profile.release]
 strip = true		<#># Strips symbols<>
-opt-level = "s"		<#># Optimize for size<>
+opt-level = "z"		<#># Optimize for size<>
 lto = true			<#># Enable Link Time Optimization<>
-codegen-units = 1	<#># Minimizes Size By Reducing Parallel Build Processes<><>
+codegen-units = 1	<#># Minimizes Size By Reducing Parallel Build Processes<>
+panic = "abord"     <#># Prevents stack unwinding, etc.<><>
 
 
 Compile:
@@ -11931,6 +13986,61 @@ Includes the <c>\\n<> used to complete the input.
 Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/io/index.html">io<>::<l "https://doc.rust-lang.org/stable/std/io/struct.Stdin.html">Stdin<>.<l "https://doc.rust-lang.org/stable/std/io/struct.Stdin.html#method.read_line">read_line<>
 @
 @ std::io::stdin(), io::stdin(), stdin(), stdin().read_line(), .read_line()
+
+
+
+### Minimalist Application
+
+<cb>#![no_std]
+#![no_main]
+
+extern crate libc;
+
+#[no_mangle]
+pub extern "c" fn main() -> isize {
+	0
+}
+
+#[panic_handler]
+fn my_panic(_info: &core::panic::PanicInfo) -> ! {
+	loop{}
+}<>
+
+
+Creates the smallest code possible.
+
+
+Use Small Code compiler options.
+@
+@ small, smallest, tiny
+@ #![no_std], no_std,  #![no_main], no_main
+
+
+
+### OS - Get
+
+<cb>= std::env::consts::OS<>
+
+Returns: <c>&str<>
+
+Possible Values:
+
+<cb>"android"
+"dragonfly"
+"freebsd"
+"ios"
+"linux"
+"macos"
+"netbsd"
+"openbsd"
+"solaris"
+"windows"<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/stable/std/index.html">std<>::<l "https://doc.rust-lang.org/stable/std/env/index.html">env<>::<l "https://doc.rust-lang.org/std/env/consts/index.html">consts<>::<l "https://doc.rust-lang.org/std/env/consts/constant.OS.html">OS<>
+@
+@ std::env::consts::OS, env::consts::OS, consts::OS
+@ OS, operating system, macos, android, dragonfly, freebsd, ios, linux, macos, netbsd, openbsd, solaris, windows
 
 
 
@@ -12322,7 +14432,7 @@ Array Type Size Separator
 
 Dot Operator
 
-The dot operator indentifies the next item as an instance field or method.
+The dot operator identifies the next item as an instance field or method.
 @
 @ dot operator
 
@@ -12396,6 +14506,22 @@ Defines Loop Name
 	<v>...<>
 	break <v>loop_name<>;
 }<>
+
+
+
+### Symbol ''
+
+A Character Literal
+
+<cb>= '<v>c<>'<>
+
+
+
+### Symbol ""
+
+A String Literal
+
+<cb>= "<v>A String<>"<>
 
 
 
@@ -12815,7 +14941,7 @@ Size Known Only at Runtime (e.g. String, Vec):
 Explicitly Placed on Heap (e.g. Box)
 
 <*>Heap
-(always dynamically allocatded)<>
+(always dynamically allocated)<>
 
 
 
@@ -12842,13 +14968,13 @@ It can not be used as the name of variable, function or anything else.
 <col><c>crate<><><col>Links to an External Crate<>
 <col><c>do<><><col><s>(For Future Use)<><>
 <col><c>dyn<><><col>Dynamic Dispatch To Trait<>
-<col><c>else<><><col>Conditional If Statement, Falback Clause<>
+<col><c>else<><><col>Conditional If Statement, Fallback Clause<>
 <col><c>enum<><><col>Defines an Enum<>
 <col><c>extern<><><col>Link To an External Crate, Function, or Variable<>
 <col><c>false<><><col>Boolean Literal<>
 <col><c>final<><><col><s>(For Future Use)<><>
 <col><c>fn<><><col>Defines a Function or Function Pointer<>
-<col><c>for<><><col>For Loop, or Implements a Trait, or Specifiesa Higher-ranked Lifetime<>
+<col><c>for<><><col>For Loop, or Implements a Trait, or Specifies a Higher-ranked Lifetime<>
 <col><c>if<><><col>Conditional If Statement<>
 <col><c>impl<><><col>Implement Inherent or Trait<>
 <col><c>in<><><col>For Loop<>
@@ -12935,7 +15061,7 @@ authors = ["<v>Author 1<>", "<v>Author 2<>", "<v>Author 3<>"]<>
 
 Includes a local Rust library in the workspace.
 @
-@ file system, add, local, dependencies, path
+@ file system, add, local, dependencies, path, crate
 
 
 ### Setting - License
@@ -12955,7 +15081,7 @@ License SPDX IDs:
 <cb>[lib]
 path="src/<v>new_name.rs<>"<>
 
-Overrides the defaul "lib.rs" name for the main library file.
+Overrides the default "lib.rs" name for the main library file.
 
 This helps remove confusion when working on multiple libraries all listed as 'lib' in your IDE.
 @
@@ -12973,6 +15099,27 @@ Uses Semantic Versioning:
 <cb><v>major<>.<v>minor<>.<v>patch<><>
 
 Semantic Versioning: <l>https://semver.org/<>
+
+
+
+# Reference - Rust Conventions
+
+
+### Prelude Module
+
+Expose commonly accessed functions, types, and traits from a single place.
+
+<cb>use <v>module<>::prelude::*;<>
+
+Use a <c>prelude<> module to expose commonly accessed functions, types, and traits from one single module. These items can be defined elsewhere but are exposed collectively here (<c>pub use <v>T<>;<>). Consumers will then only need to import the <c>prelude<> module to gain access to them.
+
+Use prelude inside your app to allow internal modules to access most commonly used items. This will make it easy for other modules to access those items.
+
+For a library, expose the most commonly used or needed items here. Including required items in one place will help consumers of the library work more effectively.
+
+Tip: Less is more. Don't overload your prelude file.
+@
+@ prelude, ::prelude::*;, prelude::*, prelude.r
 
 
 
@@ -13029,11 +15176,16 @@ Use: BtreeMap
 
 ### Lists
 
-Use: <l "array-only">Array (immutable sequence)<>, <l "vec-only">Vec (mutable sequece)<>
+Use: <l "array-only">Array (immutable sequence)<>, <l "vec-only">Vec (mutable sequence)<>
 
 
 
 # Acronyms
+
+
+### ABI
+Application Binary Interface (C's equivalent of Rust's FFI)
+
 
 
 ### ADT
@@ -13058,6 +15210,11 @@ Dynamically Sized Type
 
 
 
+### FFI
+Foreign Function Interface
+
+
+
 ### HOF
 Higher Order Functions
 
@@ -13078,6 +15235,11 @@ Resource Acquisition Is Initialization
 Reference Counted
 
 See: <l "#rc">RC<>
+
+
+
+### RLIB
+Rust Library
 
 
 
@@ -13140,7 +15302,7 @@ Rust's build system and package manager.
 
 
 ### Clippy
-Rust's includehd code linter.
+Rust's included code linter.
 @
 @ lint, linter
 
@@ -13148,7 +15310,7 @@ Rust's includehd code linter.
 
 ### Crate
 A compiled unit of a program.
-A libary that can be pulled into a project. Includes a list of dependencies.
+A library that can be pulled into a project. Includes a list of dependencies.
 
 
 
@@ -13214,10 +15376,22 @@ The unofficial mascot of Rust
 
 
 
+### Foreign Function Interface (FFI)
+This is Rust's interface to other programming languages and vice versa.
+
+It is based on C's ABI (Application Binary Interface)
+
+
+
 ### Function Overloading
 Not supported in Rust.
 
 Use traits instead.
+
+
+
+### Gorilla
+Here is a gorilla  🦍
 
 
 
@@ -13262,7 +15436,7 @@ A group of functions and types within a crate.
 
 
 ### Multi-Producer Single-Consumer (MPSC)
-A first in first out (FIFO) queue used to communicote between threads.
+A first in first out (FIFO) queue used to communicate between threads.
 
 
 
@@ -13274,7 +15448,10 @@ An unrecoverable error.
 ### Pointer
 A variable that points to a location on the memory heap.
 
-Pointers are stored in the stack.
+Pointers store memory addresses.
+Pointers themselves are stored in the stack.
+
+The most common pointer in Rust is the reference (<c>&<>)
 
 <cb>*pointer<>
 
@@ -13286,11 +15463,17 @@ A data type built into the language.
 
 
 ### Resource Acquisition Is Initialization (RAII)
-This simply means the constructor aquires a resource, the destructor releases it.
+This simply means the constructor acquires a resource, the destructor releases it.
 
 Rust enforces this. So when a resource goes out of scope, it's destructor is called and the resource is released.
 
 (yes, RAII is a terrible name)
+
+
+
+### Rust Library (RLIB)
+The intermediate compiled libraries created by Rust.
+
 
 
 ### Rustacean
@@ -13313,6 +15496,24 @@ Rust's included code formatting tool.
 Rust's included installer and Rust version switcher.
 
 <l>https://rustup.rs<>
+
+
+
+### Smart Pointer
+A structure that acts like a pointer but has extra functionality (typically relating to memory management).
+
+Smart pointers implement traits:
+
+<cb>Deref
+Drop<>
+
+Most Common Standard Library Smart Pointers:
+
+<cb>Box<v>T<>
+Rc<v>T<>
+Ref<v>T<>
+RefMut<v>T<>
+RefCell<v>T<><>
 
 
 
@@ -13351,7 +15552,7 @@ These are returned by functions that do not return any value.
 
 
 ### vtable
-Defines details for a type instance that implements a trait but the actual type isn't knovw until runtime.
+Defines details for a type instance that implements a trait but the actual type isn't known until runtime.
 
 Referenced from a fat pointer (<c>&dyn <v>Trait1<><>).
 Each trait defines a separate vtable.
