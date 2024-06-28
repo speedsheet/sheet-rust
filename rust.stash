@@ -6,101 +6,101 @@
 
 This is an interactive <b>Rust<> cheat sheet. Covers the core Rust programming language. Use the search to get instant answers.
 
-<table><col><b>Basics<>
+<t><col><b>Basics<>
 
-<*><link "?q=hello+world">Hello World<>
-<link "?q=fundamentals-only">Language Fundamentals<>
-<link "?q=conventions-only">Naming Conventions<><>
+<*><l "?q=hello+world">Hello World<>
+<l "?q=fundamentals-only">Language Fundamentals<>
+<l "?q=conventions-only">Naming Conventions<><>
 
-<*><link "?q=attributes-only">Attributes<>
-<link "?q=closure-only">Closures<>
-<link "?q=control-structure-only">Control Structures<>
-<link "?q=errors-only">Error Handling<>
-<link "?q=files-only">Files<>
-<link "?q=file+io">File IO<>
-<link "?q=functions-only">Functions<>
-<link "?q=lifetimes-only">Lifetimes<>
-<link "?q=module-only">Modules<>
-<link "?q=operators-only">Operators<>
-<link "?q=operator+precedence">Operator Precedence<>
-<link "?q=ownership-only">Ownership<>
-<link "?q=reference-only">Pointers<>
-<link "?q=smart-pointers-only">Smart Pointers<>
-<link "?q=tests-only">Testing<>
-<link "?q=traits-only">Traits<><>
+<*><l "?q=attributes-only">Attributes<>
+<l "?q=closure-only">Closures<>
+<l "?q=control-structure-only">Control Structures<>
+<l "?q=errors-only">Error Handling<>
+<l "?q=files-only">Files<>
+<l "?q=file+io">File IO<>
+<l "?q=functions-only">Functions<>
+<l "?q=lifetimes-only">Lifetimes<>
+<l "?q=module-only">Modules<>
+<l "?q=operators-only">Operators<>
+<l "?q=operator+precedence">Operator Precedence<>
+<l "?q=ownership-only">Ownership<>
+<l "?q=reference-only">Pointers<>
+<l "?q=smart-pointers-only">Smart Pointers<>
+<l "?q=tests-only">Testing<>
+<l "?q=traits-only">Traits<><>
 
 <b>Control Structures<>
 
-<*><link "?q=if-else-only">If Else<>
-<link "?q=if-let-only">If let<>
-<link "?q=ternary-only">If / Inline<>
-<link "?q=for-only#for_-_basics">For Loop<>
-<link "?q=let-else-only">Let Else<>
-<link "?q=loop-only">Loop<>
-<link "?q=match-only#match_-_basics">Match<>
-<link "?q=while-only#while_-_basics">While<><>
+<*><l "?q=if-else-only">If Else<>
+<l "?q=if-let-only">If let<>
+<l "?q=ternary-only">If / Inline<>
+<l "?q=for-only#for_-_basics">For Loop<>
+<l "?q=let-else-only">Let Else<>
+<l "?q=loop-only">Loop<>
+<l "?q=match-only#match_-_basics">Match<>
+<l "?q=while-only#while_-_basics">While<><>
 
 <b>Running Rust<>
 
-<*><link "?q=command-line-only">Command Line<>
-<link "?q=configuration-only">Configuration<><>
+<*><l "?q=command-line-only">Command Line<>
+<l "?q=configuration-only">Configuration<><>
 
 <b>Reference<>
 
-<*><link "?q=online-docs-only">Online Docs<>
-<link "?q=reserved-only">Reserved Words<>
-<link "?q=patterns-only">Rust Patterns<>
-<link "?q=terms-only">Rust Terms<>
-<link "?q=symbols-only">Symbol Lookup<><>
+<*><l "?q=online-docs-only">Online Docs<>
+<l "?q=reserved-only">Reserved Words<>
+<l "?q=patterns-only">Rust Patterns<>
+<l "?q=terms-only">Rust Terms<>
+<l "?q=symbols-only">Symbol Lookup<><>
 
 <><col><b>Data Types<>
 
-<*><link "?q=variables-only">Variables<>
-<link "?q=ownership-only">Ownership<>
-<link "?q=literals-only">Literals<>
-<link "?q=data-types-only">Data Types<><>
+<*><l "?q=variables-only">Variables<>
+<l "?q=ownership-only">Ownership<>
+<l "?q=literals-only">Literals<>
+<l "?q=data-types-only">Data Types<><>
 
-<*><link "?q=boolean-only">Bool<>
-<link "?q=byte-only">Byte<>
-<link "?q=char-only">Char<>
-<link "?q=float-only">Float<>
-<link "?q=integer-only">Integer<>
-<link "?q=str-only">Str<>
-<link "?q=string-only">String<><>
+<*><l "?q=boolean-only">Bool<>
+<l "?q=byte-only">Byte<>
+<l "?q=char-only">Char<>
+<l "?q=float-only">Float<>
+<l "?q=integer-only">Integer<>
+<l "?q=str-only">Str<>
+<l "?q=string-only">String<><>
 
-<*><link "?q=array-only">Array<><>
+<*><l "?q=array-only">Array<><>
 
-<*><link "?q=unit-only">Unit<>
-<link "?q=range-only">Range<><>
+<*><l "?q=unit-only">Unit<>
+<l "?q=range-only">Range<><>
 
-<*><link "?q=enum-only">Enum<>
-<link "?q=struct-only">Struct<>
-<link "?q=tuple-only">Tuple<>
-<link "?q=tuple-struct-only">Tuple Struct<><>
+<*><l "?q=enum-only">Enum<>
+<l "?q=struct-only">Struct<>
+<l "?q=tuple-only">Tuple<>
+<l "?q=tuple-struct-only">Tuple Struct<><>
 
 <b>Collections<>
 
-<*><link "?q=binaryheap-only">BinaryHeap<>
-<link "?q=btreemap-only">BTreeMap<>
-<link "?q=btreeset-only">BTreeSet<>
-<link "?q=hashmap-only">HashMap<>
-<link "?q=hashset-only">HashSet<>
-<link "?q=linkedlist-only">LinkedList<>
-<link "?q=vec-only">Vec<>
-<link "?q=vecdeque-only">VecDeque<><>
+<*><l "?q=binaryheap-only">BinaryHeap<>
+<l "?q=btreemap-only">BTreeMap<>
+<l "?q=btreeset-only">BTreeSet<>
+<l "?q=hashmap-only">HashMap<>
+<l "?q=hashset-only">HashSet<>
+<l "?q=linkedlist-only">LinkedList<>
+<l "?q=vec-only">Vec<>
+<l "?q=vecdeque-only">VecDeque<><>
 
 <b>Smart Pointers<>
 
-<*><link "?q=arc-only">Arc<>
-<link "?q=box-only">Box<>
-<link "?q=cell-only">Cell<>
-<link "?q=cow-only">Cow<>
-<link "?q=rc-only">Rc<>
-<link "?q=ref-only">Ref<>
-<link "?q=refcell-only">RefCell<>
-<link "?q=refmut-only">RefMut<>
-<link "?q=rwlock-only">RwLock<>
-<link "?q=weak-only">Weak<><><><>
+<*><l "?q=arc-only">Arc<>
+<l "?q=box-only">Box<>
+<l "?q=cell-only">Cell<>
+<l "?q=cow-only">Cow<>
+<l "?q=rc-only">Rc<>
+<l "?q=ref-only">Ref<>
+<l "?q=refcell-only">RefCell<>
+<l "?q=refmut-only">RefMut<>
+<l "?q=rwlock-only">RwLock<>
+<l "?q=weak-only">Weak<><><><>
 
 
 # Online Documents
@@ -8961,7 +8961,7 @@ println!("Blue = {}", <v>Color<>::<v>Blue<> as u8);
 
 Creates an enum where each item has a custom value.
 
-Items with no explicit values will continue in ascending values from the last set value.
+Items with no explicit values will continue in ascending values from the last value set.
 
 
 Example:
@@ -10159,7 +10159,45 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 
 ### Array - Get
 
+<cb>= <v>array_1<>.get(<v>index<>)<>
+
+Returns:
+
+<cb>Option\<<v>T<>><>
+
+
+Returns an item from the array
+
+Returns None if out of bounds.
+Slower than <c>vec[...]<>.
+
+
+Example:
+
+<cb>let <v>array_1<> = [<v>1<>, <v>2<>, <v>3<>];
+
+<v>second<> = <v>array_1<>.get(1);<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
+@
+@ item, element, value
+@ array.get(), .get()
+
+
+
+### Array - Get Using Index
+
 <cb>= <v>array_1<>[<v>index<>]<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns a copy of the item from the array.
+
+The item type must support the <go? "copy-">Copy<> trait
 
 
 Example:
@@ -10172,12 +10210,61 @@ Example:
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
 @
 @ item, element, value
+@ array[], []
+
+
+
+### Array - Get Mutable
+
+<cb>= <v>array_1<>.get_mut(<v>index<>)<>
+
+Returns
+
+<cb>Option\<&mut <v>T<>><>
+
+
+Returns the mutable item at the given index location.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
+@
+@ element, value, item
+@ array.get_mut(), .get_mut()
 
 
 
 ### Array - Get First
 
+<cb>= <v>array_1<>.first()<>
+
+Returns:
+
+<cb>Option\<&<v>T<>><>
+
+
+Returns the first item in the array.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
+@
+@ element, value, item, pop front
+@ beginning
+@ array.first(), .first()
+
+
+
+### Array - Get First Using Index
+
 <cb>= <v>array_1<>[0]<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns a copy of the first item in the array.
+
+The item type must support the <go? "copy-">Copy<> trait.
 
 
 Example:
@@ -10193,9 +10280,58 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 
 
 
+### Array - Get First Mutable
+
+<cb>= <v>array_1<>.first_mut()<>
+
+Returns:
+
+<cb>Option\<&mut <v>T<>><>
+
+
+Returns the first item in the array.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
+@
+@ element, value, item
+@ beginning
+@ array.first_mut(), .first_mut()
+
+
+
 ### Array - Get Last
 
+<cb>= <v>array_1<>.last()<>
+
+Returns:
+
+<cb>Option\<&<v>T<>><>
+
+
+Returns the last item in the array.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
+@
+@ element, value, item, pop front
+@ end, final
+@ array.last(), .last()
+
+
+
+### Array - Get Last Using Index
+
 <cb>= <v>array_1<>[<v>array_1<>.len() - 1]<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns a copy of the last item in the array.
+
+The item type must support the <go? "copy-">Copy<> trait.
 
 
 Example:
@@ -10208,12 +10344,42 @@ let last = <v>array_1<>[<v>array_1<>.len() - 1];<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
 @
 @ item, element, value
+@ end, final
+
+
+
+### Array - Get Last Mutable
+
+<cb>= <v>array_1<>.last_mut()<>
+
+Returns:
+
+<cb>Option\<&mut <v>T<>><>
+
+
+Returns the last item in the array.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
+@
+@ element, value, item
+@ end, final
+@ array.last_mut(), .last_mut()
 
 
 
 ### Array - Get Multidimensional
 
 <cb>= <v>array_1<>[<v>outer_index<>][<v>inner_index<>]<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns a copy of an item from the array.
+
+The item type must support the <go? "copy-">Copy<> trait.
 
 
 Example:
@@ -10233,6 +10399,31 @@ println!("{}", <v>sixth<>);
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
 @
 @ item, element, value, 2d, dimensions, dimensional
+
+
+
+### Array - Get Slice
+
+<cb>= &<v>array_1<>[<v>range<>]
+
+= &<v>array_1<>[<v>min<>..<v>max_plus_one<>]
+
+= &<v>array_1<>[<v>min<>..=<v>max<>]<>
+
+Returns:
+
+<cb>&<v>T<>[]<>
+
+
+Returns a slice of the array as a new array.
+
+<c>&<> is required because the slice size can not be determined at compile time.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ops/index.html">ops<>::<l "https://doc.rust-lang.org/std/ops/trait.Index.html">Index<>
+@
+@ subarray, sublist, to, into, convert, array-to-, to-slice
 
 
 
@@ -10590,7 +10781,29 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Vec - Get - With Index
+### Vec - Get
+
+<cb>= <v>vec_1<>.get(<v>index<>)<>
+
+Returns:
+
+<cb>Option\<<v>T<>><>
+
+
+Returns the item at the given index.
+
+Returns None if out of bounds.
+Slower than <c>vec[...]<>.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.get">get()<>
+@
+@ element, value, item
+@ vec.get(), .get()
+
+
+
+### Vec - Get Using Index
 
 <cb>= <v>vec_1<>[<v>index<>]<>
 
@@ -10610,28 +10823,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ element, value, item
 @ vec[], []
-
-
-
-### Vec - Get - With .get()
-
-<cb>= <v>vec_1<>.get(<v>index<>)<>
-
-Returns:
-
-<cb>Option\<<v>T<>><>
-
-
-Returns the item at the given index.
-
-Returns None if out of bounds.
-Slower than <c>vec[...]<>.
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.get">get()<>
-@
-@ element, value, item
-@ vec[], [], vec.get(), .get()
 
 
 
@@ -10674,6 +10865,28 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
+### Vec - Get First Using Index
+
+<cb>= <v>vec_1<>[0]<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns the first item in the vec.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.get">get()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ops/index.html">ops<>::<l "https://doc.rust-lang.org/std/ops/trait.Index.html">Index<>
+@
+@ element, value, item
+@ beginning
+@ vec[], [], vec.get(), .get()
+@ [0], .get(0)
+
+
+
 ### Vec - Get First Mutable
 
 <cb>= <v>vec_1<>.first_mut()<>
@@ -10691,26 +10904,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ element, value, item
 @ beginning
 @ vec.first_mut(), .first_mut()
-
-
-
-### Vec - Get First Using Index
-
-<cb>= <v>vec_1<>[0]
-
-= <v>vec_1<>.get(0)<>
-
-
-Returns the first item in the vec.
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.get">get()<>
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ops/index.html">ops<>::<l "https://doc.rust-lang.org/std/ops/trait.Index.html">Index<>
-@
-@ element, value, item
-@ beginning
-@ vec[], [], vec.get(), .get()
-@ [0], .get(0)
 
 
 
@@ -10734,6 +10927,27 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
+### Vec - Get Last Using Index
+
+<cb>= <v>vec_1<>[<v>vec_1<>.len() - 1]<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns the item at the given index.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.get">get()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ops/index.html">ops<>::<l "https://doc.rust-lang.org/std/ops/trait.Index.html">Index<>
+@
+@ element, value, item
+@ end, final
+@ vec[], [], vec.get(), .get()
+
+
+
 ### Vec - Get Last Mutable
 
 <cb>= <v>vec_1<>.last_mut()<>
@@ -10751,25 +10965,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ element, value, item
 @ beginning
 @ vec.last_mut(), .last_mut()
-
-
-
-### Vec - Get Last Using Index
-
-<cb>= <v>vec_1<>[<v>vec_1<>.len() - 1]
-
-= <v>vec_1<>.get(<v>vec_1<>.len() - 1)<>
-
-
-Returns the item at the given index.
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.get">get()<>
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ops/index.html">ops<>::<l "https://doc.rust-lang.org/std/ops/trait.Index.html">Index<>
-@
-@ element, value, item
-@ end, final
-@ vec[], [], vec.get(), .get()
 
 
 
@@ -14740,15 +14935,21 @@ Passes an instance of the trait to the function.
 
 ### Trait - Function Parameter - Pass Statically
 
+Pass with Ownership:
+
 <cb>fn <v>function_1<>(<v>param_1<>: impl <v>TraitName<>) {
 	<v>...<>
 }<>
+
+Pass, Borrow:
 
 <cb>fn <v>function_1<>(<v>param_1<>: &impl <v>TraitName<>) {
 	<v>...<>
 }<>
 
-<cb>fn <v>function_1<>\<T: <v>TraitName<>(<v>param_1<>: &<v>T<>) {
+Pass, Borrow:
+
+<cb>fn <v>function_1<>\<T: <v>TraitName<>>(<v>param_1<>: &<v>T<>) {
 	<v>...<>
 }<>
 
@@ -14762,9 +14963,13 @@ The fuction will be reimplemented for all possible versions of the trait.
 
 ### Trait - Function Parameter - Multiple Traits
 
+Parameter With Ownership:
+
 <cb>fn <v>function_1<>(<v>param_1<>: impl <v>Trait1<> + <v>Trait2<> + <v>Trait3<>) {
 	<v>...<>
 }<>
+
+Pass, Borrow:
 
 <cb>fn <v>function_1<>(<v>param_1<>: &impl <v>Trait1<> + <v>Trait2<> + <v>Trait3<>) {
 	<v>...<>
@@ -14778,9 +14983,13 @@ Passes an instance that implements all traits to the function.
 
 ### Trait - Function Parameter
 
+Pass with Ownership:
+
 <cb>fn <v>function_1<>(<v>param_1<>: Box\<dyn <v>TraitName<>>) {
 	<v>...<>
 }<>
+
+Pass, Borrow:
 
 <cb>fn <v>function_1<>(<v>param_1<>: &Box\<dyn <v>TraitName<>>) {
 	<v>...<>
@@ -21972,8 +22181,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 # Cow
 
-<cb>= <>
-
 Type:
 
 <cb>std::borrow::Cow<>
@@ -25541,6 +25748,324 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
+# Socket Address
+
+Type:
+
+<cb>std::net::SocketAddr<>
+
+Enum Variants:
+
+<cb>pub enum SocketAddr {
+    V4(<v>SocketAddrV4<>),
+    V6(<v>SocketAddrV6<>),
+}<>
+
+
+An enum that defines a socket address (ip address type, id and port).
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
+@
+@ std::net::socketaddr, net::socketaddr, ::socketaddr, socketaddr-only
+@ network, socketaddr, enum
+
+
+## Socket Address - Create
+@
+@ define, new, instantiate
+
+
+### Socket Address - Create V4
+
+<cb>= SocketAddr::new(IpAddr::V4(Ipv4Addr::new(<v>127<>, <v>0<>, <v>0<>, <v>1<>)), <v>port<>);<>
+
+Usage:
+
+<cb>use std::net::IpAddr;
+use std::net::Ipv4Addr;
+use std::net::SocketAddr;
+
+let <v>address<> = SocketAddr::new(IpAddr::V4(Ipv4Addr::new(<v>127<>, <v>0<>, <v>0<>, <v>1<>)), <v>port<>);<>
+
+Returns:
+
+<cb>Result\<SocketAddr, AddrParseError><>
+
+
+Defines a socket address and port for IP version 4.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>.<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html#method.new>new()<>
+Rust Docs: <l https://doc.rust-lang.org/std/net/struct.SocketAddrV4.html>SoccetAddrV4<>  |  <l https://doc.rust-lang.org/std/net/enum.IpAddr.html>IpAddr<>  |  <l https://doc.rust-lang.org/std/net/struct.Ipv4Addr.html>Ipv4Addr<>
+@
+@ SocketAddr::new
+
+
+
+### Socket Address - Create V6
+
+<cb>= SocketAddr::new(IpAddr::V6(Ipv6Addr::new(<v>0<>, <v>0<>, <v>0<>, <v>0<>, <v>0<>, <v>0<>, <v>0<>, <v>1<>)), <v>port<>);<>
+
+Usage:
+
+<cb>use std::net::IpAddr;
+use std::net::Ipv6Addr;
+use std::net::SocketAddr;
+
+let <v>address<> = SocketAddr::new(IpAddr::V6(Ipv6Addr::new(<v>0<>, <v>0<>, <v>0<>, <v>0<>, <v>0<>, <v>0<>, <v>0<>, <v>1<>)), <v>port<>);<>
+
+Returns:
+
+<cb>Result\<SocketAddr, AddrParseError><>
+
+
+Defines a socket address and port for IP version 6.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>.<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html#method.new>new()<>
+Rust Docs: <l https://doc.rust-lang.org/std/net/struct.SocketAddrV6.html>SoccetAddrV6<>  |  <l https://doc.rust-lang.org/std/net/enum.IpAddr.html>IpAddr<>  |  <l https://doc.rust-lang.org/std/net/struct.Ipv6Addr.html>Ipv6Addr<>
+@
+@ SocketAddr::new
+
+
+
+## Socket Address - Properties
+@
+@ get value
+
+
+### Socket Address - IP Address
+
+<cb>= <v>socket_address_1<>.ip()<>
+
+Returns:
+
+<cb>IpAddr<>
+
+
+Returns the IP address of the socket address.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>.<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html#method.ip>ip()<>
+@
+@ getsocketaddr.ip()
+
+
+
+### Socket Address - Port
+
+<cb>= <v>socket_address_1<>.port()<>
+
+Returns:
+
+<cb>u16<>
+
+
+Returns the port number of the socket address.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>.<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html#method.poch>port()<>
+@
+@ number, value
+@ getsocketaddr.port()
+
+
+
+# UDP Socket
+
+<cb>std::net::UdpSocket<>
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>
+@
+@ std::net::UdpSocket, net::UdpSocket, ::UdpSocket, udpsocket-only
+@ network, udpsocket
+
+
+## UDP Socket - Bind / Open
+@
+@ create, new, bind
+
+
+### UDP Socket - Open
+
+<cb>= UdpSocket::bind("<v>address<>")<>
+
+Usage:
+
+<cb>use std::net::UdpSocket;
+
+let <v>socket_1<> = UdpSocket::bind("<v>address<>");<>
+
+Returns:
+
+<cb>Result\<UdpSocket><>
+
+
+Binds a socket to a local address.
+
+Connectso to any available address and port.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.bind>bind()<>
+@
+@ open
+@ std::net::UdpSocket.bind()
+
+
+
+### UDP Socket - Open On Port
+
+<cb>= UdpSocket::bind("<v>address<>:<v>port<>")<>
+
+Usage:
+
+<cb>use std::net::UdpSocket;
+
+let <v>socket_1<> = UdpSocket::bind("<v>address<>:<v>port<>");<>
+
+Returns:
+
+<cb>Result\<UdpSocket><>
+
+
+Opens a listener on the given port.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.bind>bind()<>
+@
+@ bind to port, open
+@ std::net::UdpSocket.bind()
+
+
+
+## UDP Socket - Operations
+
+
+### UDP Socket - Receive
+
+<cb>= <v>socket_1<>.recv(<v>byte_buffer<>)<>
+
+Usage:
+
+<cb>let mut buffer = [0; 1024];
+
+let <v>size<> = <v>socket_1<>.recv(<v>byte_buffer<>);<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Receives 1 datagram message sent to the socket.
+
+Returns the size of the message in bytes.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.recv>recv()<>
+@
+@ retrieve, datagram, packet
+@ udpsocket.recv()
+
+
+
+### UDP Socket - Receive From
+
+<cb>= <v>socket_1<>.recv_from(<v>byte_buffer<>)<>
+
+Usage:
+
+<cb>let mut buffer = [0; 1024];
+
+let <v>result<> = <v>socket_1<>.recv_from(<v>byte_buffer<>);<>
+
+Returns:
+
+<cb>Result\<(usize, SocketAddr)><>
+
+
+Receives 1 datagram message sent to the socket.
+
+Returns the size of the message in bytes and the address of the sender.
+The buffer must be big enough to receive the message or the message will be truncated.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.recv_from>recv_from()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<> (enum)
+@
+@ retrieve, datagram, packet
+@ udpsocket.recv_from()
+
+
+
+### UDP Socket - Send
+
+<cb>= <v>socket_1<>.send(<v>bytes<>)<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Sends a datagram to the receiver on the connected address.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.sent>sent()<>
+@
+@ datagram, packet
+@ udpsocket.send()
+
+
+
+### UDP Socket - Send To
+
+<cb>= <v>socket_1<>.send_to(<v>bytes<>, "<v>address<>:<v>port<>")<>
+
+<cb>= <v>socket_1<>.send_to(<v>bytes<>, <v>socket_address<>)<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Sends a datagram to an address and port, or to a socket.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.send_to>send_to()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<> (enum)
+@
+@ datagram, packet
+@ udpsocket.send_to()
+
+
+
+## UDP Socket - Properties
+@
+@ get value
+
+
+### UDP Socket - Address
+
+<cb>= <v>socket_1<>.local_addr()<>
+
+Returns:
+
+<cb>Result\<SocketAddr><>
+
+
+Returns the IP address of the socket.
+
+
+See: <go?>Socket Address<> (above)
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.local_addr>local_addr()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.IpAddr.html>IpAddr<>
+@
+@ ip address, port
+@ udpsocket.local_addr()
+
+
+
 # Testing
 @
 @ unit tests
@@ -26734,7 +27259,7 @@ Usage:
 }<>
 
 
-Use the <c><link "?q=into-only trait">Into<><> trait when you need to pass either <c>String<> or <c>&str<>.
+Use the <c><l "?q=into-only trait">Into<><> trait when you need to pass either <c>String<> or <c>&str<>.
 
 Call .into() to convert to an actual String.
 
@@ -27877,6 +28402,16 @@ Allocating new data to the heap memory.
 Removing existing data from the heap memory.
 
 
+#### Heap Memory - Speed / Performance
+Heap memory is slower than stack memory when allocating, accessing and deallocating that memory.
+
+Allocation takes time as Rust must find a space that is free and big enough to fit the allocation request.
+
+Accessing takes a little longer than stack memory access as there is always a pointer call first.
+
+Deallocation takes time because allocation tables need to be updated.
+
+
 
 ### Memory - Where Is My Data Stored?
 
@@ -28544,6 +29079,163 @@ Use unimplemented!() for things that must be implemented now.
 
 
 
+# Rust Crates
+@
+@ 3rd party libraries, third
+
+
+### Chrono - Date / Time Crate
+
+Use the Chrono crate:
+
+<cb>chrono<>
+
+
+Rust does not include date and time functions.
+Use the Chrono library to add date time support to your project.
+
+
+<t>SpeedSheet<|><go "chrono">Chrono<>
+
+Docs<|><l>https://docs.rs/chrono/latest/chrono/<>
+Crate<|><l>https://crates.io/crates/chrono<>
+
+Format Codes<|><l>https://docs.rs/chrono/latest/chrono/format/strftime/<><>
+
+
+Example:
+
+<cb>use chrono::prelude::{DateTime, Local};
+
+let <v>local<>: DateTime\<Local> = Local::now();
+<#>// 2001-01-01T01:02:03.123456789+05:00<><>
+@
+@ datetime, year, month, day, hour, minute, second, timezone, time zone
+
+
+
+### JSON Support
+
+Use these Rust crates:
+
+<cb>serde
+serde_json<>
+
+
+JSON support is not built in Rust directly.
+Use the Serde library instead.
+
+
+<t>SpeedSheet<|><go "serde">Serde<>
+
+Docs<|><l>https://docs.rs/serde/latest/serde/<>
+Crate<|><l>https://crates.io/crates/serde<><>
+@
+@ convert to from
+@ json-only, marshall, unmarshal
+
+
+
+### Regular Expressions (Crate)
+
+Use the Regex crate:
+
+<cb>regex<>
+
+
+Rust does not have built in support for regular expressions.
+Use the regex crate to add regular expression support into your project.
+
+<t>Docs<|><l>https://docs.rs/regex/latest/regex/<>
+Crate<|><l>https://crates.io/crates/regex<><>
+@
+@ regex
+
+
+
+### Regular Expressions (Syntax)
+
+See: <l regex>Regex SpeedSheet<>
+
+
+Use the Regex speedsheet for help working with the regular expression syntax.
+@
+@ regex
+
+
+
+### Random
+
+Use the rand crate.
+
+<cb>rand<>
+
+
+Rust does not have built in support for random number generators.
+Use the rand crate instead.
+
+<t>SpeedSheet<|><l rand>rand SpeedSheet<>
+
+Docs<|><l>https://rust-random.github.io/book/<>
+APIs<|><l>https://docs.rs/rand/latest/rand/<>
+Crate<|><l>https://crates.io/crates/rand<><>
+@
+@ calls, network, requests
+
+
+
+### Reqwest - HTTP Crate
+
+Use the Reqwest crate.
+
+<cb>reqwest<>
+
+
+Rust does not have built in support for http commands.
+Use the excellent reqwest crate instead.
+
+<t>Docs<|><l>https://docs.rs/reqwest/latest/reqwest/<>
+Crate<|><l>https://crates.io/crates/reqwest<><>
+@
+@ calls, network, requests
+
+
+
+### Serde - Serialize / Deserialize Crate
+
+Use the Serde crate for serializing and deserializing data.
+
+<cb>serde<>
+
+<t>SpeedSheet<|><go "serde">Serde SpeedSheet<>
+
+Docs<|><l>https://docs.rs/serde/latest/serde/<>
+Crate<|><l>https://crates.io/crates/serde<><>
+@
+@ convert to from
+@ serde, serde-only, marshall, unmarshal
+
+
+
+### YAML Support
+
+Use yaml-rust:
+
+<cb>yaml-rust<>
+
+
+YAML support is not built in Rust directly.
+Use yaml-rust library instead to add yaml support into your project.
+
+
+<t>Docs<|><l>https://docs.rs/yaml-rust/latest/yaml_rust/<>
+Crate<|><l>https://crates.io/crates/yaml-rust<><>
+@
+@ convert to from
+@ yaml-only, marshall, unmarshal
+
+
+
 # Acronyms
 @
 @ glossary, glossary-only, acronyms-only, acronym-only
@@ -28612,6 +29304,11 @@ Rust Library
 
 ### SPDX
 Software Package Data Exchange
+
+
+
+### WASM
+WebAssembly
 
 
 
@@ -29051,6 +29748,13 @@ Defines details for a type instance that implements a trait but the actual type 
 
 Referenced from a fat pointer (<c>&dyn <v>Trait1<><>).
 Each trait defines a separate vtable.
+
+
+
+### WebAssembly (WASM)
+Portable binary-cod that runs in a web browser. Rust supports compiling to WebAssembly.
+
+Wikipedia: <l https://en.wikipedia.org/wiki/WebAssembly>WebAssembly<>
 
 
 
