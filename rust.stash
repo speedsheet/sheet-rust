@@ -1,106 +1,112 @@
 <metadata>index: tags<>
-# <#>Rust<> Sheet
+# <#>Rust<> SpeedSheet 🦀
 <metadata>index: None<>
-<b>Find it faster.<>
 
+This interactive Rust cheat sheet covers the essentials of the <b>Rust<> programming language. Just use FIND to get instant answers and find what you need in a snap!
 
-This is an interactive <b>Rust<> cheat sheet. Covers the core Rust programming language. Use the search to get instant answers.
+<card><t><dodger-blue><html-block><svg fill="currentColor" width="2em" height="2em" viewBox="0 0 16 16">
+	<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg><><><|><{}}><font-size 1.5em><><b>Speedsheet Like a Pro<>
+
+Check out our <l "rust_tips">tips page<> for pro-level tricks to get the most out of this cheat sheet.<><><>
 
 <t><col><b>Basics<>
 
-<*><l "?q=hello+world">Hello World<>
-<l "?q=fundamentals-only">Language Fundamentals<>
-<l "?q=conventions-only">Naming Conventions<><>
+<*><go? "hello world">Hello World<>
+<go? "fundamentals-only">Language Fundamentals<>
+<go? "conventions-only">Naming Conventions<><>
 
-<*><l "?q=attributes-only">Attributes<>
-<l "?q=closure-only">Closures<>
-<l "?q=control-structure-only">Control Structures<>
-<l "?q=errors-only">Error Handling<>
-<l "?q=files-only">Files<>
-<l "?q=file+io">File IO<>
-<l "?q=functions-only">Functions<>
-<l "?q=lifetimes-only">Lifetimes<>
-<l "?q=module-only">Modules<>
-<l "?q=operators-only">Operators<>
-<l "?q=operator+precedence">Operator Precedence<>
-<l "?q=ownership-only">Ownership<>
-<l "?q=reference-only">Pointers<>
-<l "?q=smart-pointers-only">Smart Pointers<>
-<l "?q=tests-only">Testing<>
-<l "?q=traits-only">Traits<><>
+<*><go? "attributes-only">Attributes<>
+<go? "closure-only">Closures<>
+<go? "control-structure-only">Control Structures<>
+<go? "errors-only">Error Handling<>
+<go? "files-only">Files<>
+<go? "file io">File IO<>
+<go? "functions-only">Functions<>
+<go? "lifetimes-only">Lifetimes<>
+<go? "module-only">Modules<>
+<go? "operators-only">Operators<>
+<go? "operator precedence">Operator Precedence<>
+<go? "ownership-only">Ownership<>
+<go? "reference-only">Pointers<>
+<go? "smart-pointers-only">Smart Pointers<>
+<go? "tests-only">Testing<>
+<go? "traits-only">Traits<><>
 
 <b>Control Structures<>
 
-<*><l "?q=if-else-only">If Else<>
-<l "?q=if-let-only">If let<>
-<l "?q=ternary-only">If / Inline<>
-<l "?q=for-only#for_-_basics">For Loop<>
-<l "?q=let-else-only">Let Else<>
-<l "?q=loop-only">Loop<>
-<l "?q=match-only#match_-_basics">Match<>
-<l "?q=while-only#while_-_basics">While<><>
+<*><go? "if-else-only">If Else<>
+<go? "if-let-only">If let<>
+<go? "ternary-only">If / Inline<>
+<go? "for-only#for_-_basics">For Loop<>
+<go? "let-else-only">Let Else<>
+<go? "loop-only">Loop<>
+<go? "match-only#match_-_basics">Match<>
+<go? "while-only#while_-_basics">While<><>
 
 <b>Running Rust<>
 
-<*><l "?q=command-line-only">Command Line<>
-<l "?q=configuration-only">Configuration<><>
+<*><go? "command-line-only">Command Line<>
+<go? "configuration-only">Configuration<><>
 
 <b>Reference<>
 
-<*><l "?q=online-docs-only">Online Docs<>
-<l "?q=reserved-only">Reserved Words<>
-<l "?q=patterns-only">Rust Patterns<>
-<l "?q=terms-only">Rust Terms<>
-<l "?q=symbols-only">Symbol Lookup<><>
+<*><go? "online-docs-only">Online Docs<>
+<go? "reserved-only">Reserved Words<>
+<go? "patterns-only">Rust Patterns<>
+<go? "terms-only">Rust Terms<>
+<go? "symbols-only">Symbol Lookup<><>
 
 <><col><b>Data Types<>
 
-<*><l "?q=variables-only">Variables<>
-<l "?q=ownership-only">Ownership<>
-<l "?q=literals-only">Literals<>
-<l "?q=data-types-only">Data Types<><>
+<*><go? "variables-only">Variables<>
+<go? "ownership-only">Ownership<>
+<go? "literals-only">Literals<>
+<go? "data-types-only">Data Types<><>
 
-<*><l "?q=boolean-only">Bool<>
-<l "?q=byte-only">Byte<>
-<l "?q=char-only">Char<>
-<l "?q=float-only">Float<>
-<l "?q=integer-only">Integer<>
-<l "?q=str-only">Str<>
-<l "?q=string-only">String<><>
+<*><go? "boolean-only">Bool<>
+<go? "byte-only">Byte<>
+<go? "char-only">Char<>
+<go? "float-only">Float<>
+<go? "integer-only">Integer<>
+<go? "str-only">Str<>
+<go? "string-only">String<><>
 
-<*><l "?q=array-only">Array<><>
+<*><go? "array-only">Array<><>
 
-<*><l "?q=unit-only">Unit<>
-<l "?q=range-only">Range<><>
+<*><go? "unit-only">Unit<>
+<go? "range-only">Range<><>
 
-<*><l "?q=enum-only">Enum<>
-<l "?q=struct-only">Struct<>
-<l "?q=tuple-only">Tuple<>
-<l "?q=tuple-struct-only">Tuple Struct<><>
+<*><go? "enum-only">Enum<>
+<go? "struct-only">Struct<>
+<go? "tuple-only">Tuple<>
+<go? "tuple-struct-only">Tuple Struct<><>
 
 <b>Collections<>
 
-<*><l "?q=binaryheap-only">BinaryHeap<>
-<l "?q=btreemap-only">BTreeMap<>
-<l "?q=btreeset-only">BTreeSet<>
-<l "?q=hashmap-only">HashMap<>
-<l "?q=hashset-only">HashSet<>
-<l "?q=linkedlist-only">LinkedList<>
-<l "?q=vec-only">Vec<>
-<l "?q=vecdeque-only">VecDeque<><>
+<*><go? "binaryheap-only">BinaryHeap<>
+<go? "btreemap-only">BTreeMap<>
+<go? "btreeset-only">BTreeSet<>
+<go? "hashmap-only">HashMap<>
+<go? "hashset-only">HashSet<>
+<go? "linkedlist-only">LinkedList<>
+<go? "vec-only">Vec<>
+<go? "vecdeque-only">VecDeque<><>
 
 <b>Smart Pointers<>
 
-<*><l "?q=arc-only">Arc<>
-<l "?q=box-only">Box<>
-<l "?q=cell-only">Cell<>
-<l "?q=cow-only">Cow<>
-<l "?q=rc-only">Rc<>
-<l "?q=ref-only">Ref<>
-<l "?q=refcell-only">RefCell<>
-<l "?q=refmut-only">RefMut<>
-<l "?q=rwlock-only">RwLock<>
-<l "?q=weak-only">Weak<><><><>
+<*><go?>Smart Pointer Guide<><>
+
+<*><go? "arc-only">Arc<>
+<go? "box-only">Box<>
+<go? "cell-only">Cell<>
+<go? "cow-only">Cow<>
+<go? "rc-only">Rc<>
+<go? "ref-only">Ref<>
+<go? "refcell-only">RefCell<>
+<go? "refmut-only">RefMut<>
+<go? "rwlock-only">RwLock<>
+<go? "weak-only">Weak<><><><>
 
 
 # Online Documents
@@ -254,6 +260,21 @@ Run:
 # Language Fundamentals
 @
 @ language-fundamentals-only, fundamentals-only
+
+
+
+### Created / 1st Release
+
+<t>Created<|>2006
+1st Release<|>May 2015<>
+
+
+
+### Created By
+
+Graydon Hoare
+@
+@ creator
 
 
 
@@ -721,6 +742,17 @@ Creates:
 
 
 
+### Cargo - Create Documentation
+
+<cb>cargo doc<>
+
+
+Generates HTML docs from your source code.
+@
+@ generate, html docs, docs
+
+
+
 ### Cargo - Add Library / Crate
 
 <cb>cargo add <v>crate_name<><>
@@ -728,6 +760,17 @@ Creates:
 Adds the crate dependency to the cargo.toml file.
 @
 @ dependency, dependencies, crates, libraries, install
+
+
+
+### Cargo - Add Library / Crate with Features
+
+<cb>cargo add <v>crate_name<> --features <v>feature_1<> <v>feature_2<><>
+
+Adds the crate dependency to the cargo.toml file with the given features
+@
+@ dependency, dependencies, crates, libraries, install
+@ --features
 
 
 
@@ -854,13 +897,35 @@ Tests Directory:
 
 
 
+### Cargo - Run Module Tests
+
+<cb>cargo test --test <v>file_name<><>
+
+Runs all tests in a file or module.
+
+
+Example:
+
+<cb>cargo test --test basic_tests<>
+
+Runs all tests in file '<c>/tests/<v>basic_tests<>.rs'.
+@
+@ function
+
+
+
 ### Cargo - Run Individual Test
 
 <cb>cargo test --test <v>file_name<> <v>test_1<><>
 
 Runs an individual test.
 
-Runs '<c>test_1()<>' in file '<c>/tests/<v>file_name<>.rs'.
+
+Example:
+
+<cb>cargo test --test basic_tests test_empty<>
+
+Runs '<c>test_empty()<>' in file '<c>/tests/<v>basic_tests<>.rs'.
 @
 @ function
 
@@ -1333,27 +1398,6 @@ edition = "<v>yyyy<>"
 <v>library_2<> = "^<v>v<>.<v>v<>"<>
 
 
-# Compiler
-
-
-### Silence Dead Code Warnings
-
-<cb>#[allow(dead_code)]<>
-
-
-Place in front of unused function.
-
-
-Example:
-
-<cb>#[allow(dead_code)]
-fn <v>unused_function<>() {
-	<v>...<>
-}<>
-@
-@ #[allow(dead_code)], allow dead_code
-
-
 
 # Operators
 @
@@ -1456,10 +1500,10 @@ Full Form:
 <cb>let <v>value<> = if <v>expression<> { <v>true_value<> } else { <v>false_value<> };<>
 
 
-Evaluates a conditional if expression to a value.
-Must be terminated with a semicolon (;).
+Evaluates a conditional expression and returns one value if true, and the other if false.
 
-Really this is just a regular if else statement on one line.
+Must be terminated with a semicolon (;).
+Really this is just a regular if else statement but on one line.
 
 
 Example:
@@ -1481,43 +1525,41 @@ println!("{} is {} than 5.", <v>a<>, <v>more_or_less<>);
 
 From Highest to Lowest:
 
+<t><c>::<><|>Paths
 
-<table><col><c>::<><><col>Paths<>
-<col> <>
-<col><c>.<v>method<>()<><><col>Methods<>
-<col> <>
-<col><c>.<v>field<><><><col>Fields<><col><s>left to right<><>
-<col> <>
-<col><c><v>function<>(), <v>array<>[]<><><col>Functions, Array Indexes<>
-<col> <>
-<col><c>-  *  !  &  &mut<><><col>Unary Operators<>
-<col> <>
-<col><c>as  :<><><col>Casting, : Operator<><col><s>left to right<><>
-<col> <>
-<col><c>*  /  %<><><col>Multiplicative<><col><s>left to right<><>
-<col> <>
-<col><c>+  -<><><col>Additive<><col><s>left to right<><>
-<col> <>
-<col><c>\<\<  >><><><col>Bitwise Shift<><col><s>left to right<><>
-<col> <>
-<col><c>&<><><col>Bitwise AND<><col><s>left to right<><>
-<col> <>
-<col><c>^<><><col>Bitwise XOR<><col><s>left to right<><>
-<col> <>
-<col><c>|<><><col>Bitwise OR<><col><s>left to right<><>
-<col> <>
-<col><c>==  !=  \<  \<=  >  >=<><><col>Comparison<><col><s>use parenthesis<><>
-<col> <>
-<col><c>&&<><><col>Logical AND<><col><s>left to right<><>
-<col> <>
-<col><c>||<><><col>Logical OR<><col><s>left to right<><>
-<col> <>
-<col><c>..  ..=<><><col>Range<><col><s>use parenthenis<><>
-<col> <>
-<col><c>=  +=  -=  *=  /=  %= 
-\<\<=  >>=  &=  ^=  |=<><><col>Assignment<><col><s>left to right<><>
-<col> <>
-<col><c>return  break  ||<><><col>Flow Control, Closures<><>
+<c>.<v>method<>()<><|>Methods
+
+<c>.<v>field<><><|>Fields<|><s>left to right<>
+
+<c><v>function<>(), <v>array<>[]<><|>Functions, Array Indexes
+
+<c>-  *  !  &  &mut<><|>Unary Operators
+
+<c>as  :<><|>Casting, : Operator<|><s>left to right<>
+
+<c>*  /  %<><|>Multiplicative<|><s>left to right<>
+
+<c>+  -<><|>Additive<|><s>left to right<>
+
+<c>\<\<  >><><|>Bitwise Shift<|><s>left to right<>
+
+<c>&<><|>Bitwise AND<|><s>left to right<>
+
+<c>^<><|>Bitwise XOR<|><s>left to right<>
+
+<c>|<><|>Bitwise OR<|><s>left to right<>
+
+<c>==  !=  \<  \<=  >  >=<><|>Comparison<|><s>use parenthesis<>
+
+<c>&&<><|>Logical AND<|><s>left to right<>
+
+<c>||<><|>Logical OR<|><s>left to right<>
+
+<c>..  ..=<><|>Range<|><s>use parenthenis<>
+
+<c>=  +=  -=  *=  /=  %=  \<\<=  >>=  &=  ^=  |=<><|>Assignment<|><s>left to right<>
+
+<c>return  break  ||<><|>Flow Control, Closures<>
 @
 @ order of operations
 
@@ -1528,7 +1570,7 @@ From Highest to Lowest:
 
 ### Implement Equals - Using Derive
 
-<cb>#[derive(eq)]
+<cb>#[derive(PartialEq)]
 struct <v>Type<> { <v>...<> }<>
 
 
@@ -1550,7 +1592,7 @@ println!("Point 1 == 2?: {}", <v>point_1<> == <v>point_2<>);
 
 <#>// Prints: Point 1 == 2?: false<><>
 @
-@ ==, !=, #derive, #[derive(PartialEq)], partialeq
+@ ==, !=, #derive, #[derive(eq)] #[derive(partialeq)], partialeq
 
 
 
@@ -1580,6 +1622,8 @@ impl PartialEq\<<v>Point<>> for <v>Point<> {
 		self.<v>x<> == other.<v>x<> && self.<v>y<> == other.<v>y<>
 	}
 }
+
+impl Eq for <v>Point<> {}
 
 let <v>point_1<> = <v>Point<> { x: 10, y: 20 };
 let <v>point_2<> = <v>Point<> { x: 20, y: 10 };
@@ -3037,7 +3081,7 @@ If not, it is <b>irrefutable<>.
 <col> <>
 <col>Heap Allocated Value<><col>Box\<<v>T<>><><col>Single Read / Write Owner<>
 <col>Heap Allocated Value<><col>Rc\<<v>T<>><><col>Single Owner / Multiple Readers<>
-<col>Heap Allocated Value<><col>Arc\<<v>T<>><><col>Single Owner / Multiple Readers / Thread Safe<><>
+<col>Heap Allocated Value<><col>Arc\<<v>T<>><><col>Single Owner / Multiple Readers / Thread-Safe<><>
 
 
 <b>Assignment:<>
@@ -3514,22 +3558,22 @@ Rust Docs: <l "https://doc.rust-lang.org/book/ch03-02-data-types.html">Data Type
 
 ## Standard Collection Types
 
-<table><col>Queues:<>
-<col> <>
-<col><c><l "&q=binaryheap-only">BinaryHeap<>\<<v>T<>><><><col>Priority Queue<>
-<col> <>
-<col>Sets, Maps:<>
-<col> <>
-<col><c><l "&q=btreemap-only">BTreeMap<>\<<v>K<>, <v>V<>><><><col>Sorted Key Value Map<>
-<col><c><l "&q=btreeset-only">BTreeSet<>\<<v>T<>><><><col>Sorted Set<>
-<col><c><l "&q=hashmap-only">HashMap<>\<<v>K<>, <v>V<>><><><col>Key Value Map<>
-<col><c><l "&q=hashset-only">HashSet<>\<<v>T<>><><><col>Set<>
-<col> <>
-<col>Sequences:<>
-<col> <>
-<col><c><l "&q=linkedlist-only">LinkedList<>\<<v>T<>><><><col>Double Linked List<>
-<col><c><l "&q=vec-only">Vec<>\<<v>T<>><><><col>Vector (Mutable List)<>
-<col><c><l "&q=vecdeque-only">VecDeque<>\<<v>T<>><><><col>Double Ended Queue<><>
+<t>Queues:
+
+<c><go? "binaryheap-only">BinaryHeap<>\<<v>T<>><><|>Priority Queue
+
+Sets, Maps:
+
+<c><go? "btreemap-only">BTreeMap<>\<<v>K<>, <v>V<>><><|>Sorted Key Value Map
+<c><go? "btreeset-only">BTreeSet<>\<<v>T<>><><|>Sorted Set
+<c><go? "hashmap-only">HashMap<>\<<v>K<>, <v>V<>><><|>Key Value Map
+<c><go? "hashset-only">HashSet<>\<<v>T<>><><|>Set
+
+Sequences:
+
+<c><go? "linkedlist-only">LinkedList<>\<<v>T<>><><|>Double Linked List
+<c><go? "vec-only">Vec<>\<<v>T<>><><|>Vector (Mutable List)
+<c><go? "vecdeque-only">VecDeque<>\<<v>T<>><><|>Double Ended Queue<>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>
@@ -3545,10 +3589,10 @@ index: tags
 index-to: word
 <>
 
-<t><c>Option\<<v>T<>><>		<|><l "?q=option-only">Option<>
-<c>Result\<<v>T<>, <v>E<>><><|><l "?q=result-only">Result<>
+<t><c>Option\<<v>T<>><>		<|><go? "option-only">Option<>
+<c>Result\<<v>T<>, <v>E<>><><|><go? "result-only">Result<>
 
-<c>Cow\<<v>T<>><|><l "?q=cow-only">Cow<><>
+<c>Cow\<<v>T<>><|><go? "cow-only">Cow<><>
 @
 @ Standard Collections Types, enums
 @ std-enum-types, standard-enum-types, system-enum-types, sys-enum-types
@@ -6657,7 +6701,7 @@ Returns a reference to the array of bytes in the string slice.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.as_bytes>as_bytes()<>
 @
-@ to-bytes, bytes-to, get
+@ to-bytes, bytes-to, get, iterate over
 @ str.as_bytes(), .as_bytes()
 
 
@@ -6676,7 +6720,7 @@ Returns a reference to the array of bytes in the underlying string slice.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.bytes>bytes()<>
 @
-@ get
+@ get, iterate over
 @ to-bytes, bytes-to
 @ str.bytes(), .bytes(), u8
 
@@ -8532,7 +8576,7 @@ Returns a reference to the array of bytes in the underlying string.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l https://doc.rust-lang.org/std/string/struct.String.html#method.bytes>bytes()<>
 @
-@ get
+@ get, iterate over
 @ to-bytes, bytes-to
 @ string.bytes(), .bytes(), u8
 
@@ -8553,7 +8597,7 @@ Returns an iterator to the characters in the string.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l https://doc.rust-lang.org/std/string/struct.String.html#method.chars>chars()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/str/index.html">str<>::<l "https://doc.rust-lang.org/std/str/struct.Chars.html">Chars<>
 @
-@ get characters
+@ get characters, iterate over
 @ to-chars, chars-to
 @ string.chars(), .chars()
 
@@ -9118,7 +9162,7 @@ Use <c>match<> or <c>if let<>.
 
 There is no direct way to check if an enum is a specific variant out of the box.
 @
-@ not, equals, is value, is type
+@ not, equals, is value, is type, match
 
 
 
@@ -10759,7 +10803,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>
 @
 @ vec!, vec![], vec!-only
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 
 
 
@@ -11037,11 +11080,12 @@ println!();
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.iter">iter()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/slice/index.html">slice<>::<l "https://doc.rust-lang.org/std/slice/struct.Iter.html">Iter<>
 @
+@ iterate over
 @ vec.iter(), .iter()
 
 
 
-### Vec - Iterator (Mutable)
+### Vec - Iterator, Mutable
 
 <cb>= <v>vec_1<>.iter_mut()<>
 
@@ -11078,6 +11122,7 @@ println!("{:?}", &<v>vec_1<>);
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.iter_mut">iter_mut()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/slice/index.html">slice<>::<l "https://doc.rust-lang.org/std/slice/struct.IterMut.html">IterMut<>
 @
+@ iterate over
 @ vec.iter_mut(), .iter_mut()
 
 
@@ -11254,7 +11299,7 @@ Inserts an item at the beginning of the vec.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.insert">insert()<>
 @
 @ vec.insert(), .insert(), insert
-@ add, put, extend to, value, to end
+@ add, put, extend to, value, at, start, beginning, prepend, push
 @ item, element, value
 
 
@@ -11352,6 +11397,8 @@ Sorts the items in the vec.
 
 Sorts in place.
 The sort order is stable (equivalent value items keep their relative positions).
+
+Requires that the contained item implement the <go? "ord-only">Ord trait<> ( <c>#[derive(Eq, Ord, PartialEq, PartialOrd)]<> ).
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.sort">sort()<>
@@ -11852,7 +11899,7 @@ Values:
 
 #### Config Property - Target OS
 
-<cb>#[cfg(<v>target_os<> = "<v>x86_64<>")]<>
+<cb>#[cfg(<v>target_os<> = "<v>windows<>")]<>
 
 Values:
 
@@ -11872,9 +11919,9 @@ Values:
 
 
 
-#### Config Property - NotTarget OS
+#### Config Property - Not Target OS
 
-<cb>#[cfg(not(<v>target_os<> = "<v>x86_64<>"))]<>
+<cb>#[cfg(not(<v>target_os<> = "<v>windows<>"))]<>
 
 Values:
 
@@ -11943,18 +11990,18 @@ Rust Docs: <l "https://doc.rust-lang.org/rust-by-example/trait/derive.html">Deri
 
 #### Attribute - Derive Summary
 
-<table><col><l "?q=%23[derive(Clone)]"<>Clone<>		<><col><c>#[derive(Clone)]<><>
-<col><l "?q=%23[derive(Copy)]"<>Copy<><><col><c>#[derive(Copy)]<><>
+<table><col><go? "%23[derive(Clone)]"<>Clone<>		<><col><c>#[derive(Clone)]<><>
+<col><go? "%23[derive(Copy)]"<>Copy<><><col><c>#[derive(Copy)]<><>
 <col> <>
-<col><l "?q=%23[derive(Debug)]"<>Debug<><><col><c>#[derive(Debug)]<><>
-<col><l "?q=%23[derive(Default)]"<>Default<><><col><c>#[derive(Default)]<><>
+<col><go? "%23[derive(Debug)]"<>Debug<><><col><c>#[derive(Debug)]<><>
+<col><go? "%23[derive(Default)]"<>Default<><><col><c>#[derive(Default)]<><>
 <col> <>
-<col><l "?q=%23[derive(Hash)]"<>Hash<><><col><c>#[derive(Hash)]<><>
+<col><go? "%23[derive(Hash)]"<>Hash<><><col><c>#[derive(Hash)]<><>
 <col> <>
-<col><l "?q=%23[derive(Eq)]"<>Eq<><><col><c>#[derive(Eq)]<><>
-<col><l "?q=%23[derive(Ord)]"<>Ord<><><col><c>#[derive(Ord)]<><>
-<col><l "?q=%23[derive(PartialEq)]"<>PartialEq<><><col><c>#[derive(PartialEq)]<><>
-<col><l "?q=%23[derive(PartialOrd)]"<>PartialOrd<><><col><c>#[derive(PartialOrd)]<><><>
+<col><go? "%23[derive(Eq)]"<>Eq<><><col><c>#[derive(Eq)]<><>
+<col><go? "%23[derive(Ord)]"<>Ord<><><col><c>#[derive(Ord)]<><>
+<col><go? "%23[derive(PartialEq)]"<>PartialEq<><><col><c>#[derive(PartialEq)]<><>
+<col><go? "%23[derive(PartialOrd)]"<>PartialOrd<><><col><c>#[derive(PartialOrd)]<><><>
 @
 @ basics
 
@@ -12091,7 +12138,7 @@ Implements == and != for a type.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/derive.Eq.html">Eq<> (derive macro) | <l "https://doc.rust-lang.org/std/cmp/trait.Eq.html">Eq<> (trait)
 @
 @ equals, ==, !=, not equal, compare, comparison
-@ #[derive(Eq)], (eq), eq
+@ #[derive(eq)], (eq), eq
 
 
 
@@ -12154,7 +12201,7 @@ The allow is applied to a specific item (e.g. a function or constant).
 
 
 
-### Attribute - Linter - Allow for Module, Crate
+#### Attribute - Linter - Allow for Module, Crate
 
 <cb>#![allow(<v>...<>)]<>
 
@@ -12186,7 +12233,7 @@ Allows code that is not used by your program.
 
 
 
-### Attribute - Linter - Allow Unreachable Code
+#### Attribute - Linter - Allow Unreachable Code
 
 <cb>#[allow(unreachable_code)]<>
 
@@ -12196,7 +12243,7 @@ Allows code to be unreachable.
 Silences the linter's warnings.
 @
 @ #[allow(unreachable_code)], unreachable_code, warn
-@ allow, ignore, dead
+@ allow, ignore
 
 
 
@@ -12426,7 +12473,7 @@ Set Environment Variable:
 
 Set <c>RUST_BACKTRACE<> to 1 to enable stack traces during panics (dev environment only).
 @
-@ rust_backtrace
+@ rust_backtrace, environment variable, debug
 
 
 ## Standard IO Errors
@@ -12982,7 +13029,7 @@ let <v>closure_1<> = move || println!("value = {} (owned)", <v>value<>);
 
 # Generics
 @
-@ generics-only, gen-only
+@ generics-only, gen-only, \<>
 
 
 
@@ -13703,26 +13750,26 @@ index: tags
 index-to: word
 <>
 
-<l "?q=assert!-only">assert!()<>
-<l "?q=assert_eq!-only">assert_eq!()<>
-<l "?q=assert_ne!-only">assert_ne!()<>
-<l "?q=debug_assert!-only">debug_assert!()<>
-<l "?q=debug_assert_eq!-only">debug_assert_eq!()<>
-<l "?q=debug_assert_ne!-only">debug_assert_ne!()<>
+<go? "assert!-only">assert!()<>
+<go? "assert_eq!-only">assert_eq!()<>
+<go? "assert_ne!-only">assert_ne!()<>
+<go? "debug_assert!-only">debug_assert!()<>
+<go? "debug_assert_eq!-only">debug_assert_eq!()<>
+<go? "debug_assert_ne!-only">debug_assert_ne!()<>
 
-<l "?q=eprint!-only">eprint!()<>
-<l "?q=eprintln!-only">eprintln!()<>
-<l "?q=format!-only">format!()<>
-<l "?q=print!-only">print!()<>
-<l "?q=println!-only">println!()<>
-<l "?q=write-only"<>write!()<>
-<l "?q=writeln-only"<>writeln!()<>
+<go? "eprint!-only">eprint!()<>
+<go? "eprintln!-only">eprintln!()<>
+<go? "format!-only">format!()<>
+<go? "print!-only">print!()<>
+<go? "println!-only">println!()<>
+<go? "write-only"<>write!()<>
+<go? "writeln-only"<>writeln!()<>
 
-<l "?q=panic!-only">panic!()<>
-<l "?q=todo!-only">todo!()<>
-<l "?q=unimplemented!-only">unimplemented!()<>
+<go? "panic!-only">panic!()<>
+<go? "todo!-only">todo!()<>
+<go? "unimplemented!-only">unimplemented!()<>
 
-<l "?q=vec!-only">vec!()<>
+<go? "vec!-only">vec!()<>
 @
 @ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only, !
 @ summary
@@ -13743,7 +13790,6 @@ Caution - should be used very sparingly, if at all.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.panic.html">panic!<>
 @
 @ define, new, instantiate, create
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 @ panic!(), panic!-only
 
 
@@ -13766,7 +13812,6 @@ Will panic at runtime.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.todo.html">todo<>
 @
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 @ todo!(), todo-only, todo!-only
 
 
@@ -13789,7 +13834,6 @@ Will panic at runtime.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.unimplemented.html">unimplemented<>
 @
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 @ unimplemented!(), unimplemented-only, unimplemented!-only
 
 
@@ -13875,6 +13919,20 @@ Or:
     └── mod.rs<>
 @
 @ create
+
+
+
+### Module - Declare Public to Crate Only
+
+<cb>pub(crate) mod <v>module_name<><>
+
+
+Declares a module for use inside another module.
+
+
+This will be available within the crate only!
+@
+@ create, pub(crate)
 
 
 
@@ -14481,9 +14539,9 @@ Imports an item relative to the current module.
 
 Uses and then exports an item from the current module.
 
-This allows other modules to use an item relative to this module instead of from the item's original module.
+Allows other modules to use an item relative to this module instead of from the item's original module.
 @
-@ pub, public
+@ pub, public, global
 
 
 
@@ -15107,7 +15165,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ format macro
 @ format!(), f!(), format!-only
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 
 
 
@@ -15938,7 +15995,7 @@ Usage:
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<Vec\<u8>><>
+<cb><go? "io-result-only>Result<>\<Vec\<u8>><>
 
 
 Reads a file in as bytes (u8).
@@ -15978,7 +16035,7 @@ let mut <v>contents<>: Vec\<u8> = Vec::new();
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<Vec\<u8>><>
+<cb><go? "io-result-only>Result<>\<Vec\<u8>><>
 
 
 Reads a file in as a bytes (u8).
@@ -16021,7 +16078,7 @@ fs::write(<v>path<>).expect(<v>error_message<>)<>
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<()><>
+<cb><go? "io-result-only>Result<>\<()><>
 
 
 Writes a file out as bytes (u8).
@@ -16056,7 +16113,7 @@ let mut <v>file<> = File::create(<v>path<>)?;
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<()><>
+<cb><go? "io-result-only>Result<>\<()><>
 
 
 Writes a vector of bytes to a file using an instance of <c>File<>.
@@ -16105,7 +16162,7 @@ let mut <v>file<> = File::create(<v>path<>)?;
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<()><>
+<cb><go? "io-result-only>Result<>\<()><>
 
 
 Appends a vector of bytes to a file using an instance of <c>File<>.
@@ -16137,7 +16194,7 @@ Usage:
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<String><>
+<cb><go? "io-result-only>Result<>\<String><>
 
 
 Reads a file in as a string.
@@ -16177,7 +16234,7 @@ let mut <v>content<> = String::new();
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<usize><>
+<cb><go? "io-result-only>Result<>\<usize><>
 
 
 Reads a file in as a string.
@@ -16306,7 +16363,7 @@ write(<v>path<>, <v>contents<>.as_bytes());<>
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<()><>
+<cb><go? "io-result-only>Result<>\<()><>
 
 
 Writes a string to a file.
@@ -16351,7 +16408,7 @@ let mut <v>file<> = File::create(<v>path<>)?;
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<()><>
+<cb><go? "io-result-only>Result<>\<()><>
 
 
 Writes a string out to a file using an instance of <c>File<>.
@@ -16403,7 +16460,7 @@ for <v>line<> in <v>lines<> {
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<()><>
+<cb><go? "io-result-only>Result<>\<()><>
 
 
 Writes a list of strings to a file.
@@ -16442,7 +16499,7 @@ let mut <v>file<> = File::create(<v>path<>)?;
 
 Returns:
 
-<cb><l "?q=io-result-only>Result<>\<()><>
+<cb><go? "io-result-only>Result<>\<()><>
 
 
 Appends a string to a file using an instance of <c>File<>.
@@ -17122,7 +17179,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 The error returned from an IO function call.
 
 
-<l "?q=io-result-only">Result<>  |  <l "?q=errorkind-only">ErrorKind<>
+<go? "io-result-only">Result<>  |  <go? "errorkind-only">ErrorKind<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/struct.Error.html>Error<>
 @
@@ -17155,7 +17212,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 The specific error that occured during an IO function call. Returned in IO Error.
 
-<l "?q=io-result-only">Result<>  |  <l "?q=io-error-only">Error<>
+<go? "io-result-only">Result<>  |  <go? "io-error-only">Error<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/enum.ErrorKind.html>ErrorKind<>
 @
@@ -17197,7 +17254,7 @@ ErrorKind::Other<>
 
 The result from an IO function call.
 
-<l "?q=io-error-only">Error<>  |  <l "?q=errorkind-only">ErrorKind<>
+<go? "io-error-only">Error<>  |  <go? "errorkind-only">ErrorKind<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
 @
@@ -18197,8 +18254,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ None, Some(), optional
 @ options, optionals, option-only, options-only, opt-only
-@ standard enums types
-@ std-enum-types, standard-enum-types, system-enum-types, sys-enum-types
+@ enum
 @ std::option::option, option::option, ::option
 
 
@@ -18477,7 +18533,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Option - Iter
+### Option - Iterator
 
 <cb>= <v>option_1<>.iter()<>
 
@@ -18495,12 +18551,12 @@ None returns no results.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.iter">iter()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/struct.Iter.html">Iter<>
 @
-@ get iterator
+@ get iterator, iterate over
 @ option.iter(), .iter()
 
 
 
-### Option - Iter Mut
+### Option - Iterator, Mutable
 
 <cb>= <v>option_1<>.iter_mut()<>
 
@@ -18518,7 +18574,7 @@ None returns no results.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.iter_mut">iter_mut()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/struct.IterMut.html">IterMut<>
 @
-@ get mutable iterator
+@ get mutable iterator, iterate over
 @ option.iter_mut(), .iter_mut()
 
 
@@ -18924,8 +18980,7 @@ Rust Docs: <l https://doc.rust-lang.org/std/result/enum.Result.html#variant.Ok>O
 @
 @ Ok(), Err()
 @ results, result-only, results-only, res-only
-@ standard enums types
-@ std-enum-types, standard-enum-types, system-enum-types, sys-enum-types
+@ enums types
 @ std::result::Result, result::Result, ::result
 
 
@@ -19255,7 +19310,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Result - Iter
+### Result - Iterator
 
 <cb>= <v>result_1<>.iter()<>
 
@@ -19273,12 +19328,12 @@ Err returns no results.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l "https://doc.rust-lang.org/std/result/enum.Result.html#method.iter">iter()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/struct.Iter.html">Iter<>
 @
-@ get iterator
+@ get iterator, iterate over
 @ result.iter(), .iter()
 
 
 
-### Result - Iter Mut
+### Result - Iterator, Mutable
 
 <cb>= <v>result_1<>.iter_mut()<>
 
@@ -19296,7 +19351,7 @@ Err returns no results.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l "https://doc.rust-lang.org/std/result/enum.Result.html#method.iter_mut">iter_mut()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/struct.IterMut.html">IterMut<>
 @
-@ get mutable iterator
+@ get mutable iterator, iterate over
 @ result.iter_mut(), .iter_mut()
 
 
@@ -19575,8 +19630,6 @@ A priority queue, or sort of value importance.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l "https://doc.rust-lang.org/std/collections/struct.BinaryHeap.html">BinaryHeap<>
 @
 @ binaryheap-only, binaryheap-only, priority, binary heap
-@ Standard Collections
-@ standard-collection-types, std-coll-types, std-col-types, system-collection-types, sys-coll-types, sys-col-types
 @ std::collections::binaryheap, collections::binaryheap, ::binaryheap
 
 
@@ -19601,8 +19654,6 @@ Uses arrays and 'performs naive linear search'.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l "https://doc.rust-lang.org/std/collections/struct.BTreeMap.html">BTreeMap<>
 @
 @ btree-only, btrees-only,  btreemap-only, btreemaps-only, sorted, ordered, tree, treemap
-@ Standard Collections
-@ standard-collection-types, std-coll-types, std-col-types, system-collection-types, sys-coll-types, sys-col-types
 @ std::collections::btreemap, collections::btreemap, ::btreemap
 
 
@@ -19652,16 +19703,19 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ _model_
 
 
+
 ### BTreeMap - Create From Array
 
 <cb>= BTreeMap::from(<v>array_1<>)<>
 
-<cb>= BTreeMap::from([
+<cb>use std::collections::BTreeMap;
+
+let <v>btree_map_1<> = BTreeMap::from([
 	(<v>key_1<>, <v>value_1<>),
 	(<v>key_2<>, <v>value_2<>),
 	(<v>key_3<>, <v>value_3<>),
 	<v>...<>
-])<>
+]);<>
 
 
 Creates a BTreeMap from a list of key value tuples.
@@ -19895,7 +19949,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Iterates over the key value pairs in the BTreeMap.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <l "?q=btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.BTreeMap.html>BTreeMap<>.<l "https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#method.iter">iter()<>
@@ -20060,8 +20114,6 @@ Uses arrays and 'performs naive linear search'.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l "https://doc.rust-lang.org/std/collections/struct.BTreeSet.html">BTreeSet<>
 @
 @ btree-only, btrees-only,  btreeset-only, btreesets-only, sorted, ordered, tree, treeset
-@ Standard Collections
-@ standard-collection-types, std-coll-types, std-col-types, system-collection-types, sys-coll-types, sys-col-types
 @ std::collections::btreeset, collections::btreeset, ::btreeset
 
 
@@ -20091,19 +20143,15 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ set::new()
 
 
+
 ### BTreeSet - Create From Array
 
 <cb>= BTreeSet::from(<v>array_1<>)<>
 
-<cb>= BTreeSet::from([
-	(<v>value_1<>),
-	(<v>value_2<>),
-	(<v>value_3<>),
-	<v>...<>
-])<>
+<cb>= BTreeSet::from([<v>value_1<>, <v>value_2<>, <v>value_3<>, <v>...<>])<>
 
 
-Creates a <c>BTreeSet<> from a list of key value tuples.
+Creates a <c>BTreeSet<> from a list of values.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.BTreeSet.html>BTreeSet<>.<l "https://doc.rust-lang.org/std/collections/struct.BTreeSet.html#method.from">from()<>
@@ -20491,8 +20539,6 @@ Types Must Implement:
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>
 @
-@ Standard Collections
-@ standard-collection-types, std-coll-types, std-col-types, system-collection-types, sys-coll-types, sys-col-types
 @ hashmap-only, hashmaps-only, hashmaps
 @ std::collections::HashMap, collections::HashMap, ::HashMap
 
@@ -20543,6 +20589,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ _model_
 
 
+
 ### HashMap - Create From Array
 
 <cb>= HashMap::from(<v>array_1<>)<>
@@ -20572,6 +20619,34 @@ Creates a HashMap from a list of key value tuples.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.from">from()<>
 @
 @ hashmap::from(), from()
+
+
+
+### HashMap - Create using Macro
+
+Rust doesn't have a built in macro to create hashmaps so use this one instead:
+
+<cb>macro_rules! hashmap {
+    ( $( $<v>key<>:expr => $<v>value<>:expr ),* $(,)? ) => {
+        {
+            let mut <v>map<> = std::collections::HashMap::new();
+            $(<v>map<>.insert($<v>key<>, $<v>value<>);)*
+            <v>map<>
+        }
+    };
+}<>
+
+Usage:
+
+<cb>use std::collections::HashMap;
+
+let <v>map_1<> = hashmap!{
+	"one" => 1,
+	"two" => 2,
+	"three" => 3
+}<>
+@
+@ hashmap!{}
 
 
 
@@ -20678,7 +20753,7 @@ Returns:
 Returns an iterator for all keys.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <l "?q=btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.keys">keys()<>
@@ -20700,7 +20775,7 @@ Returns:
 Returns an iterator for all values.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <l "?q=btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.values">values()<>
@@ -20724,7 +20799,7 @@ Returns:
 Returns a mutable iterator for all values.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <l "?q=btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.values_mut">values_mut()<>
@@ -20761,7 +20836,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Iterates over the key value pairs in the HashMap.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <l "?q=btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.iter">iter()<>
@@ -20804,6 +20879,26 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ remove all, delete all
 @ hashmap.clear(), .clear()
+
+
+
+### HashMap - Extend
+
+<cb><v>hashmap_1<>.extend(<v>hashmap_2<>);<>
+
+Returns:
+
+<cb>bool<>
+
+
+Adds all items from hashmap 2 into hashmap 1.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.extend">extend()<>
+@
+@ add all
+@ item, element, value, append, join
+@ hashmap.extend(), .extend()
 
 
 
@@ -20925,8 +21020,6 @@ Types Must Implement:
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashSet.html>HashSet<>
 @
 @ hashset-only, hashsets-only, set
-@ Standard Collections
-@ standard-collection-types, std-coll-types, std-col-types, system-collection-types, sys-coll-types, sys-col-types
 @ std::collections::HashSet, collections::HashSet, ::hashset
 
 
@@ -20958,26 +21051,44 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ hashset::new()
 
 
+
 ### HashSet - Create From Array
 
 <cb>= HashSet::from(<v>array_1<>)<>
 
 <cb>use std::collections::HashSet;
 
-= HashSet::from([
-	(<v>value_1<>),
-	(<v>value_2<>),
-	(<v>value_3<>),
-	<v>...<>
-])<>
+= HashSet::from([<v>value_1<>, <v>value_2<>, <v>value_3<>, <v>...<>])<>
 
 
-Creates a <c>HashSet<> from a list of key value tuples.
+Creates a <c>HashSet<> from a list of items.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashSet.html>HashSet<>.<l "https://doc.rust-lang.org/std/collections/struct.HashSet.html#method.from">from()<>
 @
 @ hashset::from(), from()
+
+
+
+### HashSet - Create From Macro
+
+Rust doesn't have a bulit in macro for creating hashsets. You can use an array and HashSet::from. But if you want an actual macro, here you go:
+
+<cb>macro_rules! hashset {
+    ($($<v>value<>:expr),* $(,)?) => {{
+        let mut <v>set<> = HashSet::new();
+        $(<v>set<>.insert($<v>value<>);)*
+        <v>set<>
+    }};
+}<>
+
+Usage:
+
+<cb>use std::collections::HashSet;
+
+let <v>set_1<> = hashset![1, 2, 3];<>
+@
+@ hashset!(), hashset![]
 
 
 
@@ -21401,8 +21512,6 @@ An linked list (ordered list).
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l "https://doc.rust-lang.org/std/collections/struct.LinkedList.html">LinkedList<>
 @
 @ linkedlist-only, linkedlist-only,  linklist-only, linklist-only, ordered, linked list
-@ Standard Collections
-@ standard-collection-types, std-coll-types, std-col-types, system-collection-types, sys-coll-types, sys-col-types
 @ std::collections::linkedlist, collections::linkedlist, ::linkedlist
 
 
@@ -21422,8 +21531,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ vecdeque-only, vecdeques-only, vecdeck
 @ double sided vec, double ended queue
-@ Standard Collections
-@ standard-collection-types, std-coll-types, std-col-types, system-collection-types, sys-coll-types, sys-col-types
 @ std:collections::VecDeque, collections::VecDeque, ::vecdeque
 
 
@@ -21734,7 +21841,7 @@ Adds an item to the beginning of the queue.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.VecDeque.html>VecDeque<>.<l "https://doc.rust-lang.org/std/collections/struct.VecDeque.html#method.push_front">push_front()<>
 @
 @ item, value, element
-@ add, insert, beginning, first
+@ add, insert, put, extend to, value, at, start, beginning, prepend, first
 @ vecdeque.push_front(), .push_front()
 
 
@@ -21750,7 +21857,7 @@ Adds an item to the end of the queue.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.VecDeque.html>VecDeque<>.<l "https://doc.rust-lang.org/std/collections/struct.VecDeque.html#method.push_back">push_back()<>
 @
 @ item, value, element
-@ Add, insert, append, end, last
+@ Add, insert, append, put, extend, to, end, last
 @ vecdeque.push_back(), .push_back()
 
 
@@ -21779,27 +21886,159 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Smart Pointers Traits:
 
-<cb><l "?q=deref-only">Deref<>
-<l "?q=drop-only">Drop<><>
+<cb><go? "deref-only">Deref<>
+<go? "drop-only">Drop<><>
 
 Standard Library Smart Pointers:
 
-<cb><l "?q=arc-only">Arc\<<v>T<>><>
-<l "?q=box-only">Box\<<v>T<>><>
-<l "?q=cell-only">Cell\<<v>T<>><>
-<l "?q=cow-only">Cow\<<v>T<>><>
-<l "?q=rc-only">Rc\<<v>T<>><>
-<l "?q=ref-only">Ref\<<v>T<>><>
-<l "?q=refcell-only">RefCell\<<v>T<>><>
-<l "?q=refmut-only">RefMut\<<v>T<>><>
-<l "?q=rwlock-only">RwLock\<<v>T<>><>
-<l "?q=weak-only">Weak\<<v>T<>><><>
+<card><t><c><go? "arc-only">Arc\<<v>T<>><><><|><|>Shared ownership, thread-safe
+<c><go? "box-only">Box\<<v>T<>><><><|><|>Heap allocated
+<c><go? "cell-only">Cell\<<v>T<>><><><|><|>Mutates behind immutable
+<c><go? "cow-only">Cow\<<v>T<>><><><|><|>Efficient pass or clone (as needed)
+<c><go? "mutex-only">Mutex\<<v>T<>><><|><|>Shared access, thread-safe
+<c><go? "rc-only">Rc\<<v>T<>><><><|><|>Shared ownership, single-threaded only
+<c><go? "ref-only">Ref\<<v>T<>><><><|><|>Immutable, returned by <c>RefCell<>
+<c><go? "refcell-only">RefCell\<<v>T<>><><><|><|>Runtime borrow checking, single-threaded only
+<c><go? "refmut-only">RefMut\<<v>T<>><><><|><|>Mutable, returned by <c>RefCell<>
+<c><go? "rwlock-only">RwLock\<<v>T<>><><><|><|>Shared access, thread-safe
+<c><go? "arc weak-only">Weak\<<v>T<>><><><|>(Arc)<|>Weak <c>Arc<> reference
+<c><go? "rc weak-only">Weak\<<v>T<>><><><|>(Rc)<|>Weak <c>Rc<> Reference<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/book/ch15-00-smart-pointers.html">Smart Pointers<>
 @
 @ smart pointer, smart-only, smart-pointer-only, smart-pointers-only
 @ wrapper-only, wrappers-only, wrap, memory management
+
+
+# Smart Pointer Guide
+
+<card><t>General:
+
+<in>Allocate On Heap<><|><go? "Box-only">Box<>\<<v>T<>>
+<in>Efficient Conditional Cloning    <><|><go? "cow-only">Cow<>\<<v>T<>>
+<in>Mutate Behind Immutable<><|><go? "cell-only">Cell<>\<<v>T<>>
+
+Single-thread:
+
+<in>Mutate Shared<sup><#>2<><><><|><go? "refcell-only">RefCell<>\<<v>T<>>
+<in>Multiple Owners, Immutable      <><|><go? "Rc-only">Rc<>\<<v>T<>>
+<in>Multiple Owners, Mutable<><|><go? "Rc-only">Rc<>\<<go? "refcell-only">RefCell<>\<<v>T<>>>
+
+Multithreaded:
+
+<in>Mutate Shared<sup><#>1<><><><|><go? "Mutex-only">Mutex<>\<<v>T<>><sup><>
+<in>Mutate Shared<sup><#>2<><><><|><go? "RwLock-only">RwLock<>\<<v>T<>><sup><>
+<in>Multiple Owners, Immutable<><|><go? "Arc-only">Arc<>\<<v>T<>><|>
+<in>Multiple Owners, Mutable<sup><#>1<><><><|><go? "Arc-only">Arc<>\<<go? "Mutex-only">Mutex<>\<<v>T<>>><sup><>
+<in>Multiple Owners, Mutable<sup><#>2<><><><|><go? "Arc-only">Arc<>\<<go? "RwLock-only">RwLock<>\<<v>T<>>><sup><><><>
+
+<#>1<>  -  Single Reader or Writer
+<#>2<>  -  Multiple Readers or Single Writer<>
+
+
+<c><go? "arc-only">Arc<>\<<v>T<>><>
+
+<in>Use when: Multiple threads need to share ownership of data.
+
+<*>Thread-safe
+Shared ownership
+Uses reference counting
+Immutable access<><>
+
+<c><go? "box-only">Box<>\<<v>T<>><>
+
+<in>Use when: You need to allocate data on the heap for a single owner.
+
+<*>Allocates on the heap
+Single owner<><>
+
+<c><go? "cell-only">Cell<>\<<v>T<>><>
+
+<in>Use when: You need to mutate data inside a type without requiring <c>mut<>.
+
+<*>Interior mutability behind immutable variable
+Underlying type must implement <c>Copy<>
+Single-threaded only
+Zero-cost abstraction<><>
+
+<c><go? "cow-only">Cow<>\<<v>T<>><>
+
+<in>Use when: You need to decide at runtime whether to use borrowed or owned data.
+
+<*>Allows access to either borrowed or owned data
+Transparent to the end user
+Clones if needed
+Underlying type must implement <c>ToOwned<><><>
+
+<><go? "mutex-only">Mutex<>\<<v>T<>><>
+
+<in>Use when: You need to safely access mutable data between threads.
+
+<*>Thread-safe mutable access
+Single borrower or owner<><>
+
+<c><go? "rc-only">Rc<>\<<v>T<>><>
+
+<in>Use when: You need shared ownership of data in a single-threaded environment.
+
+<*>Multiple owners
+Uses reference counting
+Immutable access
+Single-threaded only<><>
+
+<c><go? "ref-only">Ref<>\<<v>T<>><>
+
+<in>Use when: You need to a temporary immutable reference to the inner data of a RefCell.
+
+<*>Immutable
+Returned by <c>RefCell<>
+Enforces runtime borrow rules<><>
+
+<c><go? "refcell-only">RefCell<>\<<v>T<>><>
+
+<in>Use when: You need safe mutable access to data in a single-threaded environment.
+
+<*>Runtime borrow checking
+Bypasses compile-time borrow checks
+Multiple readers, single writer
+Single-threaded only<><>
+
+<c><go? "refmut-only">RefMut<>\<<v>T<>><>
+
+<in>Use when: You need to a temporary mutable reference to the inner data of a RefCell.
+
+<*>Mutable access
+Returned by <c>RefCell<>
+Enforces runtime borrow rules<><>
+
+<c><go? "rwlock-only">RwLock<>\<<v>T<>><>
+
+<in>Use when: You need safe mutable access to data between threads, with multiple readers or one writer.
+
+<*>Thread-safe
+Mutable access
+Multiple readers, single writer<><>
+
+<c><go? "arc weak-only">Weak<>\<<v>T<>><> (Arc)
+
+<in>Use when: You need to avoid circular references in a multi-threaded environment.
+
+<*>Non-owning reference to <c>Arc<>
+Thread-safe
+Prevents reference cycles<><>
+
+<c><go? "rc weak-only">Weak<>\<<v>T<>><> (Rc)
+
+<in>Use when: You need to avoid circular references in a single-threaded environment.
+
+<*>Non-owning reference to <c>Rc<>
+Single-threaded only
+Prevents reference cycles<><>
+@
+@ smart pointer, smart-only, smart-pointer-only, smart-pointers-only
+@ wrapper-only, wrappers-only, wrap, memory management
+@ single-threaded, multi-threaded, multi-threading, multithreaded, multithreading
 
 
 
@@ -21816,8 +22055,12 @@ Use:
 
 An Arc is a pointer to memory on the heap that can have multiple owners across multiple threads.
 
-Immutable by default.
-Arc is thread safe.
+Use when: Multiple threads need to share ownership of data.
+
+<*>Thread-safe
+Shared ownership
+Uses reference counting
+Immutable access<>
 
 ARC = Atomically Reference Counted
 
@@ -21869,34 +22112,57 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Use as if it were not wrapped in an Arc type.
 
-
 Arc automatically dereferences into the underlying type.
 
 
 
-### Arc - Get - Access Directly
+### Arc - Get - Access Directly (Nope)
 
 Not possible.
 
-You can not access the warpped value directly.
-Use <c>try_unwrap()<>.
+You can not access the contained value directly without unwrapping the Arc pointer. This includes dereferencing with *.
+
+Options:
+
+<*>Clone the Contained Data
+Unwarp the pointer with <c>try_unwrap()<><>
 @
 @ reference, data, element, value
 
 
 
-### Arc - Reference Count
+### Arc - Reference Count - Strong
 
 <cb>= Arc::strong_count(<v>arc_1<>);<>
 
 
-Returns a count of all the arc instances for that arc item.
+Returns a count of all the owning arc instances for that arc item.
+
+Strong Count = Count of all Owners
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Arc.html>Arc<>.<l "https://doc.rust-lang.org/std/sync/struct.Arc.html#method.strong_count">strong_count()<>
 @
 @ strong count, instances, existing, current
 @ arc::strong_count(), strong_count()
+
+
+
+### Arc - Reference Count - Weak
+
+<cb>= Arc::weak_count(<v>arc_1<>);<>
+
+
+Weak instances are instances of the <go? "arc weak-only">Weak<> type and imply a non-owning reference to the Ars's data.
+
+Weak = Non-Owning References
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Arc.html>Arc<>.<l "https://doc.rust-lang.org/std/sync/struct.Arc.html#method.weak_count">weak_count()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html">Weak<>
+@
+@ strong count, instances, existing, current
+@ arc::weak_count(), weak_count()
 
 
 
@@ -21931,7 +22197,7 @@ Creates a copy of the wrapped item.
 
 
 
-### Arc - Get - Own
+### Arc - Get, Unwrap
 
 <cb>= <v>arc_1<>.try_unwrap()<>
 
@@ -21946,17 +22212,55 @@ Returns the underlying item but destroys the arc.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Arc.html>Arc<>.<l "https://doc.rust-lang.org/std/sync/struct.Arc.html#method.try_unwrap">try_unwrap()<>
 @
 @ arc::try_unwrap(), arc.try_unwrap(), .try_unwrap()
+@ take ownership
+
+
+
+## Arc - Convert
+@
+@ from, convert, conversion, converting
+@ arc-to, arc-into
+
+
+### Arc - To Weak
+
+<cb>= Arc::downgrade(&<v>arc_1<>)<>
+
+Usage:
+
+<cb>use std::rc::Arc;
+let <v>weak_1<> = Arc::downgrade(&<v>arc_1<>);<>
+
+
+Creates a weak pointer to the data referenced by the Arc pointer.
+
+Yes, this is an associated function on the Arc type, not a method on the instance itself.
+
+Associated Type: <go? "arc weak-only">Weak<>
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Arc.html>Arc<>.<l "https://doc.rust-lang.org/std/sync/struct.Arc.html#method.downgrade">downgrade()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html">Weak<>
+@
+@ to-weak
+@ arc::downgrade(), downgrade()
 
 
 
 ## Arc - Patterns
 
 
-### Arc - Mutable Value
+### Arc - Mutable Value, Single Borrow
 
 Use Arc + Mutex:
 
-<cb><l "?q=arc+mutex">Arc\<Mutex\<<v>T<>>><><>
+<cb><go? "arc+mutex">Arc\<Mutex\<<v>T<>>><><>
+
+
+### Arc - Mutable Value, Multiple Borrows
+
+Use Arc + RwLock:
+
+<cb><go? "arc+mutex">Arc\<RwLock\<<v>T<>>><><>
 
 
 
@@ -22071,9 +22375,10 @@ Type:
 
 A smart pointer that allocates and then points to data on the heap.
 
-A box can have only one owner.
-Creating a box creates data on the heap.
+Use when: You need to allocate data on the heap for a single owner.
 
+<*>Allocates on the heap
+Single owner<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/boxed/index.html">boxed<>::<l https://doc.rust-lang.org/std/boxed/struct.Box.html>Box<>
 @
@@ -22165,17 +22470,151 @@ Type:
 
 <cb>std::cell::Cell\<<v>T<>><>
 
-Defines a mutable memory location.
+Allows inner data to be mutated indepenedent of the outer types mutability.
 
-This is a zero cost abstraction.
-Works with types that implement the Copy trait only.
+Use when: You need to mutate data inside a type without requiring mut.
 
+<*>Interior mutability behind immutable variable
+Underlying type must implement Copy
+Single-threaded only
+Zero-cost abstraction<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html">Cell<>
 @
 @ cell-only, cell\<t>
-@ std::cell::cell, cell::cell, ::cell, cell
+@ std::cell::cell, cell::cell, ::cell
 @ smart pointer, smart-only, smart-pointer-only, smart-pointers-only
+
+
+
+## Cell - Create
+
+<cb>= Cell::new(<v>value<>)<>
+
+Usage:
+
+<cb>use std::cell::Cell;
+
+let <v>value_1<> = Cell::new(<v>value<>);<>
+
+
+Creates a Cell containing the given value.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html">Cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html#method.new">new()<>
+@
+@ cell::new()
+
+
+
+## Cell - Properties
+
+
+### Cell - Get
+
+<cb>= <v>cell_1<>.get()<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns a copy of the value contained in the cell.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html">Cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html#method.get">get()<>
+@
+@ cell.get(), .get()
+
+
+
+### Cell - Get Mutable
+
+<cb>= <v>cell_1<>.get_mut()<>
+
+Returns:
+
+<cb>&mut <v>T<><>
+
+
+Returns a mutable reference of the value contained in the cell.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html">Cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html#method.get_mut">get_mut()<>
+@
+@ cell.get_mut(), .get_mut()
+
+
+
+## Cell - Operations
+
+
+### Cell - Set
+
+<cb><v>cell_1<>.set(<v>new_value<>)<>
+
+
+Sets the value inside the cell.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html">Cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html#method.set">set()<>
+@
+@ cell.set(), .set()
+
+
+
+### Cell - Replace
+
+<cb>= <v>cell_1<>.replace(<v>new_value<>)<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns the value and replaces it with a new value.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html">Cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html#method.replace">replace()<>
+@
+@ swap
+@ cell.replace(), .replace()
+
+
+
+### Cell - Swap
+
+<cb><v>cell_1<>.swap(<v>cell_2<>)<>
+
+
+Swaps the inner values in cell_1 and cell_2 without having to recreate either.
+
+Does not require an &mut reference.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html">Cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html#method.swap">swap()<>
+@
+@ swap
+@ cell.swap(), .swap()
+
+
+
+### Cell - Take
+
+<cb>= <v>cell_1<>.take()<>
+
+Returns:
+
+<cb><v>T<><>
+
+
+Returns the value and replaces it with the default value.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html">Cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Cell.html#method.take">take()<>
+@
+@ default
+@ cell.take(), .take()
 
 
 
@@ -22194,39 +22633,28 @@ Definition:
 }<>
 
 
-A smart pointer that allows a function to return either unchanged data (reuse) or new data (create). Allows the function to decided at runtime.
+A smart pointer that allows you to work with either borrowed or owned data and then efficiently manages access to that data. The end user can decide whether to borrow or take ownership of that data. Taking ownership will clone borrowed data.
+
+Use when: You need to decide at runtime whether to use borrowed or owned data.
+
+<*>Allows access to either borrowed or owned data
+Transparent to the end user
+Clones if needed
+Underlying type must implement ToOwned<>
 
 COW = Clone on Write
 
-Allows the reuse (return) of data passed to the function if the function does not modify it. The function will return it as <c>Borrowed<>.
-Also allows the function to return new data if required. The function returns new data as <c>Owned<>.
+Use on functions where the data may or may not be modified. If modified, return <c>Cow::Owned(<v>T<>)<>. Otherwise return <c>Cow::Borrowed(&<v>T<>)<>.
 
 Returned data type must allow <c>clone()<>.
-
-
-The Good:
-
-<*>Saves on Memory
-ACID Compliant<>
-
-The Bad:
-
-<*>Overhead of Tables (logical pointers to object, tracking, etc.)
-Memory Fragmentation<>
-
-Use Cases:
-
-<*>Shadow Storage
-Virtual Memory
-File Systems
-Versioning<>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/borrow/index.html">borrow<>::<l "https://doc.rust-lang.org/std/borrow/enum.Cow.html">Cow<>
 @
 @ cow-only, enum
 @ smart pointer, smart-only, smart-pointer-only, smart-pointers-only
-@ std::borrow::cow
+@ std::borrow::cow, borrow::cow, ::cow
+
 
 
 ## Cow - Define
@@ -22333,6 +22761,207 @@ match <v>cow_1<> {
 
 
 
+# Mutex
+
+<cb>std::sync::Mutex<>
+
+<cb>Mutex\<<v>T<>><>
+
+
+Defines a mutex around some data that can be shared across threads but only allows one single thread access to the data at a time.
+
+Use when: You need to safely access mutable data between threads.
+
+<*>Thread-safe mutable access
+Single borrower or owner<>
+
+Mutex = Mutable Exclusion
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>
+@
+@ mutex-only
+@ std::sync::Mutex, sync::Mutex, ::Mutex
+@ smart pointer, smart-only, smart-pointer-only, smart-pointers-only
+
+
+### Mutex - Create
+
+<cb>= Mutex::new(<v>value<>);<>
+
+Usage:
+
+<cb>use std::sync::Mutex;
+
+let <v>mutex_1<>: Mutex\<<v>T<>> = Mutex::new(<v>value<>);<>
+
+
+Creates a mutex containing a value.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.new>new()<>
+@
+@ mutex::new(), new()
+
+
+
+## Mutex - Operations
+
+
+#### Mutex - Get Read Lock (Blocking)
+
+<cb>= <v>mutex_1<>.lock()<>
+
+Usage:
+
+<cb>if let Some(<v>value<>) = <v>mutex_1<>.lock() {
+	<v>...<>
+};<>
+
+Returns:
+
+<cb>LockResult\<MutexGuard\<<v>T<>>><>
+
+
+Aquires a lock on the mutex.
+
+Blocks the current thread until the lock is available.
+The value is wrapped in a guard. The compiler handles this transparantly so you treat it just like normal.
+Will panic if another thread panics while holding the lock.
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.lock">lock()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
+@
+@ mutex.lock(), .lock()
+@ aquire
+
+
+
+#### Mutex - Get Read Lock (Non-Blocking)
+
+<cb>= <v>mutex_1<>.try_lock()<>
+
+Usage:
+
+<cb>if let Some(<v>value<>) = <v>mutex_1<>.try_lock() {
+	<v>...<>
+};<>
+
+Returns:
+
+<cb>TryLockResult\<MutexGuard\<<v>T<>>><>
+
+
+Attempt to aquire a lock on the mutex, returning immediately.
+
+The value is wrapped in a guard. The compiler handles this transparantly so you treat it just like normal.
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.try_lock">try_lock()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
+@
+@ mutex.try_lock(), .try_lock()
+@ aquire, try to
+
+
+
+#### Mutex - Get - Borrow
+
+<cb>= <v>guard<>.borrow()<>
+
+Usage:
+
+<cb>let Ok(<v>guard_1<>) = <v>mutex_1<>.lock() else {
+	<v>...<>
+};
+
+let <v>item<> = <v>guard_1<>.borrow()<>
+
+Returns:
+
+<cb>&\<<v>T<>><>
+
+
+Borrows the item stored inside the mutex.
+
+The item is borrowed immutably.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.borrow">borrow()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
+@
+@ immutable, immutably
+@ guard.borrow(), .borrow()
+
+
+
+#### Mutex - Get - Borrow Mutable
+
+<cb>= <v>guard_1<>.borrow_mut()<>
+
+Usage:
+
+<cb>let mut <v>guard<> = <v>mutex_1<>.lock().unwrap()
+let <v>item<> = <v>guard<>.borrow_mut()<>
+
+Returns:
+
+<cb>&\<<v>T<>><>
+
+
+Borrows the item stored inside the mutex.
+
+The item is mutable.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.borrow_mut">borrow_mut()<>
+@
+@ value
+@ guard.borrow(), .borrow()
+
+
+
+#### Mutex - Into Inner
+
+<cb>= <v>mutex_1<>.into_inner()<>
+
+Returns:
+
+<cb>LockResult\<<v>T<>><>
+
+
+Returns the underlying item but destroys the Mutex in the process.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.into_inner">into_inner()<>
+@
+@ unwrap
+@ mutex.into_inner(), .into_inner()
+
+
+
+#### Mutex - Release Lock (Automatic)
+
+Locks are automatically released once the mutex guard goes out of scope.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
+@
+@ mutexguard, unlock
+
+
+
+#### Mutex - Release Lock (Manual)
+
+<cb><v>mutex_1<>.unlock(<v>guard_1<>);<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.unlock">unlock()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
+@
+@ mutexguard.unlock(), .unlock()
+
+
+
 # Rc
 
 Type:
@@ -22340,10 +22969,14 @@ Type:
 <cb>std::rc::Rc\<<v>T<>><>
 
 
-An Rc is a pointer to memory on the heap that can have multiple owners.
+A pointer that allows a value to have multiple owners.
 
-Immutable by default.
-Rc is not thread safe.
+Use when: You need shared ownership of data in a single-threaded environment.
+
+<*>Multiple owners
+Uses reference counting
+Immutable access
+Single-threaded only
 
 RC = Reference Counted
 
@@ -22401,19 +23034,27 @@ Rc automatically dereferences into the underlying type.
 
 Not possible.
 
-You can not access the warpped value directly.
-Use clone if necessary.
+You can not access the contained value directly without unwrapping the pointer. This includes trying to dereference with *.
+
+Options:
+
+<*>Clone the Contained Data
+Unwrap the pointer with try_unwrap()<>
 @
 @ reference, data, element, value
 
 
 
-### Rc - Reference Count
+### Rc - Reference Count - Strong
 
 <cb>= Rc::strong_count(<v>rc_1<>);<>
 
 
-Returns a count of all the rc instances for that rc item.
+Returns a count of all the Rc instances for that Rc item.
+
+Strong instances are instances of the Rc Type that point to the contained data. They have ownership of that contained data.
+
+Strong = Owning References
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l https://doc.rust-lang.org/std/rc/struct.Rc.html>Rc<>.<l "https://doc.rust-lang.org/std/rc/struct.Rc.html#method.strong_count">strong_count()<>
@@ -22423,8 +23064,27 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-## Rc - Operations
+### Rc - Reference Count - Weak
 
+<cb>= Rc::weak_count(<v>rc_1<>);<>
+
+
+Returns a count of all non-owning weak instances to the rc item.
+
+Weak instances are instances of the <go? "rc weak-only">Weak<> type and imply a non-owning reference to the Rc's data.
+
+Weak = Non-Owning References
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l https://doc.rust-lang.org/std/rc/struct.Rc.html>Rc<>.<l "https://doc.rust-lang.org/std/rc/struct.Rc.html#method.weak_count">weak_count()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html">Weak<>
+@
+@ strong count, instances, existing, current
+@ rc::weak_count(), weak_count()
+
+
+
+## Rc - Operations
 
 
 ### Rc - Clone Rc
@@ -22457,7 +23117,7 @@ Creates a copy of the wrapped item.
 
 
 
-### Rc - Get - Own
+### Rc - Get, Unwrap
 
 <cb>= <v>rc_1<>.try_unwrap()<>
 
@@ -22472,6 +23132,7 @@ Returns the underlying item but destroys the Rc.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l https://doc.rust-lang.org/std/rc/struct.Rc.html>Rc<>.<l "https://doc.rust-lang.org/std/rc/struct.Rc.html#method.try_unwrap">try_unwrap()<>
 @
 @ rc::try_unwrap(), rc.try_unwrap(), .try_unwrap()
+@ take ownership
 
 
 
@@ -22495,8 +23156,10 @@ Creates a weak pointer to the data referenced by the Rc pointer.
 
 Yes, this is an associated function on the Rc type, not a method on an Rc instance.
 
+Associated Type: <go? "rc weak-only">Weak<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l https://doc.rust-lang.org/std/rc/struct.Rc.html>Rc<>.<l "https://doc.rust-lang.org/std/rc/struct.Rc.html#method.downgrade">downgrade()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html">Weak<>
 @
 @ to-weak
 @ rc::downgrade(), downgrade()
@@ -22506,13 +23169,13 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 ## Rc - Patterns
 
 
-### RC - Borrow Vec of RC
+### Rc - Borrow Vec of Rc
 
 <cb>= <v>vec_1<>.into_iter().map(|<v>rc_value<>| Rc::as_ref(&<v>rc_value<>)).collect()<>
 
 Returns:
 
-<cb>Vec\<RC\<<v>T<>>><>
+<cb>Vec\<Rc\<<v>T<>>><>
 
 
 Convertst a vec of Rc values into a vec of borrowed values.
@@ -22526,7 +23189,7 @@ Convertst a vec of Rc values into a vec of borrowed values.
 
 Use Rc + RefCell:
 
-<cb><l "?q=rc+refcell">Rc\<RefCell\<<v>T<>>><><>
+<cb><go? "rc+refcell">Rc\<RefCell\<<v>T<>>><><>
 
 
 
@@ -22534,7 +23197,7 @@ Use Rc + RefCell:
 
 Use Weak:
 
-<cb><l "?q=weak-cell">Weak\<<v>T<>><><>
+<cb><go? "weak-only">Weak\<<v>T<>><><>
 
 
 
@@ -22646,6 +23309,14 @@ Type:
 <cb>std::cell::Ref\<<v>T<>><>
 
 
+Returned by RefCell to allow immutable access to RefCell's contents.
+
+Use when: You need to a temporary mutable reference to the inner data of a <c><go? "refcell-only">RefCell<><>.
+
+<*>Immutable access
+Returned by <c>RefCell<>
+Enforces runtime borrow rules<>
+
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.Ref.html">Ref<>
 @
 @ ref-only, ref\<t>
@@ -22661,10 +23332,19 @@ Type:
 <cb>std::cell::RefCell\<<v>T<>><>
 
 
-Defines a mutable memory location.
+Tracks and enforces borrows at runtime instead of compile time. Safely allowing the contents to be mutated.
+
+Use when: You need safe mutable access to data in a single-threaded environment.
+
+<*>Runtime borrow checking
+Bypasses compile-time borrow checks
+Multiple readers, single writer
+Single-threaded Only<>
 
 Tracks borrows and mutable borrows at runtime.
-Allows a value to be mutated inside a struct method that is defined as immutable.
+Allows multiple immutable borrows or a single mutable borrow.
+Should not need to be declared mutable.
+Not thread safe.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.RefCell.html">RefCell<>
@@ -22695,7 +23375,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-## RefCell - Operations
+## RefCell - Properties
 
 
 ### RefCell - Borrow
@@ -22731,6 +23411,10 @@ Mutably borrows the internal value.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.RefCell.html">RefCell<>::<l "https://doc.rust-lang.org/std/cell/struct.RefCell.html#method.borrow_mut">borrow_mut()<>
 @
 @ refcell.borrow_mut(), .borrow_mut()
+
+
+
+## RefCell - Operations
 
 
 
@@ -22774,11 +23458,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### RefCell - Swap
 
-<cb>= <v>refcell_1<>.swap(<v>refcell_2<>)<>
-
-Returns:
-
-<cb><v>T<><>
+<cb><v>refcell_1<>.swap(<v>refcell_2<>)<>
 
 
 Swaps the inner values in refcell_1 and refcell_2 without having to recreate either.
@@ -22834,6 +23514,15 @@ Type:
 <cb>std::cell::RefMut\<<v>T<>><>
 
 
+Returned by RefCell to allow mutable access to RefCell's contents.
+
+Use when: You need to a temporary mutable reference to the inner data of a <c><go? "refcell-only">RefCell<><>.
+
+<*>Mutable access
+Returned by RefCell
+Enforces runtime borrow rules<>
+
+
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.RefMut.html">RefMut<>
 @
 @ refmut-only, refmut\<t>
@@ -22849,6 +23538,16 @@ Type:
 
 <cb>std::sync::RwLock\<<v>T<>><>
 
+Provides runtime tracking of concurrent reads and writes.
+
+Use when: You need safe mutable access to data between threads, with multiple readers or one writer.
+
+<*>Thread-safe
+Mutable access
+Multiple readers, single writer<>
+
+This type ensures safe concurrent access to data contained inside. It provides either multiple reader access (shared access), or single writer access (exclusive access).
+
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>
 @
@@ -22858,7 +23557,314 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-# Weak
+### RWLock - Create
+
+<cb>= RwLock::new(<v>value<>);<>
+
+Usage:
+
+<cb>use std::sync::RwLock;
+
+let <v>rw_lock_1<>: RWLock\<<v>T<>> = RWLock::new(<v>value<>);<>
+
+
+Creates a read write lock around a value.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.new>new()<>
+@
+@ rwlock::new(), new()
+
+
+
+## RWLock - Properties
+
+
+### RWLock - Get Mutable
+
+<cb>= <v>rwlock_1<>.get_mut()<>
+
+Returns:
+
+<cb>LockResult\<&mut <v>T<>><>
+
+
+Returns a mutable reference to the contained data.
+
+Uses static (compile time) borrow checking to enforce borrow checker rules (the borrow happens on <c><v>rwlock_1<><> itself).
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.get_mut>get_mut()<>
+@
+@ rwlock::get_mut(), get_mut()
+
+
+
+## RWLock - Operations
+
+
+#### RwLock - Get Read Lock (Blocking)
+
+<cb>= <v>rwlock_1<>.read()<>
+
+Usage:
+
+<cb>if let Some(<v>value<>) = <v>rwlock_1<>.read() {
+	<v>...<>
+};<>
+
+Returns:
+
+<cb>LockResult\<RwLockReadGuard\<<v>T<>>><>
+
+
+Aquires a read lock on the RW lock.
+
+Blocks the current thread until the lock is available (when all write locks are released).
+The value is wrapped in a guard. The compiler handles this transparantly so you treat it just like normal.
+Will panic if another thread panics while holding the lock.
+
+
+Example:
+
+<cb>use std::sync::RwLock;
+
+let <v>rwlock_1<> = RwLock::new(<v>42<>);
+
+match <v>rwlock_1<>.read() {
+	Err(_) => println!("Error aquiring read lock."),o
+	Ok(<v>value<>) => println!("value = {}", *<v>value<>),
+};
+
+<#>// Prints: value = 42<><>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.read">read()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLockReadGuard.html">RwLockReadGuard<>
+@
+@ rwlock.read(), .read()
+@ aquire, read-only, only
+
+
+
+#### RwLock - Get Read Lock (Non-Blocking)
+
+<cb>= <v>rwlock_1<>.try_read()<>
+
+Usage:
+
+<cb>if let Some(<v>value<>) = <v>rwlock_1<>.try_read() {
+	<v>...<>
+};<>
+
+Returns:
+
+<cb>TryLockResult\<RwLockReadGuard\<<v>T<>>><>
+
+
+Attempt to aquire a read lock on the RW lock, returning immediately.
+
+Will return None if there are any write locks.
+
+The value is wrapped in a guard. The compiler handles this transparantly so you treat it just like normal.
+
+
+Example:
+
+<cb>use std::sync::RwLock;
+
+let <v>rwlock_1<> = RwLock::new(<v>42<>);
+
+match <v>rwlock_1<>.try_read() {
+	Err(_) => println!("Error aquiring read lock."),
+	Ok(<v>value<>) => println!("value = {}", *<v>value<>),
+};
+
+<#>// Prints: value = 42<><>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.try_read">try_read()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLockReadGuard.html">RwLockReadGuard<>
+@
+@ rwlock.try_read(), .try_read()
+@ aquire, try to, read-only, only
+
+
+
+#### RwLock - Get Write Lock (Blocking)
+
+<cb>= <v>rwlock_1<>.write()<>
+
+Usage:
+
+<cb>if let Some(<v>value<>) = <v>rwlock_1<>.write() {
+	<v>...<>
+};<>
+
+Returns:
+
+<cb>LockResult\<RwLockGuard\<<v>T<>>><>
+
+
+Aquires a lock on the rwlock.
+
+Blocks the current thread until the lock is available.
+The value is wrapped in a guard. The compiler handles this transparantly so you treat it just like normal.
+Will panic if another thread panics while holding the lock.
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.write">write()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLockGuard.html">RwLockGuard<>
+@
+@ rwlock.write(), .write()
+@ aquire
+
+
+
+#### RwLock - Get Write Lock (Non-Blocking)
+
+<cb>= <v>rwlock_1<>.try_write()<>
+
+Usage:
+
+<cb>if let Some(<v>value<>) = <v>rwlock_1<>.try_write() {
+	<v>...<>
+};<>
+
+Returns:
+
+<cb>TryLockResult\<RwLockGuard\<<v>T<>>><>
+
+
+Attempt to aquire a lock on the rwlock, returning immediately.
+
+The value is wrapped in a guard. The compiler handles this transparantly so you treat it just like normal.
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.try_write">try_write()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLockGuard.html">RwLockGuard<>
+@
+@ rwlock.try_write(), .try_write()
+@ aquire, try to
+
+
+
+#### RWLock - Into Inner
+
+<cb>= <v>rwlock_1<>.into_inner()<>
+
+Returns:
+
+<cb>LockResult\<<v>T<>><>
+
+
+Returns the underlying item but destroys the RWLock.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.into_inner">into_inner()<>
+@
+@ unwrap
+@ rwlock.into_inner(), .into_inner()
+
+
+
+# Weak (Arc)
+
+Type:
+
+<cb>std::sync::Weak<>
+
+
+A pointer that contains a non-owning reference to some data.
+
+Use when: You need to avoid circular references in a multi-threaded environment.
+
+<*>Non-owning reference to <c><go? "arc-only">Arc<><>
+Thread-safe
+Prevents reference cycles<>
+
+Returned by <c><go? "arc-only">Arc<>.downgrade()<>.
+Used to prevent reference loops.
+Allows data to be dropped from memory even though this pointer still references it.
+Makes <_>no<> guarantees that the data still being present.
+Does not count towards ownership.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Weak.html">Weak<>
+@
+@ weak-only, non-owing, non-owner
+@ std::sync::weak, arc::weak, ::weak, weak
+@ smart pointer, smart-only, smart-pointer-only, smart-pointers-only
+
+
+
+## Weak (Arc) - Create
+
+<cb>= Weak::new(<v>value<>)<>
+
+Usage:
+
+<cb>use std::sync::Weak;
+
+let <v>weak_1<>: Weak\<<v>T<>> = Weak::new(<v>value<>);<>
+
+
+Create a new Weak pointer with data placed on the heap.
+
+Use when: You need to avoid circular references in a single-threaded environment.
+
+<*>Non-owning Reference to <c><go? "rc-only">Rc<><>
+Single-threaded only
+Prevents reference cycles<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Weak.html">Weak<>::<l "https://doc.rust-lang.org/std/sync/struct.Weak.html#method.new">new()<>
+@
+@ weak::new(), new()
+@ create, define, instantiate, new
+
+
+
+## Weak (Arc) - Operations
+
+
+### Weak (Arc) - Get
+
+You must upgrade to an Arc pointer to access the value referenced by the weak pointer.
+
+<cb>let Some(<v>arc_1<>) = <v>weak_1<>.upgrade() else {
+	<#>// Upgrade failed.<>
+};<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Weak.html">Weak<>::<l "https://doc.rust-lang.org/std/sync/struct.Weak.html#method.upgrade">upgrade()<>
+@
+@ access, element, value, data
+
+
+
+## Weak (Arc) - Convert
+@
+@ from, convert, conversion, converting
+@ weak-to, weak-into
+
+
+### Weak (Arc) - To Arc
+
+<cb>= <v>weak_1<>.upgrade()<>
+
+Returns:
+
+<cb>Option\<Arc\<<v>T<>>><>
+
+Converts a Weak pointer into an Arc pointer.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Weak.html">Weak<>::<l "https://doc.rust-lang.org/std/sync/struct.Weak.html#method.upgrade">upgrade()<>
+@
+@ to-arc
+@ weak.upgrade(), .upgrade(), mutable, own
+
+
+
+# Weak (Rc)
 
 Type:
 
@@ -22867,8 +23873,15 @@ Type:
 
 A pointer that contains a non-owning reference to some data.
 
+<*>Non-owning Reference to Rc
+Avoids Reference Cycles<>
+
+Returned by <>Rc.downgrade()<>.
+Used to prevent reference loops.
 Allows data to be dropped from memory even though this pointer still references it.
-Makes <_>no<> guarantees that the data still being present
+Makes <_>no<> guarantees that the data still being present.
+Does not count towards ownership.
+
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html">Weak<>
 @
@@ -22878,7 +23891,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-## Weak - Create
+## Weak (Rc) - Create
 
 <cb>= Weak::new(<v>value<>)<>
 
@@ -22899,13 +23912,31 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-## Weak - Convert
+## Weak (Rc) - Operations
+
+
+### Weak (Rc) - Get
+
+You must upgrade to an Rc pointer to access the value referenced by the weak pointer.
+
+<cb>let Some(<v>rc_1<>) = <v>weak_1<>.upgrade() else {
+	<#>// Upgrade failed.<>
+};<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html">Weak<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html#method.upgrade">upgrade()<>
+@
+@ access, element, value, data
+
+
+
+## Weak (Rc) - Convert
 @
 @ from, convert, conversion, converting
 @ weak-to, weak-into
 
 
-### Weak - To Rc
+### Weak (Rc) - To Rc
 
 <cb>= <v>weak_1<>.upgrade()<>
 
@@ -22930,29 +23961,28 @@ index-to: word
 <>
 @
 @ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
-
-<l "?q=asmut-only">AsMut<>
-<l "?q=asref+trait">AsRef<>
-<l "?q=clone-only+trait">Clone<>
-<l "?q=copy-only+trait">Copy<>
-<l "?q=debug-only+trait">Debug<>
-<l "?q=deref-only+trait">Deref<>
-<l "?q=default-only+trait">Default<>
-<l "?q=display-only+trait">Display<>
-<l "?q=drop-only+trait">Drop<>
-<l "?q=eq-only+trait">Eq<>
-<l "?q=error-only+trait">Error<>
-<l "?q=from-only+trait">From<>
-<l "?q=slice-only+trait">Index<>
-<l "?q=slice-only+trait">IndexMut<>
-<l "?q=into-only+trait">Into<>
-<l "?q=intoiterator-only+trait">IntoIterator<>
-<l "?q=iterator-only+trait">Iterator<>
-<l "?q=ord-only+trait">Ord<>
-<l "?q=partialeq-only+trait">PartialEq<>
-<l "?q=toowned-only+trait">ToOwned<>
-<l "?q=tostring-only+trait">ToString<>
-<l "?q=tryfrom-only+trait">TryFrom<>
+<t><c><go? "asmut-only">AsMut<><><|>Converts to a mutable reference of another type.
+<c><go? "asref trait">AsRef<><><|>Converts to a shared reference of another type.
+<c><go? "clone-only trait">Clone<><><|>Creates a copy.
+<c><go? "copy-only trait">Copy<><><|>Creates a bitwise copy (enables copy semantics).
+<c><go? "debug-only trait">Debug<><><|>Enables debugging and defines the format.
+<c><go? "deref-only trait">Deref<><><|>Provides an immutable reference to another type.
+<c><go? "default-only trait">Default<><><|>Defines the default value.
+<c><go? "display-only trait">Display<><><|>Returns a user readable form of the type.
+<c><go? "drop-only trait">Drop<><><|>Defines what to do on destruction.
+<c><go? "eq-only trait">Eq<><><|>Defines equality comparison (==) when x == x.
+<c><go? "error-only trait">Error<><><|>Defines the type of error.
+<c><go? "from-only trait">From<><><|>Converts from one type into another.
+<c><go? "slice-only trait">Index<><><|>Access elements using indexing ([])
+<c><go? "slice-only trait">IndexMut<><><|>Access elements using a mutable index ([]).
+<c><go? "into-only trait">Into<><><|>Converts from one type into another.
+<c><go? "intoiterator-only trait">IntoIterator<><><|>Converts into an iterator.
+<c><go? "iterator-only trait">Iterator<><><|>Defines a type that can be treated as an iterator.
+<c><go? "ord-only trait">Ord<><><|>Defines ordering for values (\<, >, etc.).
+<c><go? "partialeq-only trait">PartialEq<><><|>Defines equality comparison (==) when x != x may be true.
+<c><go? "toowned-only trait">ToOwned<><><|>Converts borrowed data into owned by cloning.
+<c><go? "tostring-only trait">ToString<><><|>Converts to a string.
+<c><go? "tryfrom-only trait">TryFrom<><><|>Converts from one type to another that may fail.<>
 @
 @ summary
 
@@ -22960,11 +23990,11 @@ index-to: word
 
 # Marker Traits
 
-<l "?q=copy-only+trait">Copy<>
-<l "?q=send-only+trait">Send<>
-<l "?q=sized-only+trait">Sized<>
-<l "?q=sync-only+trait">Sync<>
-<l "?q=unpin-only+trait">Unpin<>
+<go? "copy-only+trait">Copy<>
+<go? "send-only+trait">Send<>
+<go? "sized-only+trait">Sized<>
+<go? "sync-only+trait">Sync<>
+<go? "unpin-only+trait">Unpin<>
 @
 @ summary
 
@@ -22983,7 +24013,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ asmut-only
 @ std::convert::asmut, convert::asmut, asmut\<T>
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 ## AsMut - Properties
@@ -23030,7 +24059,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ asref-only
 @ std::convert::asref, convert::asref, asref\<T>
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 ## AsRef - Properties
@@ -23072,7 +24100,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 @ std::clone::Clone, clone::Clone, ::clone
 @ .clone(), .clone_from()
 @ clone-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23085,7 +24112,7 @@ Type:
 <cb>std::marker::Copy<>
 
 
-Allows an item to be copied.
+Defines a type that can be duplicated by copying its bits.
 
 This is a marker trait and defines no methods.
 Allows items to have "copy semantics'.
@@ -23096,7 +24123,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 @
 @ std::marker::copy, marker::copy, ::copy
 @ copy-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23119,7 +24145,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ fmt()
 @ std::fmt::Debug, fmt::Debug, ::Debug
 @ debug-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23164,7 +24189,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ fmt()
 @ std::fmt::Default, fmt::Default, ::Default
 @ default-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23191,7 +24215,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ deref()
 @ std::ops::deref, ops::deref, ::deref
 @ deref-only, defer-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23258,7 +24281,6 @@ Rust Docs:
 @ fmt(), tostring, .to_string()
 @ std::fmt::Display, fmt::Display, ::Display
 @ display-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23332,7 +24354,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ drop(), destructor
 @ std::ops::Drop, ops::Drop, ::drop
 @ drop-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23345,9 +24366,25 @@ Type:
 
 Allows items to be compared for equality.
 
+This is a marker trait.
+
 Requires that <c>x == x<>.
 Requires the implementation of the PartialEq trait.
 
+Required by HashSet, HashMap
+
+
+Example:
+
+<cb>struct <v>Type1<> {
+	<v>...<>
+}
+
+<#># Eq is a marker trait. Has no methods:<>
+impl Eq for <v>Type1<> {}<>
+
+
+See Also: <go? "partialeq-only">PartialEq<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.Eq.html">Eq<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialEq.html">PartialEq<>
@@ -23355,7 +24392,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ equality, equals, compare, comparison
 @ std::cmp::eq, cmp::eq, ::eq, 
 @ eq-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23388,12 +24424,10 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ error-only
 @ std::error::Error, error::Error, ::Error
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
 ## Error - Properties
-
 
 
 ### Error - Cause (deprecated)
@@ -23603,7 +24637,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ Convert, conversion, from, to
 @ std::convert::From, convert::From, ::From, from()
 @ from-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23619,6 +24652,11 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 Defines the conversion from one type into another.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/convert/index.html">convert<>::<l "https://doc.rust-lang.org/std/convert/trait.From.html">From<>::<l https://doc.rust-lang.org/std/convert/trait.From.html#tymethod.from>from()<>
+@
+@ from.from(), .from()
 
 
 
@@ -23664,6 +24702,9 @@ fn main() {
 }<>
 
 
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/convert/index.html">convert<>::<l "https://doc.rust-lang.org/std/convert/trait.From.html">From<>::<l https://doc.rust-lang.org/std/convert/trait.From.html#tymethod.from>from()<>
+
+
 
 # Hash Trait
 
@@ -23685,7 +24726,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ hashset, hashmap
 @ std::hash::hash, hash::hash, ::hash, 
 @ hash-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23707,7 +24747,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ std::hash::hasher, hash::hasher, ::hasher
 @ hasher-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23729,7 +24768,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ index-only
 @ std::ops::Index, ops::Index, ::Index
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23751,7 +24789,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ indexmut-only, mutable
 @ std::ops::IndexMut, ops::IndexMut, ::IndexMut
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23777,7 +24814,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ Convert, conversion, from, to, turbofish
 @ std::convert::Into, convert::Into, ::Into, into()
 @ into-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23823,7 +24859,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ std::iter::IntoIterator, iter::IntoIterator, ::IntoIterator
 @ intoiterator-only, into-iterator-only, into-iterators-only, intoiter-only, intoiters-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23872,7 +24907,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ std::iter::Iterator, iter::Iterator, ::Iterator
 @ iterator-only, iterators-only, iter-only, iters-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -23886,7 +24920,7 @@ Returns an iterator to the item.
 The item values are borrowed.
 
 
-Sheet: <l "?q=iterator-only">Iterator<>
+Sheet: <go? "iterator-only">Iterator<>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>
@@ -24527,7 +25561,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ equality, equals, compare, comparison
 @ std::cmp::ord, cmp::ord, ::ord, 
 @ ord-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -24607,7 +25640,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ equality, equals, compare, comparison
 @ std::cmp::partialeq, cmp::partialeq, ::partialeq, 
 @ partialeq-only, partial-eq-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -24629,7 +25661,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 @
 @ std::marker::send, marker::send, ::send
 @ send-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -24651,7 +25682,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 @
 @ std::marker::sized, marker::sized, ::sized
 @ sized-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -24673,7 +25703,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 @
 @ std::marker::sync, marker::sync, ::sync
 @ sync-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -24702,7 +25731,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ .to_owned(), .clone_into()
 @ std::borrow::ToOwned, borrow::ToOwned, ::ToOwned
 @ toowned-only, to-owned-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -24728,7 +25756,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ .to_string(), tostring, tostring-only
 @ std::string::tostring, string::tostring, ::tostring, string::tostring
 @ tostring-only, to-string-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 # TryFrom Trait
@@ -24755,7 +25782,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 @ .try_from(), 
 @ std::convert::TryFrom, convert::TryFrom, ::TryFrom, tryfrom-only
 @ try-from-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
 
 
 
@@ -24777,145 +25803,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.r
 @
 @ std::marker::unpin, marker::unpin, ::unpin
 @ unpin-only
-@ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
-
-
-
-# Syncronized Library
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>
-@
-@ sync-only, synchronized-only
-
-
-
-## Mutex
-
-<cb>std::sync::Mutex<>
-
-<cb>Mutex\<<v>T<>><>
-
-
-Defines a mutex around some data that can be shared across threads but only allows one single thread access to the data at a time.
-
-
-Mutex = Mutable Exclusion
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>
-@
-@ mutex-only
-@ std::sync::Mutex, sync::Mutex, ::Mutex
-
-
-### Mutex - Create
-
-<cb>= Mutex::new(<v>value<>);<>
-@
-@ mutex::new(), new()
-
-
-
-### Mutex - Get Lock
-
-<cb>= <v>mutex_1<>.lock()<>
-
-Usage:
-
-<cb>if let Some(<v>value<>) = <v>mutex_1<>.lock() {
-	<v>...<>
-}<>
-
-Returns:
-
-<cb>LockResult\<MutexGuard\<<v>T<>>><>
-
-
-Returns the value.
-
-The value is wrapped in a guard. The compiler handles this transparantly so you treat it just like normal.
-Will panic if another thread panics while holding the lock.
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.lock">lock()<>
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
-@
-@ mutex.lock(), .lock()
-
-
-
-### Mutex - Get - Borrow
-
-<cb>= <v>guard<>.borrow()<>
-
-Usage:
-
-<cb>let <v>guard_1<> = <v>mutex_1<>.lock().unwrap()
-let <v>item<> = <v>guard_1<>.borrow()<>
-
-Returns:
-
-<cb>&\<<v>T<>><>
-
-
-Borrows the item stored inside the mutex.
-
-The item is borrowed immutably.
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.borrow">borrow()<>
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
-@
-@ immutable, immutably
-@ guard.borrow(), .borrow()
-
-
-
-### Mutex - Get - Borrow Mutable
-
-<cb>= <v>guard_1<>.borrow_mut()<>
-
-Usage:
-
-<cb>let mut <v>guard<> = <v>mutex_1<>.lock().unwrap()
-let <v>item<> = <v>guard<>.borrow_mut()<>
-
-Returns:
-
-<cb>&\<<v>T<>><>
-
-
-Borrows the item stored inside the mutex.
-
-The item is mutable.
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.borrow_mut">borrow_mut()<>
-@
-@ value
-@ guard.borrow(), .borrow()
-
-
-
-### Mutex - Release Lock (Automatic)
-
-Locks are automatically released once the mutex guard goes out of scope.
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
-@
-@ mutexguard, unlock
-
-
-
-### Mutex - Release Lock (Manual)
-
-<cb><v>mutex_1<>.unlock(<v>guard_1<>);<>
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html">Mutex<>.<l "https://doc.rust-lang.org/std/sync/struct.Mutex.html#method.unlock">unlock()<>
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.MutexGuard.html">MutexGuard<>
-@
-@ mutexguard.unlock(), .unlock()
 
 
 
@@ -25031,13 +25918,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ std::env::var, std::env::var(), env::var(), var(), names, keys, values
 
 
-# Standard Types
-<meta>index-to: word<>
-@
-@ std-only, std-type-only, std-types-only, std-struct-only, std-structs-only
-@ standard-only, standard-type-only, standard-types-only, standard-struct-only, standard-structs-only
-
-
 # Chars
 
 <cb>std::str::Chars<>
@@ -25047,7 +25927,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ chars-only, characters-only
 @ std::str::Chars, str::chars, ::chars
-@ standard-type-only, standard-types-only, std-type-only, std-types-only
 
 
 
@@ -25153,7 +26032,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ time length
 @ duration-only
 @ std::time::Duration, time::Duration, ::Duration
-@ standard-type-only, standard-types-only, std-type-only, std-types-only
 
 
 
@@ -25333,7 +26211,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ instance, instance-only
 @ instant-only
 @ std::time::Instant, time::Instant, ::instant
-@ standard-type-only, standard-types-only, std-type-only, std-types-only
 
 
 
@@ -25415,7 +26292,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @ system time
 @ std::time::SystemTime, time::SystemTime, ::systemtime
 @ systemtime-only
-@ standard-type-only, standard-types-only, std-type-only, std-types-only
 
 
 
@@ -25557,7 +26433,7 @@ Defines an atomic boolean than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicBool.html">AtomicBool<>
 @
 @ boolean
-@ std::sync::atomic::atomicbool, sync::atomic::atomicbool, atomic::boatomicbool, b boatomicbool, atomicbool-only
+@ std::sync::atomic::atomicbool, sync::atomic::atomicbool, atomic::boatomicbool, b boatomicbool, atomicbool-only, atomic-only, atom-only
 
 
 
@@ -25574,7 +26450,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicI8.html">AtomicI8<>
 @
 @ counter, signed integer
-@ std::sync::atomic::atomici8, sync::atomic::atomici8, atomic::atomici8, atomici8, atomici8-only
+@ std::sync::atomic::atomici8, sync::atomic::atomici8, atomic::atomici8, atomici8, atomici8-only, atomic-only, atom-only
 
 
 
@@ -25591,7 +26467,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicI16.html">AtomicI16<>
 @
 @ counter, signed integer
-@ std::sync::atomic::atomici16, sync::atomic::atomici16, atomic::iatomici16,  iatomici16, atomici16-only
+@ std::sync::atomic::atomici16, sync::atomic::atomici16, atomic::iatomici16,  iatomici16, atomici16-only, atomic-only, atom-only
 
 
 
@@ -25608,7 +26484,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicI32.html">AtomicI32<>
 @
 @ counter, signed integer
-@ std::sync::atomic::atomici32, sync::atomic::atomici32, atomic::iatomici32,  iatomici32, atomici32-only
+@ std::sync::atomic::atomici32, sync::atomic::atomici32, atomic::iatomici32,  iatomici32, atomici32-only, atomic-only, atom-only
 
 
 
@@ -25625,7 +26501,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicI64.html">AtomicI64<>
 @
 @ counter, signed integer
-@ std::sync::atomic::atomici64, sync::atomic::atomici64, atomic::iatomici64,  iatomici64, atomici64-only
+@ std::sync::atomic::atomici64, sync::atomic::atomici64, atomic::iatomici64,  iatomici64, atomici64-only, atomic-only, atom-only
 
 
 
@@ -25642,7 +26518,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicU8.html">AtomicU8<>
 @
 @ counter, unsigned integer
-@ std::sync::atomic::atomicu8, sync::atomic::atomicu8, atomic::atomicu8, atomicu8, atomicu8-only
+@ std::sync::atomic::atomicu8, sync::atomic::atomicu8, atomic::atomicu8, atomicu8, atomicu8-only, atomic-only, atom-only
 
 
 
@@ -25659,7 +26535,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicU16.html">AtomicU16<>
 @
 @ counter, unsigned integer
-@ std::sync::atomic::atomicu16, sync::atomic::atomicu16, atomic::uatomicu16,  uatomicu16, atomicu16-only
+@ std::sync::atomic::atomicu16, sync::atomic::atomicu16, atomic::uatomicu16,  uatomicu16, atomicu16-only, atomic-only, atom-only
 
 
 
@@ -25676,7 +26552,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicU32.html">AtomicU32<>
 @
 @ counter, unsigned integer
-@ std::sync::atomic::atomicu32, sync::atomic::atomicu32, atomic::uatomicu32,  uatomicu32, atomicu32-only
+@ std::sync::atomic::atomicu32, sync::atomic::atomicu32, atomic::uatomicu32,  uatomicu32, atomicu32-only, atomic-only, atom-only
 
 
 
@@ -25693,7 +26569,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicU64.html">AtomicU64<>
 @
 @ counter, unsigned integer
-@ std::sync::atomic::atomicu64, sync::atomic::atomicu64, atomic::uatomicu64,  uatomicu64, atomicu64-only
+@ std::sync::atomic::atomicu64, sync::atomic::atomicu64, atomic::uatomicu64,  uatomicu64, atomicu64-only, atomic-only, atom-only
 
 
 
@@ -25710,7 +26586,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicIsize.html">AtomicIsize<>
 @
 @ counter, signed integer
-@ std::sync::atomic::atomicisize, sync::atomic::atomicisize, atomic::isiatomicisize, is isiatomicisize, atomicisize-only
+@ std::sync::atomic::atomicisize, sync::atomic::atomicisize, atomic::isiatomicisize, is isiatomicisize, atomicisize-only, atomic-only, atom-only
 
 
 
@@ -25727,7 +26603,7 @@ Defines an atomic integer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicUsize.html">AtomicUsize<>
 @
 @ counter, unsigned integer
-@ std::sync::atomic::atomicusize, sync::atomic::atomicusize, atomic::usiatomicusize, us usiatomicusize, atomicusize-only
+@ std::sync::atomic::atomicusize, sync::atomic::atomicusize, atomic::usiatomicusize, us usiatomicusize, atomicusize-only, atomic-only, atom-only
 
 
 
@@ -25744,7 +26620,7 @@ Defines an atomic pointer than can be safely shared across threads.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/atomic/index.html">atomic<>::<l "https://doc.rust-lang.org/std/sync/atomic/struct.AtomicPtr.html">AtomicPtr<>
 @
 @ pointer
-@ std::sync::atomic::atomicptr, sync::atomic::atomicptr, atomic::patomicptr,  patomicptr, atomicptr-only
+@ std::sync::atomic::atomicptr, sync::atomic::atomicptr, atomic::patomicptr,  patomicptr, atomicptr-only, atomic-only, atom-only
 
 
 
@@ -25767,8 +26643,9 @@ An enum that defines a socket address (ip address type, id and port).
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
 @
-@ std::net::socketaddr, net::socketaddr, ::socketaddr, socketaddr-only
+@ std::net::socketaddr, net::socketaddr, ::socketaddr, socketaddr-only, socket-addr-only
 @ network, socketaddr, enum
+
 
 
 ## Socket Address - Create
@@ -25872,49 +26749,393 @@ Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rus
 
 
 
+# TCP Listener
+
+Type:
+
+<cb>std::net::TcpListener<>
+
+
+Listens for incoming TCP network connections on a specified address and port.
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html>TcpListener<>
+@
+@ std::net::tcplistener, net::tcplistener, ::tcplistener, tcplistener-only, tcp-listener-only
+@ network
+
+
+
+## TCP Listener - Bind / Open
+@
+@ create, new, bind
+
+
+### TCP Listener - Open
+
+<cb>= TcpListener::bind("<v>address<>:<v>port<>")<>
+
+Usage:
+
+<cb>use std::net::TcpListener;
+
+let <v>listener_1<> = TcpListener::bind("<v>address<>:<v>port<>");<>
+
+Returns:
+
+<cb>Result\<TcpListener><>
+
+
+Opens a TCP listener on the given address and port.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html>TcpListener<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html#method.bind>bind()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+@
+@ bind to address, port, open
+@ std::net::TcpListener::bind(), bind()
+
+
+
+### TCP Listener - Open with Socket Address
+
+<cb>= TcpListener::bind(<v>socket_address<>)<>
+
+Usage:
+
+<cb>use std::net::TcpListener;
+
+let <v>socket_1<> = TcpListener::bind(<v>socket_address<>);<>
+
+Returns:
+
+<cb>Result\<TcpListener><>
+
+
+Binds a TCP listener to the local address and port defined in the socket address..
+
+
+See: <go? "socket-addr-only">SocketAddr<>
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html>TcpListener<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html#method.bind>bind()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+@
+@ open
+@ std::net::TcpListener::bind(), bind(), std::net::socketaddr, socketaddr
+
+
+
+## TCP Listener - Operations
+
+
+### TCP Listener - Accept
+
+<cb>= <v>listener_1<>.accept()<>
+
+Returns:
+
+<cb>Result\<(TcpStream, SocketAddr)><>
+
+
+Accepts an incoming request sent to the tcp port.
+
+Blocks until a request is received.
+
+
+See: <go? "tcpstream-only">TcpStream<>
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html>TcpListener<>.<l https://doc.rust-lang.org/std/net/struct.TcpListener.html#method.accept>accept()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+@
+@ request
+@ tcplistener.accept(), .accept(), tcpstream
+
+
+
+### TCP Listener - Incoming
+
+<cb>= <v>listener_1<>.incoming()<>
+
+Returns:
+
+<cb>Incoming<>
+
+
+Returns an iterator of TCP streams for incoming tcp requests.
+
+Blocks until requests are received.
+Never returns <c>None<>.
+
+
+See: <go? "tcpstream-only">TcpStream<>
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html>TcpListener<>.<l https://doc.rust-lang.org/std/net/struct.TcpListener.html#method.incoming>incoming()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.Incoming.html>Incoming<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>
+@
+@ request
+@ tcplistener.incoming(), .incoming(), tcpstream
+
+
+
+# TCP Stream
+
+Type:
+
+<cb>std::net::TcpStream<>
+
+
+Either receives or sends data over TCP.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>
+@
+@ std::net::tcpstream, net::tcpstream, ::tcpstream, tcpstream-only, tcp-stream-only
+@ network
+
+
+
+## TCP Stream - Create
+
+
+### TCP Stream - Connect
+
+<cb>= TcpStream::connect("<v>address<>:<v>port<>")<>
+
+<cb>= TcpStream::connect(<v>socket_address<>)<>
+
+Usage:
+
+<cb>use std::net::TcpStream;
+
+let <v>stream_1<> = TcpStream::connect("<v>address<>:<v>port<>")<>
+
+Returns:
+
+<cb>Result\<TcpStream><>
+
+
+Connect to a remote TCP address and port.
+
+
+See: <go? "socketaddr-only">SocketAddr<>
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.connect<>connect()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+@
+@ @ tcpstream::connect(), connect()
+
+
+
+### TCP Stream - Connect with Timeout
+
+<cb>= TcpStream::connect_timeout("<v>address<>:<v>port<>", <v>timeout_duration<>)<>
+
+<cb>= TcpStream::connect_timeout(<v>socket_address<>, <v>timeout_duration<>)<>
+
+Usage:
+
+<cb>use std::net::TcpStream;
+
+let <v>stream_1<> = TcpStream::connect_timeout("<v>address<>:<v>port<>", <v>timeout_duration<>)<>
+
+Returns:
+
+<cb>Result\<TcpStream><>
+
+
+Connect to a remote TCP address and port within a gived period.
+
+
+See: <go? "duration-only">Duration<>, <go? "socketaddr-only">SocketAddr<>
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.connect_timeout<>connect_timeout()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/time/index.html">time<>::<l "https://doc.rust-lang.org/std/time/struct.Duration.html">Duration<>
+@
+@ tcpstream::connect_timeout(), connect_timeout()
+
+
+
+## TCP Stream - Properties
+
+
+### TCP Stream - Local Address
+
+<cb>= <v>stream_1<>.local_addr()<>
+
+Returns:
+
+<cb>Result\<SocketAddr><>
+
+
+Returns the local IP address and port of the socket.
+
+
+See: <go?>Socket Address<> (above)
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>.<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.local_addr>local_addr()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.IpAddr.html>IpAddr<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+@
+@ ip address, port
+@ tcpstream.local_addr()
+
+
+
+### TCP Stream - Peer Address
+
+<cb>= <v>stream_1<>.peer_addr()<>
+
+Returns:
+
+<cb>Result\<SocketAddr><>
+
+
+Returns the peer IP address and port of the socket.
+
+
+See: <go?>Socket Address<> (above)
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>.<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.peer_addr>peer_addr()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.IpAddr.html>IpAddr<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+@
+@ ip address, port, remote
+@ tcpstream.peer_addr()
+
+
+
+## TCP Stream - Operations
+
+
+### TCP Stream - Read
+
+<cb>= <v>stream_1<>.read(&mut <v>bytes_buffer<>)<>
+
+Usage:
+
+<cb>let <v>buffer<> = [0; 1024];
+let <v>result<> = <v>stream_1<>.read(&mut <v>bytes_buffer<>)<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Sends a segment (data) over the stream.
+
+Returns the number of bytes read.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>.<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.read>read()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+@
+@ retrieve, receive, segment, packet
+@ tcpstream.read(), .read()
+
+
+
+### TCP Stream - Read with Timeout
+
+<cb>= <v>stream_1<>.read_timeout(&mut <v>bytes_buffer<>, <v>timeout_duration<>)<>
+
+Usage:
+
+<cb>let <v>buffer<> = [0; 1024];
+let <v>result<> = <v>stream_1<>.read_timeout(&mut <v>bytes_buffer<>, <v>timeout_duration<>)<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Sends a segment (data) over the stream within the given duration.
+
+Returns the number of bytes read.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>.<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.read_timeout>read_timeout()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/time/index.html">time<>::<l "https://doc.rust-lang.org/std/time/struct.Duration.html">Duration<>
+@
+@ retrieve, receive, segment, packet
+@ tcpstream.read_timeout(), .read_timeout()
+
+
+
+### TCP Stream - Write
+
+<cb>= <v>stream_1<>.write(&<v>buffer<>)<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Reads in a segment (data) over the stream.
+
+Returns the number of bytes sent.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>.<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.write>write()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+@
+@ send, segment, packet
+@ tcpstream.write(), .write()
+
+
+
+### TCP Stream - Write with Timeout
+
+<cb>= <v>stream_1<>.write_timeout(&<v>buffer<>, <v>timeout_duration<>)<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Reads in a segment (data) over the stream within the given duration.
+
+Returns the number of bytes sent.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>.<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.write_timeout>write_timeout()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/time/index.html">time<>::<l "https://doc.rust-lang.org/std/time/struct.Duration.html">Duration<>
+@
+@ send, segment, packet
+@ tcpstream.write_timeout(), .write_timeout()
+
+
+
 # UDP Socket
+
+Type:
 
 <cb>std::net::UdpSocket<>
 
+
+Sends and receives UPD datagrams over a network.
+
+
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>
 @
-@ std::net::UdpSocket, net::UdpSocket, ::UdpSocket, udpsocket-only
+@ std::net::UdpSocket, net::UdpSocket, ::UdpSocket, udpsocket-only, udp-socket-only
 @ network, udpsocket
 
 
 ## UDP Socket - Bind / Open
 @
-@ create, new, bind
+@ create, new, bind, address
+
 
 
 ### UDP Socket - Open
-
-<cb>= UdpSocket::bind("<v>address<>")<>
-
-Usage:
-
-<cb>use std::net::UdpSocket;
-
-let <v>socket_1<> = UdpSocket::bind("<v>address<>");<>
-
-Returns:
-
-<cb>Result\<UdpSocket><>
-
-
-Binds a socket to a local address.
-
-Connectso to any available address and port.
-
-
-Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.bind>bind()<>
-@
-@ open
-@ std::net::UdpSocket.bind()
-
-
-
-### UDP Socket - Open On Port
 
 <cb>= UdpSocket::bind("<v>address<>:<v>port<>")<>
 
@@ -25932,110 +27153,65 @@ Returns:
 Opens a listener on the given port.
 
 
-Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.bind>bind()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.bind>bind()<>
 @
 @ bind to port, open
-@ std::net::UdpSocket.bind()
+@ std::net::UdpSocket::bind(), bind()
 
 
 
-## UDP Socket - Operations
+### UDP Socket - Open, Assign Port
 
-
-### UDP Socket - Receive
-
-<cb>= <v>socket_1<>.recv(<v>byte_buffer<>)<>
+<cb>= UdpSocket::bind("0.0.0.0:0")<>
 
 Usage:
 
-<cb>let mut buffer = [0; 1024];
+<cb>use std::net::UdpSocket;
 
-let <v>size<> = <v>socket_1<>.recv(<v>byte_buffer<>);<>
+let <v>socket_1<> = UdpSocket::bind("0.0.0.0:0");<>
 
 Returns:
 
-<cb>Result\<usize><>
+<cb>Result\<UdpSocket><>
 
 
-Receives 1 datagram message sent to the socket.
+Binds a socket to a local address.
 
-Returns the size of the message in bytes.
+Connectso to any available address and port.
 
 
-Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.recv>recv()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.bind>bind()<>
 @
-@ retrieve, datagram, packet
-@ udpsocket.recv()
+@ open
+@ std::net::UdpSocket::bind(), bind()
 
 
 
-### UDP Socket - Receive From
+### UDP Socket - Open with Socket Address
 
-<cb>= <v>socket_1<>.recv_from(<v>byte_buffer<>)<>
+<cb>= UdpSocket::bind(<v>socket_address<>)<>
 
 Usage:
 
-<cb>let mut buffer = [0; 1024];
+<cb>use std::net::UdpSocket;
 
-let <v>result<> = <v>socket_1<>.recv_from(<v>byte_buffer<>);<>
-
-Returns:
-
-<cb>Result\<(usize, SocketAddr)><>
-
-
-Receives 1 datagram message sent to the socket.
-
-Returns the size of the message in bytes and the address of the sender.
-The buffer must be big enough to receive the message or the message will be truncated.
-
-
-Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.recv_from>recv_from()<>
-Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<> (enum)
-@
-@ retrieve, datagram, packet
-@ udpsocket.recv_from()
-
-
-
-### UDP Socket - Send
-
-<cb>= <v>socket_1<>.send(<v>bytes<>)<>
+let <v>socket_1<> = UdpSocket::bind(<v>socket_address<>);<>
 
 Returns:
 
-<cb>Result\<usize><>
+<cb>Result\<UdpSocket><>
 
 
-Sends a datagram to the receiver on the connected address.
+Binds a socket to the local address and port defined in the socket address..
 
 
-Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.sent>sent()<>
+See: <go? "socket-addr-only">SocketAddr<>
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.bind>bind()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
 @
-@ datagram, packet
-@ udpsocket.send()
-
-
-
-### UDP Socket - Send To
-
-<cb>= <v>socket_1<>.send_to(<v>bytes<>, "<v>address<>:<v>port<>")<>
-
-<cb>= <v>socket_1<>.send_to(<v>bytes<>, <v>socket_address<>)<>
-
-Returns:
-
-<cb>Result\<usize><>
-
-
-Sends a datagram to an address and port, or to a socket.
-
-
-Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.send_to>send_to()<>
-Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<> (enum)
-@
-@ datagram, packet
-@ udpsocket.send_to()
+@ open
+@ std::net::UdpSocket::bind(), bind(), std::net::socketaddr, socketaddr
 
 
 
@@ -26053,7 +27229,7 @@ Returns:
 <cb>Result\<SocketAddr><>
 
 
-Returns the IP address of the socket.
+Returns the local IP address and port of the socket.
 
 
 See: <go?>Socket Address<> (above)
@@ -26063,6 +27239,128 @@ Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rus
 @
 @ ip address, port
 @ udpsocket.local_addr()
+
+
+
+## UDP Socket - Operations
+
+
+### UDP Socket - Connect
+
+<cb>= <v>socket_1<>.connect("<v>address<>:<v>port<>")<>
+
+<cb>= <v>socket_1<>.connect(<v>socket_address<>)<><>
+
+
+Creates a connection to a remote socket.
+
+Allows the use of <go "?udpsocket-only#UDP Socket - Send">send()<> and <go "?udpsocket-only#UDP Socket - Receive">recv()<> commands to send and receive data.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.connect>connect()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<> (enum)
+@
+@ open
+@ udpsocket.connect()
+
+
+
+### UDP Socket - Receive
+
+<cb>= <v>socket_1<>.recv(&mut <v>byte_buffer<>)<>
+
+Usage:
+
+<cb>let mut buffer = [0; 1024];
+
+let <v>size<> = <v>socket_1<>.recv(&mut <v>byte_buffer<>);<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Receives 1 datagram (data) sent to the socket.
+
+Returns the size of the message in bytes.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.recv>recv()<>
+@
+@ retrieve, got, read, datagram, packet
+@ udpsocket.recv()
+
+
+
+### UDP Socket - Receive From
+
+<cb>= <v>socket_1<>.recv_from(&mut <v>byte_buffer<>)<>
+
+Usage:
+
+<cb>let mut buffer = [0; 1024];
+
+let <v>result<> = <v>socket_1<>.recv_from(&mut <v>byte_buffer<>);<>
+
+Returns:
+
+<cb>Result\<(usize, SocketAddr)><>
+
+
+Receives 1 datagram (data) sent to the socket.
+
+Returns the size of the message in bytes and the address of the sender.
+The buffer must be big enough to receive the message or the message will be truncated.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.recv_from>recv_from()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<> (enum)
+@
+@ retrieve, get, read, datagram, packet
+@ udpsocket.recv_from()
+
+
+
+### UDP Socket - Send
+
+<cb>= <v>socket_1<>.send(<v>bytes<>)<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Sends a datagram (data) to the receiver on the connected address.
+
+Open the connection using <go "?udpsocket-only#UDP Socket - Connect">.connect()<>.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.sent>sent()<>
+@
+@ datagram, packet, write
+@ udpsocket.send()
+
+
+
+### UDP Socket - Send To
+
+<cb>= <v>socket_1<>.send_to(<v>bytes<>, "<v>address<>:<v>port<>")<>
+
+<cb>= <v>socket_1<>.send_to(<v>bytes<>, <v>socket_address<>)<>
+
+Returns:
+
+<cb>Result\<usize><>
+
+
+Sends a datagram (data) to an address and port, or to a socket.
+
+
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.send_to>send_to()<>
+Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<> (enum)
+@
+@ datagram, packet, write
+@ udpsocket.send_to()
 
 
 
@@ -26218,7 +27516,9 @@ Disables unused code warnings.
 
 ### Test Assertion
 
-<cb>assert!(<v>expression<>);<>
+<cb>assert!(<v>bool_expression<>);
+
+assert!(<v>bool_expression<>, <v>fail_message<>);<>
 
 Usage:
 
@@ -26235,7 +27535,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ is true
 @ assert!(), assert-only, assert!-only
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 
 
 
@@ -26258,7 +27557,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ is equal
 @ assert_eq!(), assert_eq-only, assert_eq!-only
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 
 
 
@@ -26280,7 +27578,6 @@ Passes when actual not equals expected.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.assert_ne.html">assert_ne<>
 @
 @ assert_ne!(), assert_ne-only, assert_ne!-only
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 
 
 
@@ -26322,13 +27619,15 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### Test Debug Assertion
 
-<cb>debug_assert!(<v>expression<>);<>
+<cb>debug_assert!(<v>bool_expression<>);
+
+debug_assert!(<v>bool_expression<>, <v>fail_message<>);<>
 
 Usage:
 
 <cb>#[test]
 fn <v>assert_test<>() {
-	debug_assert!(<v>expression<>);
+	debug_assert!(<v>bool_expression<>);
 }<>
 
 
@@ -26342,7 +27641,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ is true
 @ debug_assert!(), debug_assert-only, debug_assert!-only
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 
 
 
@@ -26368,7 +27666,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ is equal
 @ debug_assert_eq!(), debug_assert_eq-only, debug_assert_eq!-only
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 
 
 
@@ -26393,7 +27690,6 @@ This is removed by the compilen in the production version.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.debug_assert_ne.html">debug_assert_ne<>
 @
 @ debug_assert_ne!(), debug_assert_ne-only, debug_assert_ne!-only
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 
 
 
@@ -26484,8 +27780,7 @@ Prints the text along with module file name, line number and variable name.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.dbg.html">dbg!<>
 @
-@ debug print, line number, file name
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
+@ debug print, line number, file name, macros
 @ std::dbg!(), dbg!()
 
 
@@ -26513,8 +27808,7 @@ eprintln!();
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.eprint.html">eprint<>
 @
-@ print, printing, error out, errout, no newline
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
+@ print, printing, error out, errout, no newline, macros
 @ eprint, eprint!(), eprint-only, eprint!-only
 
 
@@ -26550,8 +27844,7 @@ eprintln!("My name is {}.", <v>name<>);
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.eprintln.html">eprintln<>
 @
-@ print line, newline, printing, error out, errout
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
+@ print line, newline, printing, error out, errout, macros
 @ eprintln!(), eprintline, p!(), eprintln-only, eprintln!-only
 
 
@@ -26580,7 +27873,6 @@ println!();
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.print.html">print<>
 @
 @ standard out, stdout, no newline, macros
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 @ print, print!(), print-only, print!-only
 
 
@@ -26597,7 +27889,7 @@ Usage:
 use std::io::Write;
 
 print!("{}\\r", <v>value<>);
-stdout().flush().unwrap();<>
+let <v>result<> = stdout().flush();<>
 
 
 Prints to the standard out.
@@ -26623,7 +27915,29 @@ println!();
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.print.html">print<>
 @
 @ standard out, stdout, no newline, macros
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
+@ print, print!(), print-only, print!-only
+@ stdio().flush(), .flush()
+
+
+
+### print! - Flush
+
+<cb>= stdout().flush()<>
+
+Usage:
+
+<cb>use std::io::stdout;
+use std::io::Write;
+
+print!("{}\\r", <v>value<>);
+let <v>result<> = stdout().flush();<>
+
+
+Forces <c>print!()<> to write its contents to the screen.
+
+<c>print!()<> does not write to the screen immediately. Use <c>flush()<> to make it happen.
+@
+@ standard out, stdout, no newline, macros, force print
 @ print, print!(), print-only, print!-only
 @ stdio().flush(), .flush()
 
@@ -26660,9 +27974,8 @@ println!("My name is {}.", <v>name<>);
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.println.html">println<>
 @
-@ standard out, stdout, line, newline
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
-@ println!(), printline, macros, p!(), println-only, println!-only
+@ standard out, stdout, line, newline, macros
+@ println!(), printline, p!(), println-only, println!-only
 
 
 
@@ -26684,7 +27997,6 @@ Must implement:
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.println.html">println<>
 @
 @ standard out, stdout, printing line, newline
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 @ #[derive(Debug)], derive, :?, {:?}, macros
 @ println!(), printline, p!(), println-only, println!-only
 
@@ -26708,7 +28020,6 @@ Must implement:
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.println.html">println<>
 @
 @ standard out, stdout, printing line, newline, pretty print
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
 @ #[derive(Debug)], derive, :#?, {:#?}, macros
 @ println!(), printline, p!(), println-only, println!-only
 
@@ -26748,8 +28059,7 @@ Prints the value to <v>write_1<>.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.write.html">write<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/trait.Write.html">Write<> (trait)
 @
-@ standard out, stdout, no newline, macros
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
+@ standard out, stdout, no newline, macros, without
 @ write, write!(), write-only, write!-only
 
 
@@ -26777,9 +28087,8 @@ Prints the value followed by newline to <v>write_1<>.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.writeln.html">writeln<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/trait.Write.html">Write<> (trait)
 @
-@ write, line, newline
-@ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only
-@ writeln!(), printline, macros, p!(), writeln-only, writeln!-only
+@ std out, write, line, newline, macros
+@ writeln!(), writeln-only, writeln!-only
 
 
 
@@ -26803,8 +28112,9 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/fn.stdio.html">stdio()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/trait.Write.html">Write<>
 @
-@ std out
+@ std out, write, line, newline, macros
 @ std::io::stdio(), io::stdio()
+@ writeln!(), writeln-only, writeln!-only, write line
 
 
 
@@ -26828,8 +28138,9 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/fn.error.html">error()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/trait.Write.html">Write<>
 @
-@ std err
+@ std err, macros
 @ std::io::stderr(), io::stderr()
+@ writeln!(), writeln-only, writeln!-only
 
 
 
@@ -27259,7 +28570,7 @@ Usage:
 }<>
 
 
-Use the <c><l "?q=into-only trait">Into<><> trait when you need to pass either <c>String<> or <c>&str<>.
+Use the <c><go? "into-only trait">Into<><> trait when you need to pass either <c>String<> or <c>&str<>.
 
 Call .into() to convert to an actual String.
 
@@ -27464,7 +28775,7 @@ Recommended Exit Codes:
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/process/index.html">process<>::<l "https://doc.rust-lang.org/std/process/fn.exit.html">exit<>
 @
-@ error code, status, number, end program, stop, quit, .exit(), .exit(), .quit(), application, program
+@ error code, status, number, end program, stop, quit, .exit(), .exit(), .quit(), application, program, terminate
 @ std::process::exit(), process::exit(), exit()
 
 
@@ -27505,7 +28816,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### Variable - Swap Values
 
-<cb>= swap(&mut <v>item_1<>, &mut <v>item_2<>)<>
+<cb>swap(&mut <v>item_1<>, &mut <v>item_2<>)<>
 
 Usage:
 
@@ -27761,6 +29072,32 @@ Official Rust Docs: <l https://doc.rust-lang.org/book/appendix-02-operators.html
 @ symbols-only, symbol-only, sym-only
 
 
+
+### Symbol _
+
+Identifies an intentionally unused variable.
+
+<cb>let <v>_unused_variable<> = 0;<>
+@
+@ leading underscore
+
+
+
+### Symbol ?
+
+Question Mark Operator (Error Propagation Operator).
+
+Propagates a <c>Result::Err<> error to the parent function.
+
+
+<cb>fn <v>function_1<> -> Result\<T, E> {
+	<v>function_2<>()?;
+}<>
+@
+@ question mark, propagation, error
+
+
+
 ### Symbol ;
 
 Command Terminator
@@ -27777,7 +29114,7 @@ Array Type Size Separator
 
 <cb>let <v>array_1<>: [<v>T<>; <v>size<>] = <v>...<>;<>
 @
-@ semicolon
+@ semicolon, [;]
 
 
 
@@ -27890,10 +29227,13 @@ Import all public items from the module.
 ### Symbol ::\<>
 
 Type Annotation / Turbofish.
+Tells the compiler what type should be returned from a function with a generic parameter.
 
-<cb>::\<><>
+<cb>::\<<v>Type<>><>
 
-<cb>= <v>item<>.into::\<<v>TargetType<>>()<>
+<cb>= <v>item<>.into::\<<v>ConcreteType<>>()<>
+
+Here <c><v>ConcreteType<><> tells the compiler what type should be returned from the function <c>.into()<>.
 @
 @ ::\<>, turbofish
 
@@ -28033,27 +29373,6 @@ Returned by the compiler to indicate a code block that has nowhere to go on comp
 
 ### Symbol &
 
-Reference (pointer) to a Memory Location
-
-
-Examples:
-
-New reference to a variable:
-
-<cb>let <v>a<> = &<v>b<>;<>
-
-Pointer parameter to outside variable:
-
-<cb>fn print(<v>value<>: &str) {
-	<v>...<>
-}<>
-@
-@ pointer
-
-
-
-### Symbol &
-
 Borrow Resource
 
 <cb>= &<v>variable_1<><>
@@ -28072,6 +29391,27 @@ println!("{}", <v>borrower<>);
 //
 //    "42"
 //    "42"<><>
+
+
+
+### Symbol &
+
+Reference (pointer) to a Memory Location
+
+
+Examples:
+
+New reference to a variable:
+
+<cb>let <v>a<> = &<v>b<>;<>
+
+Pointer parameter to outside variable:
+
+<cb>fn print(<v>value<>: &str) {
+	<v>...<>
+}<>
+@
+@ pointer
 
 
 
@@ -28144,19 +29484,19 @@ Why: Because you need to pass a reference to the underlying type when the contai
 
 ### Symbol &mut
 
-Reference (pointer) to a Mutable Memory Location
+Borrow a Mutable Resource with Intent to Change It
 
-<cb>let <v>a<>: &mut:i32 = 42;<>
-@
-@ pointer
+<cb>= &mut <v>variable_1<><>
 
 
 
 ### Symbol &mut
 
-Borrow a Mutable Resource with Intent to Change It
+Reference (pointer) to a Mutable Memory Location
 
-<cb>= &mut <v>variable_1<><>
+<cb>let <v>a<>: &mut:i32 = 42;<>
+@
+@ pointer
 
 
 
@@ -28302,9 +29642,7 @@ fn <v>function_1<>() {
 
 ### Symbol #[]
 
-Attribute
-
-Applies to item or module.
+Attribute. Only applies to the item or module.
 
 <cb>#[<v>...<>]<>
 
@@ -28319,9 +29657,7 @@ Example:
 
 ### Symbol #![]
 
-Attribute
-
-Applies to the entire crate.
+Attribute. Applies to the entire crate.
 
 <cb>#![<v>...<>]<>
 
@@ -28334,28 +29670,34 @@ Example:
 
 
 
-### Symbol _
+### Symbol \<>
 
-Identifies an intentionally unused variable.
+Defines the generic type parameter on a type.
 
-<cb>let <v>_unused_variable<> = 0;<>
-@
-@ leading underscore
+<cb>Vec\<<v>T<>><>
 
-
-
-### Symbol ?
-
-Question Mark Operator (Error Propagation Operator).
-
-Propagates a <c>Result::Err<> error to the parent function.
+Here, <c><v>T<><> represents a placeholder for any type.
 
 
-<cb>fn <v>some_function<> -> Result\<T, E> {
-	<v>some_subfunction<>()?;
+
+### Symbol \<>
+
+Specifies the concrete type for a generic type parameter.
+
+<cb>let <v>vec_1<>: Vec\<isize> = Vec::new();<>
+
+Here, <c>isize<> replaces <c><v>T<><>, defining the specific type for the vec.
+
+
+
+### Symbol =>
+
+Match operator. Matches a pattern to a block in a match clause.
+
+<cb>match <v>value<> {
+	<v>pattern<> => <v>expression<>,
+	<v>...<>
 }<>
-@
-@ question mark, propagation, error
 
 
 
@@ -28741,21 +30083,20 @@ Use <go? "struct-only">structures<> and <go? "trait-only">traits<> instead.
 Rust does not support constructors.
 
 Implement a static function called <c>new<> instead.
-<c>new<> is by convention.
+The name <c>new<> is by convention.
 
 Example:
 
 <cb>pub struct <v>Item<> {
 	pub <v>id<>: usize,
-	pub <v>name<>: Option\<String>
+	pub <v>name<>: String
 }
 
 impl <v>Item<> {
-	pub fn new(<v>name<>: &str) {
-		let <v>id<> = <v>next_id_function<>();
+	pub fn new(<v>id<>: usize, <v>name<>: &str) {
 		<v>Item<> {
-			<v>id<>: <v>id<>,
-			<v>name<>: Some(<v>name<>.to_owned())
+			<v>id<>,
+			<v>name<>: <v>name<>.to_string()
 		}
 	}
 }<>
@@ -28778,11 +30119,32 @@ Use: <go "?btreemap">BtreeMap<>
 
 
 
+### Inheritance
+Rust does not support inheritance or any form of object oriented programming.
+
+Use <go? "trait-only">traits<> instead.
+
+
+
+### Interfaces
+Rust uses traits which are similar to interfaces.
+
+Use <go? "trait-only">traits<>.
+
+
+
 ### List
 
-Use: <l "?q=array-only">Array (immutable sequence)<>, <l "?q=vec-only">Vec (mutable sequence)<>
+Use: <go? "array-only">Array (immutable sequence)<>, <go? "vec-only">Vec (mutable sequence)<>
 @
 @ lists
+
+
+
+### Object Oriented Programming (OOP)
+Rust does not supported in Rust.
+
+Use <go? "struct-only">structures<> and <go? "trait-only">traits<> instead.
 
 
 
@@ -28790,7 +30152,7 @@ Use: <l "?q=array-only">Array (immutable sequence)<>, <l "?q=vec-only">Vec (muta
 
 Null is not supported directly in the language and there is no Null type.
 
-Use: <l "?q=option-only">Option<>
+Use: <go? "option-only">Option<>
 @
 @ nulls type
 
@@ -28798,7 +30160,7 @@ Use: <l "?q=option-only">Option<>
 
 ### Set
 
-Use: <l "?q=hashset-only">HashSet<>
+Use: <go? "hashset-only">HashSet<>
 @
 @ sets
 
@@ -28806,7 +30168,7 @@ Use: <l "?q=hashset-only">HashSet<>
 
 ### Set - Ordered
 
-Use: <l "?q=btreeset-only">BTreeSet<>
+Use: <go? "btreeset-only">BTreeSet<>
 @
 @ sets, ordered, sorted
 
@@ -28814,7 +30176,7 @@ Use: <l "?q=btreeset-only">BTreeSet<>
 
 ### Stack
 
-Use: <l "?q=vec-only">Vec<>
+Use: <go? "vec-only">Vec<>
 
 <cb>let <v>vec_1<>: Vec\<<v>V<>> = Vec::new();
 
@@ -28831,13 +30193,13 @@ Use: <l "?q=vec-only">Vec<>
 
 For switch or case statement use match statement.
 
-Use: <l "?q=match-only">Match<>
+Use: <go? "match-only">Match<>
 
 
 
 ### Tree
 
-Use: <l "?q=btreemap-only">BTreeMap<> or <l "?q=btreeset-only">BTreeSet<>
+Use: <go? "btreemap-only">BTreeMap<> or <go? "btreeset-only">BTreeSet<>
 @
 @ trees
 @ tree-only, trees-only
@@ -28881,7 +30243,7 @@ Why? Keeps the remaining code much simpler (no nests of match / if statements).
 Defines a new type by wrapping an existing type.
 
 This is a zero cost abstraction.
-Why? Adds clarity to the value.
+Why? Adds clarity to the type.
 
 
 Example:
@@ -29330,14 +30692,14 @@ Product Type
 ### Algebraic Data Types - Product Type
 An item contains one or more items. A has a B and a C (contains fields).
 
-Rust implements product types using <l "?q=struct-only">structs<>.
+Rust implements product types using <go? "struct-only">structs<>.
 
 
 
 ### Algebraic Data Types - Sum Type
 An item is a variation of something. It is one of a limited set.  A is a B or A is a C (variants).
 
-Rust implements sum types using <l "?q=enum-only">enums<>.
+Rust implements sum types using <go? "enum-only">enums<>.
 
 
 
@@ -29404,7 +30766,7 @@ The resource is deleted when count = 0.
 Will delete even if the weak count is > 0.
 
 
-VS: <l "?q=term+weak+count>Weak Count<>
+VS: <go? "term+weak+count>Weak Count<>
 
 
 
@@ -29416,7 +30778,7 @@ Must check when using the resource to see it still exists.
 Can be upgradet to a strong pointer if needed.
 
 
-VS: <l "?q=term+strong+count>Strong Count<>
+VS: <go? "term+strong+count>Strong Count<>
 
 
 
@@ -29516,6 +30878,14 @@ Not supported in Rust.
 Use traits instead.
 
 
+### Graydon Hoare
+The creator of Rust.
+
+Graydon created Rust at Mozilla in 2006.
+@
+@ rust creator
+
+
 
 ### Gorilla
 Here is a gorilla  🦍
@@ -29528,6 +30898,15 @@ These do either or both:
 
 <*>Take One or More Functions as Parameters
 Return a Functions<>
+
+
+
+### Hoisting
+The moving of variables, constants and functions to the top of the containing scope.
+
+Rust hoists constants. Constants will always be declared before any other code runs no matter where they are actually defined.
+@
+@ constants
 
 
 
@@ -29650,10 +31029,20 @@ Someone who likes and uses Rust.
 Rust's compiler.
 
 
+
 ### RustFMT
 Rust's included code formatting tool.
 @
 @ formatter, fmt
+
+
+
+### Rustic
+Code that is idiomatic Rust.
+
+There isn't an official term for idiomatic Rust but I'd love if this became it!
+@
+@ idiomatic rust
 
 
 
@@ -29677,7 +31066,7 @@ Most Common Standard Library Smart Pointers:
 <cb>Arc\<<v>T<>>
 Box\<<v>T<>>
 Cell\<<v>T<>>
-COW\<<v>T<>>
+Cow\<<v>T<>>
 Rc\<<v>T<>>
 Ref\<<v>T<>>
 RefMut\<<v>T<>>
@@ -29713,10 +31102,16 @@ A thread that runs in parallel and is controlled by the operating system.
 Core Rust only supports native threads.
 
 
+
 ### Trait - Orphan Rule
 You can only implement a trait when either the trait or the type is defined locally in the current crate.
 
 This rule ensures type safety across different crates by preventing conflicting implementations.
+
+
+
+### Transmute
+An unsafe function that reintreprets the underlying bit value of a type as another type.
 
 
 
@@ -29733,6 +31128,16 @@ In cases where type inferencing is needed to determine the type (eg into() or co
 Also called: Turbofish
 @
 @ ::\<>, fish
+
+
+
+### Type - Saturated Type
+A type that returns the maximum value when an operation causes the original value to overflow.
+
+
+
+### Type - Wrapped Type
+A type that returns the minimum value when an operation causes the original value to overflow.
 
 
 
