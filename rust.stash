@@ -4,9 +4,13 @@
 
 This interactive Rust cheat sheet covers the essentials of the <b>Rust<> programming language. Just use FIND to get instant answers and find what you need in a snap!
 
+
+Speedsheet Repo: <l>https://github.com/speedsheet/sheet-rust<>
+
+
 <card><t><dodger-blue><html-block><svg fill="currentColor" width="2em" height="2em" viewBox="0 0 16 16">
 	<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-</svg><><><|><{}}><font-size 1.5em><><b>Speedsheet Like a Pro<>
+</svg><><><|><{}><font-size 1.5em><><b>Speedsheet Like a Pro<>
 
 Check out our <l "rust_tips">tips page<> for pro-level tricks to get the most out of this cheat sheet.<><><>
 
@@ -228,7 +232,7 @@ Run:
 
 
 
-### Hello World - Command Line Name
+### Hello World - Name from Command Line Arguments
 
 File Name:
 
@@ -315,7 +319,7 @@ Multiline Comment
 Start a multiline comment with '<c>/*<>'.
 End with '<c>*/>'
 @
-@ /*, */, /**/
+@ /*, */, /**/, block
 
 
 
@@ -441,6 +445,14 @@ Invalid:
 @
 @ rust names, variable names, module names, class names
 @ rules, Valid, Name, Correct
+
+
+
+### Indexing
+
+Indexes are 0 based.
+@ 
+@ indexes base
 
 
 
@@ -641,8 +653,11 @@ CodeLLDB<>
 
 ### Rust IDE - RustRover
 
-Jetbrains RustRover (paid):
+Jetbrains RustRover:
 <l>https://www.jetbrains.com/rust/<>
+
+Free for non-commercial use.
+Subscription required commercial use.
 
 
 
@@ -875,7 +890,7 @@ Tests Directory:
 <cb><v>project<>/
 └── tests/<>
 @
-@ project, application
+@ project, application, tests, testing
 
 
 
@@ -892,7 +907,7 @@ Tests Directory:
 <cb><v>project<>/
 └── tests/<>
 @
-@ project, application
+@ project, application, tests, testing
 @ --no-fail-fast
 
 
@@ -910,7 +925,7 @@ Example:
 
 Runs all tests in file '<c>/tests/<v>basic_tests<>.rs'.
 @
-@ function
+@ function, tests, testing
 
 
 
@@ -927,7 +942,22 @@ Example:
 
 Runs '<c>test_empty()<>' in file '<c>/tests/<v>basic_tests<>.rs'.
 @
-@ function
+@ function, tests, testing
+
+
+
+### Cargo - Run Tests With Output
+
+<cb>cargo test <v>...<> -- --nocapture<>
+
+Runs tests but displays the standard out.
+
+The default is not to show anything sent to the standard out unless the test fails.
+
+The <c>-- --nocapture<> needs to be at the end of the command.
+@
+@ function, tests, testing, standard out, stdout, print, show, display
+@ --nocapture
 
 
 
@@ -1021,7 +1051,7 @@ Removes all target directories in all workspace projects and libraries.
 
 Runs all tests in all workspace projects and libraries.
 @
-@ subprojects, sub-projects, included
+@ subprojects, sub-projects, included, tests, testing
 @ test --all
 
 
@@ -1084,7 +1114,7 @@ Creates a binary file that can be executed.
 
 Contains all compiler debug code and will create a relatively larger executable.
 @
-@ rustc, create binary
+@ rustc, create binary, application
 
 
 
@@ -1096,7 +1126,7 @@ Creates a binary file that can be executed.
 
 Creates a production ready version with compiler debug code removed.
 @
-@ rustc, create binary, -O
+@ rustc, create binary, application, -O
 
 
 
@@ -1113,6 +1143,9 @@ Creates a library file (extension .lib).
 ### Program - Compile Test
 
 <cb>rustc --test <v>program_name.rs<><>
+
+
+Compiles all tests into a binary.
 @
 @ rustc, test, -t, --test
 
@@ -1122,20 +1155,31 @@ Creates a library file (extension .lib).
 
 <cb><v>program_name<><>
 
-Run after compiling with <c>rustc<>.
+Run an executable program after being compiled with <c>rustc<>.
+@
+@ application
 
 
 
-### Program - Run Tests
+### Program - Run With Tests
+
+Compile with tests:
+
+<cb>rustc --test <v>program_name.rs<><>
+
+Then Run:
 
 <cb><v>program_name<><>
 
-Run after compiling with <c>rustc --test<>.
+Run an executable program of tests after being compiled with <c>rustc --test<>.
+@
+@ --test
+
 
 
 ## Rustup
 @
-@ rustup-only
+@ rustup-only,
 
 
 ### Rustup - Components - List Installed
@@ -1407,11 +1451,11 @@ edition = "<v>yyyy<>"
 
 ## Arithmetic Operators
 
-<in><table><col><c><v>a<> + <v>b<><>    <><col>Add<>
-<col><c><v>a<> - <v>b<><><><col>Subtract<>
-<col><c><v>a<> * <v>b<><><><col>Multiply<>
-<col><c><v>a<> / <v>b<><><><col>Divide<>
-<col><c><v>a<> % <v>b<><><><col>Modulo / Remainder<><><>
+<in><t><c><v>a<> + <v>b<><>    <|>Add
+<c><v>a<> - <v>b<><><|>Subtract
+<c><v>a<> * <v>b<><><|>Multiply
+<c><v>a<> / <v>b<><><|>Divide
+<c><v>a<> % <v>b<><><|>Modulo / Remainder<><>
 @
 @ +, -, *, /, %
 @ add, plus, subtract, minus, multiply, divide, modulo, modulus
@@ -1420,11 +1464,11 @@ edition = "<v>yyyy<>"
 
 ## Arithmetic Assignment Operators
 
-<in><table><col><c><v>a<> += <v>b<><>   <><col>Add<>
-<col><c><v>a<> -= <v>b<><><><col>Subtract<>
-<col><c><v>a<> *= <v>b<><><><col>Multiply<>
-<col><c><v>a<> /= <v>b<><><><col>Divide<>
-<col><c><v>a<> %= <v>b<><><><col>Modulo / Remainder<><><>
+<in><t><c><v>a<> += <v>b<><>   <|>Add
+<c><v>a<> -= <v>b<><><|>Subtract
+<c><v>a<> *= <v>b<><><|>Multiply
+<c><v>a<> /= <v>b<><><|>Divide
+<c><v>a<> %= <v>b<><><|>Modulo / Remainder<><>
 
 Calculate the operation and save the result in <c><v>a<><>.
 @
@@ -1435,14 +1479,14 @@ Calculate the operation and save the result in <c><v>a<><>.
 
 ## Bitwise Operators
 
-<in><table><col><c>!<v>a<><><><col>Complement / Inverse<>
-<col> <>
-<col><c><v>a<> & <v>b<><><><col>Bitwise AND<>
-<col><c><v>a<> | <v>b<><><><col>Bitwise OR<>
-<col><c><v>a<> ^ <v>b<><><><col>Bitwise XOR<>
-<col> <>
-<col><c><v>a<> \<\< <v>shift_count<><><><col>Bitwise Shift Left<>
-<col><c><v>a<> >> <v>shift_count<><><><col>Bitwise Shift Right<><><>
+<in><t><c>!<v>a<><><|>Complement / Inverse
+
+<c><v>a<> & <v>b<><><|>Bitwise AND
+<c><v>a<> | <v>b<><><|>Bitwise OR
+<c><v>a<> ^ <v>b<><><|>Bitwise XOR
+
+<c><v>a<> \<\< <v>shift_count<><><|>Bitwise Shift Left
+<c><v>a<> >> <v>shift_count<><><|>Bitwise Shift Right<><>
 @
 @ !, &, |, ^, \<\<, >>, binary
 @ shift left, shift right
@@ -1453,12 +1497,12 @@ Calculate the operation and save the result in <c><v>a<><>.
 
 Calculate the operation and save the result in <c><v>a<><>:
 
-<in><table><col><c><v>a<> &= <v>b<><><><col>Bitwise AND<>
-<col><c><v>a<> |= <v>b<><><><col>Bitwise OR<>
-<col><c><v>a<> ^= <v>b<><><><col>Bitwise XOR<>
-<col> <>
-<col><c><v>a<> \<\<= <v>shift_count<><><><col>Bitwise Shift Left<>
-<col><c><v>a<> >>= <v>shift_count<><><><col>Bitwise Shift Right<><><>
+<in><t><c><v>a<> &= <v>b<><><|>Bitwise AND
+<c><v>a<> |= <v>b<><><|>Bitwise OR
+<c><v>a<> ^= <v>b<><><|>Bitwise XOR
+
+<c><v>a<> \<\<= <v>shift_count<><><|>Bitwise Shift Left
+<c><v>a<> >>= <v>shift_count<><><|>Bitwise Shift Right<><>
 @
 @ &=, |=, ^=, \<\<=, >>=, binary
 @ and, or, xor, shift left, shift right
@@ -1467,12 +1511,12 @@ Calculate the operation and save the result in <c><v>a<><>:
 
 ## Comparison Operators
 
-<in><table><col><c><v>a<> == <v>b<><>     <><col>Equals<>
-<col><c><v>a<> != <v>b<><><><col>Not Equals<>
-<col><c><v>a<> > <v>b<><><><col>Greater Than<>
-<col><c><v>a<> \< <v>b<><><><col>Less Than<>
-<col><c><v>a<> >= <v>b<><><><col>Greater Than or Equals<>
-<col><c><v>a<> \<= <v>b<><><><col>Less Than or Equals<><><>
+<in><t><c><v>a<> == <v>b<><>     <|>Equals
+<c><v>a<> != <v>b<><><|>Not Equals
+<c><v>a<> > <v>b<><><|>Greater Than
+<c><v>a<> \< <v>b<><><|>Less Than
+<c><v>a<> >= <v>b<><><|>Greater Than or Equals
+<c><v>a<> \<= <v>b<><><|>Less Than or Equals<><>
 @
 @ Boolean, ==, !=, \<>, \<, \<=, >, >/
 @ less than, greater than, less that or equal, greater than or equal, compare
@@ -1568,7 +1612,7 @@ From Highest to Lowest:
 # Operator Overloading / Implementing
 
 
-### Implement Equals - Using Derive
+### Implement Equals Operator - Using Derive
 
 <cb>#[derive(PartialEq)]
 struct <v>Type<> { <v>...<> }<>
@@ -1596,7 +1640,7 @@ println!("Point 1 == 2?: {}", <v>point_1<> == <v>point_2<>);
 
 
 
-### Implement Equals - Using Trait
+### Implement Equals Operator - Using Trait
 
 <cb>impl PartialEq\<<v>Type<>> for <v>Type<> {
 
@@ -1646,12 +1690,11 @@ println!("Point 1 == 2?: {}", <v>point_1<> == <v>point_2<>);
 
 ## Control Structures - Basics
 
-<table><col>If Else     <><col><c>if <v>expression<> {
+<t>If Else     <|><{}><c>if <v>expression<> {
 	<v>...<>
-}<><>
-<col> <>
-<col> <>
-<col><><col><c>if <v>expression<> {
+}
+
+if <v>expression<> {
 	<v>...<>
 }
 else if <v>expression<> {
@@ -1660,38 +1703,32 @@ else if <v>expression<> {
 else {
 	<v>...<>
 }<><>
-<col> <>
-<col> <>
-<col>For<><col><c>for <v>value<> in <v>start<>..<v>end_plus_one<> {
+
+For<|><{}><c>for <v>value<> in <v>start<>..<v>end_plus_one<> {
+	<v>...<>
+}
+
+for <v>value<> in <v>start<>..=<v>end<> {
+	<v>...<>
+}
+
+for <v>value<> in <v>iterator<> {
 	<v>...<>
 }<><>
-<col> <>
-<col> <>
-<col><><col><c>for <v>value<> in <v>start<>..=<v>end<> {
+
+Loop<|><{}><c>loop {
 	<v>...<>
-}<><>
-<col> <>
-<col> <>
-<col><><col><c>for <v>value<> in <v>iterator<> {
-	<v>...<>
-}<><>
-<col> <>
-<col> <>
-<col>Loop<><col><c>loop {
-	<v>...<>
-}<><>
-<col> <>
-<col> <>
-<col><><col><c>loop {
+}
+
+loop {
 	<v>...<>
 	continue;
 	<v>...<>
 	break;
 	<v>...<>
 }<><>
-<col> <>
-<col> <>
-<col>Match<><col><c>match <v>item<> {
+
+Match<|><{}><c>match <v>item<> {
 	<v>value_1<> => {
 		<v>...<>
 	}
@@ -1708,9 +1745,8 @@ else {
 		<v>...<>
 	}
 }<><>
-<col> <>
-<col> <>
-<col>While<><col><c>while <v>expression<> {
+
+While<|><{}><c>while <v>expression<> {
 	<v>...<>
 }<><><>
 @
@@ -1819,7 +1855,7 @@ for <v>number<> in <v>numbers<> {
 
 ## For
 @
-@ for-only, fors-only, for-in, for-in-only
+@ for-only, fors-only, for-in, for-in-only, loop
 
 
 
@@ -2325,9 +2361,9 @@ while <v>value<> \< 5 {
  
 Byte (<c>u8<>)<|><c>= b'<v>C'<><>
  
-Binary<|><c>= 0b<v>1111_0000<><>
-Hex<|><c>= 0x<v>ff<><>
-Octal<|><c>= 0o<v>77<><>
+Binary (i32)<|><c>= 0b<v>1111_0000<><>
+Hex (i32)<|><c>= 0x<v>ff<><>
+Octal (i32)<|><c>= 0o<v>77<><>
  
 Integer<|><c>= <v>-11<><>
 Integer<|><c>= <v>11<><>
@@ -2510,7 +2546,9 @@ The return type depends on the type inference engine or the declared variable ty
 
 <cb>= 0b<v>_1111_0000<><>
 
-Returns: Integer Type
+Returns:
+
+<cb>i32<>
 
 The return type depends on the type inference engine or the declared variable type.
 @
@@ -2522,7 +2560,9 @@ The return type depends on the type inference engine or the declared variable ty
 
 <cb>= 0x<v>ff<><>
 
-Returns: Integer Type
+Returns:
+
+<cb>i32<>
 
 The return type depends on the type inference engine or the declared variable type.
 @
@@ -2534,7 +2574,9 @@ The return type depends on the type inference engine or the declared variable ty
 
 <cb>= 0o<v>77<><>
 
-Returns: Integer Type
+Returns:
+
+<cb>i32<>
 
 The return type depends on the type inference engine or the declared variable type.
 @
@@ -2705,7 +2747,7 @@ Update Mutable:
 
 ## Variable - Create
 @
-@ create, new, instantiate
+@ create, new, instantiate, set, declare, assign
 
 
 ### Variable - Constant - Create
@@ -2902,7 +2944,7 @@ Example:
 
 println!("Value is {}", <v>value_i8<>)<>
 @
-@ as type, change, convert, conversion
+@ as type, change, convert, conversions, converting
 
 
 
@@ -2967,6 +3009,17 @@ println! ("Type = {}", <v>type_name<>);
 <#>// Prints "Type = i32"<><>
 @
 @ std::any::type_name, type_name, get, retrieve, type of
+
+
+
+### Variable - Update
+
+<cb><v>var_1<> = <v>new_value<>
+
+
+Updates the value of a mutable variable.
+@
+@ set, mutable
 
 
 
@@ -3469,76 +3522,78 @@ fn main() {
 
 By Type:
 
-<in><table><col>Array<><col><c>array<><>
-<col>Boolean<><col><c>bool<><>
-<col>Character<><col><c>char<><>
-<col> <>
-<col>Float,  32-bit  Single Precision<><col><c>f32<><>
-<col>Float,  64-bit,  Double Precision<><col><c>f64<><>
-<col> <>
-<col>Function<><col><c>fn<><>
-<col> <>
-<col>Integer,  Signed (size is OS specific)<><col><c>isize<><>
-<col> <>
-<col>Integer,  Signed,  128-bit<><col><c>i128<><>
-<col>Integer,  Signed,  16-bit<><col><c>i16<><>
-<col>Integer,  Signed,  32-bit<><col><c>i32<><>
-<col>Integer,  Signed,  64-bit<><col><c>i64<><>
-<col>Integer,  Signed,  8-bit<><col><c>i8<><>
-<col> <>
-<col>Integer,  Unsigned (size is OS specific)<><col><c>usize<><>
-<col> <>
-<col>Integer,  Unsigned,  128-bit<><col><c>u128<><>
-<col>Integer,  Unsigned,  16-bit<><col><c>u16<><>
-<col>Integer,  Unsigned,  32-bit<><col><c>u32<><>
-<col>Integer,  Unsigned,  64-bit<><col><c>u64<><>
-<col>Integer,  Unsigned,  8-bit<><col><c>u8<><>
-<col> <>
-<col>Raw, Unsafe Pointer<><col><c>pointer<><>
-<col>Reference, Shared or Mutable<><col><c>ref<><>
-<col>Slice (view into a sequence)<><col><c>slice<><>
-<col>String<><col><c>str<><>
-<col>Tuple<><col><c>tup<><>
-<col> <>
-<col>Never, ! Type<>
-<col>Unit, () Type<><col><c>unit<><><><>
+<in><t><c>array<><|>Array
 
-By Symbol:
+<c>bool<>		<|>Boolean
+<c>char<><|>Character
 
-<in><table><col><c>bool<>		<><col>Boolean<>
-<col> <>
-<col><c>i8<><><col>Integer,  Signed,  8-bit<>
-<col><c>i16<><><col>Integer,  Signed,  16-bit<>
-<col><c>i32<><><col>Integer,  Signed,  32-bit<>
-<col><c>i64<><><col>Integer,  Signed,  64-bit<>
-<col><c>i128<><><col>Integer,  Signed,  128-bit<>
-<col> <>
-<col><c>isize<><><col>Integer,  Signed (size is OS specific)<>
-<col> <>
-<col><c>u8<><><col>Integer,  Unsigned,  8-bit<>
-<col><c>u16<><><col>Integer,  Unsigned,  16-bit<>
-<col><c>u32<><><col>Integer,  Unsigned,  32-bit<>
-<col><c>u64<><><col>Integer,  Unsigned,  64-bit<>
-<col><c>u128<><><col>Integer,  Unsigned,  128-bit<>
-<col> <>
-<col><c>usize<><><col>Integer,  Unsigned (size is OS specific)<>
-<col> <>
-<col><c>f32<><><col>Float,  32-bit  Single Precision<>
-<col><c>f64<><><col>Float,  64-bit,  Double Precision<>
-<col> <>
-<col><c>char<><><col>Character<>
-<col><c>str<><><col>String<>
-<col> <>
-<col><c>array<><><col>Array<>
-<col><c>tup<><><col>Tuple<>
-<col><c>slice<><><col>Slice (view into a sequence)<>
-<col> <>
-<col><c>fn<><><col>Function<>
-<col> <>
-<col><c>pointer<><><col>Raw, Unsafe Pointer<>
-<col><c>ref<><><col>Reference, Shared or Mutable<>
-<col> <>
-<col><c>unit<><><col>Unit, () Type<><><>
+<c>f32<><|>Float,  32-bit  Single Precision
+<c>f64<><|>Float,  64-bit,  Double Precision
+
+<c>fn<><|>Function
+
+<c>i8<><|>Integer,  Signed,  8-bit
+<c>i16<><|>Integer,  Signed,  16-bit
+<c>i32<><|>Integer,  Signed,  32-bit
+<c>i64<><|>Integer,  Signed,  64-bit
+<c>i128<><|>Integer,  Signed,  128-bit
+<c>isize<><|>Integer,  Signed (size is OS specific)
+
+<c>pointer<><|>Raw, Unsafe Pointer
+
+<c>ref<><|>Reference, Shared or Mutable
+
+<c>slice<><|>Slice (view into a sequence)
+
+<c>str<><|>String
+
+<c>tup<><|>Tuple
+
+<c>u8<><|>Integer,  Unsigned,  8-bit
+<c>u16<><|>Integer,  Unsigned,  16-bit
+<c>u32<><|>Integer,  Unsigned,  32-bit
+<c>u64<><|>Integer,  Unsigned,  64-bit
+<c>u128<><|>Integer,  Unsigned,  128-bit
+<c>usize<><|>Integer,  Unsigned (size is OS specific)
+
+<c>unit<><|>Unit, () Type<><>
+
+
+By Use:
+
+<in><t>Array<|><c>array<>
+Boolean<|><c>bool<>
+Character<|><c>char<>
+
+Float,  32-bit  Single Precision<|><c>f32<>
+Float,  64-bit,  Double Precision<|><c>f64<>
+
+Function<|><c>fn<>
+
+Integer,  Signed (size is OS specific)<|><c>isize<>
+
+Integer,  Signed,  8-bit<|><c>i8<>
+Integer,  Signed,  16-bit<|><c>i16<>
+Integer,  Signed,  32-bit<|><c>i32<>
+Integer,  Signed,  64-bit<|><c>i64<>
+Integer,  Signed,  128-bit<|><c>i128<>
+
+Integer,  Unsigned (size is OS specific)<|><c>usize<>
+
+Integer,  Unsigned,  8-bit<|><c>u8<>
+Integer,  Unsigned,  16-bit<|><c>u16<>
+Integer,  Unsigned,  32-bit<|><c>u32<>
+Integer,  Unsigned,  64-bit<|><c>u64<>
+Integer,  Unsigned,  128-bit<|><c>u128<>
+
+Raw, Unsafe Pointer<|><c>pointer<>
+Reference, Shared or Mutable<|><c>ref<>
+Slice (view into a sequence)<|><c>slice<>
+String<|><c>str<>
+Tuple<|><c>tup<>
+
+Never, ! Type
+Unit, () Type<|><c>unit<><><>
 
 
 Floats: IEEE-754 Standard.
@@ -3698,13 +3753,10 @@ Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.ru
 
 
 
-# Byte - Operations
+## Byte - Conversions
 @
-@ u8, b''
-@ bytes, byte-only, bytes-only
-@ data type
-@ std::u8, ::u8, u8, std::byte, ::byte
-
+@ from, convert, conversion, converting, into
+@ from byte, byte-to, byte-into, bytes, bytes-to, bytes-into
 
 
 ### Byte - To Character
@@ -6099,7 +6151,7 @@ println!("Index {}", <v>index<>.unwrap());
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l "https://doc.rust-lang.org/std/primitive.str.html#method.find">find()<>
 @
-@ subtring, search, index, position, start
+@ subtring, search, index of, position, start
 @ str.find(), .find()
 
 
@@ -6131,7 +6183,7 @@ println!("Index {}", <v>index<>.unwrap());
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l "https://doc.rust-lang.org/std/primitive.str.html#method.rfind">rfind()<>
 @
-@ subtring, search, index, position, last
+@ subtring, search, index of, position, last, rightmost
 @ str.rfind(), .rfind()
 
 
@@ -6452,7 +6504,7 @@ for <v>line<> in <v>lines<>.iter() {
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.lines>lines()<>
 @
-@ by line break, strings, strs
+@ by line break, strings, strs, to lines
 @ str.lines(), .lines()
 
 
@@ -6580,7 +6632,7 @@ Includes spaces, newlines, and tabs.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.trim_start>trim_start()<>
 @
-@ strip, remove, delete, whitespaces, white spaces, starting, left
+@ strip, remove, delete, whitespaces, white spaces, leading, starting, left
 @ str.trim_start(), .trim_start()
 
 
@@ -6681,9 +6733,9 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-## Str - Convert
+## Str - Conversions
 @
-@ from, convert, conversion, converting
+@ from, convert, conversion, converting, into
 @ from str, str-to, str-into, into, str-from
 
 
@@ -7809,7 +7861,7 @@ println!("Index {}", <v>index<>.unwrap());
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.find">find()<>
 @
-@ subtring, search, index, position, start
+@ subtring, search, index of, position, start
 @ string.find(), .find()
 
 
@@ -7841,7 +7893,7 @@ println!("Index {}", <v>index<>.unwrap());
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.rfind">rfind()<>
 @
-@ subtring, search, index, position, end, last
+@ subtring, search, index of, position, end, last, rightmost
 @ string.rfind(), .rfind()
 
 
@@ -8293,7 +8345,7 @@ for <v>line<> in <v>lines<>.iter() {
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.lines">lines()<>
 @
-@ by line break
+@ by line break, to lines
 @ string.lines(), .lines()
 
 
@@ -9728,6 +9780,8 @@ println!("Point: {}, {}", <v>x<>, <v>y<>);
 
 
 Returns the value of the given field.
+@
+@ access
 
 
 
@@ -10633,6 +10687,17 @@ println!("{:?}", &<v>subarray<>);
 
 
 
+### Array - Update
+
+<cb><v>array_1<>[<v>index<>] = <v>new_value<>;<>
+
+
+Modifies the array value at the index position.
+@
+@ change, modify, set, item, value
+
+
+
 ## Array - Conversions
 @
 @ from, convert, conversion, converting
@@ -10710,6 +10775,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 ## Vec - Create
+@
 @ new, define, instantiate
 
 
@@ -10802,6 +10868,7 @@ println!();
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.vec.html">vec!<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>
 @
+@ assign values, initialize
 @ vec!, vec![], vec!-only
 
 
@@ -13659,6 +13726,25 @@ Use <c>(crate)<> when sharing macros.
 
 
 
+## Macro - Export from Crate
+
+<cb>#[macro_export]<>
+
+
+Usage:
+
+<cb>#[macro_export]
+macro_rules! <v>macro_1<> <v>...<><>
+
+
+Exports the macro to external crates / libraries.
+
+Exports from the root of the crate.
+@
+@ #[macro_export], macro_export
+
+
+
 ## Macro Parameter Types
 
 
@@ -15595,8 +15681,15 @@ Usage:
 let <v>path_1<> = Path::new("<v>path<>");
 = <v>path_1<>.exists()<>
 
+Returns:
 
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.Path.html>Path<>
+<cb>bool<>
+
+
+Tests if a file exists.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.Path.html>Path<>.<l https://doc.rust-lang.org/std/path/struct.Path.html#method.exists>exists()<>
 @
 @ path.exists(), .exists(), path
 
@@ -17299,7 +17392,7 @@ Returns:
 Creates an instance of Path.
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.new">new<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.new">new()<>
 @
 @ new, instance, instantiate
 @ std::path::Path::new, path::Path::new, Path::new
@@ -17337,6 +17430,9 @@ Usage:
 
 let <v>path_1<> = Path::new("<v>path<>");
 = <v>path_1<>.exists()<>
+
+
+Tests for the existence of a path.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.Path.html>Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.exists">exists()<>
@@ -17555,6 +17651,46 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 ## Path - Operations
 
 
+### Path - Add File Name
+
+<cb>= <v>path_1<>.with_file_name("<v>file<>")<>
+
+Returns:
+
+<cb>PathBuf<>
+
+
+Gets the parent of the path and adds the file name it.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.Path.html>Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.with_file_name">with_file_name()<>
+@
+@ append
+@ path.with_file_name(), .with_file_name()
+
+
+
+### Path - Add Extension
+
+<cb>= <v>path_1<>.with_extension("<v>extension<>")<>
+
+Returns:
+
+<cb>PathBuf<>
+
+
+Adds the extension to the path and returns it as a PathBuf.
+
+The "." is added in by <c>with_extension()<>.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.Path.html>Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.with_extension">with_extension()<>
+@
+@ append
+@ path.with_extension(), .with_extension()
+
+
+
 ### Path - Canonicalize
 
 <cb>= <v>path_1<>.canonicalize()<>
@@ -17571,9 +17707,9 @@ Converts all relative parts ("..") and symbolic links into the absolute path
 For "<v>file.txt<>", returns the path for "<v>/user/your_name_here/file.txt<>".
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.Path.html>Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.extension">canonicalize()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.Path.html>Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.canonicalize">canonicalize()<>
 @
-@ file parts, to absolute path, convert, into, conversion
+@ file parts, to absolute path, convert, into, conversion, ..
 @ path.canonicalize(), .canonicalize()
 
 
@@ -17607,6 +17743,52 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ directories, paths, subdirectories, subpaths, folders, subfolders
 @ std::path::Path.join(), path::Path.join(), Path.join(), .join()
+
+
+
+## Path - Conversions
+@
+@ from, convert, conversion, converting
+@ from path, path-to, path-into, into, path-from
+
+
+### Path - To Str
+
+<cb>= <v>path_1<>.to_str()<>
+
+Returns:
+
+<cb>Option\<&str><>
+
+
+Returns the path as a string if and only if it is a valid UTF-8 string.
+
+Non-UTF-8 strings return None.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.Path.html">Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.to_str">to_str()<>
+@
+@ to-str, str-to, string
+@ std::path::Path.to_str(), path::Path.to_str(), Path.to_str(), .to_str()
+
+
+
+### Path - To Str, Lossy
+
+<cb>= <v>path_1<>.to_string_lossy()<>
+
+Returns:
+
+<cb>COW\<str><>
+
+
+Returns the path as a str. Invalid UTF-8 characters get converted to � (Hex EF BF BD).
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.Path.html">Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.to_string_lossy">to_string_lossy()<>
+@
+@ to-str, str-to, string, EF BF BD, �
+@ std::path::Path.to_string_lossy(), path::Path.to_string_lossy(), Path.to_string_lossy(), .to_string_lossy()
 
 
 
@@ -21919,7 +22101,7 @@ Rust Docs: <l "https://doc.rust-lang.org/book/ch15-00-smart-pointers.html">Smart
 <in>Efficient Conditional Cloning    <><|><go? "cow-only">Cow<>\<<v>T<>>
 <in>Mutate Behind Immutable<><|><go? "cell-only">Cell<>\<<v>T<>>
 
-Single-thread:
+Single-threaded:
 
 <in>Mutate Shared<sup><#>2<><><><|><go? "refcell-only">RefCell<>\<<v>T<>>
 <in>Multiple Owners, Immutable      <><|><go? "Rc-only">Rc<>\<<v>T<>>
@@ -21935,9 +22117,11 @@ Multithreaded:
 
 <#>1<>  -  Single Reader or Writer
 <#>2<>  -  Multiple Readers or Single Writer<>
+@
+@ pointers
 
 
-<c><go? "arc-only">Arc<>\<<v>T<>><>
+########<c><go? "arc-only">Arc<>\<<v>T<>><>
 
 <in>Use when: Multiple threads need to share ownership of data.
 
@@ -21946,14 +22130,15 @@ Shared ownership
 Uses reference counting
 Immutable access<><>
 
-<c><go? "box-only">Box<>\<<v>T<>><>
+########<c><go? "box-only">Box<>\<<v>T<>><>
 
 <in>Use when: You need to allocate data on the heap for a single owner.
 
 <*>Allocates on the heap
+Returns a pointer to that location
 Single owner<><>
 
-<c><go? "cell-only">Cell<>\<<v>T<>><>
+########<c><go? "cell-only">Cell<>\<<v>T<>><>
 
 <in>Use when: You need to mutate data inside a type without requiring <c>mut<>.
 
@@ -21962,7 +22147,7 @@ Underlying type must implement <c>Copy<>
 Single-threaded only
 Zero-cost abstraction<><>
 
-<c><go? "cow-only">Cow<>\<<v>T<>><>
+########<c><go? "cow-only">Cow<>\<<v>T<>><>
 
 <in>Use when: You need to decide at runtime whether to use borrowed or owned data.
 
@@ -21971,14 +22156,14 @@ Transparent to the end user
 Clones if needed
 Underlying type must implement <c>ToOwned<><><>
 
-<><go? "mutex-only">Mutex<>\<<v>T<>><>
+########<><go? "mutex-only">Mutex<>\<<v>T<>><>
 
 <in>Use when: You need to safely access mutable data between threads.
 
 <*>Thread-safe mutable access
 Single borrower or owner<><>
 
-<c><go? "rc-only">Rc<>\<<v>T<>><>
+########<c><go? "rc-only">Rc<>\<<v>T<>><>
 
 <in>Use when: You need shared ownership of data in a single-threaded environment.
 
@@ -21987,7 +22172,7 @@ Uses reference counting
 Immutable access
 Single-threaded only<><>
 
-<c><go? "ref-only">Ref<>\<<v>T<>><>
+########<c><go? "ref-only">Ref<>\<<v>T<>><>
 
 <in>Use when: You need to a temporary immutable reference to the inner data of a RefCell.
 
@@ -21995,7 +22180,7 @@ Single-threaded only<><>
 Returned by <c>RefCell<>
 Enforces runtime borrow rules<><>
 
-<c><go? "refcell-only">RefCell<>\<<v>T<>><>
+########<c><go? "refcell-only">RefCell<>\<<v>T<>><>
 
 <in>Use when: You need safe mutable access to data in a single-threaded environment.
 
@@ -22004,7 +22189,7 @@ Bypasses compile-time borrow checks
 Multiple readers, single writer
 Single-threaded only<><>
 
-<c><go? "refmut-only">RefMut<>\<<v>T<>><>
+########<c><go? "refmut-only">RefMut<>\<<v>T<>><>
 
 <in>Use when: You need to a temporary mutable reference to the inner data of a RefCell.
 
@@ -22012,7 +22197,7 @@ Single-threaded only<><>
 Returned by <c>RefCell<>
 Enforces runtime borrow rules<><>
 
-<c><go? "rwlock-only">RwLock<>\<<v>T<>><>
+########<c><go? "rwlock-only">RwLock<>\<<v>T<>><>
 
 <in>Use when: You need safe mutable access to data between threads, with multiple readers or one writer.
 
@@ -22020,7 +22205,7 @@ Enforces runtime borrow rules<><>
 Mutable access
 Multiple readers, single writer<><>
 
-<c><go? "arc weak-only">Weak<>\<<v>T<>><> (Arc)
+########<c><go? "arc weak-only">Weak<>\<<v>T<>><> (Arc)
 
 <in>Use when: You need to avoid circular references in a multi-threaded environment.
 
@@ -22028,7 +22213,7 @@ Multiple readers, single writer<><>
 Thread-safe
 Prevents reference cycles<><>
 
-<c><go? "rc weak-only">Weak<>\<<v>T<>><> (Rc)
+########<c><go? "rc weak-only">Weak<>\<<v>T<>><> (Rc)
 
 <in>Use when: You need to avoid circular references in a single-threaded environment.
 
@@ -22976,7 +23161,7 @@ Use when: You need shared ownership of data in a single-threaded environment.
 <*>Multiple owners
 Uses reference counting
 Immutable access
-Single-threaded only
+Single-threaded only<>
 
 RC = Reference Counted
 
@@ -24752,7 +24937,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 # Index Trait
 
-<cb>trait Index {
+<cb>trait Index\<<v>IndexType<>> {
     fn index(&self, <v>value<>: IndexValueType);
 }<>
 
@@ -24765,15 +24950,38 @@ Implements indexing on a type (<c>= <v>item<>[<v>index<>]<>).
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ops/index.html">ops<>::<l "https://doc.rust-lang.org/std/ops/trait.Index.html">Index<>
+
+
+Example:
+
+<cb>use std::ops::Index;
+
+struct Items {
+	<v>values<>: Vec\<String>,
+}
+
+impl Index\<usize> for Items {
+	type Output = String;
+
+	fn index(&self, <v>index<>: usize) -> &Self::Output {
+		&self.<v>values<>[<v>index<>]
+	}
+}
+
+let <v>items<> = Items{values: vec!["A".into(), "B".into(), "C".into()] };
+
+println!("Item 1: {}", &<v>items<>[1]);
+
+<#>// Prints: B<><>
 @
 @ index-only
-@ std::ops::Index, ops::Index, ::Index
+@ std::ops::Index, ops::Index, ::Index, []
 
 
 
 # Index Mut Trait
 
-<cb>trait IndexMut {
+<cb>trait IndexMut\<<v>IndexType<>> {
     fn index_mut(&mut self, <v>value<>: IndexValueType);
 }<>
 
@@ -24784,11 +24992,50 @@ Type:
 
 Implements mutable indexing on a type (<c>= <v>item<>[<v>index<>]<>).
 
+Requires: <go? "index-only">Index Trait<>
+The Index Trait must also be implemented.
+
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ops/index.html">ops<>::<l "https://doc.rust-lang.org/std/ops/trait.IndexMut.html">IndexMut<>
+
+
+Example:
+
+<cb>use std::ops::Index;
+use std::ops::IndexMut;
+
+struct Items {
+	<v>values<>: Vec\<String>,
+}
+
+impl Index\<usize> for Items {
+	type Output = String;
+
+	fn index(&self, <v>index<>: usize) -> &Self::Output {
+		&self.<v>values<>[<v>index<>]
+	}
+}
+
+impl IndexMut\<usize> for Items {
+	fn index_mut(&mut self, <v>index<>: usize) -> &mut Self::Output {
+		&mut self.<v>values<>[<v>index<>]
+	}
+}
+
+let mut <v>items<> = Items{values: vec!["A".into(), "B".into(), "C".into()] };
+
+println!("Item 1: {}", &<v>items<>[1]);
+
+let <v>item1<> = &mut <v>items<>[1];
+*<v>item1<> = "Z".into();
+
+println!("Item 1: {}", &<v>items<>[1]);
+
+<#>// Prints: B
+// Prints: Z<><>
 @
 @ indexmut-only, mutable
-@ std::ops::IndexMut, ops::IndexMut, ::IndexMut
+@ std::ops::IndexMut, ops::IndexMut, ::IndexMut, []
 
 
 
@@ -25555,11 +25802,13 @@ Type:
 Allows items to be compared defining which is greater.
 
 
+See Also: <go? "partialord-only">PartialOrd<>
+
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.Ord.html">Ord<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/enum.Ordering.html">Ordering<>
 @
-@ equality, equals, compare, comparison
-@ std::cmp::ord, cmp::ord, ::ord, 
+@ equality, equals, compare, comparison, greater than, less than
+@ std::cmp::ord, cmp::ord, ::ord, cmp()
 @ ord-only
 
 
@@ -25603,7 +25852,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Ord - clamp
+### Ord - Clamp
 
 <cb>= <v>item_1<>.clamp(<v>item_min<>, <v>item_max<>)<>
 
@@ -25632,14 +25881,46 @@ Type:
 Allows items to be compared for equality.
 
 Use when the following may be true: x != x.
-(example: NaN != NaN)
+Example, NaN is never equal to anything, not even itself (NaN != NaN).
 
+
+See Also: <go? "eq-only">Eq<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialEq.html">PartialEq<>
 @
 @ equality, equals, compare, comparison
-@ std::cmp::partialeq, cmp::partialeq, ::partialeq, 
+@ std::cmp::partialeq, cmp::partialeq, ::partialeq, eq(), ne()
 @ partialeq-only, partial-eq-only
+
+
+
+# PartialOrd Trait
+
+<cb>pub trait PartialOrd\<<v>Other<>> {
+    fn le(<v>other<>: &<v>Other<>) -> bool;
+    fn lt(<v>other<>: &<v>Other<>) -> bool;
+    fn ge(<v>other<>: &<v>Other<>) -> bool;
+    fn gt(<v>other<>: &<v>Other<>) -> bool;
+}<>
+
+Type:
+
+<cb>std::cmp::PartialOrd<>
+
+
+Allows items to be compared to determine which is greater.
+
+Use when the following may be true: x != x.
+Example, NaN is never equal to anything, not even itself (NaN != NaN).
+
+
+See Also: <go? "ord-only">Ord<>
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html">PartialOrd<>
+@
+@ compare, comparison, partial order, greater than, less than
+@ std::cmp::partialord, cmp::partialord, ::partialord, le(), lt(), ge(), gt()
+@ partialord-only, partial-ord-only
 
 
 
@@ -26285,6 +26566,9 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 # SystemTime
 
 <cb>std::time::SystemTime<>
+
+
+Represents system clock time since an unspecified point (typically Unix epoch).
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/time/index.html">time<>::<l "https://doc.rust-lang.org/std/time/struct.SystemTime.html">SystemTime<>
@@ -28333,7 +28617,7 @@ println!("{}", <v>total<>);
 
 ### Index Operations - Implement
 
-To implement index operations, implement traits Index, IndexMut for usize, Range, RangeInclusive, RangeFrom, RangeTo
+To implement index operations, implement Index, and IndexMut traits on these: Range, RangeInclusive, RangeFrom, RangeTo (implement for usize):
 
 Implement:
 
@@ -28464,7 +28748,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Input - Read
+### Input - Read from Keyboard
 
 <cb>= stdin().read_line(&mut <v>value<>)<>
 
@@ -28499,6 +28783,7 @@ Includes the <c>\\n<> used to complete the input.
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/struct.Stdin.html">Stdin<>.<l "https://doc.rust-lang.org/std/io/struct.Stdin.html#method.read_line">read_line()<>
 @
 @ std::io::stdin(), io::stdin(), stdin(), stdin().read_line(), .read_line()
+@ stdin, standard in, keyboard
 
 
 
@@ -28775,8 +29060,8 @@ Recommended Exit Codes:
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/process/index.html">process<>::<l "https://doc.rust-lang.org/std/process/fn.exit.html">exit<>
 @
-@ error code, status, number, end program, stop, quit, .exit(), .exit(), .quit(), application, program, terminate
-@ std::process::exit(), process::exit(), exit()
+@ error code, status, number, end program, stop, quit, application, program, terminate
+@ std::process::exit(), process::exit(), exit(), quit()
 
 
 
@@ -28860,50 +29145,50 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 # Naming Conventions
 @
-@ Names, naming-conventions-only, conventions-only
+@ names, naming-conventions-only, conventions-only
 
 
 ## Naming Conventions - Basics
 
-<table><col>Constant<><col><c><v>UPPER_SNAKE_CASE<><><>
-<col> <>
-<col>Constructor - General<><col>new
+<t>Constant<|><c><v>UPPER_SNAKE_CASE<><>
+
+Constructor - General<|><{}>new
 
 <c>with_<v>more_details<><><>
-<col> <>
-<col>Constructor - Conversion<><col><c>from_<v>some_other_type<><><>
-<col> <>
-<col>Crate<><col>No Convention?<>
-<col> <>
-<col>Enum Variant<><col><c><v>TitleCase<><><>
-<col> <>
-<col>Feature<><col>No Convention?<>
-<col> <>
-<col>Function<><col><c><v>snake_case<><><>
-<col> <>
-<col>Lifetime<><col><c><v>lowercase<><><>
-<col> <>
-<col>Method<><col><c><v>snake_case<><><>
-<col> <>
-<col>Macro<><col><c><v>snake_case<>!<><>
-<col> <>
-<col>Module<><col><c><v>snake_case<><><>
-<col> <>
-<col>Static<><col><c><v>UPPER_SNAKE_CASE<><><>
-<col> <>
-<col>Trait<><col><c><v>TitleCase<><><>
-<col> <>
-<col>Type<><col><c><v>TitleCase<><><>
-<col> <>
-<col>Type Parameter<><col><c><v>T<><>  (Upper Case Letter)
+
+Constructor - Conversion<|><c>from_<v>some_other_type<><>
+
+Crate<|>No Convention?
+
+Enum Variant<|><c><v>TitleCase<><>
+
+Feature<|>No Convention?
+
+Function<|><c><v>snake_case<><>
+
+Lifetime<|><c><v>lowercase<><>
+
+Method<|><c><v>snake_case<><>
+
+Macro<|><c><v>snake_case<>!<>
+
+Module<|><c><v>snake_case<><>
+
+Static<|><c><v>UPPER_SNAKE_CASE<><>
+
+Trait<|><c><v>TitleCase<><>
+
+Type<|><c><v>TitleCase<><>
+
+Type Parameter<|><{}><c><v>T<><>  (Upper Case Letter)
 
 <c><v>TitleCase<><><>
-<col> <>
-<col>Variable<><col><c><v>snake_case<><><>
-<col> <>
-<col>Variable - Constants<><col><c><v>UPPER_SNAKE_CASE<><><>
-<col> <>
-<col>Variable - Unused<><col><c><v>_leading_underscore<><><><>
+
+Variable<|><c><v>snake_case<><>
+
+Variable - Constants<|><c><v>UPPER_SNAKE_CASE<><>
+
+Variable - Unused<|><c><v>_leading_underscore<><><>
 
 See:
 <l>https://rust-lang.github.io/api-guidelines/naming.html<>
@@ -28912,88 +29197,123 @@ See:
 
 
 
-## Naming Convention Details
+## Naming Convention - Details
 
 
-### Convention - Constants
+### Convention - Constant Name
 
 <cb><v>UPPER_SNAKE_CASE<><>
+@
+@ constants
 
 
-### Convention - Constructors - General
+### Convention - Constructor Name - General
 
 <cb>new<>
 
 <cb>with_<v>more_details<><>
+@
+@ constructors
 
 
-### Convention - Constructors - Conversion
+### Convention - Constructor Name - Conversion
 
 <cb>from_<v>some_other_type<><>
+@
+@ constructors
 
 
-### Convention - Crates
+### Convention - Crate Name
 
 No convention?
+@
+@ crates
 
 
-### Convention - Modules
+### Convention - Module Name
 
 <cb><v>snake_case<><>
+@
+@ modules
 
 
-### Convention - Enum Variants
+### Convention - Enum Name
 
 <cb><v>TitleCase<><>
+@
+@ enums
 
 
-### Convention - Features
+### Convention - Enum Variant Name
+
+<cb><v>TitleCase<><>
+@
+@ enums, Variants
+
+
+### Convention - Feature Name
 
 No convention?
 
 <m>See: C-FEATURE
 <l>https://rust-lang.github.io/api-guidelines/naming.html#c-feature<><>
+@
+@ features
 
 
-### Convention - Functions
+### Convention - Function Name
 
 <cb><v>snake_case<><>
+@
+@ functions
 
 
-### Convention - Lifetimes
+### Convention - Lifetime Name
 
 <cb>lowercase<>
 
 Use short words.
 Some recommend a single letter but I strongly disagree.
+@
+@ lifetimes
 
 
-### Convention - Macros
+### Convention - Macro Name
 
 <cb><v>snake_case<>!<>
+@
+@ macros
 
 
-### Convention - Methods
+### Convention - Method Name
 
 <cb><v>snake_case<><>
+@
+@ Methods
 
 
-### Convention - Statics
+### Convention - Static Name
 
 <cb><v>UPPER_SNAKE_CASE<><>
+@
+@ Statics
 
 
-### Convention - Traits
-
-<cb><v>TitleCase<><>
-
-
-### Convention - Types
+### Convention - Trait Name
 
 <cb><v>TitleCase<><>
+@
+@ Traits
 
 
-### Convention - Type Parameters
+### Convention - Type Name
+
+<cb><v>TitleCase<><>
+@
+@ Types
+
+
+### Convention - Type Parameter Name
 
 <cb><v>TitleCase<><>
 
@@ -29001,24 +29321,32 @@ Some recommend a single letter but I strongly disagree.
 
 Short concise name in TitleCase.
 Some recommend a single uppercase letter.
+@
+@ Parameters, types
 
 
-### Convention - Variables
+### Convention - Variable Name
 
 <cb><v>snake_case<><>
+@
+@ Variables
 
 
-### Convention - Variables - Constants
+### Convention - Variable Name - Constants
 
 <cb><v>UPPER_SNAKE_CASE<><>
+@
+@ Variables
 
 
 
-### Convention - Variables - Unused
+### Convention - Variable Name - Unused Variable
 
 <cb><v>_leading_underscore<><>
 
 The compiler will ignore unused variables when they have a leading underscore.
+@
+@ variables
 
 
 
@@ -29640,6 +29968,23 @@ fn <v>function_1<>() {
 }<>
 
 
+See: <go?>Document Comments<>
+
+
+
+### Symbol /* */
+
+A Comment Block
+
+<cb><#>/*
+	This is a comment block.
+*/<><>
+
+
+See: <go?>Comments Multiline<>
+
+
+
 ### Symbol #[]
 
 Attribute. Only applies to the item or module.
@@ -29784,58 +30129,58 @@ Explicitly Placed on Heap (e.g. Box)
 A reserved word is a keyword that has special meaning or purpose to Rust.
 It can not be used as the name of variable, function or anything else.
 
-<in><table><col><c>abstract<>       <><col><s>(For Future Use)<><>
-<col><c>as<><><col>Casts a Variable, or Renames a Item<>
-<col><c>async<><><col>Returns a Future<>
-<col><c>await<><><col>Suspend Execution Until Future Is Done<>
-<col><c>become<><><col><s>(For Future Use)<><>
-<col><c>box<><><col><s>(For Future Use)<><>
-<col><c>break<><><col>Exits a Loop<>
-<col><c>const<><><col>Defines a Constant<>
-<col><c>continue<><><col>Continue to Next Loop Iteration<>
-<col><c>crate<><><col>Links to an External Crate<>
-<col><c>do<><><col><s>(For Future Use)<><>
-<col><c>dyn<><><col>Dynamic Dispatch To Trait<>
-<col><c>else<><><col>Conditional If Statement, Fallback Clause<>
-<col><c>enum<><><col>Defines an Enum<>
-<col><c>extern<><><col>Link To an External Crate, Function, or Variable<>
-<col><c>false<><><col>Boolean Literal<>
-<col><c>final<><><col><s>(For Future Use)<><>
-<col><c>fn<><><col>Defines a Function or Function Pointer<>
-<col><c>for<><><col>For Loop, or Implements a Trait, or Specifies a Higher-ranked Lifetime<>
-<col><c>if<><><col>Conditional If Statement<>
-<col><c>impl<><><col>Implement Inherent or Trait<>
-<col><c>in<><><col>For Loop<>
-<col><c>let<><><col>Create a Variable<>
-<col><c>loop<><><col>Unconditional Loop<>
-<col><c>macro<><><col><s>(For Future Use)<><>
-<col><c>match<><><col>Match Control Statement<>
-<col><c>mod<><><col>Defines a Module<>
-<col><c>move<><><col>Gives Ownership To Closure<>
-<col><c>mut<><><col>Mutable Value / Pointer<>
-<col><c>override<><><col><s>(For Future Use)<><>
-<col><c>priv<><><col><s>(For Future Use)<><>
-<col><c>pub<><><col>Set Public Visibility<>
-<col><c>ref<><><col>Reference Binding<>
-<col><c>return<><><col>Return A Value<>
-<col><c>Self<><><col>Alias For Type Being Defined or Being Implemented<>
-<col><c>self<><><col>Method Subject or Current Module<>
-<col><c>static<><><col>Global Variable<>
-<col><c>struct<><><col>Defines a Structure<>
-<col><c>super<><><col>Parent Module<>
-<col><c>trait<><><col>Defines a Trait<>
-<col><c>true<><><col>Boolean Literal<>
-<col><c>try<><><col><s>(For Future Use)<><>
-<col><c>type<><><col>Defines an Alias<>
-<col><c>typeof<><><col><s>(For Future Use)<><>
-<col><c>union<><><col>Defines a Union<>
-<col><c>unsafe<><><col>Enables Unsafe Operations<>
-<col><c>unsized<><><col><s>(For Future Use)<><>
-<col><c>use<><><col>Bring Into Scope<>
-<col><c>virtual<><><col><s>(For Future Use)<><>
-<col><c>where<><><col>Type Constraint<>
-<col><c>while<><><col>Conditional Loop<>
-<col><c>yield<><><col><s>(For Future Use)<><><><>
+<in><t><c>abstract<>       <|><s>(For Future Use)<>
+<c>as<><|>Casts a Variable, or Renames a Item
+<c>async<><|>Returns a Future
+<c>await<><|>Suspend Execution Until Future Is Done
+<c>become<><|><s>(For Future Use)<>
+<c>box<><|><s>(For Future Use)<>
+<c>break<><|>Exits a Loop
+<c>const<><|>Defines a Constant
+<c>continue<><|>Continue to Next Loop Iteration
+<c>crate<><|>Links to an External Crate
+<c>do<><|><s>(For Future Use)<>
+<c>dyn<><|>Dynamic Dispatch To Trait
+<c>else<><|>Conditional If Statement, Fallback Clause
+<c>enum<><|>Defines an Enum
+<c>extern<><|>Link To an External Crate, Function, or Variable
+<c>false<><|>Boolean Literal
+<c>final<><|><s>(For Future Use)<>
+<c>fn<><|>Defines a Function or Function Pointer
+<c>for<><|>For Loop, or Implements a Trait, or Specifies a Higher-ranked Lifetime
+<c>if<><|>Conditional If Statement
+<c>impl<><|>Implement Inherent or Trait
+<c>in<><|>For Loop
+<c>let<><|>Create a Variable
+<c>loop<><|>Unconditional Loop
+<c>macro<><|><s>(For Future Use)<>
+<c>match<><|>Match Control Statement
+<c>mod<><|>Defines a Module
+<c>move<><|>Gives Ownership To Closure
+<c>mut<><|>Mutable Value / Pointer
+<c>override<><|><s>(For Future Use)<>
+<c>priv<><|><s>(For Future Use)<>
+<c>pub<><|>Set Public Visibility
+<c>ref<><|>Reference Binding
+<c>return<><|>Return A Value
+<c>Self<><|>Alias For Type Being Defined or Being Implemented
+<c>self<><|>Method Subject or Current Module
+<c>static<><|>Global Variable
+<c>struct<><|>Defines a Structure
+<c>super<><|>Parent Module
+<c>trait<><|>Defines a Trait
+<c>true<><|>Boolean Literal
+<c>try<><|><s>(For Future Use)<>
+<c>type<><|>Defines an Alias
+<c>typeof<><|><s>(For Future Use)<>
+<c>union<><|>Defines a Union
+<c>unsafe<><|>Enables Unsafe Operations
+<c>unsized<><|><s>(For Future Use)<>
+<c>use<><|>Bring Into Scope
+<c>virtual<><|><s>(For Future Use)<>
+<c>where<><|>Type Constraint
+<c>while<><|>Conditional Loop
+<c>yield<><|><s>(For Future Use)<><><>
 @
 @ abstract, as, async, await, become, box
 @ break, const, continue, crate, do, dyn
@@ -30052,7 +30397,7 @@ Example:
 <cb>pub use crate::<v>types<>::<v>ImportantType<>
 pub use crate::<v>traits<>::<v>ImportantTrait<><>
 @
-@ prelude, ::prelude::*;, prelude::*, prelude.r
+@ prelude, ::prelude::*;, prelude::*, prelude.rs
 
 
 
@@ -30082,8 +30427,8 @@ Use <go? "struct-only">structures<> and <go? "trait-only">traits<> instead.
 ### Class Constructors
 Rust does not support constructors.
 
-Implement a static function called <c>new<> instead.
-The name <c>new<> is by convention.
+Implement a static function instead.
+<c>new()<> is typically used (by convention).
 
 Example:
 
@@ -30116,6 +30461,14 @@ Use: <go "?hashmap">HashMap<>
 Use: <go "?btreemap">BtreeMap<>
 @
 @ dict, dicts, maps, ordered, sorted, associative arrays
+
+
+
+### Functions - Variadic
+Not supported in Rust
+
+
+Variadic: Functions that take a variable number of parameters.
 
 
 
@@ -30607,10 +30960,8 @@ Crate<|><l>https://crates.io/crates/yaml-rust<><>
 Application Binary Interface (C's equivalent of Rust's FFI)
 
 
-
 ### ADT
 Algebraic Data Type
-
 
 
 ### ARC
@@ -30619,30 +30970,32 @@ Atomically Reference Counted
 See: <l "#arc">ARC<>
 
 
-
 ### COW
 Clone on Write
-
 
 
 ### DST
 Dynamically Sized Type
 
 
-
 ### FFI
 Foreign Function Interface
-
 
 
 ### HOF
 Higher Order Functions
 
 
+### LLVM
+Low Level Virtual Machine
+
 
 ### MPSC
 Multi-Producer Single-Consumer
 
+
+### MSRV
+Minimum Supported Rust Version
 
 
 ### RAII
@@ -30651,22 +31004,18 @@ Resource Acquisition Is Initialization
 @ RALL
 
 
-
 ### RC
 Reference Counted
 
 See: <l "#rc">RC<>
 
 
-
 ### RLIB
 Rust Library
 
 
-
 ### SPDX
 Software Package Data Exchange
-
 
 
 ### WASM
@@ -30931,6 +31280,15 @@ Use these types:
 
 
 
+### Low Level Virtual Machine (LLVM)
+A language independent compiler that translates code into machine code using an intermediate representation. Supports a wide range of platforms and architectures.
+
+Used by Rust to compile code into executable binaries.
+
+Wikipedia: <l https://en.wikipedia.org/wiki/LLVM>LLVM<>
+ 
+
+
 ### Marker Trait
 A marker trait is a trait that is used to identify a property of a type.
 
@@ -31107,6 +31465,8 @@ Core Rust only supports native threads.
 You can only implement a trait when either the trait or the type is defined locally in the current crate.
 
 This rule ensures type safety across different crates by preventing conflicting implementations.
+@
+@ implementing across modules
 
 
 
