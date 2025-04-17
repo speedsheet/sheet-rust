@@ -4,9 +4,7 @@
 
 This interactive Rust cheat sheet covers the essentials of the <b>Rust<> programming language. Just use FIND to get instant answers and find what you need in a snap!
 
-
 Speedsheet Repo: <l>https://github.com/speedsheet/sheet-rust<>
-
 
 <card><t><dodger-blue><html-block><svg fill="currentColor" width="2em" height="2em" viewBox="0 0 16 16">
 	<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
@@ -2298,7 +2296,21 @@ println!("Returns {}.", <v>returned_value<>);
 	<v>...<>
 };<>
 @
-@ enums, fields, values, elements
+@ enums, fields, values, elements, variant
+
+
+
+#### Match - Match Enum Struct - Ignore Fields
+
+<cb>match <v>enum_value<> {
+	Enum1::Value1 {..} => { <v>...<> },
+	<v>...<>
+};<>
+
+
+Use <c>{..}<> to match only the variant and ignore the fields inside.
+@
+@ enums, fields, values, elements, {..}, .., variant
 
 
 
@@ -6415,7 +6427,7 @@ Returns:
 <cb>Split<>
 
 
-Returns a list of strings split on the split string.
+Returns an iterator of strings split on the split string.
 
 If no split found, returns the original string (1 value).
 If no value before or after the split, empty strings are returned.
@@ -6442,6 +6454,7 @@ for <v>line<> in <v>lines<>.iter() {
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.split>split()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.Split.html>Split<>
 @
 @ str.split(), .split()
 
@@ -6456,7 +6469,7 @@ Returns:
 <cb>Option\<(&str, &str)><>
 
 
-Returns a tuple of strings split in two.
+Returns a tuple of strings split in two splitting on the first match.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.split_once>split_once()<>
@@ -6503,6 +6516,7 @@ for <v>line<> in <v>lines<>.iter() {
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.lines>lines()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.Split.html>Split<>
 @
 @ by line break, strings, strs, to lines
 @ str.lines(), .lines()
@@ -6522,7 +6536,7 @@ Returns:
 <cb>Split<>
 
 
-Returns a list of strings split on Unicode white space characters.
+Returns an iterator of strings split on Unicode white space characters.
 
 Empty strings are not returned.
 
@@ -6545,6 +6559,7 @@ for <v>line<> in <v>lines<>.iter() {
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.split_whitespace>split_whitespace()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.Split.html>Split<>
 @
 @ by whitespaces
 @ str.split_whitespace(), .split_whitespace()
@@ -6571,6 +6586,71 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ using
 @ str.split(), .split()
+
+
+
+### Str - Split Right
+
+<cb>= <v>str_1<>.rsplit(<v>split_string<>)<>
+
+Usage:
+
+<cb>let <v>strings<>: Vec\<&str> = <v>str_1<>.rsplit(<v>split_string<>).collect()<>
+
+Returns:
+
+<cb>RSplit<>
+
+
+Returns an iterator of strings split on the split string starting from the right.
+
+If no split found, returns the original string (1 value).
+If no value before or after the split, empty strings are returned.
+
+The split string is not returned.
+
+
+Example:
+
+<cb>let <v>str_1<> = "one\\ntwo\\nthree\\n";
+
+let <v>lines<>: Vec\<&str> = <v>str_1<>.rsplit("\\n").collect();
+
+for <v>line<> in <v>lines<>.iter() {
+	println!("'{}'", <v>line<>);
+}
+
+<#>// Prints:
+//
+//    ''
+//    'three'
+//    'two'
+//    'one'<><>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.rsplit>rsplit()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.RSplit.html>RSplit<>
+@
+@ str.rsplit(), .rsplit()
+
+
+
+### Str - Split Right Once
+
+<cb>= <v>str_1<>.rsplit_once(<v>split_string<>)<>
+
+Returns:
+
+<cb>Option\<(&str, &str)><>
+
+
+Returns a tuple of strings split in two splitting on the first match from the right.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.rsplit_once>rsplit_once()<>
+@
+@ in two, by
+@ str.rsplit_once(), .rsplit_once()
 
 
 
@@ -8255,7 +8335,7 @@ Returns:
 <cb>Split<>
 
 
-Returns a list of strings separated on the split string.
+Returns an iterator of strings separated on the split string.
 
 If no split found, returns the original string (1 value).
 If no value before or after the split, empty strings are returned.
@@ -8282,6 +8362,7 @@ for <v>line<> in <v>lines<>.iter() {
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.split">split()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.Split.html>Split<>
 @
 @ split by
 @ string.split(), .split()
@@ -8301,6 +8382,7 @@ Returns a tuple of strings split in two.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.split_once">split_once()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.Split.html>Split<>
 @
 @ in two, by
 @ string.split_once(), .split_once()
@@ -8320,7 +8402,7 @@ Returns:
 <cb>Split<>
 
 
-Returns a list of lines.
+Returns an iterator of lines.
 
 Empty lines are not returned.
 Splits on newline (\\n) and newline + carriage return (\\n\\r).
@@ -8344,6 +8426,7 @@ for <v>line<> in <v>lines<>.iter() {
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.lines">lines()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.Split.html>Split<>
 @
 @ by line break, to lines
 @ string.lines(), .lines()
@@ -8363,7 +8446,7 @@ Returns:
 <cb>Split<>
 
 
-Returns a list of strings split on Unicode white space characters.
+Returns an iterator of strings split on Unicode white space characters.
 
 Empty strings are not returned.
 
@@ -8386,6 +8469,7 @@ for <v>line<> in <v>lines<>.iter() {
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.split_whitespace">split_whitespace()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.Split.html>Split<>
 @
 @ by whitespaces
 @ string.split_whitespace(), .split_whitespace()
@@ -8405,13 +8489,81 @@ Returns:
 <cb>Split<>
 
 
-Returns a list of strings split where the function returns true.
+Returns an iterator of strings split where the function returns true.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.split">split()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.Split.html>Split<>
 @
 @ using
 @ str.split(), .split()
+
+
+
+### String - Split Right
+
+<cb>= <v>string_1<>.rsplit(<v>split_string<>)<>
+
+Usage:
+
+<cb>let <v>strings<>: Vec\<&str> = <v>string_1<>.rsplit(<v>split_string<>).collect()<>
+
+Returns:
+
+<cb>Split<>
+
+
+Returns an iterator of strings separated on the split string, splitting on matches from the right.
+
+If no split found, returns the original string (1 value).
+If no value before or after the split, empty strings are returned.
+
+The split string is not returned.
+
+
+Example:
+
+<cb>let <v>string_1<> = "one\\ntwo\\nthree\\n".to_string();
+
+let <v>lines<>: Vec\<&str> = <v>string_1<>.rsplit("\\n").collect();
+
+for <v>line<> in <v>lines<>.iter() {
+	println!("'{}'", <v>line<>);
+}
+
+<#>// Prints:
+//
+//    ''
+//    'three'
+//    'two'
+//    'one'<><>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.rsplit">rsplit()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.RSplit.html>RSplit<>
+@
+@ split by
+@ string.rsplit(), .rsplit()
+
+
+
+### String - Split Right Once
+
+<cb>= <v>string_1<>.rsplit_once(<v>split_string<>)<>
+
+Returns:
+
+<cb>Option\<(&str, &str)><>
+
+
+Returns a tuple of strings split in two, splitting on the first match from the right.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.rsplit_once">rsplit_once()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>::<l https://doc.rust-lang.org/std/str/struct.RSplit.html>RSplit<>
+@
+@ in two, by
+@ string.rsplit_once(), .rsplit_once()
 
 
 
@@ -9005,7 +9157,7 @@ Enums With Properties:
 
 ## Enum - Create
 @
-@ new
+@ new, variants
 
 
 ### Enum - Define
@@ -9177,7 +9329,25 @@ if <v>color<> == <v>Color<>::Red {
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialEq.html">PartialEq<>
 @
-@ not, equals, is value, is type, is variant
+@ equals, is value, is type, is variant
+
+
+
+### Enum - Not Equals
+
+<cb>= ! matches!(<v>value1<>, <v>Enum1<>::<v>Item1<>)<>
+
+or
+
+<cb>match <v>value<> {
+	<v>Enum1<>::<v>Item1<> => {},
+	_ => <v>...<>	<#>// Put code here.<>
+}<>
+
+
+Testss if the enum is NOT a particular variant.
+@
+@ not, equals, not value, is not type, match, !match!(), match!()
 
 
 ### Enum - To Integer
@@ -9214,7 +9384,7 @@ Use <c>match<> or <c>if let<>.
 
 There is no direct way to check if an enum is a specific variant out of the box.
 @
-@ not, equals, is value, is type, match
+@ equals, is value, is type, match
 
 
 
@@ -11838,7 +12008,7 @@ Otherwise the statement is excluded.
 
 Rust Doc: <l "https://doc.rust-lang.org/reference/conditional-compilation.html">Conditional compilation<>
 @
-@ any(), has, properties, value
+@ any(), has, properties, value, or
 
 
 
@@ -11858,7 +12028,7 @@ Otherwise the statement is excluded.
 
 Rust Doc: <l "https://doc.rust-lang.org/reference/conditional-compilation.html">Conditional compilation<>
 @
-@ all(), has, properties, values
+@ all(), has, properties, values, and
 
 
 
@@ -12601,7 +12771,6 @@ Docs: <l https://doc.rust-lang.org/nightly/std/io/enum.ErrorKind.html>ErrorKind<
 @ fuctions, function-only, functions-only
 
 
-
 ## Function - Basics
 
 Define - No Parameters:
@@ -12899,27 +13068,6 @@ fn main() {
 
 
 
-### Function - Return With No Value
-
-<cb>return;<>
-
-Usage
-
-<cb>fn <v>function_1<>() {
-	<v>...<>
-	if <v>condition<> {
-		return;
-	}
-	<v>...<>
-}<>
-
-
-Returns from a function without returning a value.
-@
-@ unit, (), exit no value
-
-
-
 # Function Type
 @
 @ define, reference, fn
@@ -12990,7 +13138,7 @@ It has access to all the variables that are in scope in that environment.
 
 ## Closure - Create
 @
-@ new, define
+@ new, define, ||
 
 
 ### Closure - Create With No Arguments
@@ -13009,7 +13157,7 @@ Example:
 
 closure_1();<>
 @
-@ ||, zero, 0
+@ zero, 0
 @ parameters
 
 
@@ -15190,20 +15338,20 @@ Stores a static reference to an item that implements the trait.
 # Unsafe
 
 Rust Docs: <l "https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html">Chapter 19 - Unsafe<>
+@
+@ unsafe-only
 
 
-
-### Unsafe - Rules
+## Unsafe - Rules
 
 Allows you to:
 
-<*>Dereference a Raw Pointer
-Read from / Write To a Mutable Variable
-Read from / Write To an External Static Variable
-Access a Union Field (but not assign to it)
-Call an Unsafe Function
-Call an External C Function (Unsafe by default?)
-Implement an Unsafe Trait<>
+<*>Dereference a raw pointer
+Access or modify mutable static variable
+Access (but not modify) a union field
+Implement an unsafe trait
+Call an unsafe function
+Call an external C function (unsafe by default?)<>
 
 Used by:
 
@@ -15213,12 +15361,82 @@ Special Packages<>
 @ basics
 
 
+## Unsafe - Basics
 
-### Unsafe Syntax
+
+@
+@ summary
+
+
+
+## Unsafe - Details
+
+
+### Unsafe - Unsafe Block
 
 <cb>unsafe {
 	<v>...<>
 }<>
+
+
+
+### Unsafe - Usafe Access Raw Pointer
+
+<cb>unsafe {
+	<v>...<> = *<v>raw_pointer_1<>
+}<>
+
+
+Access the value of a raw pointer.
+
+
+# Raw Pointer
+@
+@ raw-only, raw-pointer-only, unsafe-only
+
+
+## Raw Pointer - Create
+@
+@ define, instantiate
+
+
+### Raw Pointer - Create Immutable
+
+<cb>= &raw const <v>variable_1<><>
+
+Usage:
+
+<cb>unsafe {
+
+	<v>...<> = &raw const <v>variable_1<>
+}<>
+
+
+Creates an immutable raw poniter.
+@
+@ &raw
+
+
+
+## Raw Pointer - Properties
+
+
+### Raw Pointer - Get
+
+<cb>= *<v>raw_pointer_1<><>
+
+Usage:
+
+<cb>unsafe {
+	<v>...<> = *<v>raw_pointer_1<>
+}<>
+
+
+Accesses the value of a raw pointer.
+
+Access must be inside an unsafe block.
+@
+@ access, read, value
 
 
 
@@ -17037,6 +17255,9 @@ Errors:
 <cb>std::io::Result<>
 
 
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
+
+
 
 ## BufReader - Create
 
@@ -17092,6 +17313,7 @@ Returns 0 if at the end of the file.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/struct.BufReader.html">BufReader<>.<l "https://doc.rust-lang.org/std/io/trait.Read.html#tymethod.read">read()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
 @
 @ std::io::bufreader.read(), io::bufreader.read(), bufreader.read(), .read()
 
@@ -17154,6 +17376,9 @@ let mut <v>writer<> = BufWriter::new(<v>file<>);
 Errors:
 
 <cb>std::io::Result<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
 
 
 
@@ -17241,6 +17466,7 @@ Returns the number of bytes actually accepted
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/struct.BufWriter.html">BufWriter<>.<l "https://doc.rust-lang.org/std/io/struct.BufWriter.html#method.write">write()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
 @
 @ std::io::BufWriter.write(), io::BufWriter.write(), BufWriter.write(), .write()
 
@@ -17259,6 +17485,7 @@ Forces a write of the buffer to the destination.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l "https://doc.rust-lang.org/std/io/struct.BufWriter.html">BufWriter<>.<l "https://doc.rust-lang.org/std/io/trait.Write.html#tymethod.flush">flush()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
 @
 @ std::io::BufWriter.flush(), io::BufWriter.flush(), BufWriter.flush(), .flush()
 
@@ -17285,7 +17512,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### IO Error - ErrorKind
 
-<cb>= <v>error<>.kind()<><>
+<cb>= <v>error<>.kind()<>
 
 Returns:
 
@@ -17366,6 +17593,8 @@ Type:
 
 
 A structure representing a path.
+
+This type is <b>unsized<>.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.Path.html">Path<>
@@ -17542,6 +17771,10 @@ Usage:
 let <v>path_1<> = Path::new("<v>path<>");
 = <v>path_1<>.is_absolute()<>
 
+Returns:
+
+<cb>bool<>
+
 
 Returns true if the path is a absolute path.
 
@@ -17563,6 +17796,10 @@ Usage:
 
 let <v>path_1<> = Path::new("<v>path<>");
 = <v>path_1<>.is_dir()<>
+
+Returns:
+
+<cb>bool<>
 
 
 Returns true if the path is a directory.
@@ -17588,6 +17825,10 @@ Usage:
 let <v>path_1<> = Path::new("<v>path<>");
 = <v>path_1<>.is_file()<>
 
+Returns:
+
+<cb>bool<>
+
 
 Returns true if the path is a file.
 
@@ -17610,6 +17851,10 @@ Usage:
 
 let <v>path_1<> = Path::new("<v>path<>");
 = <v>path_1<>.is_relative()<>
+
+Returns:
+
+<cb>bool<>
 
 
 Returns true if the path is a relative path.
@@ -17634,6 +17879,10 @@ Usage:
 
 let <v>path_1<> = Path::new("<v>path<>");
 = <v>path_1<>.is_symlink()<>
+
+Returns:
+
+<cb>bool<>
 
 
 Returns true if the path is a symlink.
@@ -17750,6 +17999,27 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ from, convert, conversion, converting
 @ from path, path-to, path-into, into, path-from
+
+
+### Path - To PathBuf
+
+<cb>= <v>path_1<>.to_path_buf()<>
+
+Returns:
+
+<cb>PathBuf<>
+
+
+Converts the path into a PathBuf.
+
+This is useful if you need to return the path (path is unsized, whereas pathbuf is sized).
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.Path.html">Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.to_path_buf">to_path_buf()<>
+@
+@ to-path, path-to
+@ std::path::Path.to_path_buf(), path::Path.to_path_buf(), Path.to_path_buf(), .to_path_buf()
+
 
 
 ### Path - To Str
@@ -18011,6 +18281,10 @@ Usage:
 let <v>pathbuf_1<> = PathBuf::new("<v>pathbuf<>");
 = <v>pathbuf_1<>.is_absolute()<>
 
+Returns:
+
+<cb>bool<>
+
 
 Returns true if the PathBuf is a absolute path.
 
@@ -18032,6 +18306,10 @@ Usage:
 
 let <v>pathbuf_1<> = PathBuf::new("<v>pathbuf<>");
 = <v>pathbuf_1<>.is_dir()<>
+
+Returns:
+
+<cb>bool<>
 
 
 Returns true if the PathBuf is a directory.
@@ -18055,6 +18333,10 @@ Usage:
 let <v>pathbuf_1<> = PathBuf::new("<v>pathbuf<>");
 = <v>pathbuf_1<>.is_file()<>
 
+Returns:
+
+<cb>bool<>
+
 
 Returns true if the PathBuf is a file.
 
@@ -18075,6 +18357,10 @@ Usage:
 
 let <v>pathbuf_1<> = PathBuf::new("<v>pathbuf<>");
 = <v>pathbuf_1<>.is_relative()<>
+
+Returns:
+
+<cb>bool<>
 
 
 Returns true if the PathBuf is a relative path.
@@ -18097,6 +18383,10 @@ Usage:
 
 let <v>pathbuf_1<> = PathBuf::new("<v>pathbuf<>");
 = <v>pathbuf_1<>.is_symlink()<>
+
+Returns:
+
+<cb>bool<>
 
 
 Returns true if the PathBuf is a symlink.
@@ -18200,6 +18490,70 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ directories, paths, subdirectories, subpaths, folders, subfolders
 @ std::path::PathBuf.join(), path::PathBuf.join(), PathBuf.join(), .join()
+
+
+
+## PathBuf - Conversions
+@ 
+@ from, convert, conversion, converting, into
+@ from pathbuf, pathbuf-to, pathbuf-into, into, pathbuf-from
+
+
+### PathBuf - To Path
+
+<cb>= <v>pathbuf_1<>.as_path()<>
+
+Returns:
+
+<cb>&Path<>
+
+
+Returns a reference to the <c>Path<> form of the PathBuf.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html">PathBuf<>.<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html#method.as_path">as_path()<>
+@
+@ pathbuf.as_path(), .as_path()
+
+
+
+### Pathbuf - To Str
+
+<cb>= <v>pathbuf_1<>.to_str()<>
+
+Returns:
+
+<cb>Option\<&str><>
+
+
+Returns the pathbuf as a string if and only if it is a valid UTF-8 string.
+
+Non-UTF-8 strings return None.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html">PathBuf<>.<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html#method.to_str">to_str()<>
+@
+@ to-str, str-to, string
+@ std::path::pathbuf.to_str(), pathbuf::pathbuf.to_str(), pathbuf.to_str(), .to_str()
+
+
+
+### Pathbuf - To Str, Lossy
+
+<cb>= <v>pathbuf_1<>.to_string_lossy()<>
+
+Returns:
+
+<cb>COW\<str><>
+
+
+Returns the pathbuf as a str. Invalid UTF-8 characters get converted to � (Hex EF BF BD).
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html">PathBuf<>.<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html#method.to_string_lossy">to_string_lossy()<>
+@
+@ to-str, str-to, string, EF BF BD, �
+@ std::path::pathbuf.to_string_lossy(), pathbuf::pathbuf.to_string_lossy(), pathbuf.to_string_lossy(), .to_string_lossy()
 
 
 
@@ -21800,7 +22154,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Contains?
 
-<cb>= <v>vec_deque_1<>.contains(<v>item<>);<>
+<cb>= <v>vec_deque_1<>.contains(<v>value_1<>);<>
 
 
 Returns true if the item exists in the queue.
@@ -21814,7 +22168,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Get Back
 
-<cb><v>vec_deque_1<>.back(<v>item<>);<>
+<cb><v>vec_deque_1<>.back();<>
 
 
 Returns an item from the end of the queue.
@@ -21827,7 +22181,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Get Back Mutable
 
-<cb><v>vec_deque_1<>.back_mut(<v>item<>);<>
+<cb><v>vec_deque_1<>.back_mut();<>
 
 
 Returns a mutable item from the end of the queue.
@@ -21842,7 +22196,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Get Front
 
-<cb><v>vec_deque_1<>.front(<v>item<>);<>
+<cb><v>vec_deque_1<>.front();<>
 
 
 Returns an item from the beginning of the queue.
@@ -21857,7 +22211,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Get Front Mutable
 
-<cb><v>vec_deque_1<>.front_mut(<v>item<>);<>
+<cb><v>vec_deque_1<>.front_mut();<>
 
 
 Returns a mutable item from the beginning of the queue.
@@ -21871,7 +22225,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Get Item
 
-<cb><v>vec_deque_1<>.get(<v>item<>);<>
+<cb><v>vec_deque_1<>.get(<v>index<>);<>
 
 
 Returns an item from the beginning of the queue.
@@ -21983,7 +22337,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Pop Front
 
-<cb><v>vec_deque_1<>.pop_front(<v>item<>);<>
+<cb><v>vec_deque_1<>.pop_front();<>
 
 
 Removes and returns an item from the beginning of the queue.
@@ -21999,7 +22353,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Pop Back
 
-<cb><v>vec_deque_1<>.pop_back(<v>item<>);<>
+<cb><v>vec_deque_1<>.pop_back();<>
 
 
 Removes and returns an item from the end of the queue.
@@ -22014,7 +22368,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Push Front
 
-<cb><v>vec_deque_1<>.push_front(<v>item<>);<>
+<cb><v>vec_deque_1<>.push_front(<v>value_1<>);<>
 
 
 Adds an item to the beginning of the queue.
@@ -22030,7 +22384,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### VecDeque - Push Back
 
-<cb><v>vec_deque_1<>.push_back(<v>item<>);<>
+<cb><v>vec_deque_1<>.push_back(<v>value_1<>);<>
 
 
 Adds an item to the end of the queue.
@@ -22111,12 +22465,12 @@ Multithreaded:
 
 <in>Mutate Shared<sup><#>1<><><><|><go? "Mutex-only">Mutex<>\<<v>T<>><sup><>
 <in>Mutate Shared<sup><#>2<><><><|><go? "RwLock-only">RwLock<>\<<v>T<>><sup><>
-<in>Multiple Owners, Immutable<><|><go? "Arc-only">Arc<>\<<v>T<>><|>
+<in>Multiple Owners, Immutable<><|><go? "Arc-only">Arc<>\<<v>T<>>
 <in>Multiple Owners, Mutable<sup><#>1<><><><|><go? "Arc-only">Arc<>\<<go? "Mutex-only">Mutex<>\<<v>T<>>><sup><>
 <in>Multiple Owners, Mutable<sup><#>2<><><><|><go? "Arc-only">Arc<>\<<go? "RwLock-only">RwLock<>\<<v>T<>>><sup><><><>
 
 <#>1<>  -  Single Reader or Writer
-<#>2<>  -  Multiple Readers or Single Writer<>
+<#>2<>  -  Multiple Readers or Single Writer
 @
 @ pointers
 
@@ -22156,7 +22510,7 @@ Transparent to the end user
 Clones if needed
 Underlying type must implement <c>ToOwned<><><>
 
-########<><go? "mutex-only">Mutex<>\<<v>T<>><>
+########<c><go? "mutex-only">Mutex<>\<<v>T<>><>
 
 <in>Use when: You need to safely access mutable data between threads.
 
@@ -24061,7 +24415,7 @@ A pointer that contains a non-owning reference to some data.
 <*>Non-owning Reference to Rc
 Avoids Reference Cycles<>
 
-Returned by <>Rc.downgrade()<>.
+Returned by <c>Rc.downgrade()<>.
 Used to prevent reference loops.
 Allows data to be dropped from memory even though this pointer still references it.
 Makes <_>no<> guarantees that the data still being present.
@@ -27533,7 +27887,7 @@ Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rus
 
 <cb>= <v>socket_1<>.connect("<v>address<>:<v>port<>")<>
 
-<cb>= <v>socket_1<>.connect(<v>socket_address<>)<><>
+<cb>= <v>socket_1<>.connect(<v>socket_address<>)<>
 
 
 Creates a connection to a remote socket.
@@ -28455,9 +28809,9 @@ The <c>cmd!<> command and parameters do not require quotes around the names (<m>
 
 Full Form:
 
-<cb>use std::env::args();
+<cb>use std::env::args;
 
-let <v>args<>: Vec\<String> = env::args().collect();<>
+let <v>args<>: Vec\<String> = args().collect();<>
 
 Returns:
 
@@ -29856,18 +30210,8 @@ A Logical Or Operator
 
 <cb>= <v>a<> || <v>b<><>
 
-A Closure With No Parameters:
 
-<cb>= || <v>...<><>
-
-A Closure With A Parameter:
-
-<cb>= |<v>param_1<>: <v>type<>| <v>...<><>
-
-
-Examples:
-
-Logical Or:
+Example:
 
 <cb>let <v>a<> = true;
 let <v>b<> = false;
@@ -29877,14 +30221,37 @@ let <v>logical_or<> = <v>a<> || <v>b<>;
 println!("Locigal Or = {}", <v>logical_or<>);
 
 <#>// Prints "Locigal Or = true"<><>
+@
+@ double pipe
 
-Closure:
+
+
+### Symbol ||
+
+A Closure With No Parameters:
+
+<cb>= || <v>...<><>
+
+
+Example:
+
+Logical Or:
 
 <cb>let <v>closure_1<> = || println!("This is a closure.");
 
 <v>closure_1<>();
 
 <#>// Prints "This is a closure."<><>
+@
+@ double pipe
+
+
+
+### Symbol ||
+
+A Closure With A Parameter:
+
+<cb>= |<v>param_1<>: <v>type<>| <v>...<><>
 @
 @ double pipe
 
@@ -30043,6 +30410,20 @@ Match operator. Matches a pattern to a block in a match clause.
 	<v>pattern<> => <v>expression<>,
 	<v>...<>
 }<>
+
+
+
+### Symbol {..}
+
+Match struct using wild cards.
+
+<cb>match <v>enum_1<> {
+	<v>Enum1<>::<v>Variant1<>{..} => {
+		<v>...<>
+	},
+}<>
+@
+@ wild card, dot dot
 
 
 
@@ -30608,7 +30989,7 @@ println("{}", seconds.0)
 
 <#>// Prints: 60<><>
 @
-@ new type, wraps type, external trait
+@ new type, wraps type, external trait, wrapper
 @ newtype-only
 
 
@@ -30626,7 +31007,7 @@ Implements a trait for an external trait and type.
 
 Why? Allows you to add a trait to a type when both are external to your code.
 @
-@ new type, wraps type, external trait
+@ new type, wraps type, external trait, wrapper
 @ newtype-only
 
 
