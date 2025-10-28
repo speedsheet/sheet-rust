@@ -1,8 +1,8 @@
 <metadata>index: tags<>
 # <#>Rust<> SpeedSheet 🦀
-<b>Comprehensive Rust language reference. Cheatsheet speed!<>
+<metadata>index: None<>
 
-Comprehensive Rust language reference with real-time search. Type to find syntax, types, traits, and concepts instantly.
+This interactive Rust cheat sheet covers the essentials of the <b>Rust<> programming language. Just use FIND to get instant answers and find what you need in a snap!
 
 Speedsheet Repo: <l>https://github.com/speedsheet/sheet-rust<>
 
@@ -761,27 +761,8 @@ Creates:
 
 
 Generates HTML docs from your source code.
-
-
-Options:
-
-<in><t><c>--no-deps<><|>Shows project docs only without dependencies.
-<c><c>--document-private-items<><|>Include private items.<>
 @
-@ generate, html docs, docs, documents
-@ --no-deps, -document-private-items
-
-
-
-### Cargo - Create and Open Documentation
-
-<cb>cargo doc --open<>
-
-
-Generates HTML docs from your source code.
-@
-@ generate, html docs, docs, documents, view
-@ --open
+@ generate, html docs, docs
 
 
 
@@ -1114,31 +1095,9 @@ cargo publish<>
 
 
 
-### Cargo - Crate - Show
-
-<cb>cargo tree -i <v>crate_name<><>
-
-
-Shows the crate and version number.
-@
-@ display, print, project, version number
-
-
-
 ### Cargo - Crate - Yank
 
 <cb>cargo yank --version <v>x<>.<v>x<>.<v>x<> <v>crate_name<><>
-
-
-
-### Cargo - Crates - Show Tree
-
-<cb>cargo tree<>
-
-
-Displays all crates used by your project in tree form.
-@
-@ display, print, project
 
 
 
@@ -1379,7 +1338,7 @@ Usage:
 <cb>rustup target add wasm32-unknown-unknown
 cargo build --release --target wasm32-unknown-unknown<>
 
-<hl>Untested. I'm sure it is incomplete.<>
+<m>Untested. I'm sure it is incomplete.<>
 @
 @ add, install
 @ wasm
@@ -13785,19 +13744,6 @@ This will be removed in the release version (cargo build --release).
 
 
 
-#### Config Property - Target Non-Development Only
-
-<cb>#[cfg(not(debug_assertions))]
-<v>...<><>
-
-This will be included in release / non-development builds only (cargo build --release).
-@
-@ #[cfg(debug_assertions)], debug_assertions, cfg, production
-@ test, debug, assertions
-@ conditional compile, include, exclude
-
-
-
 #### Config Property - Target Release Only
 
 <cb>#[cfg(not(debug_assertions))]
@@ -14149,7 +14095,7 @@ Allows unused variables.
 
 <cb>#[warn(unused_imports)]<>
 
-<hl>Example<>
+<m>Example<>
 @
 @ #[warn(unused_imports)], unused_imports, warn
 @ allow, ignore
@@ -14160,7 +14106,7 @@ Allows unused variables.
 
 <cb>#[warn(unused_variables)]<>
 
-<hl>Example<>
+<m>Example<>
 @
 @ #[warn(unused_variables)]
 @ allow, ignore, unused_variables
@@ -15244,7 +15190,7 @@ Tells Rust what the lifetimes need to be for values entering and leaving the fun
 
 
 
-### Lifetime - Function Parameter With Type Annotation
+### Lifetime - Funciton Parameter With Type Annotation
 
 <cb>fn <v>function_1<>\<'<v>a<>, <v>T<>> (<v>param_1<>: &'<v>a<> <v>T<>, <v>param_2<><v>...<>) <v>...<><>
 
@@ -15373,17 +15319,17 @@ If <c>&self<> is an argument, the return type gets the <c>self<> lifetime<>.
 Rule 1:
 
 <cb>fn function_1(<v>param_1<>: &<v>T<>, <v>param_2<>: &<v>T<>) -> &<v>T<>                   <#>// Elided<>
-fn function_1<hl>\<'a, 'b><>(<v>param_1<>: &<hl>'a<> <v>T<>, <v>param_2<>: &<hl>'b<> <v>T<>) -> &<hl>'a<> <v>T<>  <#>// Compiler Expanded<><>
+fn function_1<m>\<'a, 'b><>(<v>param_1<>: &<m>'a<> <v>T<>, <v>param_2<>: &<m>'b<> <v>T<>) -> &<m>'a<> <v>T<>  <#>// Compiler Expanded<><>
 
 Rule 2:
 
 <cb>fn function_1(<v>param_1<>: &<v>T<>) -> &<v>T<>                               <#>// Elided<>
-fn function_1<hl>\<'a><>(<v>param_1<>: &<hl>'a<> <v>T<>) -> &<hl>'a<> <v>T<>                     <#>// Compiler Expanded<><>
+fn function_1<m>\<'a><>(<v>param_1<>: &<m>'a<> <v>T<>) -> &<m>'a<> <v>T<>                     <#>// Compiler Expanded<><>
 
 Rule 3:
 
 <cb>fn function_1(&<v>self<>, <v>param_2<>: &<v>T<>) -> &<v>T<>                        <#>// Elided<>
-fn function_1<hl>\<'a, 'b><>(&<hl>'a<> <v>self<>, <v>param_2<>: &<hl>'b<> <v>T<>) -> &<hl>'a<> <v>T<>       <#>// Compiler Expanded<><>
+fn function_1<m>\<'a, 'b><>(&<m>'a<> <v>self<>, <v>param_2<>: &<m>'b<> <v>T<>) -> &<m>'a<> <v>T<>       <#>// Compiler Expanded<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/reference/lifetime-elision.html">Lifetime elision<>
@@ -15689,7 +15635,7 @@ A module also defines a namespace for those functions and types.
 Types:
 
 <in>Inline Module
-File Module (<hl>term?<>)<>
+File Module (<m>term?<>)<>
 
 Rust Docs: <l https://doc.rust-lang.org/reference/items/modules.html<>Modules<>
 @
@@ -18950,7 +18896,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 # BufWriter
 
-<hl>Untested. Please report any errors, thanks!<>
+<m>Untested. Please report any errors, thanks!<>
 
 <cb>BufWriter<>
 
@@ -18969,7 +18915,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ## BufWriter - Basics
 
-<hl>Untested. Please report any errors, thanks!<>
+<m>Untested. Please report any errors, thanks!<>
 
 Read:
 
@@ -19144,7 +19090,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 <cb>std::io::ErrorKind<>
 
 
-The specific error that occurred during an IO function call. Returned in IO Error.
+The specific error that occured during an IO function call. Returned in IO Error.
 
 <go? "io-result-only">Result<>  |  <go? "io-error-only">Error<>
 
@@ -23782,7 +23728,7 @@ Type:
 
 <cb>std::cell::OnceCell<>
 
-<*>Use for lazy global initialization
+<*>Use for lazy global initalization
 Immutable unless defined with <c>mut<>
 Not thread safe (use <go?>OnceLock<>)<>
 
@@ -23923,7 +23869,7 @@ Type:
 
 <cb>std::cell::OnceLock<>
 
-<*>Use for lazy global initialization
+<*>Use for lazy global initalization
 Immutable
 Is thread safe<>
 
@@ -25288,9 +25234,9 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Usage:
 
-<cb>use std::fmt;
-use std::fmt::Display;
+<cb>use std::fmt::Display;
 use std::fmt::Formatter;
+use std::fmt;
 
 impl Display for <v>Struct1<> {
 
@@ -25311,9 +25257,9 @@ Implementing this automatically implements the <c>ToString<> trait too.
 
 Example:
 
-<cb>use std::fmt;
-use std::fmt::Display;
+<cb>use std::fmt::Display;
 use std::fmt::Formatter;
+use std::fmt::Result;
 
 struct Point {
 	<v>x<>: i32,
@@ -25322,7 +25268,7 @@ struct Point {
 
 impl Display for Point {
 
-	fn fmt(&self, <v>formatter<>: &mut Formatter) -> fmt::Result {
+	fn fmt(&self, <v>formatter<>: &mut Formatter) -> Result {
 		write!(<v>formatter<>, "{}, {}", self.<v>x<>, self.<v>y<>)
 	}
 }
@@ -25501,7 +25447,7 @@ Returns:
 <cb>Option\<&dyn Error><>
 
 
-<hl>Deprecated.<>
+<m>Deprecated.<>
 
 Use <c>.source()<>.
 
@@ -25522,7 +25468,7 @@ Returns:
 <cb>&str<>
 
 
-<hl>Deprecated.<>
+<m>Deprecated.<>
 
 Returns the original error if any.
 
@@ -25928,7 +25874,7 @@ Type:
 
 Converts an item from one type into another.
 
-<hl>Prefer the <c>From<> trait over <c>Into<>.<>
+<m>Prefer the <c>From<> trait over <c>Into<>.<>
 Automatically implements the <c>From<> trait.
 Often requires turbofish / type annotations to help the type inference system.
 
@@ -29503,7 +29449,7 @@ Equivalent To:
 <v>command<>.arg("<v>param1<>");
 <v>command<>.arg("<v>param2<>");<>
 
-The <c>cmd!<> command and parameters do not require quotes around the names (<hl>confirm<>).
+The <c>cmd!<> command and parameters do not require quotes around the names (<m>confirm<>).
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/process/index.html">process<>::<l "https://doc.rust-lang.org/std/process/struct.Command.html#method.spawn">Command<>
@@ -32397,7 +32343,7 @@ Wikipedia: <l https://en.wikipedia.org/wiki/LLVM>LLVM<>
 A marker trait is a trait that is used to identify a property of a type.
 
 Marker traits do not have any methods associated with them
-and therefore do not require any method implementation.
+and therefore do not requiry any method implementation.
 
 
 
@@ -32575,7 +32521,7 @@ This rule ensures type safety across different crates by preventing conflicting 
 
 
 ### Transmute
-An unsafe function that reinterprets the underlying bit value of a type as another type.
+An unsafe function that reintreprets the underlying bit value of a type as another type.
 
 
 
@@ -32621,42 +32567,13 @@ Each trait defines a separate vtable.
 
 
 ### WebAssembly (WASM)
-Portable binary-code that runs in a web browser. Rust supports compiling to WebAssembly.
+Portable binary-cod that runs in a web browser. Rust supports compiling to WebAssembly.
 
 Wikipedia: <l https://en.wikipedia.org/wiki/WebAssembly>WebAssembly<>
 
 
 
 ### Zero Cost Abstraction
-These abstractions give you high-level language features (such as safety and expressiveness) without sacrificing performance.
+These absractions give you high-level language features (such as safety and expressiveness) without sacrificing performance.
 
 
-
-# Legal
-
-
-## License
-
-© 2021-2025 ThinkGo, LLC. Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
-
-<b>Summary:<>
-
-<b>Allowed:<>
-<in><*>Personal use and link sharing
-Modifications and improvements
-Redistribution of modified versions<><>
-
-<b>Required:<>
-<in><*>Credit speedsheet.io as source
-License derivatives under CC BY-NC-SA 4.0<><>
-
-<b>Prohibited:<>
-<in><*>Commercial use without permission<><>
-
-Full license text: <l>https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode<>
-
-<b>Contributing improvements:<>
-PRs welcome at <l>https://github.com/speedsheet/sheet-bash<>
-
-<b>Commercial licensing inquiries:<>
-Contact via [feedback form](https://speedsheet.io/feedback) with subject "Commercial Licensing - Rust SpeedSheet"
