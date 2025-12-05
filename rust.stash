@@ -9524,11 +9524,29 @@ This only works enums with no data attached to them (no tuple or struct enums).
 ## Enum - Patterns
 
 
+### Enum - Equals
+
+<cb>matches!(<v>value_1<>, <v>Type<>::<v>Variant<>)<>
+
+
+Returns true if the value matches the pattern.
+@
+@ matches!(), is value
+
+
+
 ### Enum - Equals / If Let Variant
 
 <cb>if let <v>Enum1<>::<v>Item1<> = <v>value<> <v>...<><>
 
-or
+
+Tests if the enum is a particular variant of it (e.g. is it Item1?).
+@
+@ equals, is value, is type, match
+
+
+
+### Enum - Equals / Using Match
 
 <cb>match <v>value<> {
 	<v>Enum1<>::<v>Item1<> => <v>...<>,
@@ -9537,10 +9555,6 @@ or
 
 
 Tests if the enum is a particular variant of it (e.g. is it Item1?).
-
-Use <c>match<> or <c>if let<>. 
-
-There is no direct way to check if an enum is a specific variant out of the box.
 @
 @ equals, is value, is type, match
 
@@ -9827,9 +9841,9 @@ Rust Docs: <l "https://doc.rust-lang.org/std/keyword.struct.html">struct<>
 Struct Fields:
 
 <cb>struct <v>Struct1<> {
-   <v>field_1<>: <v>T1<>,
-   <v>field_2<>: <v>T2<>,
-   <v>field_3<>: <v>T3<>
+	<v>field_1<>: <v>T1<>,
+	<v>field_2<>: <v>T2<>,
+	<v>field_3<>: <v>T3<>
 }<>
 
 Struct Functions and Methods:
@@ -9856,9 +9870,9 @@ Call Function:
 Create:
 
 <cb>let <v>value_1<> = <v>Struct1<> {
-   <v>field_1<>: <v>value<>,
-   <v>field_2<>: <v>value<>,
-   <v>field_3<>: <v>value<>
+	<v>field_1<>: <v>value<>,
+	<v>field_2<>: <v>value<>,
+	<v>field_3<>: <v>value<>
 };
 
 let <v>value_2<> = <v>Struct1<>::new(<v>field_1<>, <v>field_2<>, <v>field_3<>);<>
@@ -23782,6 +23796,10 @@ Type:
 
 <cb>std::cell::OnceCell<>
 
+Import:
+
+<cb>use std::cell::OnceCell;<>
+
 <*>Use for lazy global initialization
 Immutable unless defined with <c>mut<>
 Not thread safe (use <go?>OnceLock<>)<>
@@ -29611,6 +29629,43 @@ strip = true		<#># Strips symbols<><>
 
 
 
+### Current Executable - Get
+
+<cb>= current_exe()<>
+
+Usage:
+
+<cb>use std::env::current_exe;
+
+= current_exe()<>
+
+Returns:
+
+<cb>Result\<PathBuf><>
+
+
+Returns the path to the currently running executable.
+
+
+Example:
+
+<cb>use std::env::current_exe;
+use std::path::PathBuf;
+
+let <v>path<>: PathBuf = current_exe().unwrap();
+let <v>executable<> = <v>path<>.to_str().unwrap();
+
+println!("Current Executable: {}", &<v>executable<>);<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/env/index.html">env<>::<l "https://doc.rust-lang.org/std/env/fn.current_exe.html">current_exe<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html">PathBuf<>
+@
+@ path
+@ std::env::current_exe(), env::current_exe(), current_exe()
+
+
+
 ### Current Working Directory - Get
 
 <cb>= current_dir()<>
@@ -29878,35 +29933,6 @@ Use Small Code compiler options.
 
 
 
-### OS - Get
-
-<cb>= std::env::consts::OS<>
-
-Returns:
-
-<c>&str<>
-
-Possible Values:
-
-<cb>"android"
-"dragonfly"
-"freebsd"
-"ios"
-"linux"
-"macos"
-"netbsd"
-"openbsd"
-"solaris"
-"windows"<>
-
-
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/env/index.html">env<>::<l "https://doc.rust-lang.org/std/env/consts/index.html">consts<>::<l "https://doc.rust-lang.org/std/env/consts/constant.OS.html">OS<>
-@
-@ std::env::consts::OS, env::consts::OS, consts::OS
-@ OS, operating system, macos, android, dragonfly, freebsd, ios, linux, macos, netbsd, openbsd, solaris, windows
-
-
-
 ### Pass String or &str
 
 <cb>\<<v>IntoString<>: Into\<String>><>
@@ -30125,6 +30151,68 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ error code, status, number, end program, stop, quit, application, program, terminate
 @ std::process::exit(), process::exit(), exit(), quit()
+
+
+
+### System Architecture - Get
+
+<cb>= std::env::consts::ARCH<>
+
+Returns:
+
+<c>&str<>
+
+Possible Values:
+
+<cb>"x86"
+"x86_64"
+"arm"
+"arm64"			<#>Apple Silicon Macs<>
+"armv7"			<#>Embedded or Older Modile Devices<>
+"riscv32"		<#>RISC-V<>
+"riscv64"		<#>RISC-V<>
+"powerpc"
+"powerpc64"
+"wasm32"
+"wasm64"<>
+
+
+Returns the CPU type / system architecture for the current system.
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/env/index.html">env<>::<l "https://doc.rust-lang.org/std/env/consts/index.html">consts<>::<l "https://doc.rust-lang.org/std/env/consts/constant.ARCH.html">ARCH<>
+@
+@ std::env::consts::ARCH, env::consts::ARCH, consts::ARCH, cpu
+@ ARCH, 
+
+
+
+### System OS - Get
+
+<cb>= std::env::consts::OS<>
+
+Returns:
+
+<c>&str<>
+
+Possible Values:
+
+<cb>"android"
+"dragonfly"
+"freebsd"
+"ios"
+"linux"
+"macos"
+"netbsd"
+"openbsd"
+"solaris"
+"windows"<>
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/env/index.html">env<>::<l "https://doc.rust-lang.org/std/env/consts/index.html">consts<>::<l "https://doc.rust-lang.org/std/env/consts/constant.OS.html">OS<>
+@
+@ std::env::consts::OS, env::consts::OS, consts::OS
+@ OS, operating system, macos, android, dragonfly, freebsd, ios, linux, macos, netbsd, openbsd, solaris, windows
 
 
 
@@ -31317,7 +31405,7 @@ Example:
 <cb>[dependencies]
 <>
 @
-@ dependency, crate, library, libraries, include
+@ dependency, crate, library, libraries, include, import
 @ [depedencies], [dependency]
 
 
@@ -31341,7 +31429,7 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 thiserror = "1.0"<>
 @
-@ dependencies, crate, library, libraries, tests,include, add, features
+@ dependencies, crate, library, libraries, tests, include, import, add, features
 @ [dev-dependencies], [dev-dependency]
 
 
@@ -31362,7 +31450,7 @@ Example:
 <cb>[dependencies]
 <v>utils<> = "../<v>utils-lib<>"<>
 @
-@ dependencies, libraries, include, add, path
+@ dependencies, libraries, include, add, path, import module
 @ [dependencies], [dependency]
 
 
@@ -31375,7 +31463,7 @@ Example:
 
 Imports a crate into the project workspace using the provided name.
 @
-@ dependency, crate, library, libraries, include, alias change
+@ dependency, crate, library, libraries, include, import, alias change
 @ [dependencies], [dependency]
 
 
@@ -31458,6 +31546,47 @@ Uses Semantic Versioning:
 Semantic Versioning: <l>https://semver.org/<>
 @
 @ [package]
+
+
+
+# Reference - Git .gitignore
+@
+@ git-only
+
+### Basic Rust .gitignore
+
+Git .gitignore file for Rust projects:
+
+<cb><#># Backup files<>
+**/*.rs.bk
+*.orig
+
+<#># Cargo<>
+<#># (include for binaries, exclude for libraries)<>
+Cargo.lock
+
+<#># Environment variables<>
+.env
+.env.local
+
+<#># IDEs<>
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swo
+*.swp
+*.iml
+*~
+
+<#># Build artifacts<>
+debug/
+target/
+*.pdb
+*.o
+
+<#># OS<>
+.DS_Store
+Thumbs.db<>
 
 
 
@@ -32637,7 +32766,7 @@ These abstractions give you high-level language features (such as safety and exp
 
 ## License
 
-© 2021-2025 ThinkGo, LLC. Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+© 2023-2025 ThinkGo, LLC. Licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
 
 <b>Summary:<>
 
@@ -32656,7 +32785,7 @@ License derivatives under CC BY-NC-SA 4.0<><>
 Full license text: <l>https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode<>
 
 <b>Contributing improvements:<>
-PRs welcome at <l>https://github.com/speedsheet/sheet-bash<>
+PRs welcome at <l>https://github.com/speedsheet/sheet-rust<>
 
 <b>Commercial licensing inquiries:<>
 Contact via [feedback form](https://speedsheet.io/feedback) with subject "Commercial Licensing - Rust SpeedSheet"
