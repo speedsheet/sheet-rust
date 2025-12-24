@@ -14084,7 +14084,7 @@ For Entire Module:
 
 Allows code that is not used by your program.
 @
-@ #![allow(dead_code)]
+@ #[allow(dead_code)], #![allow(dead_code)]
 @ ignore, dead_code
 
 
@@ -14116,7 +14116,7 @@ For Entire Module:
 
 Disables warnings for unused code inside a module.
 @
-@ #[allow(unused)]
+@ #[allow(unused)], #![allow(unused)]
 @ ignore, unused
 
 
@@ -14136,7 +14136,7 @@ Allows unused imports.
 
 For <c>#[allow(unused_imports)]<>, place right before import statement.
 @
-@ #[allow(unused_imports)], unused_imports, allow
+@ #[allow(unused_imports)], #![allow(unused_imports)], unused_imports, allow
 @ ignore, use
 
 
@@ -14154,7 +14154,7 @@ For Entire Module:
 
 Allows unused variables.
 @
-@ #[allow(unused_variables)], unused_variables, allow
+@ #[allow(unused_variables)], #![allow(unused_variables)], unused_variables, allow
 @ ignore
 
 
@@ -32306,6 +32306,43 @@ Rust's build system and package manager.
 Rust's included code linter.
 @
 @ lint, linter
+
+
+
+### Conditional Compilation
+Where the compiler decides to include or exclude code based on some criteria:
+
+<*>Feature Gates
+Target Os/Arch
+Build Profile
+Custom Flags<>
+
+
+
+### Conditional Compile - Feature Gates
+A flag that tells the compiler to include or exclude a piece of code based on what features are enabled, i.e., conditional compilation.
+
+<cb>(#[cfg(feature = "<v>..."<>)])<>
+
+
+
+### Conditional Compile - Target Os/Arch
+
+<cb>(#[cfg(target_os = "<v>...<>")]<>
+
+<cb>#[cfg(target_arch = "<v>...<>")])<>
+
+
+
+### Conditional Compile - Build Profile
+
+<cb>(#[cfg(debug_assertions)], #[cfg(test)])<>
+
+
+
+### Conditional Compile - Custom Flags
+
+<cb>(--cfg custom_flag via rustc/Cargo)<>
 
 
 
