@@ -8,9 +8,7 @@ https://speedsheet.io/s/rust
 
 # Status
 
-Content: Beginning Stages of Development
-
-This sheet is in very early stages of development.
+Content: Complete, comprehensive, actively maintained.
 
 
 # Contribute

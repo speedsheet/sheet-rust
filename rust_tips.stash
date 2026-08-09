@@ -1,5 +1,5 @@
-# <#>Rust<> SpeedSheet Tips
-Tips for using the <go rust>Rust SpeedSheet<> Like a Pro
+# <n>Rust<> SpeedSheet Tips
+Tips for using the <doc rust>Rust SpeedSheet<> Like a Pro
 
 <block light><image "rust-overview-light.webp"><><block not-light><image "rust-overview-dark.webp"><>
 
@@ -17,23 +17,23 @@ Incomplete names match too<>
 
 Use '-only' or just '-' with the item name to focus on its section alone and drop the indirect uses from your results:
 
-<*>"<c><go "rust?vec-only>vec-only<><>"
-"<c><go "rust?vec->vec-<><>"<>
+<*>"<c><doc "rust?vec-only>vec-only<><>"
+"<c><doc "rust?vec->vec-<><>"<>
 
 
 #### Lookup by Path
 
 Find a type by entering either it's full path or just the "::":
 
-<*>"<c><go "rust?std::vec::vec>std::vec::vec<><>"
-"<c><go "rust?::vec>::vec<><>"<>
+<*>"<c><doc "rust?std::vec::vec>std::vec::vec<><>"
+"<c><doc "rust?::vec>::vec<><>"<>
 
 
 #### Lookup Symbols
 
 Need to know what a symbol does? Just enter "symbol" and then the symbol you what:
 
-<*>"<c><go "rust?symbol ::\<>symbol ::\<><><>"<><>
+<*>"<c><doc "rust?symbol ::\<>symbol ::\<><><>"<><>
 
 
 #### Use ESC to Reset
@@ -47,9 +47,9 @@ When you’re done searching, hit Escape to clear your search and bring everythi
 
 Don’t miss these key areas:
 
-<*><go "rust?hello world>Hello World<>
-<go "rust?smart pointer guide>Smart Pointer Guide<>
-<go "rust?struct-only>Structs<>, <go "rust?trait-only>Traits<><>
+<*><doc "rust?hello world>Hello World<>
+<doc "rust?smart pointer guide>Smart Pointer Guide<>
+<doc "rust?struct-only>Structs<>, <doc "rust?trait-only>Traits<><>
 
 
 #### Feedback

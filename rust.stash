@@ -1,5 +1,5 @@
 <metadata>index: tags<>
-# <#>Rust<> SpeedSheet 🦀
+# <n>Rust<> SpeedSheet 🦀
 <b>Comprehensive Rust language reference. Cheatsheet speed!<>
 
 Comprehensive Rust language reference with real-time search. Type to find syntax, types, traits, and concepts instantly.
@@ -14,101 +14,101 @@ Check out our <l "rust_tips">tips page<> for pro-level tricks to get the most ou
 
 <t><col><b>Basics<>
 
-<*><go? "hello world">Hello World<>
-<go? "fundamentals-only">Language Fundamentals<>
-<go? "conventions-only">Naming Conventions<><>
+<*><doc? "hello world">Hello World<>
+<doc? "fundamentals-only">Language Fundamentals<>
+<doc? "conventions-only">Naming Conventions<><>
 
-<*><go? "attributes-only">Attributes<>
-<go? "closure-only">Closures<>
-<go? "control-structure-only">Control Structures<>
-<go? "errors-only">Error Handling<>
-<go? "files-only">Files<>
-<go? "file io">File IO<>
-<go? "functions-only">Functions<>
-<go? "lifetimes-only">Lifetimes<>
-<go? "module-only">Modules<>
-<go? "operators-only">Operators<>
-<go? "operator precedence">Operator Precedence<>
-<go? "ownership-only">Ownership<>
-<go? "reference-only">Pointers<>
-<go? "smart-pointers-only">Smart Pointers<>
-<go? "tests-only">Testing<>
-<go? "traits-only">Traits<><>
+<*><doc? "attributes-only">Attributes<>
+<doc? "closure-only">Closures<>
+<doc? "control-structure-only">Control Structures<>
+<doc? "errors-only">Error Handling<>
+<doc? "files-only">Files<>
+<doc? "file io">File IO<>
+<doc? "functions-only">Functions<>
+<doc? "lifetimes-only">Lifetimes<>
+<doc? "module-only">Modules<>
+<doc? "operators-only">Operators<>
+<doc? "operator precedence">Operator Precedence<>
+<doc? "ownership-only">Ownership<>
+<doc? "reference-only">Pointers<>
+<doc? "smart-pointers-only">Smart Pointers<>
+<doc? "tests-only">Testing<>
+<doc? "traits-only">Traits<><>
 
 <b>Control Structures<>
 
-<*><go? "if-else-only">If Else<>
-<go? "if-let-only">If let<>
-<go? "ternary-only">If / Inline<>
-<go? "for-only#for_-_basics">For Loop<>
-<go? "let-else-only">Let Else<>
-<go? "loop-only">Loop<>
-<go? "match-only#match_-_basics">Match<>
-<go? "while-only#while_-_basics">While<><>
+<*><doc? "if-else-only">If Else<>
+<doc? "if-let-only">If let<>
+<doc? "ternary-only">If / Inline<>
+<doc? "for-only#for_-_basics">For Loop<>
+<doc? "let-else-only">Let Else<>
+<doc? "loop-only">Loop<>
+<doc? "match-only#match_-_basics">Match<>
+<doc? "while-only#while_-_basics">While<><>
 
 <b>Running Rust<>
 
-<*><go? "command-line-only">Command Line<>
-<go? "configuration-only">Configuration<><>
+<*><doc? "command-line-only">Command Line<>
+<doc? "configuration-only">Configuration<><>
 
 <b>Reference<>
 
-<*><go? "online-docs-only">Online Docs<>
-<go? "reserved-only">Reserved Words<>
-<go? "patterns-only">Rust Patterns<>
-<go? "terms-only">Rust Terms<>
-<go? "symbols-only">Symbol Lookup<><>
+<*><doc? "online-docs-only">Online Docs<>
+<doc? "reserved-only">Reserved Words<>
+<doc? "patterns-only">Rust Patterns<>
+<doc? "terms-only">Rust Terms<>
+<doc? "symbols-only">Symbol Lookup<><>
 
 <><col><b>Data Types<>
 
-<*><go? "variables-only">Variables<>
-<go? "ownership-only">Ownership<>
-<go? "literals-only">Literals<>
-<go? "data-types-only">Data Types<><>
+<*><doc? "variables-only">Variables<>
+<doc? "ownership-only">Ownership<>
+<doc? "literals-only">Literals<>
+<doc? "data-types-only">Data Types<><>
 
-<*><go? "boolean-only">Bool<>
-<go? "byte-only">Byte<>
-<go? "char-only">Char<>
-<go? "float-only">Float<>
-<go? "integer-only">Integer<>
-<go? "str-only">Str<>
-<go? "string-only">String<><>
+<*><doc? "boolean-only">Bool<>
+<doc? "byte-only">Byte<>
+<doc? "char-only">Char<>
+<doc? "float-only">Float<>
+<doc? "integer-only">Integer<>
+<doc? "str-only">Str<>
+<doc? "string-only">String<><>
 
-<*><go? "array-only">Array<><>
+<*><doc? "array-only">Array<><>
 
-<*><go? "unit-only">Unit<>
-<go? "range-only">Range<><>
+<*><doc? "unit-only">Unit<>
+<doc? "range-only">Range<><>
 
-<*><go? "enum-only">Enum<>
-<go? "struct-only">Struct<>
-<go? "tuple-only">Tuple<>
-<go? "tuple-struct-only">Tuple Struct<><>
+<*><doc? "enum-only">Enum<>
+<doc? "struct-only">Struct<>
+<doc? "tuple-only">Tuple<>
+<doc? "tuple-struct-only">Tuple Struct<><>
 
 <b>Collections<>
 
-<*><go? "binaryheap-only">BinaryHeap<>
-<go? "btreemap-only">BTreeMap<>
-<go? "btreeset-only">BTreeSet<>
-<go? "hashmap-only">HashMap<>
-<go? "hashset-only">HashSet<>
-<go? "linkedlist-only">LinkedList<>
-<go? "vec-only">Vec<>
-<go? "vecdeque-only">VecDeque<><>
+<*><doc? "binaryheap-only">BinaryHeap<>
+<doc? "btreemap-only">BTreeMap<>
+<doc? "btreeset-only">BTreeSet<>
+<doc? "hashmap-only">HashMap<>
+<doc? "hashset-only">HashSet<>
+<doc? "linkedlist-only">LinkedList<>
+<doc? "vec-only">Vec<>
+<doc? "vecdeque-only">VecDeque<><>
 
 <b>Smart Pointers<>
 
-<*><go?>Smart Pointer Guide<><>
+<*><doc?>Smart Pointer Guide<><>
 
-<*><go? "arc-only">Arc<>
-<go? "box-only">Box<>
-<go? "cell-only">Cell<>
-<go? "cow-only">Cow<>
-<go? "rc-only">Rc<>
-<go? "ref-only">Ref<>
-<go? "refcell-only">RefCell<>
-<go? "refmut-only">RefMut<>
-<go? "rwlock-only">RwLock<>
-<go? "weak-only">Weak<><><><>
+<*><doc? "arc-only">Arc<>
+<doc? "box-only">Box<>
+<doc? "cell-only">Cell<>
+<doc? "cow-only">Cow<>
+<doc? "rc-only">Rc<>
+<doc? "ref-only">Ref<>
+<doc? "refcell-only">RefCell<>
+<doc? "refmut-only">RefMut<>
+<doc? "rwlock-only">RwLock<>
+<doc? "weak-only">Weak<><><><>
 
 
 # Online Documents
@@ -214,11 +214,11 @@ fn main() {
     println!("name: ");
 
     if let Err(<v>error<>) = stdin().read_line(&mut <v>name<>) {
-        println!("Error: {}", <v>error<>);
+        eprintln!("Error: {}", <v>error<>);
         return;
     }
 
-    <v>name<>.pop(); <#>// Remove the newline character.<>
+    <v>name<>.pop(); <n>// Remove the newline character.<>
 
     println!("Hello, {}!", <v>name<>);
 }<>
@@ -282,7 +282,7 @@ Graydon Hoare
 
 ### Comments
 
-<cb><#>// This is a comment.<><>
+<cb><n>// This is a comment.<><>
 
 Start a comment with '<c>//<>'.
 @
@@ -292,7 +292,7 @@ Start a comment with '<c>//<>'.
 
 ### Comments - Inline
 
-<cb><#>/* inline comment */<><>
+<cb><n>/* inline comment */<><>
 
 
 A comment embedded in a statement.
@@ -300,7 +300,7 @@ A comment embedded in a statement.
 
 Example
 
-<cb>let a <#>/* Type determined by inferencing */<> = 42.<>
+<cb>let a <n>/* Type determined by inferencing */<> = 42.<>
 @
 @ /*, */, /**/
 
@@ -308,7 +308,7 @@ Example
 
 ### Comments - Multiline
 
-<cb><#>/*
+<cb><n>/*
 
 Multiline Comment
 
@@ -323,9 +323,9 @@ End with '<c>*/>'
 
 ### Doc Comments
 
-<cb><#>/// This is a doc comment.<><>
+<cb><n>/// This is a doc comment.<><>
 
-<cb><#>/// This doc comment
+<cb><n>/// This doc comment
 /// adds content to the
 /// following function.<>
 fn <v>documented_function<>() {
@@ -333,7 +333,7 @@ fn <v>documented_function<>() {
 }<>
 
 Doc comments are placed before the item being commented on.
-Use a triple forward slash (<#><c>///<><>) on each line.
+Use a triple forward slash (<n><c>///<><>) on each line.
 @
 @ code, documentation, docstring-only, docstr-only, doc-string-only, doc-str-only
 @ ///
@@ -342,7 +342,7 @@ Use a triple forward slash (<#><c>///<><>) on each line.
 
 ### Doc Comments - Markdown Format
 
-<cb><#>/// # Heading 1
+<cb><n>/// # Heading 1
 /// ## Heading 2
 ///
 /// In **<b>bold<>** or __<b>bold<>__
@@ -383,7 +383,7 @@ Example:
 
 println!("a = {}", <v>a<>);
 
-<#>// Prints:
+<n>// Prints:
 //
 //    a = 15
 //    a = 10<><>
@@ -410,7 +410,7 @@ Example:
 
 println!("value = {}", <v>value<>);
 
-<#>// Prints: "value = 100"<><>
+<n>// Prints: "value = 100"<><>
 
 
 
@@ -466,7 +466,7 @@ For Libraries:
 <cb>src/lib.rs<>
 
 
-For Tests<super><#>1<><>:
+For Tests<super><n>1<><>:
 
 <cb>tests/tests.rs<>
 
@@ -901,13 +901,14 @@ Compiles and runs the application.
 Runs unit tests in src modules and any tests in /tests.
 
 Stops when a test fails.
+Returns exit code 0 if successful, 101 if any tests failed.
 
 Tests Directory:
 
 <cb><v>project<>/
 └── tests/<>
 @
-@ project, application, tests, testing
+@ project, application, unit tests, testing
 
 
 
@@ -918,13 +919,14 @@ Tests Directory:
 Runs unit tests in src modules and any tests in /tests.
 
 Runs all tests regardless of outcomes.
+Returns exit code 0 if successful, 101 if any tests failed.
 
 Tests Directory:
 
 <cb><v>project<>/
 └── tests/<>
 @
-@ project, application, tests, testing
+@ project, application, unit tests, testing
 @ --no-fail-fast
 
 
@@ -1001,6 +1003,19 @@ Updates all libraries and crates.
 Lists the changes.
 @
 @ crates, all
+
+
+
+### Cargo - Backup Libraries
+
+<cb>cargo vendor<>
+
+
+Creates a local copy of all crates used in your project or workspace.
+
+Backs up to <c>/vendor<> by default.
+@
+@ crates, all, vendor, workspace.
 
 
 
@@ -1201,7 +1216,7 @@ Compiles a binary excluding anything that is defined in the default feature:
 Cargo.toml:
 
 <cb>[features]
-default = [<v>"crate-1<>", "<>crate-2<>"]<>
+default = [<v>"crate-1<>", "<v>crate-2<>"]<>
 @
 @ --no-default-features
 
@@ -1314,7 +1329,7 @@ cargo build --release --target x86_64-apple-darwin<>
 @
 @ apple, darwin
 @ add, install
-@ x86_64-apple-darwin
+@ x86_64-apple-darwin, intel, amd
 
 
 
@@ -1404,7 +1419,7 @@ Requires:
 
 <cb>brew install stable-i686-pc-windows-msvc
 
-	<#># Or...<>
+	<n># Or...<>
 
 rustup toolchain install stable-i686-pc-windows-msvc<>
 @
@@ -1436,7 +1451,7 @@ Requires:
 
 <cb>brew install stable-x86_64-pc-windows-msvc
 
-	<#># Or...<>
+	<n># Or...<>
 
 rustup toolchain install stable-x86_64-pc-windows-msvc<>
 @
@@ -1507,7 +1522,7 @@ Lists all available targets.
 
 Cargo.Toml:
 
-<cb><#># Comments<>
+<cb><n># Comments<>
 
 [package]
 name = "<v>AppName<>"
@@ -1608,7 +1623,7 @@ Calculate the operation and save the result in <c><v>a<><>:
 <col><c><v>a<> || <v>b<><><><col>Or<><><>
 @
 @ Boolean, !, &&, ||
-@ and, or, not, negation, bang
+@ and, or, unary not, negation, bang
 
 
 
@@ -1634,7 +1649,7 @@ let <v>more_or_less<> = if <v>a<> > 5 {"more"} else {"less"};
 
 println!("{} is {} than 5.", <v>a<>, <v>more_or_less<>);
 
-<#>// Prints "10 is more than 5."<><>
+<n>// Prints "10 is more than 5."<><>
 @
 @ Ternary conditional operator, tertiary, expression
 @ Inline If, iif, if else
@@ -1650,35 +1665,35 @@ From Highest to Lowest:
 
 <c>.<v>method<>()<><|>Methods
 
-<c>.<v>field<><><|>Fields<|><s>left to right<>
+<c>.<v>field<><><|>Fields<|><d>left to right<>
 
 <c><v>function<>(), <v>array<>[]<><|>Functions, Array Indexes
 
 <c>-  *  !  &  &mut<><|>Unary Operators
 
-<c>as  :<><|>Casting, : Operator<|><s>left to right<>
+<c>as  :<><|>Casting, : Operator<|><d>left to right<>
 
-<c>*  /  %<><|>Multiplicative<|><s>left to right<>
+<c>*  /  %<><|>Multiplicative<|><d>left to right<>
 
-<c>+  -<><|>Additive<|><s>left to right<>
+<c>+  -<><|>Additive<|><d>left to right<>
 
-<c>\<\<  >><><|>Bitwise Shift<|><s>left to right<>
+<c>\<\<  >><><|>Bitwise Shift<|><d>left to right<>
 
-<c>&<><|>Bitwise AND<|><s>left to right<>
+<c>&<><|>Bitwise AND<|><d>left to right<>
 
-<c>^<><|>Bitwise XOR<|><s>left to right<>
+<c>^<><|>Bitwise XOR<|><d>left to right<>
 
-<c>|<><|>Bitwise OR<|><s>left to right<>
+<c>|<><|>Bitwise OR<|><d>left to right<>
 
-<c>==  !=  \<  \<=  >  >=<><|>Comparison<|><s>use parenthesis<>
+<c>==  !=  \<  \<=  >  >=<><|>Comparison<|><d>use parenthesis<>
 
-<c>&&<><|>Logical AND<|><s>left to right<>
+<c>&&<><|>Logical AND<|><d>left to right<>
 
-<c>||<><|>Logical OR<|><s>left to right<>
+<c>||<><|>Logical OR<|><d>left to right<>
 
-<c>..  ..=<><|>Range<|><s>use parenthenis<>
+<c>..  ..=<><|>Range<|><d>use parenthenis<>
 
-<c>=  +=  -=  *=  /=  %=  \<\<=  >>=  &=  ^=  |=<><|>Assignment<|><s>left to right<>
+<c>=  +=  -=  *=  /=  %=  \<\<=  >>=  &=  ^=  |=<><|>Assignment<|><d>left to right<>
 
 <c>return  break  ||<><|>Flow Control, Closures<>
 @
@@ -1691,7 +1706,7 @@ From Highest to Lowest:
 
 ### Implement Equals Operator - Using Derive
 
-<cb>#[derive(PartialEq)]
+<cb>#[derive(PartialEq, Eq)]
 struct <v>Type<> { <v>...<> }<>
 
 
@@ -1700,7 +1715,7 @@ To support the == and != operators, use the derive attribute.
 
 Example:
 
-<cb>#[derive(PartialEq)]
+<cb>#[derive(PartialEq, Eq)]
 struct <v>Point<> {
 	<v>x<>: i32,
 	<v>y<>: i32
@@ -1711,7 +1726,7 @@ let <v>point_2<> = <v>Point<> { x: 20, y: 10 };
 
 println!("Point 1 == 2?: {}", <v>point_1<> == <v>point_2<>);
 
-<#>// Prints: Point 1 == 2?: false<><>
+<n>// Prints: Point 1 == 2?: false<><>
 @
 @ ==, !=, #derive, #[derive(eq)] #[derive(partialeq)], partialeq, compare, comparator
 
@@ -1724,7 +1739,9 @@ println!("Point 1 == 2?: {}", <v>point_1<> == <v>point_2<>);
 	fn eq(&self, other: &<v>Type<>) -> bool {
 		self.<v>...<> == other.<v>...<>
 	}
-}<>
+}
+
+impl Eq\<<v>Type<>> for <v>Type<> {}<>
 
 
 To support the == and != operators, implement the PartialEq trait.
@@ -1751,7 +1768,7 @@ let <v>point_2<> = <v>Point<> { x: 20, y: 10 };
 
 println!("Point 1 == 2?: {}", <v>point_1<> == <v>point_2<>);
 
-<#>// Prints: Point 1 == 2?: false<><>
+<n>// Prints: Point 1 == 2?: false<><>
 @
 @ ==, !=, partialeq, impl, compare, comparator
 
@@ -1917,7 +1934,7 @@ for <v>number<> in <v>numbers<> {
 	}
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 // 1
 // [none]
@@ -1955,7 +1972,7 @@ For With <c>..<> :
 	println!("{}", <v>value<>);
 }
 
-<#>// Prints Values: 0, 1, 2<><>
+<n>// Prints Values: 0, 1, 2<><>
 
 For With <c>..=<> :
 
@@ -1963,7 +1980,7 @@ For With <c>..=<> :
 	println!("{}", <v>value<>);
 }
 
-<#>// Prints Values: 0, 1, 2, 3<><>
+<n>// Prints Values: 0, 1, 2, 3<><>
 @
 @ .., ..=
 
@@ -1987,7 +2004,7 @@ for <v>item<> in <v>vec_1<> {
 	println!("{} ", <v>item<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    one
 //    two
@@ -2016,7 +2033,7 @@ for <v>item<> in <v>iterator<> {
 	println!("{} ", <v>item<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    one
 //    two
@@ -2046,7 +2063,7 @@ for <v>item<> in <v>iterator<> {
 ### Let - Let Else
 
 <cb>let <v>pattern<> = <v>expression<> else {
-	<#>// Handle exception here.<>
+	<n>// Handle exception here.<>
 	return;
 };<>
 
@@ -2068,7 +2085,7 @@ let Some(<v>value<>) = <v>some_value<> else {
 
 println!("value = {}", <v>value<>);
 
-<#>// Prints: value = 42<><>
+<n>// Prints: value = 42<><>
 @
 @ guard expression, pattern matching
 @ let-else-only
@@ -2112,7 +2129,7 @@ loop {
 	}
 }
 
-<#>// Prints values 1, 2, 3, 4.<><>
+<n>// Prints values 1, 2, 3, 4.<><>
 @
 @ break, continue, infinite
 
@@ -2147,7 +2164,7 @@ let <v>result<> = loop {
 
 println!("Result = {}.", <v>result<>);
 
-<#>// Prints: "Result = 5."<><>
+<n>// Prints: "Result = 5."<><>
 @
 @ break
 @ loop-only, expression, with return value
@@ -2334,7 +2351,7 @@ let <v>returned_value<> = match <v>value<> {
 
 println!("Returns {}.", <v>returned_value<>);
 
-<#>// Prints ""><><>
+<n>// Prints ""><><>
 @
 @ return value
 
@@ -2417,7 +2434,7 @@ while <v>value<> \< 5 {
 	<v>value<> += 1;
 }
 
-<#>\\ Prints values 0, 1, 2, 3, 4.<><>
+<n>\\ Prints values 0, 1, 2, 3, 4.<><>
 
 
 
@@ -2693,14 +2710,14 @@ Stored in the code.
 
 <cb>"\\<v>x<>"<>
 
-<table><col>Escape Syntax<><col><c>\\<v>x<><><>
-<col> <>
-<col>Backslash<><col><c>\\\\<><>
-<col>Carriage Return<><col><c>\\r<><>
-<col>Newline<><col><c>\\n<><>
-<col>Tab<><col><c>\\t<><>
-<col> <>
-<col>Null<><col><c>\\0<><><>
+<t>Escape Syntax<|><c>\\<v>x<><>
+
+Backslash<|><c>\\\\<>
+Carriage Return<|><c>\\r<>
+Newline<|><c>\\n<>
+Tab<|><c>\\t<>
+
+Null<|><c>\\0<><>
 @
 @ tab, newline, backslash, carriage return, null
 @ \\\\, \\r, \\n, \\t, \\0, "\\"
@@ -2776,9 +2793,9 @@ Use a normal string literal with embedded new lines to create a multiline string
 
 ### String Literal - Raw Escape
 
-<cb>r"<#>text<>"
-r#"<#>text<>"#
-r###"<#>text<>"###<>
+<cb>r"<n>text<>"
+r#"<n>text<>"#
+r###"<n>text<>"###<>
 
 
 Defines a string with the exact contents between the start and end quotes.
@@ -2789,15 +2806,15 @@ Define the starting and ending quotes with hashes (#) to allow quote and hash ch
 
 Examples:
 
-<cb>= "<#>Text \\t using escapes.<>"			<s>// \\t -> tab character<>
-= r"<#>Text \\t ignoring escapes<>"		<s>// \\t -> "\\t" (unchanged)<>
+<cb>= "<n>Text \\t using escapes.<>"			<d>// \\t -> tab character<>
+= r"<n>Text \\t ignoring escapes<>"		<d>// \\t -> "\\t" (unchanged)<>
 
-= "<#>Quotes \\" \\" requiring escapes.<>"
-= r#"<#>Qoutes " " without escapes.<>"#
+= "<n>Quotes \\" \\" requiring escapes.<>"
+= r#"<n>Qoutes " " without escapes.<>"#
 
-= r##"<#>Qoutes " " and single # hashes # without escapes.<>"##<>
+= r##"<n>Qoutes " " and single # hashes # without escapes.<>"##<>
 @
-@ r", r#", r##"
+@ r", r#", r##", multiline
 
 
 
@@ -2905,7 +2922,7 @@ Example:
 
 println!("{}", <v>INT_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/keyword.static.html">Static<>
@@ -2914,7 +2931,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/keyword.static.html">Static<>
 
 
 
-### Variable - Static - Create With 'static
+### Variable - Static - Create With 'static Lifetime
 
 <cb>static <v>STATIC_1<>: &'static <v>type<> = &<v>value<>;<>
 
@@ -2934,13 +2951,13 @@ Examples:
 
 println!("{}", <v>INT_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 <cb>static <v>STR_1<>: &'static str = "42";
 
 println!("{}", <v>STR_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 @
 @ static, 'static
 @ immutable, static, global, scope
@@ -2976,7 +2993,7 @@ Example:
 
 <cb>let <v>int_1<> = 42;
 
-<#>// Assigns int_1 as type i32;<><>
+<n>// Assigns int_1 as type i32;<><>
 @
 @ let
 
@@ -3006,14 +3023,13 @@ else {
 	<v>value<> = -1;
 }
 
-<#>// Sets value to 1.<><>
+<n>// Sets value to 1.<><>
 @
 @ predefine
 
 
 
 ## Variable Operations
-
 
 
 ### Variable - Cast
@@ -3059,7 +3075,7 @@ let <v>value<>: i64 = <v>42<>;
 
 println!("Size of value = {}.", size_of_val(&<v>value<>));
 
-<#>// Prints: "Size of value = 8."<><>
+<n>// Prints: "Size of value = 8."<><>
 @
 @ get, retrieve, std::mem::size_of_val(), size_of_val()
 
@@ -3097,7 +3113,7 @@ fn type_of\<<v>T<>>(_: <v>T<>) -> &'static str {
 let <v>type_name<> = type_of(<v>1<>_i32);
 println! ("Type = {}", <v>type_name<>);
 
-<#>// Prints "Type = i32"<><>
+<n>// Prints "Type = i32"<><>
 @
 @ std::any::type_name, type_name, get, retrieve, type of
 
@@ -3139,7 +3155,7 @@ Shadowing:
 	let <v>variable_1<> = 1;
 
 	{
-		<#>// Block, Shadows Outer Variable:<>
+		<n>// Block, Shadows Outer Variable:<>
 		let <v>variable_1<> = 2;
 	}
 }<>
@@ -3333,7 +3349,7 @@ Here <c>outer_scope<> tries to borrow and then access a value after it goes out 
 
 Returns this error:
 
-<cb><!>borrowed value does not live long enough<><>
+<cb><!!>borrowed value does not live long enough<><>
 
 
 
@@ -3392,7 +3408,7 @@ let <v>borrower<> = &<v>owner<>;
 println!("{}", &<v>owner<>);
 println!("{}", <v>borrower<>);
 
-<#>// Prints:
+<n>// Prints:
 //
 //    "42"
 //    "42"<><>
@@ -3429,7 +3445,7 @@ let <v>borrower<> = &mut <v>owner<>;
 
 println!("{}", <v>borrower<>);
 
-<#>// Prints:
+<n>// Prints:
 //
 //    "42"
 //    "42"<><>
@@ -3462,13 +3478,13 @@ By Assignment:
 
 let <v>new_owner<> = <v>owner<>;
 
-<#>// NO:
+<n>// NO:
 // println!("{}", owner);<>
 
-<#>// YES:<>
+<n>// YES:<>
 println!("{}", <v>new_owner<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 By Passing:
 
@@ -3479,9 +3495,9 @@ By Passing:
 let <v>owner<> = Box::new(<v>42<>_i32);
 
 <v>take_ownership<>(<v>owner<>);
-<#>// Prints: "42"<>
+<n>// Prints: "42"<>
 
-<#>// NO!
+<n>// NO!
 // println!("{}", owner);<><>
 @
 @ move, take
@@ -3585,7 +3601,7 @@ Example:
 
 Infer type of <c><v>value<><>:
 
-<cb><#>// Infers value as i64:<>
+<cb><n>// Infers value as i64:<>
 
 fn <v>square<>(<v>x<>: i64) -> i64 {
 	<v>x<> * <v>x<>
@@ -3593,10 +3609,10 @@ fn <v>square<>(<v>x<>: i64) -> i64 {
 
 fn main() {
 
-	<#>// Infer type:<>
+	<n>// Infer type:<>
 	let <v>value<> = <v>4<>;
 
-	<#>// Inference happens here: i64<>
+	<n>// Inference happens here: i64<>
 	let <v>square<> = square(<v>value<>);
 
 	println!("{} squared is {}.", <v>value<>, <v>square<>);
@@ -3706,20 +3722,20 @@ Rust Docs: <l "https://doc.rust-lang.org/book/ch03-02-data-types.html">Data Type
 
 <t>Queues:
 
-<c><go? "binaryheap-only">BinaryHeap<>\<<v>T<>><><|>Priority Queue
+<c><doc? "binaryheap-only">BinaryHeap<>\<<v>T<>><><|>Priority Queue
 
 Sets, Maps:
 
-<c><go? "btreemap-only">BTreeMap<>\<<v>K<>, <v>V<>><><|>Sorted Key Value Map
-<c><go? "btreeset-only">BTreeSet<>\<<v>T<>><><|>Sorted Set
-<c><go? "hashmap-only">HashMap<>\<<v>K<>, <v>V<>><><|>Key Value Map
-<c><go? "hashset-only">HashSet<>\<<v>T<>><><|>Set
+<c><doc? "btreemap-only">BTreeMap<>\<<v>K<>, <v>V<>><><|>Sorted Key Value Map
+<c><doc? "btreeset-only">BTreeSet<>\<<v>T<>><><|>Sorted Set
+<c><doc? "hashmap-only">HashMap<>\<<v>K<>, <v>V<>><><|>Key Value Map
+<c><doc? "hashset-only">HashSet<>\<<v>T<>><><|>Set
 
 Sequences:
 
-<c><go? "linkedlist-only">LinkedList<>\<<v>T<>><><|>Double Linked List
-<c><go? "vec-only">Vec<>\<<v>T<>><><|>Vector (Mutable List)
-<c><go? "vecdeque-only">VecDeque<>\<<v>T<>><><|>Double Ended Queue<>
+<c><doc? "linkedlist-only">LinkedList<>\<<v>T<>><><|>Double Linked List
+<c><doc? "vec-only">Vec<>\<<v>T<>><><|>Vector (Mutable List)
+<c><doc? "vecdeque-only">VecDeque<>\<<v>T<>><><|>Double Ended Queue<>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>
@@ -3735,10 +3751,10 @@ index: tags
 index-to: word
 <>
 
-<t><c>Option\<<v>T<>><>		<|><go? "option-only">Option<>
-<c>Result\<<v>T<>, <v>E<>><><|><go? "result-only">Result<>
+<t><c>Option\<<v>T<>><>		<|><doc? "option-only">Option<>
+<c>Result\<<v>T<>, <v>E<>><><|><doc? "result-only">Result<>
 
-<c>Cow\<<v>T<>><|><go? "cow-only">Cow<><>
+<c>Cow\<<v>T<>><|><doc? "cow-only">Cow<><>
 @
 @ Standard Collections Types, enums
 @ std-enum-types, standard-enum-types, system-enum-types, sys-enum-types
@@ -3771,7 +3787,7 @@ With Type Literals:
 
 println!("{}", <v>bool_1<>);
 
-<#>// Prints: "true"<><>
+<n>// Prints: "true"<><>
 
 With Type Declaration:
 
@@ -3779,7 +3795,7 @@ With Type Declaration:
 
 println!("{}", <v>bool_1<>);
 
-<#>// Prints: "false"<><>
+<n>// Prints: "false"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.bool.html">bool<>
@@ -3807,7 +3823,7 @@ Returns <c>Some\<<v>T<>><> when the boolean is true.
 
 Example:
 
-<cb><#>// Use (<v>condition<>).then_some(<v>...<>):<>
+<cb><n>// Use (<v>condition<>).then_some(<v>...<>):<>
 
 let <v>string_1<> = "";
 
@@ -3848,7 +3864,7 @@ From Byte Literal:
 println!("{}", <v>byte_1<>);
 println!("{}", <v>byte_1<> as char);
 
-<#>// Prints:
+<n>// Prints:
 //
 //    120
 //    x<><>
@@ -3860,7 +3876,7 @@ From Hex Literal:
 println!("{}", <v>byte_1<>);
 println!("{}", <v>byte_1<> as char);
 
-<#>// Prints:
+<n>// Prints:
 //
 //    120
 //    x<><>
@@ -3899,7 +3915,7 @@ let <v>char_1<> = <v>byte_1<> as char;
 
 println!("{}", <v>char_1<>);
 
-<#>// Prints: "z"<><>
+<n>// Prints: "z"<><>
 @
 @ convert, converting, conversion, from, as, cast, char
 
@@ -3946,7 +3962,7 @@ From Literal:
 
 println!("{}", <v>char_1<>);
 
-<#>// Prints: "*"<><>
+<n>// Prints: "*"<><>
 
 With Type Declaration:
 
@@ -3954,7 +3970,7 @@ With Type Declaration:
 
 println!("{}", <v>char_1<>);
 
-<#>// Prints: "*"<><>
+<n>// Prints: "*"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>
@@ -3984,17 +4000,17 @@ Examples:
 <cb>let <v>char_1<> = 'a';
 println!("{}", <v>char_1<>.is_alphabetic());
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 <cb>let <v>char_1<> = '1';
 println!("{}", <v>char_1<>.is_alphabetic());
 
-<#>// Prints: false<><>
+<n>// Prints: false<><>
 
 <cb>let <v>char_1<> = 'ㅏ';
 println!("{}", <v>char_1<>.is_alphabetic());
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>::<l "https://doc.rust-lang.org/std/primitive.char.html#method.is_alphabetic">is_alphabetic()<>
@@ -4023,17 +4039,17 @@ Examples:
 <cb>let <v>char_1<> = 'a';
 println!("{}", <v>char_1<>.is_alphanumeric());
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 <cb>let <v>char_1<> = ' ';
 println!("{}", <v>char_1<>.is_alphanumeric());
 
-<#>// Prints: false<><>
+<n>// Prints: false<><>
 
 <cb>let <v>char_1<> = 'ㅏ';
 println!("{}", <v>char_1<>.is_alphanumeric());
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>::<l "https://doc.rust-lang.org/std/primitive.char.html#method.is_alphanumeric">is_alphanumeric()<>
@@ -4098,12 +4114,12 @@ Examples:
 <cb>let <v>char_1<> = ' ';
 println!("{}", <v>char_1<>.is_whitespace());
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 <cb>let <v>char_1<> = 'x';
 println!("{}", <v>char_1<>.is_whitespace());
 
-<#>// Prints: false<><>
+<n>// Prints: false<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>::<l "https://doc.rust-lang.org/std/primitive.char.html#method.is_whitespace">is_whitespace()<>
@@ -4136,7 +4152,7 @@ Example:
 
 println!("{}", <v>stars<>);
 
-<#>// Prints: "**********"<><>
+<n>// Prints: "**********"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.char.html">char<>
@@ -4284,7 +4300,7 @@ With Literal:
 
 println!("{}", <v>float_1<>);
 
-<#>// Prints: "11.23"<><>
+<n>// Prints: "11.23"<><>
 
 With Type Declaration:
 
@@ -4292,7 +4308,7 @@ With Type Declaration:
 
 println!("{}", <v>float_1<>);
 
-<#>// Prints: "11.23"<><>
+<n>// Prints: "11.23"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.f32.html">f32<>
@@ -4330,7 +4346,7 @@ With Type Literals:
 
 println!("{}", <v>float_1<>);
 
-<#>// Prints: "11.23"<><>
+<n>// Prints: "11.23"<><>
 
 With Type Declaration:
 
@@ -4338,7 +4354,7 @@ With Type Declaration:
 
 println!("{}", <v>float_1<>);
 
-<#>// Prints: "11.23"<><>
+<n>// Prints: "11.23"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.f64.html">f64<>
@@ -4423,14 +4439,14 @@ let <v>square<> = <v>value<>.powf(<v>2.0<>);
 
 println!("{} squared is {}.", <v>value<>, <v>square<>);
 
-<#>// Prints "4 squared is 16."<><>
+<n>// Prints "4 squared is 16."<><>
 
 <cb>let <v>value<>: f32 = 4.0;
 let <v>square<> = f32::powf(<v>value<>, <v>2.0<>);
 
 println!("{} squared is {}.", <v>value<>, <v>square<>);
 
-<#>// Prints "4 squared is 16."<><>
+<n>// Prints "4 squared is 16."<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.f32.html">f32<>.<l "https://doc.rust-lang.org/std/primitive.f32.html#method.powf">powf()<>
@@ -4459,14 +4475,14 @@ let <v>square<> = <v>value<>.powi(<v>2<>);
 
 println!("{} squared is {}.", <v>value<>, <v>square<>);
 
-<#>// Prints "4 squared is 16."<><>
+<n>// Prints "4 squared is 16."<><>
 
 <cb>let <v>value<>: f32 = 4.0;
 let <v>square<> = f32::powi(<v>value<>, <v>2<>);
 
 println!("{} squared is {}.", <v>value<>, <v>square<>);
 
-<#>// Prints "4 squared is 16."<><>
+<n>// Prints "4 squared is 16."<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.f32.html">f32<>.<l "https://doc.rust-lang.org/std/primitive.f32.html#method.powi">powi()<>
@@ -4583,7 +4599,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -4591,7 +4607,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i8.html">i8<>
@@ -4630,7 +4646,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -4638,7 +4654,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u8.html">u8<>
@@ -4682,7 +4698,7 @@ let <v>char_1<> = <v>u8_1<> as char;
 
 println!("{}", <v>char_1<>);
 
-<#>// Prints: "*"<><>
+<n>// Prints: "*"<><>
 @
 @ u8-to, from u8, from byte, byte-to, to-char
 
@@ -4710,7 +4726,7 @@ let <v>text<>: String = String::from_utf8(<v>bytes<>).unwrap();
 
 println!("{}", <v>text<>);
 
-<#>// Prints: "text!"<><>
+<n>// Prints: "text!"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/string/index.html>string<>::<l https://doc.rust-lang.org/std/string/struct.String.html>String<>.<l https://doc.rust-lang.org/std/string/struct.String.html#method.from_utf8>from_utf8()<>
@@ -4745,7 +4761,7 @@ let <v>text<>: String = String::from_utf8_lossy(<v>bytes<>).unwrap();
 
 println!("{}", <v>text<>);
 
-<#>// Prints: "text!"<><>
+<n>// Prints: "text!"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/string/index.html>string<>::<l https://doc.rust-lang.org/std/string/struct.String.html>String<>.<l https://doc.rust-lang.org/std/string/struct.String.html#method.from_utf8_lossy>from_utf8_lossy()<>
@@ -4783,7 +4799,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -4791,7 +4807,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i16.html">i16<>
@@ -4830,7 +4846,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -4838,7 +4854,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u16.html">u16<>
@@ -4877,7 +4893,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -4885,7 +4901,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i32.html">i32<>
@@ -4924,7 +4940,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -4932,7 +4948,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u32.html">u32<>
@@ -4971,7 +4987,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -4979,7 +4995,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i64.html">i64<>
@@ -5018,7 +5034,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -5026,7 +5042,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u64.html">u64<>
@@ -5065,7 +5081,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -5073,7 +5089,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.i128.html">i128<>
@@ -5112,7 +5128,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -5120,7 +5136,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.u128.html">u128<>
@@ -5160,7 +5176,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -5168,7 +5184,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.isize.html">isize<>
@@ -5208,7 +5224,7 @@ With Literal:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 With Type Declaration:
 
@@ -5216,7 +5232,7 @@ With Type Declaration:
 
 println!("{}", <v>int_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l "https://doc.rust-lang.org/std/primitive.usize.html">usize<>
@@ -5273,14 +5289,14 @@ let <v>square<> = <v>value<>.pow(<v>2<>);
 
 println!("{} squared is {}.", <v>value<>, <v>square<>);
 
-<#>// Prints "4 squared is 16."<><>
+<n>// Prints "4 squared is 16."<><>
 
 <cb>let <v>value<>: i32 = 4;
 let <v>square<> = i32::pow(<v>value<>, <v>2<>);
 
 println!("{} squared is {}.", <v>value<>, <v>square<>);
 
-<#>// Prints "4 squared is 16."<><>
+<n>// Prints "4 squared is 16."<><>
 @
 @ .pow(), ::pow(), pow(), square
 
@@ -5435,7 +5451,7 @@ Features:
 <*>Is Immutable
 Stored as an u8 Vector
 Stores in UTF-8 Format
-Can NOT be created directly<super><#>1<><>.<>
+Can NOT be created directly<super><n>1<><>.<>
 
 Can be stored in:
 
@@ -5479,7 +5495,7 @@ Examples:
 
 println!("{}", <v>str_1<>);
 
-<#>// Prints: "abc"<><>
+<n>// Prints: "abc"<><>
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/primitive.str.html>str<>
@@ -5542,7 +5558,7 @@ Returns true when the match exists in the string slice.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.contains>contains()<>
 @
-@ is substring, in, includes
+@ is substring, in, includes, has
 @ str.contains(), .contains()
 
 
@@ -5557,6 +5573,7 @@ Returns true if the string slice contains the characters.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.chars>chars()<>
 @
+@ has, includes
 @ .any(), char?
 
 
@@ -5616,12 +5633,12 @@ Examples:
 <cb>let <v>text<> = "none";
 println!("{}", <v>text<>.chars().all(char::is_whitespace));
 
-<#>// Prints: false<><>
+<n>// Prints: false<><>
 
 <cb>let <v>text<> = "has whitespace";
 println!("{}", <v>text<>.chars().all(char::is_whitespace));
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.chars>chars()<>
@@ -5650,17 +5667,17 @@ Examples:
 <cb>let <v>text<> = "letters";
 println!("{}", <v>text<>.chars().all(char::is_alphabetic));
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 <cb>let <v>text<> = "two words";
 println!("{}", <v>text<>.chars().all(char::is_alphabetic));
 
-<#>// Prints: false<><>
+<n>// Prints: false<><>
 
 <cb>let <v>text<> = "한국어";
 println!("{}", <v>text<>.chars().all(char::is_alphabetic));
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 
 
@@ -5691,17 +5708,17 @@ Examples:
 <cb>let <v>text<> = "abc123";
 println!("{}", <v>text<>.chars().all(char::is_alphanumeric));
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 <cb>let <v>text<> = "abc 123";
 println!("{}", <v>text<>.chars().all(char::is_alphanumeric));
 
-<#>// Prints: false<><>
+<n>// Prints: false<><>
 
 <cb>let <v>text<> = "한국어";
 println!("{}", <v>text<>.chars().all(char::is_alphanumeric));
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.chars>chars()<>
@@ -5872,12 +5889,12 @@ Examples:
 <cb>let <v>text<> = "123";
 println!("{}", <v>text<>.chars().all(char::is_numeric));
 
-<#>// Prints: true<><>
+<n>// Prints: true<><>
 
 <cb>let <v>text<> = "abc";
 println!("{}", <v>text<>.chars().all(char::is_numeric));
 
-<#>// Prints: false<><>
+<n>// Prints: false<><>
 
 
 
@@ -5911,7 +5928,7 @@ let <v>characters<> = <v>str_1<>.chars().count();
 
 println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>length<>, <v>characters<>);
 
-<#>// Prints "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+<n>// Prints "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.len>len()<>
@@ -5944,7 +5961,7 @@ let <v>characters<> = <v>str_1<>.chars().count();
 
 println!("String {}, length(bytes) = {}, characters = {}.", <v>str_1<>, <v>length<>, <v>characters<>);
 
-<#>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+<n>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.chars>chars()<>
@@ -5988,16 +6005,16 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Examples:
 
-<cb><table><col><v>text<><><col>= "12345"<><col><#>// "12345"<><>
-<col><v>first<><><col>= <v>text<>.chars().next().unwrap()<><col><#>// "1"<><>
-<col><v>last<><><col>= <v>text<>.chars().last().unwrap()<><col><#>// "5"<><>
+<cb><table><col><v>text<><><col>= "12345"<><col><n>// "12345"<><>
+<col><v>first<><><col>= <v>text<>.chars().next().unwrap()<><col><n>// "1"<><>
+<col><v>last<><><col>= <v>text<>.chars().last().unwrap()<><col><n>// "5"<><>
 <col> <>
-<col><v>left<><><col>= <v>text<>.chars().take(<v>3<>).collect::\<String>()<><col><#>// "123"<><>
+<col><v>left<><><col>= <v>text<>.chars().take(<v>3<>).collect::\<String>()<><col><n>// "123"<><>
 <col> <>
-<col><v>middle<><><col>= <v>text<>.chars().skip(<v>1<>).take(<v>3<>).collect::\<String>()<><col><#>// "234"<><>
-<col><><col>= <v>text<>.chars().skip(<v>1<>).take(<v>4<> - <v>1<>).collect::\<String>()<><col><#>// "234"<><>
+<col><v>middle<><><col>= <v>text<>.chars().skip(<v>1<>).take(<v>3<>).collect::\<String>()<><col><n>// "234"<><>
+<col><><col>= <v>text<>.chars().skip(<v>1<>).take(<v>4<> - <v>1<>).collect::\<String>()<><col><n>// "234"<><>
 <col> <>
-<col><v>right<><><col>= <v>text<>.chars().skip(text.chars().count() - <v>3<>).collect::\<String>()<><col><#>// "345"<><><><>
+<col><v>right<><><col>= <v>text<>.chars().skip(text.chars().count() - <v>3<>).collect::\<String>()<><col><n>// "345"<><><><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>
@@ -6027,17 +6044,17 @@ Examples:
 
 <cb>let <v>str_1<> = "<v>12345<>";
 
-let <v>first<> = &<v>str_1<>[0..=0];                 <#>// "1"<>
+let <v>first<> = &<v>str_1<>[0..=0];                 <n>// "1"<>
 
-let <v>last<> = &<v>str_1<>[str_1.len() - 1.. str_1.len()];   <#>// "5"<>
+let <v>last<> = &<v>str_1<>[str_1.len() - 1.. str_1.len()];   <n>// "5"<>
 
-let <v>index_1<> = &<v>str_1<>[1..=1];               <#>// "2"<>
+let <v>index_1<> = &<v>str_1<>[1..=1];               <n>// "2"<>
 
-let <v>index_1_to_3<> = &<v>str_1<>[1..4];           <#>// "234"<>
+let <v>index_1_to_3<> = &<v>str_1<>[1..4];           <n>// "234"<>
 
-let <v>index_1_to_end<> = &<v>str_1<>[1..];          <#>// "2345"<>
+let <v>index_1_to_end<> = &<v>str_1<>[1..];          <n>// "2345"<>
 
-let <v>start_to_index_3<> = &<v>str_1<>[..4];        <#>// "1234"<><>
+let <v>start_to_index_3<> = &<v>str_1<>[..4];        <n>// "1234"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>
@@ -6079,7 +6096,7 @@ let <v>substring<> = &<v>str_1<>[..3];
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: 123<><>
+<n>// Prints: 123<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>
@@ -6123,7 +6140,7 @@ let <v>substring<> = &<v>str_1<>[1..3];
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: 23<><>
+<n>// Prints: 23<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>
@@ -6145,7 +6162,7 @@ let <v>right<> = &<v>str_1<>.chars().skip(<v>str_1<>.len() - 3).collect::\<Strin
 
 println!("{}", &<v>right<>);
 
-<#>// Prints: 345<><>
+<n>// Prints: 345<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.chars>chars()<>
@@ -6173,7 +6190,7 @@ let <v>substring<> = &<v>str_1<>[2..];
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: 345<><>
+<n>// Prints: 345<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>
@@ -6236,7 +6253,7 @@ let <v>concatenated<> = <v>a<>.to_string() + <v>b<>;
 
 println!("{}", <v>concatenated<>);
 
-<#>// Prints: "abcdef"<><>
+<n>// Prints: "abcdef"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.concat>concat()<>
@@ -6268,7 +6285,7 @@ let <v>index<> = <v>str_1<>.find("two");
 
 println!("Index {}", <v>index<>.unwrap());
 
-<#>// Prints: Index 4<><>
+<n>// Prints: Index 4<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l "https://doc.rust-lang.org/std/primitive.str.html#method.find">find()<>
@@ -6300,7 +6317,7 @@ let <v>index<> = <v>str_1<>.rfind("two");
 
 println!("Index {}", <v>index<>.unwrap());
 
-<#>// Prints: Index 14<><>
+<n>// Prints: Index 14<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l "https://doc.rust-lang.org/std/primitive.str.html#method.rfind">rfind()<>
@@ -6328,7 +6345,7 @@ let <v>formatted<> = format!("<v>...{}...<>", <v>str_1<>);
 
 println!("{}", <v>formatted<>);
 
-<#>// Prints: "...abc..."<><>
+<n>// Prints: "...abc..."<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.format.html">format<>
@@ -6358,7 +6375,7 @@ let <v>substring<> = &<v>str_1<>.strip_prefix("https://").unwrap();
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: speedsheet.io<><>
+<n>// Prints: speedsheet.io<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.strip_prefix>strip_prefix()<>
@@ -6390,7 +6407,7 @@ let <v>substring<> = &<v>str_1<>.strip_suffix(".txt").unwrap();
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: file_name<><>
+<n>// Prints: file_name<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.strip_suffix>strip_suffix()<>
@@ -6424,7 +6441,7 @@ println!("{}", <v>stars_0<>);
 println!("{}", <v>stars_1<>);
 println!("{}", <v>stars_2<>);
 
-<#>// Prints:
+<n>// Prints:
 ""
 "*"
 "**"<><>
@@ -6459,7 +6476,7 @@ let <v>replaced<> = <v>str_1<>.replace("this", "that");
 
 println!("{}", <v>replaced<>);
 
-<#>// Prints: Replace <b>that<> and <b>that<> and <b>that<>.<><>
+<n>// Prints: Replace <b>that<> and <b>that<> and <b>that<>.<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.replace>replace()<>
@@ -6491,7 +6508,7 @@ let <v>replaced<> = <v>str_1<>.replacen("this", "that", 1);
 
 println!("{}", <v>replaced<>);
 
-<#>// Prints: Replace <b>that<> but not this or this.<><>
+<n>// Prints: Replace <b>that<> but not this or this.<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.replacen>replacen()<>
@@ -6521,7 +6538,7 @@ let <v>reversed<>: String = <v>str_1<>.chars().rev().collect();
 
 println!("{}", <v>reversed<>);
 
-<#>// Prints: 54321<><>
+<n>// Prints: 54321<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.chars>chars()<>
@@ -6562,7 +6579,7 @@ for <v>line<> in <v>lines<>.iter() {
 	println!("'{}'", <v>line<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    'one'
 //    'two'
@@ -6625,7 +6642,7 @@ for <v>line<> in <v>lines<>.iter() {
 	println!("'{}'", <v>line<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    'one'
 //    'two'
@@ -6668,7 +6685,7 @@ for <v>line<> in <v>lines<>.iter() {
 	println!("'{}'", <v>line<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    'one'
 //    'two'
@@ -6737,7 +6754,7 @@ for <v>line<> in <v>lines<>.iter() {
 	println!("'{}'", <v>line<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    ''
 //    'three'
@@ -6854,7 +6871,7 @@ let <v>joined<> = <v>strings<>.into_iter().collect::\<String>();
 
 println!("{}", <v>joined<>);
 
-<#>// Prints: 1, 2, 3<><>
+<n>// Prints: 1, 2, 3<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>
@@ -6884,7 +6901,7 @@ let <v>joined<> = <v>strings<>.join(", ");
 
 println!("{}", <v>joined<>);
 
-<#>// Prints: 1, 2, 3<><>
+<n>// Prints: 1, 2, 3<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>
@@ -6902,7 +6919,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Sorts a vec of strings in place.
 
 
-See: <go? "vec-only">Vec<>
+See: <doc? "vec-only">Vec<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.sort">sort()<>
@@ -6920,7 +6937,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Sorts a vec of strings in place.
 
 
-See: <go? "vec-only">Vec<>
+See: <doc? "vec-only">Vec<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/primitive.str.html">str<>.<l https://doc.rust-lang.org/std/primitive.str.html#method.cmp>cmp()<> | <l https://doc.rust-lang.org/std/primitive.str.html#method.to_lowercase>to_lowercase<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.sort_by">sort_by()<>
@@ -7082,7 +7099,7 @@ let <v>string_1<>: String = <v>str_1<>.to_string();
 
 println!("{}", <v>string_1<>);
 
-<#>// Prints: "abc"<><>
+<n>// Prints: "abc"<><>
 
 Every Way:
 
@@ -7098,7 +7115,7 @@ println!("{}", <v>string_2<>);
 println!("{}", <v>string_3<>);
 println!("{}", <v>string_4<>);
 
-<#>// Prints:
+<n>// Prints:
 //
 // "abc"
 // "abc"
@@ -7568,7 +7585,7 @@ let <v>characters<> = <v>string_1<>.chars().count();
 
 println!("String {}, length(bytes) = {}, characters = {}.", <v>string_1<>, <v>length<>, <v>characters<>);
 
-<#>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
+<n>// Prints: "String 🙂⭐️, length(bytes) = 10, characters = 3."<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.chars">chars()<>
@@ -7612,16 +7629,16 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Examples:
 
-<cb><table><col><v>text<><><col>= "12345".to_string()<><col><#>// "12345"<><>
-<col><v>first<><><col>= <v>text<>.chars().next().unwrap()<><col><#>// "1"<><>
-<col><v>last<><><col>= <v>text<>.chars().last().unwrap()<><col><#>// "5"<><>
+<cb><table><col><v>text<><><col>= "12345".to_string()<><col><n>// "12345"<><>
+<col><v>first<><><col>= <v>text<>.chars().next().unwrap()<><col><n>// "1"<><>
+<col><v>last<><><col>= <v>text<>.chars().last().unwrap()<><col><n>// "5"<><>
 <col> <>
-<col><v>left<><><col>= <v>text<>.chars().take(<v>3<>).collect::\<String>()<><col><#>// "123"<><>
+<col><v>left<><><col>= <v>text<>.chars().take(<v>3<>).collect::\<String>()<><col><n>// "123"<><>
 <col> <>
-<col><v>middle<><><col>= <v>text<>.chars().skip(<v>1<>).take(<v>3<>).collect::\<String>()<><col><#>// "234"<><>
-<col><><col>= <v>text<>.chars().skip(<v>1<>).take(<v>4<> - <v>1<>).collect::\<String>()<><col><#>// "234"<><>
+<col><v>middle<><><col>= <v>text<>.chars().skip(<v>1<>).take(<v>3<>).collect::\<String>()<><col><n>// "234"<><>
+<col><><col>= <v>text<>.chars().skip(<v>1<>).take(<v>4<> - <v>1<>).collect::\<String>()<><col><n>// "234"<><>
 <col> <>
-<col><v>right<><><col>= <v>text<>.chars().skip(text.chars().count() - <v>3<>).take(<v>3<>).collect::\<String>()<><col><#>// "345"<><><><>
+<col><v>right<><><col>= <v>text<>.chars().skip(text.chars().count() - <v>3<>).take(<v>3<>).collect::\<String>()<><col><n>// "345"<><><><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l https://doc.rust-lang.org/std/string/struct.String.html#method.chars>chars()<>
@@ -7652,17 +7669,17 @@ Examples:
 
 <cb>let <v>string_1<> = "<v>12345<>".to_string();
 
-let <v>first<> = &<v>string_1<>[0..=0];                 <#>// "1"<>
+let <v>first<> = &<v>string_1<>[0..=0];                 <n>// "1"<>
 
-let <v>last<> = &<v>string_1<>[string_1.len() - 1.. string_1.len()];   <#>// "5"<>
+let <v>last<> = &<v>string_1<>[string_1.len() - 1.. string_1.len()];   <n>// "5"<>
 
-let <v>index_1<> = &<v>string_1<>[1..=1];               <#>// "2"<>
+let <v>index_1<> = &<v>string_1<>[1..=1];               <n>// "2"<>
 
-let <v>index_1_to_3<> = &<v>string_1<>[1..4];           <#>// "234"<>
+let <v>index_1_to_3<> = &<v>string_1<>[1..4];           <n>// "234"<>
 
-let <v>index_1_to_end<> = &<v>string_1<>[1..];          <#>// "2345"<>
+let <v>index_1_to_end<> = &<v>string_1<>[1..];          <n>// "2345"<>
 
-let <v>start_to_index_3<> = &<v>string_1<>[..4];        <#>// "1234"<><>
+let <v>start_to_index_3<> = &<v>string_1<>[..4];        <n>// "1234"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -7708,7 +7725,7 @@ let <v>substring<> = &<v>string_1<>[..3];
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: 123<><>
+<n>// Prints: 123<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -7756,7 +7773,7 @@ let <v>substring<> = &<v>string_1<>[1..3];
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: 23<><>
+<n>// Prints: 23<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -7782,7 +7799,7 @@ let <v>right<> = &<v>str_1<>.chars().skip(<v>str_1<>.len() - 3).collect::\<Strin
 
 println!("{}", &<v>right<>);
 
-<#>// Prints: 345<><>
+<n>// Prints: 345<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l https://doc.rust-lang.org/std/string/struct.String.html#method.chars>chars()<>
@@ -7814,7 +7831,7 @@ let <v>substring<> = &<v>string_1<>[2..];
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: 345<><>
+<n>// Prints: 345<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -7824,8 +7841,6 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 ## String - Operations
-@
-@ strings, string-only, strings-only
 
 
 ### String - Append Character
@@ -7844,7 +7859,7 @@ Examples:
 
 println!("{}", <v>string_1<>);
 
-<#>// Prints: "abcd"<><>
+<n>// Prints: "abcd"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.push">push()<>
@@ -7870,7 +7885,7 @@ let <v>str_2<> =  "def";
 
 println!("{}", <v>string_1<>);
 
-<#>// Prints: "abcdef"<><>
+<n>// Prints: "abcdef"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.push_str">push_str()<>
@@ -7900,7 +7915,7 @@ let <v>string_2<> =  "def".to_string();
 
 println!("{}", <v>string_1<>);
 
-<#>// Prints: "abcdef"<><>
+<n>// Prints: "abcdef"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.push_str">push_str()<>
@@ -7956,7 +7971,7 @@ let <v>concatenated<> = [<v>a<>, <v>b<>].concat();
 
 println!("{}", <v>concatenated<>);
 
-<#>// Prints: "AB"<><>
+<n>// Prints: "AB"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>
@@ -7990,7 +8005,7 @@ let <v>c<> = [&<v>a<>, <v>b<>.as_str()].concat();
 
 println!("{} + {} = {}", &<v>a<>, &<v>b<>, &<v>c<>);
 
-<#>// Prints: "A + B = AB"<><>
+<n>// Prints: "A + B = AB"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -8022,7 +8037,7 @@ let <v>concatenated<> = <v>a<> + <v>b<>;
 
 println!("{}", <v>concatenated<>);
 
-<#>// Prints: "AB"<><>
+<n>// Prints: "AB"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -8053,7 +8068,7 @@ let <v>index<> = <v>string_1<>.find("two");
 
 println!("Index {}", <v>index<>.unwrap());
 
-<#>// Prints: Index 4<><>
+<n>// Prints: Index 4<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.find">find()<>
@@ -8085,7 +8100,7 @@ let <v>index<> = <v>string_1<>.rfind("two");
 
 println!("Index {}", <v>index<>.unwrap());
 
-<#>// Prints: Index 14<><>
+<n>// Prints: Index 14<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.rfind">rfind()<>
@@ -8113,7 +8128,7 @@ let <v>formatted<> = format!("<v>...{}...<>", <v>string_1<>);
 
 println!("{}", <v>formatted<>);
 
-<#>// Prints: "...abc..."<><>
+<n>// Prints: "...abc..."<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.format.html">format<>
@@ -8144,7 +8159,7 @@ let <v>joined<> = [<v>string_1<>, <v>string_2<>, <v>string_3<>].join(", ");
 
 println!("{}", <v>joined<>);
 
-<#>// Prints: "1, 2, 3"<><>
+<n>// Prints: "1, 2, 3"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -8190,7 +8205,7 @@ let <v>substring<> = &<v>string_1<>.strip_prefix("https://").unwrap();
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: speedsheet.io<><>
+<n>// Prints: speedsheet.io<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.strip_prefix">strip_prefix()<>
@@ -8222,7 +8237,7 @@ let <v>substring<> = &<v>string_1<>.strip_suffix(".txt").unwrap();
 
 println!("{}", &<v>substring<>);
 
-<#>// Prints: file_name<><>
+<n>// Prints: file_name<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.strip_suffix">strip_suffix()<>
@@ -8258,7 +8273,7 @@ println!("{}", <v>stars_0<>);
 println!("{}", <v>stars_1<>);
 println!("{}", <v>stars_2<>);
 
-<#>// Prints:
+<n>// Prints:
 ""
 "*"
 "**"<><>
@@ -8292,7 +8307,7 @@ let <v>replaced<> = <v>string_1<>.replace("this", "that");
 
 println!("{}", <v>replaced<>);
 
-<#>// Prints: Replace <b>that<> and <b>that<> and <b>that<>.<><>
+<n>// Prints: Replace <b>that<> and <b>that<> and <b>that<>.<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.replace">replace()<>
@@ -8324,7 +8339,7 @@ let <v>replaced<> = <v>string_1<>.replacen("this", "that", 1);
 
 println!("{}", <v>replaced<>);
 
-<#>// Prints: Replace <b>that<> but not this or this.<><>
+<n>// Prints: Replace <b>that<> but not this or this.<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.replacen">replacen()<>
@@ -8359,7 +8374,7 @@ Example:
 
 println!("{}", <v>string_1<>);
 
-<#>// Prints: 1 <b>*<> 3<><>
+<n>// Prints: 1 <b>*<> 3<><>
 
 
 Example:
@@ -8370,7 +8385,7 @@ Example:
 
 println!("{}", <v>string_1<>);
 
-<#>// Prints: 1 <b>two<> 3<><>
+<n>// Prints: 1 <b>two<> 3<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.replace_range">replace_range()<>
@@ -8405,7 +8420,7 @@ Example:
 
 println!("{}", <v>string_1<>);
 
-<#>// Prints: one <b>2<> three<><>
+<n>// Prints: one <b>2<> three<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.replace_range">replace_range()<>
@@ -8435,7 +8450,7 @@ let <v>reversed<>: String = <v>string_1<>.chars().rev().collect();
 
 println!("{}", <v>reversed<>);
 
-<#>// Prints: 54321<><>
+<n>// Prints: 54321<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l https://doc.rust-lang.org/std/string/struct.String.html#method.chars>chars()<>
@@ -8476,7 +8491,7 @@ for <v>line<> in <v>lines<>.iter() {
 	println!("'{}'", <v>line<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    'one'
 //    'two'
@@ -8541,7 +8556,7 @@ for <v>line<> in <v>lines<>.iter() {
 	println!("'{}'", <v>line<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    'one'
 //    'two'
@@ -8584,7 +8599,7 @@ for <v>line<> in <v>lines<>.iter() {
 	println!("'{}'", <v>line<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    'one'
 //    'two'
@@ -8654,7 +8669,7 @@ for <v>line<> in <v>lines<>.iter() {
 	println!("'{}'", <v>line<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    ''
 //    'three'
@@ -8777,7 +8792,7 @@ let <v>joined<> = <v>strings<>.into_iter().collect::\<String>();
 
 println!("{}", <v>joined<>);
 
-<#>// Prints: 1, 2, 3<><>
+<n>// Prints: 1, 2, 3<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -8811,7 +8826,7 @@ let <v>joined<> = <v>strings<>.join(", ");
 
 println!("{}", <v>joined<>);
 
-<#>// Prints: 1, 2, 3<><>
+<n>// Prints: 1, 2, 3<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -8878,7 +8893,7 @@ let <v>bytes<>: &[u8] = <v>text<>.as_bytes();
 
 println!("{:?}", <v>bytes<>);
 
-<#>// Prints: [84, 101, 120, 116, 33]<><>
+<n>// Prints: [84, 101, 120, 116, 33]<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l https://doc.rust-lang.org/std/string/struct.String.html#method.as_bytes-1>as_bytes()<>
@@ -9013,7 +9028,7 @@ let <v>str_2<> = <v>string_1<>.as_str();
 
 println!("{}", <v>str_2<>);
 
-<#>// Prints: "abc"<><>
+<n>// Prints: "abc"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.as_str">as_str()<>
@@ -9052,7 +9067,7 @@ let <v>str_2<> = <v>string_1<>.into_boxed_str();
 
 println!("{}", <v>str_2<>);
 
-<#>// Prints: "abc"<><>
+<n>// Prints: "abc"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>::<l "https://doc.rust-lang.org/std/string/struct.String.html">String<>.<l "https://doc.rust-lang.org/std/string/struct.String.html#method.into_boxed_str">into_boxed_str()<>
@@ -9085,7 +9100,7 @@ let <v>str_2<>: &str = &<v>string_1<>;
 
 println!("{}", <v>str_2<>);
 
-<#>// Prints: "abc"<><>
+<n>// Prints: "abc"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/string/index.html">string<>
@@ -9313,7 +9328,7 @@ println!("Red = {}", <v>Color<>::<v>Red<> as u8);
 println!("Green = {}", <v>Color<>::<v>Green<> as u8);
 println!("Blue = {}", <v>Color<>::<v>Blue<> as u8);
 
-<#>// Red = 0
+<n>// Red = 0
 // Green = 1
 // Blue = 2<><>
 
@@ -9347,7 +9362,7 @@ println!("Red = {}", <v>Color<>::<v>Red<> as u8);
 println!("Green = {}", <v>Color<>::<v>Green<> as u8);
 println!("Blue = {}", <v>Color<>::<v>Blue<> as u8);
 
-<#>// Red = 10
+<n>// Red = 10
 // Green = 20
 // Blue = 21<><>
 @
@@ -9447,12 +9462,12 @@ if <v>color<> == <v>Color<>::Red {
 	println!("Color Red");
 };
 
-<#>// Prints: Color Red<><>
+<n>// Prints: Color Red<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialEq.html">PartialEq<>
 @
-@ equals, is value, is type, is variant
+@ equals, is value, is type, is variant, compare
 
 
 
@@ -9482,12 +9497,12 @@ if matches!(<v>color<>, <v>Color<>::Red) {
 	println!("Color Red");
 };
 
-<#>// Prints: Color Red<><>
+<n>// Prints: Color Red<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialEq.html">PartialEq<>
 @
-@ equals, is value, is type, is variant, matches!(), matches()
+@ equals, compare, is value, is type, is variant, matches!(), matches()
 
 
 
@@ -9499,13 +9514,13 @@ or
 
 <cb>match <v>value<> {
 	<v>Enum1<>::<v>Item1<> => {},
-	_ => <v>...<>	<#>// Put code here.<>
+	_ => <v>...<>	<n>// Put code here.<>
 }<>
 
 
 Testss if the enum is NOT a particular variant.
 @
-@ not, equals, not value, is not type, match, !matches!(), matcesh!(), matches()
+@ not, equals, compare, not value, is not type, match, !matches!(), matcesh!(), matches()
 
 
 ### Enum - To Integer
@@ -9710,7 +9725,7 @@ for <v>value<> in <v>range_1<> {
 }
 println!();
 
-<#>// Prints: 0 1 2 3 <><>
+<n>// Prints: 0 1 2 3 <><>
 
 With <c>..=<> :
 
@@ -9723,7 +9738,7 @@ for <v>value<> in <v>range_1<> {
 }
 println!();
 
-<#>// Prints: 0 1 2 3 <><>
+<n>// Prints: 0 1 2 3 <><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ops/index.html">ops<>::<l "https://doc.rust-lang.org/std/ops/struct.Range.html">Range<>
@@ -9748,7 +9763,7 @@ Example:
 	println!("{}", <v>value<>);
 }
 
-<#>Prints: 2, 1, 0<><>
+<n>Prints: 2, 1, 0<><>
 
 
 Example:
@@ -9757,7 +9772,7 @@ Example:
 	println!("{}", <v>value<>);
 }
 
-<#>Prints: 3, 2, 1, 0<><>
+<n>Prints: 3, 2, 1, 0<><>
 @ count down, -1, reverse, negative, 
 @ .rev()
 
@@ -9919,7 +9934,7 @@ let <v>point_1<> = <v>Point<> {
 
 println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
 
-<#>// Prints: "Point 1: 10, 20"<><>
+<n>// Prints: "Point 1: 10, 20"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/keyword.struct.html">struct<>
@@ -9958,7 +9973,7 @@ let <v>point_1<> = <v>Point<>::new(10, 20);
 
 println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
 
-<#>// Prints: "Point 1: 10, 20"<><>
+<n>// Prints: "Point 1: 10, 20"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/keyword.struct.html">struct<>
@@ -9996,7 +10011,7 @@ let <v>point_1<> = <v>Point<> {
 
 println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
 
-<#>// Prints: "Point 1: 10, 20"<><>
+<n>// Prints: "Point 1: 10, 20"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/keyword.struct.html">struct<>
@@ -10033,7 +10048,7 @@ let <v>point_1<> = <v>Point<> { <v>x<>, <v>y<> };
 
 println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
 
-<#>// Prints: "Point 1: 10, 20"<><>
+<n>// Prints: "Point 1: 10, 20"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/keyword.struct.html">struct<>
@@ -10073,7 +10088,7 @@ let <v>point_2<> = <v>Point<> {
 
 println!("Point 2: {}, {}, {}", <v>point_2<>.<v>x<>, <v>point_2<>.<v>y<>, <v>point_2<>.<v>z<>);
 
-<#>// Prints: "Point 2: -10, -20, 100"<><>
+<n>// Prints: "Point 2: -10, -20, 100"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/keyword.struct.html">struct<>
@@ -10108,7 +10123,7 @@ let <v>Point<> {<v>x<>, <v>y<>} = <v>point_1<>;
 
 println!("Point: {}, {}", <v>x<>, <v>y<>);
 
-<#>// Prints: "Point: 10, 20"<><>
+<n>// Prints: "Point: 10, 20"<><>
 @
 @ destructuring, get, items, values, fields
 
@@ -10166,7 +10181,7 @@ let <v>point_2<> = Point { ..<v>point_1<> };
 
 println!("Point 2: {}, {}", <v>point_2<>.<v>x<>, <v>point_2<>.<v>y<>);
 
-<#>// Prints: "Point 2: 10, 20"<><>
+<n>// Prints: "Point 2: 10, 20"<><>
 @
 @ clone, duplicate
 @ ..
@@ -10206,7 +10221,7 @@ let <v>point_2<> = Point {
 
 println!("Point 2: {}, {}", <v>point_2<>.<v>x<>, <v>point_2<>.<v>y<>);
 
-<#>// Prints: "Point 2: 10, 20"<><>
+<n>// Prints: "Point 2: 10, 20"<><>
 @
 @ clone, duplicate, update, updates, modifications, modify
 @ ..
@@ -10275,7 +10290,7 @@ let <v>second_value<> = <v>numbers<>.1;
 
 println!("{}", <v>second_value<>);
 
-<#>// Prints: two<><>
+<n>// Prints: two<><>
 
 
 
@@ -10297,7 +10312,7 @@ let (<v>one<>, <v>two<>, <v>three<>) = <v>numbers<>;
 
 println!("{}, {}, {}", <v>one<>, <v>two<>, <v>three<>);
 
-<#>// Prints: 1, 2, 3<><>
+<n>// Prints: 1, 2, 3<><>
 @
 @ get, destructuring, values, items
 
@@ -10351,7 +10366,7 @@ let <v>point_1<> = <v>Point<>(<v>10<>, <v>20<>);
 
 println!("Point 1: {}, {}", <v>point_1<>.0, <v>point_1<>.1);
 
-<#>// Prints: "Point 1: 10, 20"<><>
+<n>// Prints: "Point 1: 10, 20"<><>
 @
 @ create, new, instantiate
 
@@ -10430,7 +10445,7 @@ let <v>value_1<> = <v>UnitLikeStruct<>;
 
 println!("{:?}", <v>value_1<>);
 
-<#>// Prints: UnitLikeStruct<><>
+<n>// Prints: UnitLikeStruct<><>
 
 
 
@@ -10510,13 +10525,13 @@ Examples:
 
 println!("{:?}", &<v>array_1<>);
 
-<#>// Prints: [0, 0, 0]<><>
+<n>// Prints: [0, 0, 0]<><>
 
 <cb>let <v>array_1<>: [<v>i32<>; 3] = [0; 3];
 
 println!("{:?}", &<v>array_1<>);
 
-<#>// Prints: [0, 0, 0]<><>
+<n>// Prints: [0, 0, 0]<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
@@ -10551,7 +10566,7 @@ Example:
 println!("{:?}", &<v>array_1<>);
 println!("{:?}", &<v>array_1<>[1][2]);
 
-<#>// Prints:
+<n>// Prints:
 //
 //    [[1, 2, 3], [4, 5, 6]]
 //    6<><>
@@ -10637,7 +10652,7 @@ Returns:
 
 Returns a copy of the item from the array.
 
-The item type must support the <go? "copy-">Copy<> trait
+The item type must support the <doc? "copy-">Copy<> trait
 
 
 Example:
@@ -10704,7 +10719,7 @@ Returns:
 
 Returns a copy of the first item in the array.
 
-The item type must support the <go? "copy-">Copy<> trait.
+The item type must support the <doc? "copy-">Copy<> trait.
 
 
 Example:
@@ -10771,7 +10786,7 @@ Returns:
 
 Returns a copy of the last item in the array.
 
-The item type must support the <go? "copy-">Copy<> trait.
+The item type must support the <doc? "copy-">Copy<> trait.
 
 
 Example:
@@ -10819,7 +10834,7 @@ Returns:
 
 Returns a copy of an item from the array.
 
-The item type must support the <go? "copy-">Copy<> trait.
+The item type must support the <doc? "copy-">Copy<> trait.
 
 
 Example:
@@ -10833,7 +10848,7 @@ let <v>sixth<> = <v>array_1<>[<v>1<>][<v>2<>];
 
 println!("{}", <v>sixth<>);
 
-<#>// Prints: 6<><>
+<n>// Prints: 6<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/primitive.array.html>Arrays<>
@@ -10943,17 +10958,17 @@ Examples:
 
 <cb>let <v>array_1<> = [1, 2, 3, 4, 5];
 
-let <v>first<> = &<v>array_1<>[0..=0];                 <#>// [1]<>
+let <v>first<> = &<v>array_1<>[0..=0];                 <n>// [1]<>
 
-let <v>last<> = &<v>array_1<>[array_1.len() - 1.. array_1.len()];   <#>// [5]<>
+let <v>last<> = &<v>array_1<>[array_1.len() - 1.. array_1.len()];   <n>// [5]<>
 
-let <v>index_1<> = &<v>array_1<>[1..=1];               <#>// [2]<>
+let <v>index_1<> = &<v>array_1<>[1..=1];               <n>// [2]<>
 
-let <v>index_1_to_3<> = &<v>array_1<>[1..4];           <#>// [2, 3, 4]<>
+let <v>index_1_to_3<> = &<v>array_1<>[1..4];           <n>// [2, 3, 4]<>
 
-let <v>index_1_to_end<> = &<v>array_1<>[1..];          <#>// [2, 3, 4, 5]<>
+let <v>index_1_to_end<> = &<v>array_1<>[1..];          <n>// [2, 3, 4, 5]<>
 
-let <v>start_to_index_3<> = &<v>array_1<>[..4];        <#>// [1, 2, 3, 4]<><>
+let <v>start_to_index_3<> = &<v>array_1<>[..4];        <n>// [1, 2, 3, 4]<><>
 @
 @ Partial, subarray, sub-array, subslice, sub-slice
 @ .subarray(), []
@@ -10978,7 +10993,7 @@ let <v>subarray<> = &<v>array_1<>[1..3];
 
 println!("{:?}", &<v>subarray<>);
 
-<#>// Prints: [2, 3]<><>
+<n>// Prints: [2, 3]<><>
 @
 @ Partial, subarray, sub-array, subslice, sub-slice
 @ .subarray(), []
@@ -11001,7 +11016,7 @@ let <v>subarray<> = &<v>array_1<>[..3];
 
 println!("{:?}", &<v>subarray<>);
 
-<#>// Prints: [1, 2, 3]<><>
+<n>// Prints: [1, 2, 3]<><>
 @
 @ Start, Beginning, slice, subarray, sub-array, subslice, sib-slice, partial, .left(), []
 
@@ -11023,7 +11038,7 @@ let <v>subarray<> = &<v>array_1<>[2..];
 
 println!("{:?}", &<v>subarray<>);
 
-<#>// Prints: [3, 4, 5]<><>
+<n>// Prints: [3, 4, 5]<><>
 @
 @ Last, End, slice, subarray, sub-array, subslice, sib-slice, partial, .right(), []
 
@@ -11062,7 +11077,7 @@ let <v>vec_1<>: Vec\<i32> = <v>array_1<>.to_vec();
 
 println!("{:?}", &<v>vec_1<>);
 
-<#>// Prints: [1, 2, 3, 4, 5]<><>
+<n>// Prints: [1, 2, 3, 4, 5]<><>
 @
 @ to-vec
 @ .to_vec()
@@ -11204,7 +11219,7 @@ for <v>item<> in <v>vec_1<>.iter() {
 }
 println!();
 
-<#>// Prints: "a b c "<><>
+<n>// Prints: "a b c "<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.vec.html">vec!<>
@@ -11483,7 +11498,7 @@ for <v>item<> in <v>vec_1<>.iter() {
 }
 println!();
 
-<#>// Prints: "a b c "<><>
+<n>// Prints: "a b c "<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.iter">iter()<>
@@ -11525,7 +11540,7 @@ for <v>item<> in <v>vec_1<>.iter_mut() {
 
 println!("{:?}", &<v>vec_1<>);
 
-<#>// Prints: [2, 4, 6]<><>
+<n>// Prints: [2, 4, 6]<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.iter_mut">iter_mut()<>
@@ -11554,7 +11569,7 @@ Example:
 
 println!("Size {}.", <v>vec_1<>.len());
 
-<#>// Prints: "Size 3."<><>
+<n>// Prints: "Size 3."<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.len">len()<>
@@ -11836,7 +11851,7 @@ Sorts the items in the vec.
 Sorts in place.
 The sort order is stable (equivalent value items keep their relative positions).
 
-Requires that the contained item implement the <go? "ord-only">Ord trait<> ( <c>#[derive(Eq, Ord, PartialEq, PartialOrd)]<> ).
+Requires that the contained item implement the <doc? "ord-only">Ord trait<> ( <c>#[derive(Eq, Ord, PartialEq, PartialOrd)]<> ).
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/vec/index.html">vec<>::<l "https://doc.rust-lang.org/std/vec/struct.Vec.html">Vec<>.<l "https://doc.rust-lang.org/std/vec/struct.Vec.html#method.sort">sort()<>
@@ -12121,6 +12136,8 @@ Returns:
 
 Returns option 2 when option 1 has a value.
 
+Use to chain value
+
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.and">and()<>
 @
@@ -12128,7 +12145,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Option - And Then
+### Option - And Then / Chain on Some
 
 <cb>= <v>option_1<>.and_then(<v>function_2<>)<>
 
@@ -12139,10 +12156,14 @@ Returns:
 
 Calls function 2 when option 1 has a value.
 
+You MUST return the value inside <c>Option\<><>.
+
+vs: <c>.map()<> - Map wraps the final result inside <c>Option\<><> for you. <c>.and_then()<> does not.
+
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.and_then">and_then()<>
 @
-@ apply function
+@ apply function, monads
 @ option.and_then(), .and_then()
 
 
@@ -12167,7 +12188,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Option - Get Value Or Default
+### Option - Get Value or Default
 
 <cb>= <v>optional_1<>.unwrap_or(<v>default<>)<>
 
@@ -12187,16 +12208,17 @@ Passing Lambda:
 let <v>unwrapped<> = <v>no_value<>.unwrap_or("[No Value]");
 println!("Unwrapped = {}", <v>unwrapped<>);
 
-<#>// Prints "Unwrapped = [No Value]"<><>
+<n>// Prints "Unwrapped = [No Value]"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.unwrap_or">unwrap_or()<>
 @
+@ with fallback value
 @ .unwrap_or()
 
 
 
-### Option - Get Value Or Call Function
+### Option - Get Value or Call Function
 
 <cb>= <v>optional_1<>.unwrap_or_else(<v>else_function<>)<>
 
@@ -12217,7 +12239,7 @@ Passing Lambda:
 let <v>unwrapped<> = <v>no_value<>.unwrap_or_else(|| "[No Value]");
 println!("Unwrapped = {}", <v>unwrapped<>);
 
-<#>// Prints "Unwrapped = [No Value]"<><>
+<n>// Prints "Unwrapped = [No Value]"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.unwrap_or_else">unwrap_or_else()<>
@@ -12227,7 +12249,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Option - Get Value with Panic Message
+### Option - Get Value or Panic
 
 <cb>= <v>optional_1<>.expect("<v>panic message<>")<>
 
@@ -12239,7 +12261,7 @@ Returns:
 Returns the value inside the option.
 
 Will panic if option is None.
-Panics with the custom panic message
+Panics with the custom panic message.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.expect">expect()<>
@@ -12307,7 +12329,10 @@ Returns:
 
 Converts from one type to another.
 
-Applies the function when <c>Some(value)<> exists.
+Applies the function when <c>Some(<v>value<>)<> exists.
+Map wraps the final result inside <c>Option\<><> for you.
+
+vs: <c>.and_then()<> - and_then requires you to add the <c>Option\<><> yourself. <c>.map()<> does it automatically.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.map">map()<>
@@ -12338,7 +12363,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Option - OK Or
+### Option - OK or Return Error
 
 <cb>= <v>option_1<>.ok_or(<v>error<>)<>
 
@@ -12354,11 +12379,11 @@ The ok_or() clause handles values that are <c>None<>.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.ok_or">ok_or()<>
 @
-@ option.ok_or()
+@ option.ok_or(), error, result
 
 
 
-### Option - OK Or Else
+### Option - OK or Else Call Function
 
 <cb>= <v>option_1<>.ok_or_else(|| <v>error_function<>)<>
 
@@ -12379,7 +12404,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Option - Or
+### Option - Or / Chain Fallback
 
 <cb>= <v>option_1<>.or(<v>option_2<>)<>
 
@@ -12390,6 +12415,7 @@ Returns:
 
 Returns the option. If <c>None<>, returns option 2.
 
+Use to chain values until a non-None value is returned.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.or">or()<>
 @
@@ -12398,7 +12424,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Option - Or Else
+### Option - Or Else / Chain Lazy Fallback
 
 <cb>= <v>option_1<>.or_else(<v>function_2<>)<>
 
@@ -12408,6 +12434,8 @@ Returns:
 
 
 Returns the option. If <c>None<>, calls a function and returns its value.
+
+Use to chain function calls until a non-None value is returned.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/option/index.html">option<>::<l "https://doc.rust-lang.org/std/option/enum.Option.html">Option<>.<l "https://doc.rust-lang.org/std/option/enum.Option.html#method.or_else">or_else()<>
@@ -12643,7 +12671,7 @@ match <v>optional_int<> {
 	}
 }
 
-<#>// Prints "Optional value is 4."<><>
+<n>// Prints "Optional value is 4."<><>
 @
 @ Some(), None
 
@@ -12727,10 +12755,10 @@ Function Return:
 
 <cb>fn <v>some_function<>() -> Result\<<v>Type<>, <v>Error<>> {
 
-	<#>// Return good result:<>
+	<n>// Return good result:<>
 	return Ok(<v>value<>);
 
-	<#>// Return error:<>
+	<n>// Return error:<>
 	return Err(<v>error<>);
 }<>
 
@@ -12738,7 +12766,7 @@ Propagate Error:
 
 <cb>fn <v>call_some_function<>() -> Result\<<v>Type<>, <v>Error<>> {
 
-	<#>// Return Error with ?<>
+	<n>// Return Error with ?<>
 	<v>...<> = <v>some_function<>()?;
 	<v>...<>
 }<>
@@ -12861,7 +12889,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Result - And Then
+### Result - And Then / Chain on Ok
 
 <cb>= <v>result_1<>.and_then(<v>function_2<>)<>
 
@@ -12870,12 +12898,17 @@ Returns:
 <cb>Result\<<v>U<>, <v>E<>><>
 
 
-Calls function 2 when option 1 has a value. Otherwise, return the error.
+Calls function 2 when option 1 has a value.
+Otherwise, return the original error.
+
+You MUST return the value inside <c>Result\<><>.
+
+vs: <c>.map()<> - Map wraps the final result inside <c>Ok\<><> for you. <c>.and_then()<> does not.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l "https://doc.rust-lang.org/std/result/enum.Result.html#method.and_then">and_then()<>
 @
-@ apply function
+@ apply function, monads
 @ result.and_then(), .and_then()
 
 
@@ -12904,7 +12937,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Returns:
 
-<cb>Option\<<v>E<>><>
+<cb><v>E<><>
 
 
 Returns the error value.
@@ -12960,7 +12993,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Result - Get Value Or Default
+### Result - Get Value or Default
 
 <cb>= <v>result_1<>.unwrap_or(<v>default<>)<>
 
@@ -12978,12 +13011,12 @@ Will panic if the result is an error.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l https://doc.rust-lang.org/std/result/enum.Result.html#method.unwrap_or>unwrap_or()<>
 @
-@ unwrap or, substitute, or else
+@ unwrap or, substitute, or else, fallback
 @ result.unwrap_or(), .unwrap_or()
 
 
 
-### Result - Get Value Or Call Function
+### Result - Get Value or Call Function
 
 <cb>= <v>result_1<>.unwrap_or_else(<v>else_function<>)<>
 
@@ -13003,7 +13036,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Result - Get Value with Panic Message
+### Result - Get Value or Panic
 
 <cb>= <v>result_1<>.expect("<v>panic message<>")<>
 
@@ -13082,9 +13115,13 @@ Returns:
 <cb>Result\<<v>U<>, <v>E<>><>
 
 
-Maps the wrapped value from one type to another.
+Maps <c>Result::OK<> values from one type to another.
 
-Errors are returned as is.
+Only alters <c>Result::OK<>.
+Errors are returned unchanged.
+
+Map wraps the final result inside <c>Ok\<><> for you.
+vs: <c>.and_then()<> - and_then requires you to add the <c>Result\<><> yourself. <c>.map()<> does <c>Ok\<><> automatically.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l "https://doc.rust-lang.org/std/result/enum.Result.html#method.map">map()<>
@@ -13143,7 +13180,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Result - Or
+### Result - Or / Chain Fallback
 
 <cb>= <v>result_1<>.or(<v>result_2<>)<>
 
@@ -13154,6 +13191,8 @@ Returns:
 
 Returns the result. If <c>Err<>, returns result 2.
 
+Use to chain values until a non-Err value is returned.
+
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/result/index.html">result<>::<l "https://doc.rust-lang.org/std/result/enum.Result.html">Result<>.<l "https://doc.rust-lang.org/std/result/enum.Result.html#method.or">or()<>
 @
@@ -13162,7 +13201,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 
 
-### Result - Or Else
+### Result - Or Else / Chain Lazy Fallback
 
 <cb>= <v>result_1<>.or_else(<v>function_2<>)<>
 
@@ -13172,6 +13211,8 @@ Returns:
 
 
 Use to return a new value if there is an error.
+
+Use to chain function calls until a non-Err value is returned.
 
 If no error, the original result is returned.
 If there is an error, the function can return either OK(<v>new_value<>) or Err(<v>new_error<>).
@@ -13395,7 +13436,7 @@ let <v>distance<> = <v>Point<>::distance_from_0_0(&<v>point_1<>);
 
 println!("Point Distance: {}", <v>distance<>);
 
-<#>// Prints: "Point Distance: 22.36068"<><>
+<n>// Prints: "Point Distance: 22.36068"<><>
 @
 @ impl-only
 
@@ -13430,7 +13471,7 @@ let <v>point_1<> = <v>Point<>::new(10, 20);
 
 println!("Point 1: {}, {}", <v>point_1<>.<v>x<>, <v>point_1<>.<v>y<>);
 
-<#>// Prints: "Point 1: 10, 20"<><>
+<n>// Prints: "Point 1: 10, 20"<><>
 @
 @ impl-only
 
@@ -13846,18 +13887,18 @@ Rust Docs: <l "https://doc.rust-lang.org/rust-by-example/trait/derive.html">Deri
 
 #### Attribute - Derive Summary
 
-<table><col><go? "%23[derive(Clone)]"<>Clone<>		<><col><c>#[derive(Clone)]<><>
-<col><go? "%23[derive(Copy)]"<>Copy<><><col><c>#[derive(Copy)]<><>
+<table><col><doc? "%23[derive(Clone)]"<>Clone<>		<><col><c>#[derive(Clone)]<><>
+<col><doc? "%23[derive(Copy)]"<>Copy<><><col><c>#[derive(Copy)]<><>
 <col> <>
-<col><go? "%23[derive(Debug)]"<>Debug<><><col><c>#[derive(Debug)]<><>
-<col><go? "%23[derive(Default)]"<>Default<><><col><c>#[derive(Default)]<><>
+<col><doc? "%23[derive(Debug)]"<>Debug<><><col><c>#[derive(Debug)]<><>
+<col><doc? "%23[derive(Default)]"<>Default<><><col><c>#[derive(Default)]<><>
 <col> <>
-<col><go? "%23[derive(Hash)]"<>Hash<><><col><c>#[derive(Hash)]<><>
+<col><doc? "%23[derive(Hash)]"<>Hash<><><col><c>#[derive(Hash)]<><>
 <col> <>
-<col><go? "%23[derive(Eq)]"<>Eq<><><col><c>#[derive(Eq)]<><>
-<col><go? "%23[derive(Ord)]"<>Ord<><><col><c>#[derive(Ord)]<><>
-<col><go? "%23[derive(PartialEq)]"<>PartialEq<><><col><c>#[derive(PartialEq)]<><>
-<col><go? "%23[derive(PartialOrd)]"<>PartialOrd<><><col><c>#[derive(PartialOrd)]<><><>
+<col><doc? "%23[derive(Eq)]"<>Eq<><><col><c>#[derive(Eq)]<><>
+<col><doc? "%23[derive(Ord)]"<>Ord<><><col><c>#[derive(Ord)]<><>
+<col><doc? "%23[derive(PartialEq)]"<>PartialEq<><><col><c>#[derive(PartialEq)]<><>
+<col><doc? "%23[derive(PartialOrd)]"<>PartialOrd<><><col><c>#[derive(PartialOrd)]<><><>
 @
 @ basics
 
@@ -13887,7 +13928,7 @@ fn main() {
 	println!("Point: {},{}", &<v>point_2<>.<v>x<>, &<v>point_2<>.<v>y<>);
 }
 
-<#>// Prints: Point: 3,4<><>
+<n>// Prints: Point: 3,4<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l https://doc.rust-lang.org/std/clone/index.html>clone<>::<l https://doc.rust-lang.org/std/clone/derive.Clone.html>Clone<> (derive macro) | <l https://doc.rust-lang.org/std/clone/trait.Clone.html>Clone<> (trait)
@@ -13957,7 +13998,7 @@ fn main() {
     println!("Values: {:?}", <v>item<>.<v>values<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    Name:
 //    Values: []<><>
@@ -14198,10 +14239,10 @@ Recoverable Error:
 
 <cb>fn <v>do_something<>() -> Result\<<v>Type<>, <v>Error<>> {
 
-	<#>// Return good result:<>
+	<n>// Return good result:<>
 	return Ok(<v>data<>);
 
-	<#>// Return error:<>
+	<n>// Return error:<>
 	return Err(<v>error<>);
 }<>
 
@@ -14237,10 +14278,10 @@ Unrecoverable Error:
 
 <cb>fn <v>do_something<>() -> Result\<<v>T<>, <v>Error<>> {
 
-	<#>// Return good result:<>
+	<n>// Return good result:<>
 	return Ok(<v>data<>);
 
-	<#>// Return error:<>
+	<n>// Return error:<>
 	return Err(<v>error<>);
 }<>
 
@@ -14419,7 +14460,7 @@ Return Value (Implicit):
 Return Multiple Values:
 
 <cb>fn <v>name<>() {
-   return (<v>value_1<>, <v>value_2<>); <#>// Return as tuple.<>
+   return (<v>value_1<>, <v>value_2<>); <n>// Return as tuple.<>
 }<>
 @
 @ summary
@@ -14652,7 +14693,7 @@ fn main() {
 
 <cb>fn <v>name<>() {
 	<v>...<>
-	<#>// Nothing returned.<>
+	<n>// Nothing returned.<>
 }<>
 
 
@@ -14667,7 +14708,7 @@ fn type_of\<T>(_: T) -> &'static str {
 	type_name::\<T>()
 }
 
-<#>/// Returns nothing:<>
+<n>/// Returns nothing:<>
 fn <v>print_square<>(<v>x<>: i32) {
 	let <v>squared<> = <v>x<> * <v>x<>;
 	println!("{} squared is {}.", <v>x<>, <v>squared<>);
@@ -14678,7 +14719,7 @@ fn main() {
 	println!("returned value type is {}.", type_of(<v>return_value<>));
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    2 squared is 4.
 //    returned value type is ().<><>
@@ -14730,7 +14771,7 @@ let <v>squared_value<> = <v>square<>(4);
 
 println!("4 squared is {}.", <v>squared_value<>);
 
-<#>// Prints: "4 squared is 16."<><>
+<n>// Prints: "4 squared is 16."<><>
 
 
 
@@ -14797,7 +14838,7 @@ Example:
 
 closure_1("Value 1");
 
-<#>// Prints: param_1 = Value 1<><>
+<n>// Prints: param_1 = Value 1<><>
 @
 @ parameters
 
@@ -14819,7 +14860,7 @@ let <v>closure_1<> = || println!("value = {}", <v>value<>);
 
 <v>closure_1<>();
 
-<#>// Prints "value = 42"<><>
+<n>// Prints "value = 42"<><>
 @
 @ local scope, referencing, reference, move
 
@@ -14841,7 +14882,7 @@ let <v>closure_1<> = move || println!("value = {} (owned)", <v>value<>);
 
 <v>closure_1<>();
 
-<#>// Prints "value = 42 (owned)"<><>
+<n>// Prints "value = 42 (owned)"<><>
 @
 @ local scope, referencing, reference, ownership, move
 
@@ -15386,18 +15427,18 @@ If <c>&self<> is an argument, the return type gets the <c>self<> lifetime<>.
 
 Rule 1:
 
-<cb>fn function_1(<v>param_1<>: &<v>T<>, <v>param_2<>: &<v>T<>) -> &<v>T<>                   <#>// Elided<>
-fn function_1<hl>\<'a, 'b><>(<v>param_1<>: &<hl>'a<> <v>T<>, <v>param_2<>: &<hl>'b<> <v>T<>) -> &<hl>'a<> <v>T<>  <#>// Compiler Expanded<><>
+<cb>fn function_1(<v>param_1<>: &<v>T<>, <v>param_2<>: &<v>T<>) -> &<v>T<>                   <n>// Elided<>
+fn function_1<hl>\<'a, 'b><>(<v>param_1<>: &<hl>'a<> <v>T<>, <v>param_2<>: &<hl>'b<> <v>T<>) -> &<hl>'a<> <v>T<>  <n>// Compiler Expanded<><>
 
 Rule 2:
 
-<cb>fn function_1(<v>param_1<>: &<v>T<>) -> &<v>T<>                               <#>// Elided<>
-fn function_1<hl>\<'a><>(<v>param_1<>: &<hl>'a<> <v>T<>) -> &<hl>'a<> <v>T<>                     <#>// Compiler Expanded<><>
+<cb>fn function_1(<v>param_1<>: &<v>T<>) -> &<v>T<>                               <n>// Elided<>
+fn function_1<hl>\<'a><>(<v>param_1<>: &<hl>'a<> <v>T<>) -> &<hl>'a<> <v>T<>                     <n>// Compiler Expanded<><>
 
 Rule 3:
 
-<cb>fn function_1(&<v>self<>, <v>param_2<>: &<v>T<>) -> &<v>T<>                        <#>// Elided<>
-fn function_1<hl>\<'a, 'b><>(&<hl>'a<> <v>self<>, <v>param_2<>: &<hl>'b<> <v>T<>) -> &<hl>'a<> <v>T<>       <#>// Compiler Expanded<><>
+<cb>fn function_1(&<v>self<>, <v>param_2<>: &<v>T<>) -> &<v>T<>                        <n>// Elided<>
+fn function_1<hl>\<'a, 'b><>(&<hl>'a<> <v>self<>, <v>param_2<>: &<hl>'b<> <v>T<>) -> &<hl>'a<> <v>T<>       <n>// Compiler Expanded<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/reference/lifetime-elision.html">Lifetime elision<>
@@ -15605,26 +15646,26 @@ index: tags
 index-to: word
 <>
 
-<go? "assert!-only">assert!()<>
-<go? "assert_eq!-only">assert_eq!()<>
-<go? "assert_ne!-only">assert_ne!()<>
-<go? "debug_assert!-only">debug_assert!()<>
-<go? "debug_assert_eq!-only">debug_assert_eq!()<>
-<go? "debug_assert_ne!-only">debug_assert_ne!()<>
+<doc? "assert!-only">assert!()<>
+<doc? "assert_eq!-only">assert_eq!()<>
+<doc? "assert_ne!-only">assert_ne!()<>
+<doc? "debug_assert!-only">debug_assert!()<>
+<doc? "debug_assert_eq!-only">debug_assert_eq!()<>
+<doc? "debug_assert_ne!-only">debug_assert_ne!()<>
 
-<go? "eprint!-only">eprint!()<>
-<go? "eprintln!-only">eprintln!()<>
-<go? "format!-only">format!()<>
-<go? "print!-only">print!()<>
-<go? "println!-only">println!()<>
-<go? "write-only"<>write!()<>
-<go? "writeln-only"<>writeln!()<>
+<doc? "eprint!-only">eprint!()<>
+<doc? "eprintln!-only">eprintln!()<>
+<doc? "format!-only">format!()<>
+<doc? "print!-only">print!()<>
+<doc? "println!-only">println!()<>
+<doc? "write-only"<>write!()<>
+<doc? "writeln-only"<>writeln!()<>
 
-<go? "panic!-only">panic!()<>
-<go? "todo!-only">todo!()<>
-<go? "unimplemented!-only">unimplemented!()<>
+<doc? "panic!-only">panic!()<>
+<doc? "todo!-only">todo!()<>
+<doc? "unimplemented!-only">unimplemented!()<>
 
-<go? "vec!-only">vec!()<>
+<doc? "vec!-only">vec!()<>
 @
 @ standard macros, standard-macros-only, standard-macro-only, std-macro-only, std-macros-only, !
 @ summary
@@ -15646,6 +15687,40 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 @
 @ define, new, instantiate, create
 @ panic!(), panic!-only
+
+
+# Send and Sync, Send vs Sync
+
+Rule of thumb:
+<*><m>Send<> = transfer ownership across threads
+<m>Sync<> = concurrent read access<>
+
+
+<m>Send<>:
+<*>Type can be moved to another thread<>
+
+<m>Sync<>:
+<*>Type can be shared between threads by reference (<m>&<v>T<><> is <m>Send<>)<>
+
+
+Standard Types:
+
+Send + Sync:
+<*><c>i32<>, <c>String<>, <c>AtomicUsize<>, <c>Arc\<<v>T<>><>, <c>Mutex\<<v>T<>><>, <c>Vec\<<v>T<>><> 
+Only when <c><v>T<><> is both <c>Send<> and <c>Sync<><>
+
+Send only (not Sync):
+<*><c>Cell\<<v>T<>><>, <c>RefCell\<<v>T<>><>
+Safe to move to another thread, but interior mutability has no synchronization for shared access<>
+
+Sync only (not Send):
+<*><c>MutexGuard\<'_, <v>T<>><>
+Must be dropped on the thread that locked it (pthread requirement), but <c>&MutexGuard<> is fine to share<>
+
+Neither:
+<*>Raw pointers <c>*const<> <c><v>T<><> / <c>*mut <v>T<><>
+<c>Rc\<<v>T<>><>
+Non-atomic RefCount races on both transfer and shared access<>
 
 
 
@@ -16441,7 +16516,7 @@ Define:
 	fn <v>function_1<>();
 	fn <v>function_2<>() -> Self;
 	fn <v>function_with_default_implementation<>() {
-		<#>// Implementation here.<>
+		<n>// Implementation here.<>
 	}
 
 	fn <v>method<>(self);
@@ -16449,7 +16524,7 @@ Define:
 	fn <v>method<>(&mut self);
 	fn <v>method<>(Box\<self>);
 	fn <v>method_with_default_implementation<>(&self) {
-		<#>// Implementation here.<>
+		<n>// Implementation here.<>
 	}
 }<>
 
@@ -16458,11 +16533,11 @@ Implement:
 <cb>imp <v>Trait1<> for <v>Type<> {
 
 	fn <v>function_1<>() {
-		<#>// Implementation here.<>
+		<n>// Implementation here.<>
 	}
 
 	fn <v>method_1<>(&self) {
-		<#>// Implementation here.<>
+		<n>// Implementation here.<>
 	}
 
 	fn <v>call_type_method<>(&<v>self<>) {
@@ -16474,7 +16549,7 @@ Implement:
 	}
 
 	fn <v>use_constant<>() {
-		<s>...<> = Self::<v>CONSTANT_1<>;
+		<d>...<> = Self::<v>CONSTANT_1<>;
 	}
 }<>
 
@@ -16538,7 +16613,7 @@ A trait function is independent of any trait instance.
 <cb>trait <v>trait_1<> {
 
 	fn <v>function_1<> () {
-		<#>// Implementation here.<>
+		<n>// Implementation here.<>
 	}
 }<>
 
@@ -16578,7 +16653,7 @@ Boxed:
 
 <cb>fn <v>method_1<>(Box\<self>);<>
 
-Take Ownership<super><#>1<><>:
+Take Ownership<super><n>1<><>:
 
 <cb>fn <v>method_1<>(self);<>
 
@@ -16596,7 +16671,7 @@ Trait methods are always associated with an instance of a trait.
 <cb>trait <v>trait_1<> {
 
 	fn <v>method_1<>(&self) {
-		<#>// Implementation here.<>
+		<n>// Implementation here.<>
 	}
 }<>
 
@@ -16663,7 +16738,7 @@ Functions can be Type functions (call with ::) or instance methods (defined with
 <cb>trait <v>TraitName<> {
 
 	fn <v>traitFunction1<>(<v>...<>) {
-		<#>// Implement here.<>
+		<n>// Implement here.<>
 		<v>...<>
 	}
 }<>
@@ -16740,7 +16815,7 @@ impl <v>Item<> {
 
 impl <v>Trait1<> for <v>Item<> {
 	fn call_struct(&<v>self<>) -> &'static str {
-		<b><v>Item<>.call()<>		<#>// Call happens here.<>
+		<b><v>Item<>.call()<>		<n>// Call happens here.<>
 	}
 }
 
@@ -16750,7 +16825,7 @@ fn main() {
 	println!("{}", <b><v>item_1<>.call_struct()<>);
 }
 
-<#>Prints: Called item.<><><>
+<n>Prints: Called item.<><><>
 @
 @ self
 
@@ -16798,7 +16873,7 @@ struct <v>Item<>;
 
 impl <v>Item<> {
 	fn call_trait(&<v>self<>) -> &'static str {
-		<b><v>Trait1<>::call(<v>self<>)<>	<#>// Call happens here.<>
+		<b><v>Trait1<>::call(<v>self<>)<>	<n>// Call happens here.<>
 	}
 }
 
@@ -16814,7 +16889,7 @@ fn main() {
 	println!("{}", <b><v>item_1<>.call_trait()<>);
 }
 
-<#>Prints: Called trait.<><><>
+<n>Prints: Called trait.<><><>
 @
 @ self
 
@@ -17117,7 +17192,7 @@ Examples:
 
 <cb>println!("'{:>10}'", "12345");
 
-<#>// Prints: '     12345'<><>
+<n>// Prints: '     12345'<><>
 @
 @ align right, right justify, string
 @ pad-left, justify-right, right-justify, align-right, right-align
@@ -17143,7 +17218,7 @@ Examples:
 
 <cb>println!("'{:*>10}'", "12345");
 
-<#>// Prints: '*****12345'<><>
+<n>// Prints: '*****12345'<><>
 @
 @ align right, right justify, string
 @ pad-left, justify-right, right-justify, align-right, right-align
@@ -17170,11 +17245,11 @@ Examples:
 
 <cb>println!("'{:10}'", "12345");
 
-<#>// Prints: '12345     '<><>
+<n>// Prints: '12345     '<><>
 
 <cb>println!("'{:\<10}'", "12345");
 
-<#>// Prints: '12345     '<><>
+<n>// Prints: '12345     '<><>
 @ align left, left justify, string
 @ pad-right, justify-left, left-justify, left-right, left-align
 @ {:\<}, {:}
@@ -17201,7 +17276,7 @@ Example:
 
 <cb>println!("'{:*\<10}'", "12345");
 
-<#>// Prints: '12345*****'<><>
+<n>// Prints: '12345*****'<><>
 @
 @ align left, left justify, string
 @ pad-right, justify-left, left-justify, left-right, left-align
@@ -17247,7 +17322,7 @@ Example:
 
 <cb>println!("'{:.3}'", 3.141592);
 
-<#>// Prints: '3.142'<><>
+<n>// Prints: '3.142'<><>
 @
 @ align right, right justify, float, floats, floating values, f32, f64
 @ pad-left, justify-right, right-justify, align-right, right-align
@@ -17275,7 +17350,7 @@ Examples:
 
 <cb>println!("{:05}", 42);
 
-<#>// Prints: 00042<><>
+<n>// Prints: 00042<><>
 @
 @ align right, right justify, integers, floats, floating values, f32, f64, 0s
 @ pad-left, justify-right, right-justify, align-right, right-align
@@ -17301,7 +17376,7 @@ Example:
 
 <cb>println!("{:08.3}", 3.141592);
 
-<#>// Prints: 0003.142<><>
+<n>// Prints: 0003.142<><>
 @
 @ align right, right justify, integer, 0s, floats, floating values, f32, f64
 @ pad-left, justify-right, right-justify, align-right, right-align
@@ -17335,16 +17410,16 @@ Prints the binary form of a value.
 
 Examples:
 
-<cb>println!("{:b}", 11);		<#>// 1011<>
-println!("{:08b}", 11);		<#>// 00001011<>
-println!("{:016b}", 11);	<#>// 0000000000001011<><>
+<cb>println!("{:b}", 11);		<n>// 1011<>
+println!("{:08b}", 11);		<n>// 00001011<>
+println!("{:016b}", 11);	<n>// 0000000000001011<><>
 
 <cb>let <v>value<> = 11;
 let <b>binary<> = format!("{:b}", value);
 
 println!("{} decimal = {} binary.", &<v>value<>, &<v>binary<>);
 
-<#>// Prints: 11 decimal = 1011 binary.<><>
+<n>// Prints: 11 decimal = 1011 binary.<><>
 @
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize 
@@ -17371,15 +17446,15 @@ Prints the binary form of a value with leading '0b'.
 
 Examples:
 
-<cb>println!("{:#b}", 11);		<#>// <b>0b<>1011<>
-println!("{:#08b}", 11);	<#>// <b>0b<>00001011<><>
+<cb>println!("{:#b}", 11);		<n>// <b>0b<>1011<>
+println!("{:#08b}", 11);	<n>// <b>0b<>00001011<><>
 
 <cb>let <v>value<> = 11;
 let <b>binary<> = format!("{:#b}", value);
 
 println!("{} decimal = {} binary.", &<v>value<>, &<v>binary<>);
 
-<#>// Prints: 11 decimal = 0b1011 binary.<><>
+<n>// Prints: 11 decimal = 0b1011 binary.<><>
 @
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize 
@@ -17407,16 +17482,16 @@ Prints the lower case hexadecimal form of a value.
 
 Examples:
 
-<cb>println!("{:x}", 42);		<#>// 2a<>
-println!("{:02x}", 42);		<#>// 2a<>
-println!("{:04x}", 42);		<#>// 002a<><>
+<cb>println!("{:x}", 42);		<n>// 2a<>
+println!("{:02x}", 42);		<n>// 2a<>
+println!("{:04x}", 42);		<n>// 002a<><>
 
 <cb>let <v>value<> = 42;
 let <b>hex<> = format!("{:04x}", value);
 
 println!("{} decimal = {} hex.", &<v>value<>, &<v>hex<>);
 
-<#>// Prints: 42 decimal = 002a hex.<><>
+<n>// Prints: 42 decimal = 002a hex.<><>
 @
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize
@@ -17445,16 +17520,16 @@ Returns the upper case hexadecimal form of a value.
 
 Examples:
 
-<cb>println!("{:X}", 42);		<#>// 2A<>
-println!("{:02X}", 42);		<#>// 2A<>
-println!("{:04X}", 42);		<#>// 002A<><>
+<cb>println!("{:X}", 42);		<n>// 2A<>
+println!("{:02X}", 42);		<n>// 2A<>
+println!("{:04X}", 42);		<n>// 002A<><>
 
 <cb>let <v>value<> = 42;
 let <b>hex<> = format!("{:04X}", value);
 
 println!("{} decimal = {} hex.", &<v>value<>, &<v>hex<>);
 
-<#>// Prints: 42 decimal = 002A hex.<><>
+<n>// Prints: 42 decimal = 002A hex.<><>
 @
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize 
@@ -17487,17 +17562,17 @@ Note: The padding length refers to the total length of the returned string.
 
 Examples:
 
-<cb>println!("{:#x}", 42);		<#>// <b>0x<>2a<>
-println!("{:#02x}", 42);	<#>// 0x2a<>
-println!("{:#04x}", 42);	<#>// 0x2a<>
-println!("{:#06x}", 42);	<#>// 0x002a<><>
+<cb>println!("{:#x}", 42);		<n>// <b>0x<>2a<>
+println!("{:#02x}", 42);	<n>// 0x2a<>
+println!("{:#04x}", 42);	<n>// 0x2a<>
+println!("{:#06x}", 42);	<n>// 0x002a<><>
 
 <cb>let <v>value<> = 42;
 let <b>hex<> = format!("{:#06x}", value);
 
 println!("{} decimal = {} hex.", &<v>value<>, &<v>hex<>);
 
-<#>// Prints: 42 decimal = 0x002a hex.<><>
+<n>// Prints: 42 decimal = 0x002a hex.<><>
 @
 @ integer, i8, i16, i32, i64, i128
 @ u8, u16, u32, u64, fu128, usize 
@@ -17934,7 +18009,7 @@ Usage:
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<Vec\<u8>><>
+<cb><doc? "io-result-only>Result<>\<Vec\<u8>><>
 
 
 Reads a file in as bytes (u8).
@@ -17974,7 +18049,7 @@ let mut <v>contents<>: Vec\<u8> = Vec::new();
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<Vec\<u8>><>
+<cb><doc? "io-result-only>Result<>\<Vec\<u8>><>
 
 
 Reads a file in as a bytes (u8).
@@ -18017,7 +18092,7 @@ fs::write(<v>path<>).expect(<v>error_message<>)<>
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<()><>
+<cb><doc? "io-result-only>Result<>\<()><>
 
 
 Writes a file out as bytes (u8).
@@ -18052,7 +18127,7 @@ let mut <v>file<> = File::create(<v>path<>)?;
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<()><>
+<cb><doc? "io-result-only>Result<>\<()><>
 
 
 Writes a vector of bytes to a file using an instance of <c>File<>.
@@ -18101,7 +18176,7 @@ let mut <v>file<> = File::create(<v>path<>)?;
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<()><>
+<cb><doc? "io-result-only>Result<>\<()><>
 
 
 Appends a vector of bytes to a file using an instance of <c>File<>.
@@ -18133,7 +18208,7 @@ Usage:
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<String><>
+<cb><doc? "io-result-only>Result<>\<String><>
 
 
 Reads a file in as a string.
@@ -18173,7 +18248,7 @@ let mut <v>content<> = String::new();
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<usize><>
+<cb><doc? "io-result-only>Result<>\<usize><>
 
 
 Reads a file in as a string.
@@ -18302,7 +18377,7 @@ write(<v>path<>, <v>contents<>.as_bytes());<>
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<()><>
+<cb><doc? "io-result-only>Result<>\<()><>
 
 
 Writes a string to a file.
@@ -18347,7 +18422,7 @@ let mut <v>file<> = File::create(<v>path<>)?;
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<()><>
+<cb><doc? "io-result-only>Result<>\<()><>
 
 
 Writes a string out to a file using an instance of <c>File<>.
@@ -18399,7 +18474,7 @@ for <v>line<> in <v>lines<> {
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<()><>
+<cb><doc? "io-result-only>Result<>\<()><>
 
 
 Writes a list of strings to a file.
@@ -18438,7 +18513,7 @@ let mut <v>file<> = File::create(<v>path<>)?;
 
 Returns:
 
-<cb><go? "io-result-only>Result<>\<()><>
+<cb><doc? "io-result-only>Result<>\<()><>
 
 
 Appends a string to a file using an instance of <c>File<>.
@@ -18858,13 +18933,13 @@ Read:
 use std::io::BufReader;
 use std::io::Read;
 
-<#>// Open:<>
+<n>// Open:<>
 
 let <v>file<> = File::open(<v>path<>)?;
 let mut <v>reader<> = BufReader::new(<v>file<>);
 let mut <v>buffer<> = [0_u8; <v>max_size<>];
 
-<#>// Read:<>
+<n>// Read:<>
 
 loop {
 
@@ -18991,14 +19066,14 @@ Read:
 use std::io::BufWriter;
 use std::io::Write;
 
-<#>// Open:<>
+<n>// Open:<>
 let <v>file<> = File::open(<v>path<>)?;
 let mut <v>writer<> = BufWriter::new(<v>file<>);
 
-<#>// Write Bytes:<>
+<n>// Write Bytes:<>
 <v>writer<>.write(&<v>byte_array<>)?
 
-<#>// Force Write:<>
+<n>// Force Write:<>
 <v>writer<>.flush()?;<>
 
 Errors:
@@ -19127,11 +19202,11 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 The error returned from an IO function call.
 
 
-<go? "io-result-only">Result<>  |  <go? "errorkind-only">ErrorKind<>
+<doc? "io-result-only">Result<>  |  <doc? "errorkind-only">ErrorKind<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/struct.Error.html>Error<>
 @
-@ io-error-only
+@ io-error-only, ioerror-only
 @ std::io::error, io::error
 
 
@@ -19160,7 +19235,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 The specific error that occurred during an IO function call. Returned in IO Error.
 
-<go? "io-result-only">Result<>  |  <go? "io-error-only">Error<>
+<doc? "io-result-only">Result<>  |  <doc? "io-error-only">Error<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/enum.ErrorKind.html>ErrorKind<>
 @
@@ -19202,7 +19277,7 @@ ErrorKind::Other<>
 
 The result from an IO function call.
 
-<go? "io-error-only">Error<>  |  <go? "errorkind-only">ErrorKind<>
+<doc? "io-error-only">Error<>  |  <doc? "errorkind-only">ErrorKind<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/io/index.html">io<>::<l https://doc.rust-lang.org/std/io/type.Result.html>Result<>
 @
@@ -19213,11 +19288,13 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 # Path
 
-<cb>Path<>
-
 Type:
 
 <cb>std::path::Path<>
+
+Use:
+
+<cb>use std::path::Path;<>
 
 
 A structure representing a path.
@@ -19612,7 +19689,7 @@ let <v>user_path<> = <v>path_1<>.join("<v>your_name_here<>");
 
 println!("{}", <v>user_path<>.display())
 
-<#>// Prints: home/your_name_here<><>
+<n>// Prints: home/your_name_here<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.Path.html">Path<>.<l "https://doc.rust-lang.org/std/path/struct.Path.html#method.join">join()<>
@@ -19692,11 +19769,13 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 # PathBuf
 
-<cb>PathBuf<>
-
 Type:
 
 <cb>std::path::PathBuf<>
+
+Use:
+
+<cb>use std::path::PathBuf;<>
 
 
 A structure representing a mutable path.
@@ -19757,7 +19836,7 @@ Example:
 let <v>pathbuf_1<> = PathBuf::from("/home");
 println!("{}", <v>pathbuf_1<>.display());
 
-<#>// Prints: /home<><>
+<n>// Prints: /home<><>
 
 Creates an instance of PathBuf with the given value.
 
@@ -19810,7 +19889,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### PathBuf - File Name
 
-<cb>= <v>pat;1<>.file_name()<>
+<cb>= <v>path_1<>.file_name()<>
 
 Returns:
 
@@ -19856,7 +19935,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### PathBuf - File Parent
 
-<cb>= <v>pathbuf_1<>.extension()<>
+<cb>= <v>pathbuf_1<>.parent()<>
 
 Returns:
 
@@ -19868,17 +19947,17 @@ Returns the parent directory for the pathbuf.
 For "<v>/user/your_name_here/file.txt<>", returns "<v>/user/your_name_here<>".
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.PathBuf.html>PathBuf<>.<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html#method.extension">extension()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l https://doc.rust-lang.org/std/path/struct.PathBuf.html>PathBuf<>.<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html#method.parent">parent()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/ffi/index.html">ffi<>::<l "https://doc.rust-lang.org/std/ffi/struct.OsStr.html">OsStr<>
 @
-@ file parts, directory, folder, get
-@ pathbuf.extension(), .extension()
+@ file parts, directory, folder, get, ..
+@ pathbuf.parent(), .parent()
 
 
 
 ### PathBuf - File Stem
 
-<cb>= <v>pat;1<>.file_stem()<>
+<cb>= <v>path_1<>.file_stem()<>
 
 Returns:
 
@@ -20055,7 +20134,7 @@ let mut <v>pathbuf_1<> = PathBuf::new();
 
 println!("{}", <v>pathbuf_1<>.display());
 
-<#>// Prints: /home/your_name_here<><>
+<n>// Prints: /home/your_name_here<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html">PathBuf<>.<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html#method.push">push()<>
@@ -20111,7 +20190,7 @@ let <v>user_path<> = <v>path_1<>.join("<v>your_name_here<>");
 
 println!("{}", <v>user_path<>.display());
 
-<#>// Prints: home/your_name_here<><>
+<n>// Prints: home/your_name_here<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/path/index.html">path<>::<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html">PathBuf<>.<l "https://doc.rust-lang.org/std/path/struct.PathBuf.html#method.join">join()<>
@@ -20469,7 +20548,7 @@ let <v>value<> = &<v>btree_map_1<>.get(&"<v>one<>");
 
 println!("{}", <v>value<>.unwrap());
 
-<#>// Prints: "Value 1"<><>
+<n>// Prints: "Value 1"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.BTreeMap.html>BTreeMap<>.<l "https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#method.new">new()<>
@@ -20517,6 +20596,7 @@ Returns true when the btreemap contains the given key.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.BTreeMap.html>BTreeMap<>.<l "https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#method.contains_key">contains_key()<>
 @
+@ has, check exists, includes
 @ btreemap.contains_key(), .contains_key()
 
 
@@ -20583,7 +20663,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Returns:
 
-<cb>Keys\<<v>Key<>, <v>Value<>> 	<#>// Iterator<><>
+<cb>Keys\<<v>Key<>, <v>Value<>> 	<n>// Iterator<><>
 
 
 Returns an iterator for all keys.
@@ -20602,7 +20682,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Returns:
 
-<cb>Values\<<v>Key<>, <v>Value<>> 	<#>// Iterator<><>
+<cb>Values\<<v>Key<>, <v>Value<>> 	<n>// Iterator<><>
 
 
 Returns an iterator for all values.
@@ -20623,7 +20703,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Returns:
 
-<cb>ValuesMut\<<v>Key<>, <v>Value<>> 	<#>// Iterator<><>
+<cb>ValuesMut\<<v>Key<>, <v>Value<>> 	<n>// Iterator<><>
 
 
 Returns a mutable iterator for all values.
@@ -20682,7 +20762,7 @@ while let Some((<v>key<>, <v>value<>)) = <v>range<>.next() {
 	println!("{} ({})", <v>value<>, <v>key<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //    β (beta)
 //    χ (chi)
@@ -20725,7 +20805,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Iterates over the key value pairs in the BTreeMap.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <doc? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.BTreeMap.html>BTreeMap<>.<l "https://doc.rust-lang.org/std/collections/struct.BTreeMap.html#method.iter">iter()<>
@@ -20953,6 +21033,7 @@ Returns true if the set contains the value.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.BTreeSet.html>BTreeSet<>.<l "https://doc.rust-lang.org/std/collections/struct.BTreeSet.html#method.contains">contains()<>
 @
+@ has, check exists, includes
 @ btreeset.contains(), .contains()
 
 
@@ -21403,7 +21484,7 @@ let <v>value<> = &<v>hashmap_1<>.get(&"<v>one<>");
 
 println!("{}", <v>value<>.unwrap());
 
-<#>// Prints: "Value 1"<><>
+<n>// Prints: "Value 1"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.new">new()<>
@@ -21505,6 +21586,7 @@ Returns true when the hashmap contains the given key.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.contains_key">contains_key()<>
 @
+@ has, check exists, includes
 @ hashmap.contains_key(), .contains_key()
 
 
@@ -21571,13 +21653,13 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Returns:
 
-<cb>Keys\<<v>Key<>, <v>Value<>> 	<#>// Iterator<><>
+<cb>Keys\<<v>Key<>, <v>Value<>> 	<n>// Iterator<><>
 
 
 Returns an iterator for all keys.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <doc? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.keys">keys()<>
@@ -21593,13 +21675,13 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Returns:
 
-<cb>Values\<<v>Key<>, <v>Value<>> 	<#>// Iterator<><>
+<cb>Values\<<v>Key<>, <v>Value<>> 	<n>// Iterator<><>
 
 
 Returns an iterator for all values.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <doc? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.values">values()<>
@@ -21617,13 +21699,13 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Returns:
 
-<cb>ValuesMut\<<v>Key<>, <v>Value<>> 	<#>// Iterator<><>
+<cb>ValuesMut\<<v>Key<>, <v>Value<>> 	<n>// Iterator<><>
 
 
 Returns a mutable iterator for all values.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <doc? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.values_mut">values_mut()<>
@@ -21660,7 +21742,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Iterates over the key value pairs in the HashMap.
 
 Takes O(capacity) time to execute (vs the shorter O(length) time).
-Prefer <go? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
+Prefer <doc? "btreemap-only">BTreeMap<> if doing this a lot or on a large data set.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashMap.html>HashMap<>.<l "https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.iter">iter()<>
@@ -21951,6 +22033,7 @@ Returns true if the set contains the value.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.HashSet.html>HashSet<>.<l "https://doc.rust-lang.org/std/collections/struct.HashSet.html#method.contains">contains()<>
 @
+@ has, check exists, includes
 @ hashset.contains(), .contains()
 
 
@@ -22387,7 +22470,7 @@ for <v>item<> in <v>vec_deque_1<>.iter() {
 }
 println!();
 
-<#>// Prints: "c b a "<><>
+<n>// Prints: "c b a "<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.VecDeque.html>VecDeque<>.<l "https://doc.rust-lang.org/std/collections/struct.VecDeque.html#method.new">new()<>
@@ -22427,7 +22510,7 @@ for <v>item<> in <v>vec_deque_1<>.iter() {
 }
 println!();
 
-<#>// Prints: "a b c "<><>
+<n>// Prints: "a b c "<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.VecDeque.html>VecDeque<>
@@ -22450,7 +22533,7 @@ Returns true if the item exists in the queue.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.VecDeque.html>VecDeque<>.<l "https://doc.rust-lang.org/std/collections/struct.VecDeque.html#method.contains">contains()<>
 @
-@ has, in, includes
+@ has, check exists, includes
 @ item, element, value
 
 
@@ -22580,7 +22663,7 @@ Example:
 
 println!("Size {}.", <v>vec_deque_1<>.len());
 
-<#>// Prints: "Size 3."<><>
+<n>// Prints: "Size 3."<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/collections/index.html">collections<>::<l https://doc.rust-lang.org/std/collections/struct.VecDeque.html>VecDeque<>.<l "https://doc.rust-lang.org/std/collections/struct.VecDeque.html#method.len">len()<>
@@ -22710,23 +22793,23 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Smart Pointers Traits:
 
-<cb><go? "deref-only">Deref<>
-<go? "drop-only">Drop<><>
+<cb><doc? "deref-only">Deref<>
+<doc? "drop-only">Drop<><>
 
 Standard Library Smart Pointers:
 
-<card><t><c><go? "arc-only">Arc\<<v>T<>><><><|><|>Shared ownership, thread-safe
-<c><go? "box-only">Box\<<v>T<>><><><|><|>Heap allocated
-<c><go? "cell-only">Cell\<<v>T<>><><><|><|>Mutates behind immutable
-<c><go? "cow-only">Cow\<<v>T<>><><><|><|>Efficient pass or clone (as needed)
-<c><go? "mutex-only">Mutex\<<v>T<>><><|><|>Shared access, thread-safe
-<c><go? "rc-only">Rc\<<v>T<>><><><|><|>Shared ownership, single-threaded only
-<c><go? "ref-only">Ref\<<v>T<>><><><|><|>Immutable, returned by <c>RefCell<>
-<c><go? "refcell-only">RefCell\<<v>T<>><><><|><|>Runtime borrow checking, single-threaded only
-<c><go? "refmut-only">RefMut\<<v>T<>><><><|><|>Mutable, returned by <c>RefCell<>
-<c><go? "rwlock-only">RwLock\<<v>T<>><><><|><|>Shared access, thread-safe
-<c><go? "arc weak-only">Weak\<<v>T<>><><><|>(Arc)<|>Weak <c>Arc<> reference
-<c><go? "rc weak-only">Weak\<<v>T<>><><><|>(Rc)<|>Weak <c>Rc<> Reference<><>
+<card><t><c><doc? "arc-only">Arc\<<v>T<>><><><|><|>Shared ownership, thread-safe
+<c><doc? "box-only">Box\<<v>T<>><><><|><|>Heap allocated
+<c><doc? "cell-only">Cell\<<v>T<>><><><|><|>Mutates behind immutable
+<c><doc? "cow-only">Cow\<<v>T<>><><><|><|>Efficient pass or clone (as needed)
+<c><doc? "mutex-only">Mutex\<<v>T<>><><|><|>Shared access, thread-safe
+<c><doc? "rc-only">Rc\<<v>T<>><><><|><|>Shared ownership, single-threaded only
+<c><doc? "ref-only">Ref\<<v>T<>><><><|><|>Immutable, returned by <c>RefCell<>
+<c><doc? "refcell-only">RefCell\<<v>T<>><><><|><|>Runtime borrow checking, single-threaded only
+<c><doc? "refmut-only">RefMut\<<v>T<>><><><|><|>Mutable, returned by <c>RefCell<>
+<c><doc? "rwlock-only">RwLock\<<v>T<>><><><|><|>Shared access, thread-safe
+<c><doc? "arc weak-only">Weak\<<v>T<>><><><|>(Arc)<|>Weak <c>Arc<> reference
+<c><doc? "rc weak-only">Weak\<<v>T<>><><><|>(Rc)<|>Weak <c>Rc<> Reference<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/book/ch15-00-smart-pointers.html">Smart Pointers<>
@@ -22739,31 +22822,34 @@ Rust Docs: <l "https://doc.rust-lang.org/book/ch15-00-smart-pointers.html">Smart
 
 <card><t>General:
 
-<in>Allocate On Heap<><|><go? "Box-only">Box<>\<<v>T<>>
-<in>Efficient Conditional Cloning    <><|><go? "cow-only">Cow<>\<<v>T<>>
-<in>Mutate Behind Immutable<><|><go? "cell-only">Cell<>\<<v>T<>>
+<in>Allocate On Heap<><|><doc? "Box-only">Box<>\<<v>T<>>
+<in>Efficient Conditional Cloning    <><|><doc? "cow-only">Cow<>\<<v>T<>>
+<in>Mutate Behind Immutable<><|><doc? "cell-only">Cell<>\<<v>T<>>
 
 Single-threaded:
 
-<in>Mutate Shared<sup><#>2<><><><|><go? "refcell-only">RefCell<>\<<v>T<>>
-<in>Multiple Owners, Immutable      <><|><go? "Rc-only">Rc<>\<<v>T<>>
-<in>Multiple Owners, Mutable<><|><go? "Rc-only">Rc<>\<<go? "refcell-only">RefCell<>\<<v>T<>>>
+<in>Mutate Shared<sup><n>2<><><><|><doc? "refcell-only">RefCell<>\<<v>T<>>
+<in>Multiple Owners, Immutable      <><|><doc? "Rc-only">Rc<>\<<v>T<>>
+<in>Multiple Owners, Mutable<><|><doc? "Rc-only">Rc<>\<<doc? "refcell-only">RefCell<>\<<v>T<>>>
 
 Multithreaded:
 
-<in>Mutate Shared<sup><#>1<><><><|><go? "Mutex-only">Mutex<>\<<v>T<>><sup><>
-<in>Mutate Shared<sup><#>2<><><><|><go? "RwLock-only">RwLock<>\<<v>T<>><sup><>
-<in>Multiple Owners, Immutable<><|><go? "Arc-only">Arc<>\<<v>T<>>
-<in>Multiple Owners, Mutable<sup><#>1<><><><|><go? "Arc-only">Arc<>\<<go? "Mutex-only">Mutex<>\<<v>T<>>><sup><>
-<in>Multiple Owners, Mutable<sup><#>2<><><><|><go? "Arc-only">Arc<>\<<go? "RwLock-only">RwLock<>\<<v>T<>>><sup><><><>
+<in>Mutate Shared<sup><n>1<><><><|><doc? "Mutex-only">Mutex<>\<<v>T<>><sup><>
+<in>Mutate Shared<sup><n>2<><><><|><doc? "RwLock-only">RwLock<>\<<v>T<>><sup><>
+<in>Multiple Owners, Immutable<><|><doc? "Arc-only">Arc<>\<<v>T<>>
+<in>Multiple Owners, Mutable<sup><n>1<><><><|><doc? "Arc-only">Arc<>\<<doc? "Mutex-only">Mutex<>\<<v>T<>>><sup><>
+<in>Multiple Owners, Mutable<sup><n>2<><><><|><doc? "Arc-only">Arc<>\<<doc? "RwLock-only">RwLock<>\<<v>T<>>><sup><><><>
 
-<#>1<>  -  Single Reader or Writer
-<#>2<>  -  Multiple Readers or Single Writer
+<n>1<>  -  Single Reader or Writer
+<n>2<>  -  Multiple Readers or Single Writer
 @
 @ pointers, summary
+@ smart pointer, smart-only, smart-pointer-only, smart-pointers-only
+@ wrapper-only, wrappers-only, wrap, memory management
+@ single-threaded, multi-threaded, multi-threading, multithreaded, multithreading
 
 
-######## <c><go? "arc-only">Arc<>\<<v>T<>><>
+######## <c><doc? "arc-only">Arc<>\<<v>T<>><>
 
 <in>Use when: Multiple threads need to share ownership of data.
 
@@ -22772,7 +22858,7 @@ Shared ownership
 Uses reference counting
 Immutable access<><>
 
-######## <c><go? "box-only">Box<>\<<v>T<>><>
+######## <c><doc? "box-only">Box<>\<<v>T<>><>
 
 <in>Use when: You need to allocate data on the heap for a single owner.
 
@@ -22780,7 +22866,7 @@ Immutable access<><>
 Returns a pointer to that location
 Single owner<><>
 
-######## <c><go? "cell-only">Cell<>\<<v>T<>><>
+######## <c><doc? "cell-only">Cell<>\<<v>T<>><>
 
 <in>Use when: You need to mutate data inside a type without requiring <c>mut<>.
 
@@ -22789,7 +22875,7 @@ Underlying type must implement <c>Copy<>
 Single-threaded only
 Zero-cost abstraction<><>
 
-######## <c><go? "cow-only">Cow<>\<<v>T<>><>
+######## <c><doc? "cow-only">Cow<>\<<v>T<>><>
 
 <in>Use when: You need to decide at runtime whether to use borrowed or owned data.
 
@@ -22798,14 +22884,14 @@ Transparent to the end user
 Clones if needed
 Underlying type must implement <c>ToOwned<><><>
 
-######## <c><go? "mutex-only">Mutex<>\<<v>T<>><>
+######## <c><doc? "mutex-only">Mutex<>\<<v>T<>><>
 
 <in>Use when: You need to safely access mutable data between threads.
 
 <*>Thread-safe mutable access
 Single borrower or owner<><>
 
-######## <c><go? "rc-only">Rc<>\<<v>T<>><>
+######## <c><doc? "rc-only">Rc<>\<<v>T<>><>
 
 <in>Use when: You need shared ownership of data in a single-threaded environment.
 
@@ -22814,7 +22900,7 @@ Uses reference counting
 Immutable access
 Single-threaded only<><>
 
-######## <c><go? "ref-only">Ref<>\<<v>T<>><>
+######## <c><doc? "ref-only">Ref<>\<<v>T<>><>
 
 <in>Use when: You need to a temporary immutable reference to the inner data of a RefCell.
 
@@ -22822,7 +22908,7 @@ Single-threaded only<><>
 Returned by <c>RefCell<>
 Enforces runtime borrow rules<><>
 
-######## <c><go? "refcell-only">RefCell<>\<<v>T<>><>
+######## <c><doc? "refcell-only">RefCell<>\<<v>T<>><>
 
 <in>Use when: You need safe mutable access to data in a single-threaded environment.
 
@@ -22831,7 +22917,7 @@ Bypasses compile-time borrow checks
 Multiple readers, single writer
 Single-threaded only<><>
 
-######## <c><go? "refmut-only">RefMut<>\<<v>T<>><>
+######## <c><doc? "refmut-only">RefMut<>\<<v>T<>><>
 
 <in>Use when: You need to a temporary mutable reference to the inner data of a RefCell.
 
@@ -22839,7 +22925,7 @@ Single-threaded only<><>
 Returned by <c>RefCell<>
 Enforces runtime borrow rules<><>
 
-######## <c><go? "rwlock-only">RwLock<>\<<v>T<>><>
+######## <c><doc? "rwlock-only">RwLock<>\<<v>T<>><>
 
 <in>Use when: You need safe mutable access to data between threads, with multiple readers or one writer.
 
@@ -22847,7 +22933,7 @@ Enforces runtime borrow rules<><>
 Mutable access
 Multiple readers, single writer<><>
 
-######## <c><go? "arc weak-only">Weak<>\<<v>T<>><> (Arc)
+######## <c><doc? "arc weak-only">Weak<>\<<v>T<>><> (Arc)
 
 <in>Use when: You need to avoid circular references in a multi-threaded environment.
 
@@ -22855,17 +22941,13 @@ Multiple readers, single writer<><>
 Thread-safe
 Prevents reference cycles<><>
 
-######## <c><go? "rc weak-only">Weak<>\<<v>T<>><> (Rc)
+######## <c><doc? "rc weak-only">Weak<>\<<v>T<>><> (Rc)
 
 <in>Use when: You need to avoid circular references in a single-threaded environment.
 
 <*>Non-owning reference to <c>Rc<>
 Single-threaded only
 Prevents reference cycles<><>
-@
-@ smart pointer, smart-only, smart-pointer-only, smart-pointers-only
-@ wrapper-only, wrappers-only, wrap, memory management
-@ single-threaded, multi-threaded, multi-threading, multithreaded, multithreading
 
 
 
@@ -22922,7 +23004,7 @@ let <v>arc_1<> = Arc::new(<v>42<>_i32);
 
 println!("{}", <v>arc_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Arc.html>Arc<>.<l "https://doc.rust-lang.org/std/sync/struct.Arc.html#method.new">new()<>
@@ -22980,7 +23062,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 <cb>= Arc::weak_count(<v>arc_1<>);<>
 
 
-Weak instances are instances of the <go? "arc weak-only">Weak<> type and imply a non-owning reference to the Ars's data.
+Weak instances are instances of the <doc? "arc weak-only">Weak<> type and imply a non-owning reference to the Ars's data.
 
 Weak = Non-Owning References
 
@@ -23063,7 +23145,7 @@ Creates a weak pointer to the data referenced by the Arc pointer.
 
 Yes, this is an associated function on the Arc type, not a method on the instance itself.
 
-Associated Type: <go? "arc weak-only">Weak<>
+Associated Type: <doc? "arc weak-only">Weak<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l https://doc.rust-lang.org/std/sync/struct.Arc.html>Arc<>.<l "https://doc.rust-lang.org/std/sync/struct.Arc.html#method.downgrade">downgrade()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html">Weak<>
@@ -23080,14 +23162,14 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Use Arc + Mutex:
 
-<cb><go? "arc+mutex">Arc\<Mutex\<<v>T<>>><><>
+<cb><doc? "arc+mutex">Arc\<Mutex\<<v>T<>>><><>
 
 
 ### Arc - Mutable Value, Multiple Borrows
 
 Use Arc + RwLock:
 
-<cb><go? "arc+mutex">Arc\<RwLock\<<v>T<>>><><>
+<cb><doc? "arc+mutex">Arc\<RwLock\<<v>T<>>><><>
 
 
 
@@ -23237,7 +23319,7 @@ Example:
 
 println!("{}", <v>box_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/boxed/index.html">boxed<>::<l https://doc.rust-lang.org/std/boxed/struct.Box.html>Box<>.<l "https://doc.rust-lang.org/std/boxed/struct.Box.html#method.new">new()<>
@@ -23296,6 +23378,10 @@ Box\<<v>T<>><|>=<|>│ pointer:  usize ──│──▶ │ item │
 Type:
 
 <cb>std::cell::Cell\<<v>T<>><>
+
+Use:
+
+<cb>use std::cell::Cell;<>
 
 Allows inner data to be mutated indepenedent of the outer types mutability.
 
@@ -23590,9 +23676,13 @@ match <v>cow_1<> {
 
 # Mutex
 
-<cb>std::sync::Mutex<>
+Type:
 
-<cb>Mutex\<<v>T<>><>
+<cb>std::sync::Mutex\<<v>T<>><>
+
+Use:
+
+<cb>use std::sync::Mutex;<>
 
 
 Defines a mutex around some data that can be shared across threads but only allows one single thread access to the data at a time.
@@ -23802,7 +23892,7 @@ Import:
 
 <*>Use for lazy global initialization
 Immutable unless defined with <c>mut<>
-Not thread safe (use <go?>OnceLock<>)<>
+Not thread safe (use <doc?>OnceLock<>)<>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cell/index.html">cell<>::<l "https://doc.rust-lang.org/std/cell/struct.OnceCell.html">OnceCell<>
@@ -24045,6 +24135,10 @@ Type:
 
 <cb>std::rc::Rc\<<v>T<>><>
 
+Use:
+
+<cb>use std::rc::Rc;<>
+
 
 A pointer that allows a value to have multiple owners.
 
@@ -24086,7 +24180,7 @@ let <v>rc_1<> = Rc::new(<v>42<>_i32);
 
 println!("{}", <v>rc_1<>);
 
-<#>// Prints: "42"<><>
+<n>// Prints: "42"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l https://doc.rust-lang.org/std/rc/struct.Rc.html>Rc<>.<l "https://doc.rust-lang.org/std/rc/struct.Rc.html#method.new">new()<>
@@ -24151,7 +24245,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 Returns a count of all non-owning weak instances to the rc item.
 
-Weak instances are instances of the <go? "rc weak-only">Weak<> type and imply a non-owning reference to the Rc's data.
+Weak instances are instances of the <doc? "rc weak-only">Weak<> type and imply a non-owning reference to the Rc's data.
 
 Weak = Non-Owning References
 
@@ -24236,7 +24330,7 @@ Creates a weak pointer to the data referenced by the Rc pointer.
 
 Yes, this is an associated function on the Rc type, not a method on an Rc instance.
 
-Associated Type: <go? "rc weak-only">Weak<>
+Associated Type: <doc? "rc weak-only">Weak<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l https://doc.rust-lang.org/std/rc/struct.Rc.html>Rc<>.<l "https://doc.rust-lang.org/std/rc/struct.Rc.html#method.downgrade">downgrade()<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/rc/index.html">rc<>::<l "https://doc.rust-lang.org/std/rc/struct.Weak.html">Weak<>
@@ -24269,7 +24363,7 @@ Convertst a vec of Rc values into a vec of borrowed values.
 
 Use Rc + RefCell:
 
-<cb><go? "rc+refcell">Rc\<RefCell\<<v>T<>>><><>
+<cb><doc? "rc+refcell">Rc\<RefCell\<<v>T<>>><><>
 
 
 
@@ -24277,7 +24371,7 @@ Use Rc + RefCell:
 
 Use Weak:
 
-<cb><go? "weak-only">Weak\<<v>T<>><><>
+<cb><doc? "weak-only">Weak\<<v>T<>><><>
 
 
 
@@ -24388,10 +24482,14 @@ Type:
 
 <cb>std::cell::Ref\<<v>T<>><>
 
+Use:
+
+<cb>use std::cell::Ref;<>
+
 
 Returned by RefCell to allow immutable access to RefCell's contents.
 
-Use when: You need to a temporary mutable reference to the inner data of a <c><go? "refcell-only">RefCell<><>.
+Use when: You need to a temporary mutable reference to the inner data of a <c><doc? "refcell-only">RefCell<><>.
 
 <*>Immutable access
 Returned by <c>RefCell<>
@@ -24410,6 +24508,10 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Type:
 
 <cb>std::cell::RefCell\<<v>T<>><>
+
+Use:
+
+<cb>use std::cell::RefCell;<>
 
 
 Tracks and enforces borrows at runtime instead of compile time. Safely allowing the contents to be mutated.
@@ -24596,7 +24698,7 @@ Type:
 
 Returned by RefCell to allow mutable access to RefCell's contents.
 
-Use when: You need to a temporary mutable reference to the inner data of a <c><go? "refcell-only">RefCell<><>.
+Use when: You need to a temporary mutable reference to the inner data of a <c><doc? "refcell-only">RefCell<><>.
 
 <*>Mutable access
 Returned by RefCell
@@ -24617,6 +24719,10 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Type:
 
 <cb>std::sync::RwLock\<<v>T<>><>
+
+Use:
+
+<cb>use std::sync::RwLock;<>
 
 Provides runtime tracking of concurrent reads and writes.
 
@@ -24715,7 +24821,7 @@ match <v>rwlock_1<>.read() {
 	Ok(<v>value<>) => println!("value = {}", *<v>value<>),
 };
 
-<#>// Prints: value = 42<><>
+<n>// Prints: value = 42<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.read">read()<>
@@ -24759,7 +24865,7 @@ match <v>rwlock_1<>.try_read() {
 	Ok(<v>value<>) => println!("value = {}", *<v>value<>),
 };
 
-<#>// Prints: value = 42<><>
+<n>// Prints: value = 42<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/sync/index.html">sync<>::<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html">RwLock<>.<l "https://doc.rust-lang.org/std/sync/struct.RwLock.html#method.try_read">try_read()<>
@@ -24856,11 +24962,11 @@ A pointer that contains a non-owning reference to some data.
 
 Use when: You need to avoid circular references in a multi-threaded environment.
 
-<*>Non-owning reference to <c><go? "arc-only">Arc<><>
+<*>Non-owning reference to <c><doc? "arc-only">Arc<><>
 Thread-safe
 Prevents reference cycles<>
 
-Returned by <c><go? "arc-only">Arc<>.downgrade()<>.
+Returned by <c><doc? "arc-only">Arc<>.downgrade()<>.
 Used to prevent reference loops.
 Allows data to be dropped from memory even though this pointer still references it.
 Makes <_>no<> guarantees that the data still being present.
@@ -24890,7 +24996,7 @@ Create a new Weak pointer with data placed on the heap.
 
 Use when: You need to avoid circular references in a single-threaded environment.
 
-<*>Non-owning Reference to <c><go? "rc-only">Rc<><>
+<*>Non-owning Reference to <c><doc? "rc-only">Rc<><>
 Single-threaded only
 Prevents reference cycles<>
 
@@ -24910,7 +25016,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 You must upgrade to an Arc pointer to access the value referenced by the weak pointer.
 
 <cb>let Some(<v>arc_1<>) = <v>weak_1<>.upgrade() else {
-	<#>// Upgrade failed.<>
+	<n>// Upgrade failed.<>
 };<>
 
 
@@ -25000,7 +25106,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 You must upgrade to an Rc pointer to access the value referenced by the weak pointer.
 
 <cb>let Some(<v>rc_1<>) = <v>weak_1<>.upgrade() else {
-	<#>// Upgrade failed.<>
+	<n>// Upgrade failed.<>
 };<>
 
 
@@ -25041,28 +25147,28 @@ index-to: word
 <>
 @
 @ standard-traits-only, system-traits-only, std-traits-only, sys-traits-only
-<t><c><go? "asmut-only">AsMut<><><|>Converts to a mutable reference of another type.
-<c><go? "asref trait">AsRef<><><|>Converts to a shared reference of another type.
-<c><go? "clone-only trait">Clone<><><|>Creates a copy.
-<c><go? "copy-only trait">Copy<><><|>Creates a bitwise copy (enables copy semantics).
-<c><go? "debug-only trait">Debug<><><|>Enables debugging and defines the format.
-<c><go? "deref-only trait">Deref<><><|>Provides an immutable reference to another type.
-<c><go? "default-only trait">Default<><><|>Defines the default value.
-<c><go? "display-only trait">Display<><><|>Returns a user readable form of the type.
-<c><go? "drop-only trait">Drop<><><|>Defines what to do on destruction.
-<c><go? "eq-only trait">Eq<><><|>Defines equality comparison (==) when x == x.
-<c><go? "error-only trait">Error<><><|>Defines the type of error.
-<c><go? "from-only trait">From<><><|>Converts from one type into another.
-<c><go? "slice-only trait">Index<><><|>Access elements using indexing ([])
-<c><go? "slice-only trait">IndexMut<><><|>Access elements using a mutable index ([]).
-<c><go? "into-only trait">Into<><><|>Converts from one type into another.
-<c><go? "intoiterator-only trait">IntoIterator<><><|>Converts into an iterator.
-<c><go? "iterator-only trait">Iterator<><><|>Defines a type that can be treated as an iterator.
-<c><go? "ord-only trait">Ord<><><|>Defines ordering for values (\<, >, etc.).
-<c><go? "partialeq-only trait">PartialEq<><><|>Defines equality comparison (==) when x != x may be true.
-<c><go? "toowned-only trait">ToOwned<><><|>Converts borrowed data into owned by cloning.
-<c><go? "tostring-only trait">ToString<><><|>Converts to a string.
-<c><go? "tryfrom-only trait">TryFrom<><><|>Converts from one type to another that may fail.<>
+<t><c><doc? "asmut-only">AsMut<><><|>Converts to a mutable reference of another type.
+<c><doc? "asref trait">AsRef<><><|>Converts to a shared reference of another type.
+<c><doc? "clone-only trait">Clone<><><|>Creates a copy.
+<c><doc? "copy-only trait">Copy<><><|>Creates a bitwise copy (enables copy semantics).
+<c><doc? "debug-only trait">Debug<><><|>Enables debugging and defines the format.
+<c><doc? "deref-only trait">Deref<><><|>Provides an immutable reference to another type.
+<c><doc? "default-only trait">Default<><><|>Defines the default value.
+<c><doc? "display-only trait">Display<><><|>Returns a user readable form of the type.
+<c><doc? "drop-only trait">Drop<><><|>Defines what to do on destruction.
+<c><doc? "eq-only trait">Eq<><><|>Defines equality comparison (==) when x == x.
+<c><doc? "error-only trait">Error<><><|>Defines the type of error.
+<c><doc? "from-only trait">From<><><|>Converts from one type into another.
+<c><doc? "slice-only trait">Index<><><|>Access elements using indexing ([])
+<c><doc? "slice-only trait">IndexMut<><><|>Access elements using a mutable index ([]).
+<c><doc? "into-only trait">Into<><><|>Converts from one type into another.
+<c><doc? "intoiterator-only trait">IntoIterator<><><|>Converts into an iterator.
+<c><doc? "iterator-only trait">Iterator<><><|>Defines a type that can be treated as an iterator.
+<c><doc? "ord-only trait">Ord<><><|>Defines ordering for values (\<, >, etc.).
+<c><doc? "partialeq-only trait">PartialEq<><><|>Defines equality comparison (==) when x != x may be true.
+<c><doc? "toowned-only trait">ToOwned<><><|>Converts borrowed data into owned by cloning.
+<c><doc? "tostring-only trait">ToString<><><|>Converts to a string.
+<c><doc? "tryfrom-only trait">TryFrom<><><|>Converts from one type to another that may fail.<>
 @
 @ summary
 
@@ -25070,11 +25176,11 @@ index-to: word
 
 # Marker Traits
 
-<go? "copy-only+trait">Copy<>
-<go? "send-only+trait">Send<>
-<go? "sized-only+trait">Sized<>
-<go? "sync-only+trait">Sync<>
-<go? "unpin-only+trait">Unpin<>
+<doc? "copy-only+trait">Copy<>
+<doc? "send-only+trait">Send<>
+<doc? "sized-only+trait">Sized<>
+<doc? "sync-only+trait">Sync<>
+<doc? "unpin-only+trait">Unpin<>
 @
 @ summary
 
@@ -25261,7 +25367,7 @@ let <v>point<> = <v>Point<>::default();
 
 println!("x: {}, y: {}", <v>point<>.x, <v>point<>.<v>y<>);
 
-<#>// x: 0, y: 0<><>
+<n>// x: 0, y: 0<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/default/index.html">default<>::<l "https://doc.rust-lang.org/std/default/trait.Default.html">Default<>
@@ -25460,11 +25566,11 @@ Example:
 	<v>...<>
 }
 
-<#># Eq is a marker trait. Has no methods:<>
+<n># Eq is a marker trait. Has no methods:<>
 impl Eq for <v>Type1<> {}<>
 
 
-See Also: <go? "partialeq-only">PartialEq<>
+See Also: <doc? "partialeq-only">PartialEq<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.Eq.html">Eq<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialEq.html">PartialEq<>
@@ -25480,7 +25586,7 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 <cb>pub trait Error: Debug + Display {
 	fn source(&self) -> Option\<&(dyn Error + 'static)>;
 	fn description(&self) -> &str;
-    <s>fn cause(&self) -> Option\<&dyn Error>;<>
+    <d>fn cause(&self) -> Option\<&dyn Error>;<>
     fn provide\<'a>(&'a self, demand: &mut Demand\<'a>);
 }<>
 
@@ -25867,7 +25973,7 @@ let <v>items<> = Items{values: vec!["A".into(), "B".into(), "C".into()] };
 
 println!("Item 1: {}", &<v>items<>[1]);
 
-<#>// Prints: B<><>
+<n>// Prints: B<><>
 @
 @ index-only
 @ std::ops::Index, ops::Index, ::Index, []
@@ -25887,7 +25993,7 @@ Type:
 
 Implements mutable indexing on a type (<c>= <v>item<>[<v>index<>]<>).
 
-Requires: <go? "index-only">Index Trait<>
+Requires: <doc? "index-only">Index Trait<>
 The Index Trait must also be implemented.
 
 
@@ -25926,7 +26032,7 @@ let <v>item1<> = &mut <v>items<>[1];
 
 println!("Item 1: {}", &<v>items<>[1]);
 
-<#>// Prints: B
+<n>// Prints: B
 // Prints: Z<><>
 @
 @ indexmut-only, mutable
@@ -26062,7 +26168,7 @@ Returns an iterator to the item.
 The item values are borrowed.
 
 
-Sheet: <go? "iterator-only">Iterator<>
+Sheet: <doc? "iterator-only">Iterator<>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>
@@ -26178,7 +26284,37 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 
 ### Iterator - Find
 
-<cb>= <v>iterator_1<>.find(<v>match_function<>)><>
+<cb>= <v>iterator_1<>.find(<v>match_function<>)<>
+
+Find Function:
+
+<cb>fn(item: &<v>T<>) -> bool<>
+
+Returns:
+
+<cb>Optional:\<T><>
+
+
+Iterates over a list, returning the first non-none item.
+
+The iterator short circuits on the first positive match.
+
+
+
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>.<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.find">find()<>
+@
+@ item, element, value
+@ .find()
+
+
+
+### Iterator - Find Map
+
+<cb>= <v>iterator_1<>.find_map(<v>match_function<>)<>
+
+Filter Map Function:
+
+<cb>fn(item: <v>T<>) -> Option\<U><>
 
 Returns:
 
@@ -26188,10 +26324,10 @@ Returns:
 Returns the item that returns true for the match function.
 
 
-Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>.<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.find">find()<>
+Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>.<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.find_map">find_map()<>
 @
 @ item, element, value
-@ .find()
+@ .find_map()
 
 
 
@@ -26441,7 +26577,7 @@ for (<v>index<>, <v>item<>) in <v>items<>.into_iter().enumerate() {
 	println!("{} {}", <v>index<>, <v>item<>);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 //   0 one
 //   1 two
@@ -26450,7 +26586,7 @@ for (<v>index<>, <v>item<>) in <v>items<>.into_iter().enumerate() {
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>.<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.enumerate">enumerate()<>
 @
-@ iterator.enumerate(), iter.enumerate(), .enumerate()
+@ iterator.enumerate(), iter.enumerate(), .enumerate(), index
 
 
 
@@ -26481,9 +26617,7 @@ Returns
 <cb>FilterMap\<<v>F<>><>
 
 
-Maps values into <c>Option\<<v>T<>><> and then filters out the <c>None<> values.
-
-None items are filtered out.
+Takes a function that converts the data into <c>Option\<<v>T<>><> (required) so that it can then filter out the <c>None<> values.
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/iter/index.html">iter<>::<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html">Iterator<>.<l "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.filter_map">filter_map()<>
@@ -26670,7 +26804,7 @@ for <v>pair<> in <v>zipped<>.iter() {
     println!("{} {}", <v>pair<>.0, <v>pair<>.1);
 }
 
-<#>// Prints:
+<n>// Prints:
 //
 // 1 one
 // 2 two
@@ -26697,7 +26831,7 @@ Type:
 Allows items to be compared defining which is greater.
 
 
-See Also: <go? "partialord-only">PartialOrd<>
+See Also: <doc? "partialord-only">PartialOrd<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.Ord.html">Ord<>
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/enum.Ordering.html">Ordering<>
@@ -26779,7 +26913,7 @@ Use when the following may be true: x != x.
 Example, NaN is never equal to anything, not even itself (NaN != NaN).
 
 
-See Also: <go? "eq-only">Eq<>
+See Also: <doc? "eq-only">Eq<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialEq.html">PartialEq<>
 @
@@ -26809,7 +26943,7 @@ Use when the following may be true: x != x.
 Example, NaN is never equal to anything, not even itself (NaN != NaN).
 
 
-See Also: <go? "ord-only">Ord<>
+See Also: <doc? "ord-only">Ord<>
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/cmp/index.html">cmp<>::<l "https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html">PartialOrd<>
 @
@@ -27149,7 +27283,7 @@ Returns true if contains the character.
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/str/index.html">str<>::<l "https://doc.rust-lang.org/std/str/struct.Chars.html">Chars<>.<l "https://doc.rust-lang.org/std/str/struct.Chars.html#impl-Any-for-Chars%3C%27a%3E">any()<>
 @
-@ in, includes, has
+@ has, includes
 @ chars.any(), .any(), char?
 
 
@@ -28023,7 +28157,7 @@ Returns:
 Binds a TCP listener to the local address and port defined in the socket address..
 
 
-See: <go? "socket-addr-only">SocketAddr<>
+See: <doc? "socket-addr-only">SocketAddr<>
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html>TcpListener<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html#method.bind>bind()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
@@ -28051,7 +28185,7 @@ Accepts an incoming request sent to the tcp port.
 Blocks until a request is received.
 
 
-See: <go? "tcpstream-only">TcpStream<>
+See: <doc? "tcpstream-only">TcpStream<>
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html>TcpListener<>.<l https://doc.rust-lang.org/std/net/struct.TcpListener.html#method.accept>accept()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>
@@ -28078,7 +28212,7 @@ Blocks until requests are received.
 Never returns <c>None<>.
 
 
-See: <go? "tcpstream-only">TcpStream<>
+See: <doc? "tcpstream-only">TcpStream<>
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpListener.html>TcpListener<>.<l https://doc.rust-lang.org/std/net/struct.TcpListener.html#method.incoming>incoming()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.Incoming.html>Incoming<>
@@ -28129,7 +28263,7 @@ Returns:
 Connect to a remote TCP address and port.
 
 
-See: <go? "socketaddr-only">SocketAddr<>
+See: <doc? "socketaddr-only">SocketAddr<>
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.connect<>connect()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
@@ -28159,7 +28293,7 @@ Returns:
 Connect to a remote TCP address and port within a gived period.
 
 
-See: <go? "duration-only">Duration<>, <go? "socketaddr-only">SocketAddr<>
+See: <doc? "duration-only">Duration<>, <doc? "socketaddr-only">SocketAddr<>
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.connect_timeout<>connect_timeout()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
@@ -28185,7 +28319,7 @@ Returns:
 Returns the local IP address and port of the socket.
 
 
-See: <go?>Socket Address<> (above)
+See: <doc?>Socket Address<> (above)
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>.<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.local_addr>local_addr()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.IpAddr.html>IpAddr<>
@@ -28208,7 +28342,7 @@ Returns:
 Returns the peer IP address and port of the socket.
 
 
-See: <go?>Socket Address<> (above)
+See: <doc?>Socket Address<> (above)
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.TcpStream.html>TcpStream<>.<l https://doc.rust-lang.org/std/net/struct.TcpStream.html#method.peer_addr>peer_addr()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.IpAddr.html>IpAddr<>
@@ -28414,7 +28548,7 @@ Returns:
 Binds a socket to the local address and port defined in the socket address..
 
 
-See: <go? "socket-addr-only">SocketAddr<>
+See: <doc? "socket-addr-only">SocketAddr<>
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.bind>bind()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.SocketAddr.html>SocketAddr<>
@@ -28441,7 +28575,7 @@ Returns:
 Returns the local IP address and port of the socket.
 
 
-See: <go?>Socket Address<> (above)
+See: <doc?>Socket Address<> (above)
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.local_addr>local_addr()<>
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/enum.IpAddr.html>IpAddr<>
@@ -28463,7 +28597,7 @@ Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rus
 
 Creates a connection to a remote socket.
 
-Allows the use of <go "?udpsocket-only#UDP Socket - Send">send()<> and <go "?udpsocket-only#UDP Socket - Receive">recv()<> commands to send and receive data.
+Allows the use of <doc "?udpsocket-only#UDP Socket - Send">send()<> and <doc "?udpsocket-only#UDP Socket - Receive">recv()<> commands to send and receive data.
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.connect>connect()<>
@@ -28541,7 +28675,7 @@ Returns:
 
 Sends a datagram (data) to the receiver on the connected address.
 
-Open the connection using <go "?udpsocket-only#UDP Socket - Connect">.connect()<>.
+Open the connection using <doc "?udpsocket-only#UDP Socket - Connect">.connect()<>.
 
 
 Rust Docs: <l https://doc.rust-lang.org/std/index.html>std<>::<l https://doc.rust-lang.org/std/net/index.html>net<>::<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html>UdpSocket<>.<l https://doc.rust-lang.org/std/net/struct.UdpSocket.html#method.sent>sent()<>
@@ -28686,7 +28820,7 @@ mod test {
 	#[test]
 	fn <v>basic_test<>() {
 
-		<#>Assertions Here<>
+		<n>Assertions Here<>
 
 		assert(<v>expression<>, "<v>Fail message.<>");
 	}
@@ -29012,7 +29146,7 @@ Example:
 }
 eprintln!();
 
-<#>// Prints: "0 1 2 3 "<><>
+<n>// Prints: "0 1 2 3 "<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.eprint.html">eprint<>
@@ -29048,7 +29182,7 @@ Print Variable Value:
 
 eprintln!("My name is {}.", <v>name<>);
 
-<#>// Prints "My name is your_name_here".<><>
+<n>// Prints "My name is your_name_here".<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.eprintln.html">eprintln<>
@@ -29076,7 +29210,7 @@ Example:
 }
 println!();
 
-<#>// Prints: "0 1 2 3 "<><>
+<n>// Prints: "0 1 2 3 "<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.print.html">print<>
@@ -29118,7 +29252,7 @@ for <v>value<> in (5..=0).rev() {
 }
 println!();
 
-<#>// Prints: "5", "4", "3", "2", "1", "0"<><>
+<n>// Prints: "5", "4", "3", "2", "1", "0"<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.print.html">print<>
@@ -29178,7 +29312,7 @@ Print Variable Value:
 
 println!("My name is {}.", <v>name<>);
 
-<#>// Prints "My name is your_name_here".<><>
+<n>// Prints "My name is your_name_here".<><>
 
 
 Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.rust-lang.org/std/macro.println.html">println<>
@@ -29364,12 +29498,12 @@ Rust Docs: <l "https://doc.rust-lang.org/std/index.html">std<>::<l "https://doc.
 Code:
 
 <cb>#[cfg(feature = "<v>feature-name<>")]
-<#>// Code statement / function / type goes here.<><>
+<n>// Code statement / function / type goes here.<><>
 
 Code (when not using feature):
 
 <cb>#[cfg (<b>not<>(feature = "<v>feature-name<>"))]
-<#>// Code statement / function / type goes here.<><>
+<n>// Code statement / function / type goes here.<><>
 
 Cargo.toml:
 
@@ -29396,7 +29530,7 @@ Build:
 ### Feature - Include Code
 
 <cb>#[cfg(feature = "<v>feature-name<>")]
-<#>// Code statement / function / type goes here.<><>
+<n>// Code statement / function / type goes here.<><>
 
 
 Includes the code after the <c>#[cfg]<> attribute when the feature is included.
@@ -29408,7 +29542,7 @@ Includes the code after the <c>#[cfg]<> attribute when the feature is included.
 ### Feature - Include Code when Any Feature
 
 <cb>#[cfg(any(feature = "<v>feature-1<>", feature = "<v>feature-2<>"))]
-<#>// Code statement / function / type goes here.<><>
+<n>// Code statement / function / type goes here.<><>
 
 
 Includes the code after the <c>#[cfg]<> attribute when any of the listed features is included.
@@ -29420,7 +29554,7 @@ Includes the code after the <c>#[cfg]<> attribute when any of the listed feature
 ### Feature - Include Code when All Features
 
 <cb>#[cfg(all(feature = "<v>feature-1<>", feature = "<v>feature-2<>"))]
-<#>// Code statement / function / type goes here.<><>
+<n>// Code statement / function / type goes here.<><>
 
 
 Includes the code after the <c>#[cfg]<> attribute when all of the listed features are included.
@@ -29432,7 +29566,7 @@ Includes the code after the <c>#[cfg]<> attribute when all of the listed feature
 ### Feature - Exclude Code
 
 <cb>#[cfg(not(feature = "<v>feature-name<>"))]
-<#>// Code statement / function / type goes here.<><>
+<n>// Code statement / function / type goes here.<><>
 
 
 Include the code after the <c>#[cfg]<> attribute if and only if the feature is not present.
@@ -29619,11 +29753,11 @@ Compile:
 Commented cargo.toml:
 
 <cb>[profile.release]
-codegen-units = 1	<#># Minimizes Size By Reducing Parallel Build Processes<>
-lto = true			<#># Enable Link Time Optimization<>
-opt-level = "z"		<#># Optimize for size<>
-panic = "abort"		<#># Prevents stack unwinding, etc.<>
-strip = true		<#># Strips symbols<><>
+codegen-units = 1	<n># Minimizes Size By Reducing Parallel Build Processes<>
+lto = true			<n># Enable Link Time Optimization<>
+opt-level = "z"		<n># Optimize for size<>
+panic = "abort"		<n># Prevents stack unwinding, etc.<>
+strip = true		<n># Strips symbols<><>
 @
 @ command, cargo, --release
 
@@ -29727,9 +29861,45 @@ let <v>total<> = <v>curried<>(<v>b<>, <v>c<>);
 
 println!("{}", <v>total<>);
 
-<#>// Prints: 6<><>
+<n>// Prints: 6<><>
 @
 @ curried, parameter, closure
+
+
+
+### Implement Equality
+
+<b>x == x always (default):<>
+
+<*>Implement PartialEq
+Implement Eq
+<c>#[derive(PartialEq, Eq)]<><>
+
+<b>x != x maybe (NaN-like):<>
+
+<*>Implement PartialEq
+<c>#[derive(PartialEq)]<><>
+@
+@ equals, equality, compare, comparing, eq vs partialeq
+
+
+
+### Implement Compare / Ordering (less than, greater than)
+
+<b>x == x always (default):<>
+
+<*>Implement PartialOrd
+Implement Ord
+Requires PartialEq, Eq
+<c>#[derive(PartialEq, Eq, PartialOrd, Ord)]<><>
+
+<b>x != x maybe (NaN-like):<>
+
+<*>Implement PartialOrd
+Requires PartialEq
+<c>#[derive(PartialEq, PartialOrd)]<><>
+@
+@ comparing., order, partialord vs ord
 
 
 
@@ -29763,7 +29933,7 @@ pub struct Data\<V> {
     <v>items<>: Vec\<V>,
 }
 
-<#>// Index: [index] ─────────────────── //<>
+<n>// Index: [index] ─────────────────── //<>
 
 impl\<V> Index\<usize> for Data\<V> {
     type <v>Output<> = V;
@@ -29779,7 +29949,7 @@ impl\<V> IndexMut\<usize> for Data\<V> {
     }
 }
 
-<#>// Range: [from..to] ──────────────── //<>
+<n>// Range: [from..to] ──────────────── //<>
 
 impl\<V> Index\<Range\<usize>> for Data\<V> {
     type Output = [V];
@@ -29795,7 +29965,7 @@ impl\<V> IndexMut\<Range\<usize>> for Data\<V> {
     }
 }
 
-<#>// Range: [from..=to] ─────────────── //<>
+<n>// Range: [from..=to] ─────────────── //<>
 
 impl\<V> Index\<RangeInclusive\<usize>> for Data\<V> {
     type Output = [V];
@@ -29811,7 +29981,7 @@ impl\<V> IndexMut\<RangeInclusive\<usize>> for Data\<V> {
     }
 }
 
-<#>// Range: [from..] ────────────────── //<>
+<n>// Range: [from..] ────────────────── //<>
 
 impl\<V> Index\<RangeFrom\<usize>> for Data\<V> {
     type Output = [V];
@@ -29827,7 +29997,7 @@ impl\<V> IndexMut\<RangeFrom\<usize>> for Data\<V> {
     }
 }
 
-<#>// Range: [..to] ──────────────────── //<>
+<n>// Range: [..to] ──────────────────── //<>
 
 impl\<V> Index\<RangeTo\<usize>> for Data\<V> {
     type Output = [V];
@@ -29843,7 +30013,7 @@ impl\<V> IndexMut\<RangeTo\<usize>> for Data\<V> {
     }
 }
 
-<#>// Main ───────────────────────────── //<>
+<n>// Main ───────────────────────────── //<>
 
 fn main() {
 
@@ -29878,7 +30048,7 @@ let mut <v>value<> = String::new();
 
 match stdin().read_line(&mut <v>value<>) {
 	Ok(_) => {
-		<v>value<>.pop();  <#>// Removes the \\n at the end the input.<>
+		<v>value<>.pop();  <n>// Removes the \\n at the end the input.<>
 		<v>value<>
 	}
 
@@ -29944,7 +30114,7 @@ Usage:
 }<>
 
 
-Use the <c><go? "into-only trait">Into<><> trait when you need to pass either <c>String<> or <c>&str<>.
+Use the <c><doc? "into-only trait">Into<><> trait when you need to pass either <c>String<> or <c>&str<>.
 
 Call .into() to convert to an actual String.
 
@@ -29959,7 +30129,7 @@ Example:
 print_string("<v>As &str<>");
 print_string(String::from("<v>As String<>"));
 
-<#>// Prints:
+<n>// Prints:
 //
 //    As &str
 //    As String<><>
@@ -30011,6 +30181,46 @@ print_string(String::from("<v>As String<>"));
     └── <v>test_module_1<>.rs<>
 @
 @ standard, std rust, src, lib.rs, tests, crate, setup
+
+
+
+### Project Workspace - Create
+
+<*>Create the workspace directory.
+Create the workspace Cargo.toml file.<>
+
+Cargo.toml:
+
+<cb>[workspace]
+members = [
+]
+
+resolver = "3"<>
+
+
+This creates a workspace for your project where you can develop related libraries and modules.
+
+Create applications and libraries (<m>cargo new<>) from the workspace directory.
+
+
+<cb><v>workspace<>/
+└── Cargo.toml<>
+
+
+With project modules:
+
+<cb><v>workspace/<>
+├── Cargo.toml
+├── <v>app/<>
+├── <v>lib-1/<>
+└── <v>lib-2/<><>
+
+
+Notes:
+
+<*>Use <c>resolver = "3"<> for Rust 2024.
+@
+@ define, new
 
 
 
@@ -30117,7 +30327,7 @@ fn dot_dot_dot\<'a>(<v>text<>: &'a str) -> Cow\<'a, str> {
 println!("{}", dot_dot_dot("12345"));
 println!("{}", dot_dot_dot("1234567890"));
 
-<#>// Prints:
+<n>// Prints:
 //
 // 12345
 // 12345...<><>
@@ -30167,10 +30377,10 @@ Possible Values:
 <cb>"x86"
 "x86_64"
 "arm"
-"arm64"			<#>Apple Silicon Macs<>
-"armv7"			<#>Embedded or Older Modile Devices<>
-"riscv32"		<#>RISC-V<>
-"riscv64"		<#>RISC-V<>
+"arm64"			<n>Apple Silicon Macs<>
+"armv7"			<n>Embedded or Older Modile Devices<>
+"riscv32"		<n>RISC-V<>
+"riscv64"		<n>RISC-V<>
 "powerpc"
 "powerpc64"
 "wasm32"
@@ -30865,7 +31075,7 @@ let <v>borrower<> = &<v>owner<>;
 println!("{}", &<v>owner<>);
 println!("{}", <v>borrower<>);
 
-<#>// Prints:
+<n>// Prints:
 //
 //    "42"
 //    "42"<><>
@@ -30909,7 +31119,7 @@ let <v>bitwise_and<> = <v>a<> & <v>b<>;
 
 println!("Bitwise And = {:b}.", <v>bitwise_and<>);
 
-<#>// Prints "Bitwise And = 100"<><>
+<n>// Prints "Bitwise And = 100"<><>
 @
 @ binary
 
@@ -30931,7 +31141,7 @@ let <v>logical_and<> = <v>a<> && <v>b<>;
 
 println!("Locigal And = {}", <v>logical_and<>);
 
-<#>// Prints "Locigal And = false"<><>
+<n>// Prints "Locigal And = false"<><>
 @
 @ double ampersand
 
@@ -30994,7 +31204,7 @@ let <v>bitwise_or<> = <v>a<> | <v>b<>;
 
 println!("Bitwise Or = {:b}.", <v>bitwise_or<>);
 
-<#>// Prints "Bitwise Or = 1101"<><>
+<n>// Prints "Bitwise Or = 1101"<><>
 @
 @ binary
 
@@ -31016,7 +31226,7 @@ let <v>logical_or<> = <v>a<> || <v>b<>;
 
 println!("Locigal Or = {}", <v>logical_or<>);
 
-<#>// Prints "Locigal Or = true"<><>
+<n>// Prints "Locigal Or = true"<><>
 @
 @ double pipe
 
@@ -31037,7 +31247,7 @@ Logical Or:
 
 <v>closure_1<>();
 
-<#>// Prints "This is a closure."<><>
+<n>// Prints "This is a closure."<><>
 @
 @ double pipe
 
@@ -31069,7 +31279,7 @@ let <v>bitwise_xor<> = <v>a<> ^ <v>b<>;
 
 println!("Bitwise XOR = {:b}.", <v>bitwise_xor<>);
 
-<#>// Prints "Bitwise XOR = 1001"<><>
+<n>// Prints "Bitwise XOR = 1001"<><>
 @
 @ binary
 
@@ -31117,7 +31327,7 @@ The empty value returned by a function that does not return a value.
 
 Comment.
 
-<cb><#>/// this is a comment.<><>
+<cb><n>/// this is a comment.<><>
 
 
 
@@ -31125,13 +31335,13 @@ Comment.
 
 Document Comment
 
-<cb><#>/// Function document.<>
+<cb><n>/// Function document.<>
 fn <v>function_1<>() {
 	<v>...<>
 }<>
 
 
-See: <go?>Document Comments<>
+See: <doc?>Document Comments<>
 
 
 
@@ -31139,12 +31349,12 @@ See: <go?>Document Comments<>
 
 A Comment Block
 
-<cb><#>/*
+<cb><n>/*
 	This is a comment block.
 */<><>
 
 
-See: <go?>Comments Multiline<>
+See: <doc?>Comments Multiline<>
 
 
 
@@ -31306,37 +31516,38 @@ Explicitly Placed on Heap (e.g. Box)
 A reserved word is a keyword that has special meaning or purpose to Rust.
 It can not be used as the name of variable, function or anything else.
 
-<in><t><c>abstract<>       <|><s>(For Future Use)<>
+<in><t><c>abstract<>       <|><d>(For Future Use)<>
 <c>as<><|>Casts a Variable, or Renames a Item
 <c>async<><|>Returns a Future
 <c>await<><|>Suspend Execution Until Future Is Done
-<c>become<><|><s>(For Future Use)<>
-<c>box<><|><s>(For Future Use)<>
+<c>become<><|><d>(For Future Use)<>
+<c>box<><|><d>(For Future Use)<>
 <c>break<><|>Exits a Loop
 <c>const<><|>Defines a Constant
 <c>continue<><|>Continue to Next Loop Iteration
 <c>crate<><|>Links to an External Crate
-<c>do<><|><s>(For Future Use)<>
+<c>do<><|><d>(For Future Use)<>
 <c>dyn<><|>Dynamic Dispatch To Trait
 <c>else<><|>Conditional If Statement, Fallback Clause
 <c>enum<><|>Defines an Enum
 <c>extern<><|>Link To an External Crate, Function, or Variable
 <c>false<><|>Boolean Literal
-<c>final<><|><s>(For Future Use)<>
+<c>final<><|><d>(For Future Use)<>
 <c>fn<><|>Defines a Function or Function Pointer
 <c>for<><|>For Loop, or Implements a Trait, or Specifies a Higher-ranked Lifetime
 <c>if<><|>Conditional If Statement
+<c>gen<><|><d>(For Future Use)<>
 <c>impl<><|>Implement Inherent or Trait
 <c>in<><|>For Loop
 <c>let<><|>Create a Variable
 <c>loop<><|>Unconditional Loop
-<c>macro<><|><s>(For Future Use)<>
+<c>macro<><|><d>(For Future Use)<>
 <c>match<><|>Match Control Statement
 <c>mod<><|>Defines a Module
 <c>move<><|>Gives Ownership To Closure
 <c>mut<><|>Mutable Value / Pointer
-<c>override<><|><s>(For Future Use)<>
-<c>priv<><|><s>(For Future Use)<>
+<c>override<><|><d>(For Future Use)<>
+<c>priv<><|><d>(For Future Use)<>
 <c>pub<><|>Set Public Visibility
 <c>ref<><|>Reference Binding
 <c>return<><|>Return A Value
@@ -31347,27 +31558,38 @@ It can not be used as the name of variable, function or anything else.
 <c>super<><|>Parent Module
 <c>trait<><|>Defines a Trait
 <c>true<><|>Boolean Literal
-<c>try<><|><s>(For Future Use)<>
+<c>try<><|><d>(For Future Use)<>
 <c>type<><|>Defines an Alias
-<c>typeof<><|><s>(For Future Use)<>
+<c>typeof<><|><d>(For Future Use)<>
 <c>union<><|>Defines a Union
 <c>unsafe<><|>Enables Unsafe Operations
-<c>unsized<><|><s>(For Future Use)<>
+<c>unsized<><|><d>(For Future Use)<>
 <c>use<><|>Bring Into Scope
-<c>virtual<><|><s>(For Future Use)<>
+<c>virtual<><|><d>(For Future Use)<>
 <c>where<><|>Type Constraint
 <c>while<><|>Conditional Loop
-<c>yield<><|><s>(For Future Use)<><><>
+<c>yield<><|><d>(For Future Use)<><><>
 @
 @ abstract, as, async, await, become, box
 @ break, const, continue, crate, do, dyn
 @ else, enum, extern, false, final, fn
-@ for, if, impl, in, let, loop, macro
+@ for, gen, if, impl, in, let, loop, macro
 @ match, mod, move, mut, override, priv
 @ pub, ref, return, Self, self, static
 @ struct, super, trait, true, try, type
 @ typeof, union, unsafe, unsized, use
 @ virtual, where, while, yield
+@ keywords, key words
+@ reserved-words-only, reserved-only
+@ keyword-only, keywords-only, key-word-only
+
+
+
+# Reference - Reserved Words - Macros
+
+<t><c>macro_rules<><|>Creates custom macros.<>
+@
+@ macro_rules
 @ keywords, key words
 @ reserved-words-only, reserved-only
 @ keyword-only, keywords-only, key-word-only
@@ -31384,7 +31606,7 @@ Rust Docs: <l https://doc.rust-lang.org/cargo/reference/manifest.html>Cargo Form
 
 ### Cargo.toml - Comment
 
-<cb><#># Comments<><>
+<cb><n># Comments<><>
 @
 @ comments
 
@@ -31557,19 +31779,19 @@ Semantic Versioning: <l>https://semver.org/<>
 
 Git .gitignore file for Rust projects:
 
-<cb><#># Backup files<>
+<cb><n># Backup files<>
 **/*.rs.bk
 *.orig
 
-<#># Cargo<>
-<#># (include for binaries, exclude for libraries)<>
+<n># Cargo<>
+<n># (include for binaries, exclude for libraries)<>
 Cargo.lock
 
-<#># Environment variables<>
+<n># Environment variables<>
 .env
 .env.local
 
-<#># IDEs<>
+<n># IDEs<>
 .idea/
 .vscode/*
 !.vscode/extensions.json
@@ -31578,13 +31800,13 @@ Cargo.lock
 *.iml
 *~
 
-<#># Build artifacts<>
+<n># Build artifacts<>
 debug/
 target/
 *.pdb
 *.o
 
-<#># OS<>
+<n># OS<>
 .DS_Store
 Thumbs.db<>
 
@@ -31638,7 +31860,7 @@ Use Instead:
 ### Classes
 Rust does not support classes.
 
-Use <go? "struct-only">structures<> and <go? "trait-only">traits<> instead.
+Use <doc? "struct-only">structures<> and <doc? "trait-only">traits<> instead.
 
 
 
@@ -31668,7 +31890,7 @@ impl <v>Item<> {
 
 ### Dictionary, Map, Table
 
-Use: <go "?hashmap">HashMap<>
+Use: <doc "?hashmap">HashMap<>
 @
 @ dict, dicts, maps, associative arrays, hash table
 
@@ -31676,7 +31898,7 @@ Use: <go "?hashmap">HashMap<>
 
 ### Dictionary, Map, Table - Ordered
 
-Use: <go "?btreemap">BtreeMap<>
+Use: <doc "?btreemap">BtreeMap<>
 @
 @ dict, dicts, maps, ordered, sorted, associative arrays
 
@@ -31693,20 +31915,20 @@ Variadic: Functions that take a variable number of parameters.
 ### Inheritance
 Rust does not support inheritance or any form of object oriented programming.
 
-Use <go? "trait-only">traits<> instead.
+Use <doc? "trait-only">traits<> instead.
 
 
 
 ### Interfaces
 Rust uses traits which are similar to interfaces.
 
-Use <go? "trait-only">traits<>.
+Use <doc? "trait-only">traits<>.
 
 
 
 ### List
 
-Use: <go? "array-only">Array (immutable sequence)<>, <go? "vec-only">Vec (mutable sequence)<>
+Use: <doc? "array-only">Array (immutable sequence)<>, <doc? "vec-only">Vec (mutable sequence)<>
 @
 @ lists
 
@@ -31715,7 +31937,7 @@ Use: <go? "array-only">Array (immutable sequence)<>, <go? "vec-only">Vec (mutabl
 ### Object Oriented Programming (OOP)
 Rust does not supported in Rust.
 
-Use <go? "struct-only">structures<> and <go? "trait-only">traits<> instead.
+Use <doc? "struct-only">structures<> and <doc? "trait-only">traits<> instead.
 
 
 
@@ -31723,7 +31945,7 @@ Use <go? "struct-only">structures<> and <go? "trait-only">traits<> instead.
 
 Null is not supported directly in the language and there is no Null type.
 
-Use: <go? "option-only">Option<>
+Use: <doc? "option-only">Option<>
 @
 @ nulls type
 
@@ -31731,7 +31953,7 @@ Use: <go? "option-only">Option<>
 
 ### Set
 
-Use: <go? "hashset-only">HashSet<>
+Use: <doc? "hashset-only">HashSet<>
 @
 @ sets
 
@@ -31739,7 +31961,7 @@ Use: <go? "hashset-only">HashSet<>
 
 ### Set - Ordered
 
-Use: <go? "btreeset-only">BTreeSet<>
+Use: <doc? "btreeset-only">BTreeSet<>
 @
 @ sets, ordered, sorted
 
@@ -31747,7 +31969,7 @@ Use: <go? "btreeset-only">BTreeSet<>
 
 ### Stack
 
-Use: <go? "vec-only">Vec<>
+Use: <doc? "vec-only">Vec<>
 
 <cb>let <v>vec_1<>: Vec\<<v>V<>> = Vec::new();
 
@@ -31764,13 +31986,13 @@ Use: <go? "vec-only">Vec<>
 
 For switch or case statement use match statement.
 
-Use: <go? "match-only">Match<>
+Use: <doc? "match-only">Match<>
 
 
 
 ### Tree
 
-Use: <go? "btreemap-only">BTreeMap<> or <go? "btreeset-only">BTreeSet<>
+Use: <doc? "btreemap-only">BTreeMap<> or <doc? "btreeset-only">BTreeSet<>
 @
 @ trees
 @ tree-only, trees-only
@@ -31824,7 +32046,7 @@ Example:
 <v>seconds<> = <v>Seconds<>(60);
 println("{}", seconds.0)
 
-<#>// Prints: 60<><>
+<n>// Prints: 60<><>
 @
 @ new type, wraps type, external trait, wrapper
 @ newtype-only
@@ -31956,6 +32178,8 @@ PartialEq:
 Example - NaN != Nan
 Implements partial equivalence only (reflexive property is not true).<>
 
+<*>Required by ==, !=, ::contains(), assert_eq!(), assert_ne!()<>
+
 <*>NOT usable in HashSet, HashMap<>
 @
 @ traits
@@ -32028,7 +32252,7 @@ Rust does not include date and time functions.
 Use the Chrono library to add date time support to your project.
 
 
-<t>SpeedSheet<|><go "chrono">Chrono<>
+<t>SpeedSheet<|><doc "chrono">Chrono<>
 
 Docs<|><l>https://docs.rs/chrono/latest/chrono/<>
 Crate<|><l>https://crates.io/crates/chrono<>
@@ -32041,7 +32265,7 @@ Example:
 <cb>use chrono::prelude::{DateTime, Local};
 
 let <v>local<>: DateTime\<Local> = Local::now();
-<#>// 2001-01-01T01:02:03.123456789+05:00<><>
+<n>// 2001-01-01T01:02:03.123456789+05:00<><>
 @
 @ datetime, year, month, day, hour, minute, second, timezone, time zone
 
@@ -32059,7 +32283,7 @@ JSON support is not built in Rust directly.
 Use the Serde library instead.
 
 
-<t>SpeedSheet<|><go "serde">Serde<>
+<t>SpeedSheet<|><doc "serde">Serde<>
 
 Docs<|><l>https://docs.rs/serde/latest/serde/<>
 Crate<|><l>https://crates.io/crates/serde<><>
@@ -32140,7 +32364,7 @@ Use the Serde crate for serializing and deserializing data.
 
 <cb>serde<>
 
-<t>SpeedSheet<|><go "serde">Serde SpeedSheet<>
+<t>SpeedSheet<|><doc "serde">Serde SpeedSheet<>
 
 Docs<|><l>https://docs.rs/serde/latest/serde/<>
 Crate<|><l>https://crates.io/crates/serde<><>
@@ -32259,14 +32483,14 @@ Product Type
 ### Algebraic Data Types - Product Type
 An item contains one or more items. A has a B and a C (contains fields).
 
-Rust implements product types using <go? "struct-only">structs<>.
+Rust implements product types using <doc? "struct-only">structs<>.
 
 
 
 ### Algebraic Data Types - Sum Type
 An item is a variation of something. It is one of a limited set.  A is a B or A is a C (variants).
 
-Rust implements sum types using <go? "enum-only">enums<>.
+Rust implements sum types using <doc? "enum-only">enums<>.
 
 
 
@@ -32370,7 +32594,7 @@ The resource is deleted when count = 0.
 Will delete even if the weak count is > 0.
 
 
-VS: <go? "term+weak+count>Weak Count<>
+VS: <doc? "term+weak+count>Weak Count<>
 
 
 
@@ -32382,7 +32606,7 @@ Must check when using the resource to see it still exists.
 Can be upgradet to a strong pointer if needed.
 
 
-VS: <go? "term+strong+count>Strong Count<>
+VS: <doc? "term+strong+count>Strong Count<>
 
 
 
@@ -32731,10 +32955,37 @@ Core Rust only supports native threads.
 
 
 
-### Trait - Orphan Rule
-You can only implement a trait when either the trait or the type is defined locally in the current crate.
+### Trait - Coherence
+The guarantee that for any given type-trait pair, there's exactly one implementation in your entire program — no ambiguity, no conflicts.
 
-This rule ensures type safety across different crates by preventing conflicting implementations.
+Related: <doc?>Trait Orphan Rule<>
+@
+@ trait
+
+
+
+### Trait - Orphan Rule
+You can not implement an external library trait on another external type inside your code.
+
+Why: This prevents multiple crates from defining conflicting implementations, ensuring type safety across crates.
+
+You can implement your trait on your type, your trait on someone else's type and someone elses trait on your type.
+
+It only applies when coding the implementation (<c>impl <v>Trait<> for <v>Type<><>). Once implemented, that implementation can be used anywhere in its scope.
+
+Rule:
+
+<in>You can implement:
+
+<*>Your trait on anyone's type
+Anyone's trait on your type
+Your trait on your type<>
+
+You cannot implement:
+
+<*>Someone else's trait on someone else's type<><>
+
+Related: <doc?>Trait Coherence<>
 @
 @ implementing across modules
 
